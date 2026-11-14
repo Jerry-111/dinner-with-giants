@@ -1,0 +1,131 @@
+{
+  "id": "H4",
+  "name": "Marie Curie",
+  "round": "R1",
+  "notice": "Simulation based on public material; not the person's own words.",
+  "options": {
+    "O1": {
+      "learning": 5,
+      "upside": 6,
+      "optionality": 4,
+      "fit": 4,
+      "overall": 4,
+      "confidence": "medium",
+      "basis": "inferred",
+      "one_line": "Resourced but narrow: compute and pay are real, but a role built on someone else's roadmap is the opposite of what ever worked for me.",
+      "late_modes": "Joining to run an already-standard pipeline (structure prediction is now mature, F14) rather than to open a genuinely new question is late; joining to help choose what the team measures next is not.",
+      "conflict": null
+    },
+    "O2": {
+      "learning": 7,
+      "upside": 6,
+      "optionality": 4,
+      "fit": 6,
+      "overall": 5,
+      "confidence": "low",
+      "basis": "inferred",
+      "one_line": "Close to my own scale and partnership pattern, but equity and a venture-backed company's survival are bets I have no instinct for, and the 2026 numbers have gotten worse, not better.",
+      "late_modes": "If the specific target or platform is already crowded with funded competitors, that is late; an under-examined angle at a small company is not.",
+      "conflict": null
+    },
+    "O3": {
+      "learning": 8,
+      "upside": 6,
+      "optionality": 5,
+      "fit": 5,
+      "overall": 6,
+      "confidence": "high",
+      "basis": "synthesized",
+      "one_line": "The closest institutional analogue to my own doctorate: a mentor building a lab alongside you, if the question is truly yours and not leftover work.",
+      "late_modes": "None observed: a newly hired assistant professor's first years are, if anything, the earliest and highest-ownership moment an academic lab offers, closest to my own position with Pierre.",
+      "conflict": null
+    },
+    "O4": {
+      "learning": 8,
+      "upside": 5,
+      "optionality": 9,
+      "fit": 8,
+      "overall": 8,
+      "confidence": "high",
+      "basis": "synthesized",
+      "one_line": "This is almost exactly how radium was found: a weak, already-observed signal, modest means, a partner if one can be had, and a dated point to stop and judge the result.",
+      "late_modes": "If the toolkit's niche is already being absorbed into a well-resourced lab's own open infrastructure (F14, F15's scale), a solo year re-covering the same ground is late; moving to an adjacent, still-unclaimed problem is not.",
+      "conflict": null
+    }
+  },
+  "levers": {
+    "L1": 25,
+    "L2": 30,
+    "L3": 10,
+    "L4": 25,
+    "L5": 10
+  },
+  "lever_reason": "Ownership of the question and a real partner to check the work against matter more than the size of the budget; a public, verifiable track record is what travels with you if an institution fails you. Money buys time, not judgment, which is why financial runway and compute rank below the other three.",
+  "questions": {
+    "Q1": {
+      "position": "conditional",
+      "score": 6,
+      "condition": "Yes, but only if the specific mentor and problem give real ownership of a question, not labor inside someone else's already-funded program; my own doctorate mattered because the question and method were mine, not because of the degree itself."
+    },
+    "Q2": {
+      "position": "conditional",
+      "score": 7,
+      "condition": "Yes, if savings cover the year, a signal already exists (users, stars, a paper), and there is at least one other person checking the work. I never once did my best work entirely alone."
+    }
+  },
+  "conditions": {
+    "Q2": ["C1", "C2", "C5"]
+  },
+  "paths_for_user": [
+    {
+      "name": "Signal-first independent year",
+      "options": ["O4"],
+      "next_12_months": "Grow the toolkit under the conditions above, treat it as a dated experiment, and set the 12-month mark as a real decision point, not a soft one.",
+      "why": "Matches my own 1897-1903 pattern [dossier §I]: an already-observed but unresourced signal, modest means, a defined point to stop and judge the result by what was actually measured, not by what was hoped for.",
+      "wrong_signal": "No growth in users or contributors, and savings running out, before any outside interest appears. That is the moment to stop, not the moment to push through on willpower alone."
+    },
+    {
+      "name": "Own a question inside a new lab",
+      "options": ["O3"],
+      "next_12_months": "Join the assistant professor's lab and use the first year to establish that the specific question is Alex's own, before the five-to-six-year commitment [F1, F2] starts to feel irreversible.",
+      "why": "Resembles my own doctoral years [dossier §A, §G]: the credential mattered less than the fact that the question and the method were genuinely mine, working alongside a partner who was also building something.",
+      "wrong_signal": "By month twelve the problems being assigned are the advisor's leftover questions, not ones Alex chose. That is the point where this stops resembling my own path and starts resembling plain labor."
+    },
+    {
+      "name": "Test the startup, but verify the ground first",
+      "options": ["O2"],
+      "next_12_months": "Before joining, get specific, written answers on equity against the going rate [F11], on runway given weaker 2026 biotech financing [F12], and on what happens to any code or results if the company folds.",
+      "why": "The broad, close-partnership shape resembles my work with Pierre [dossier §A], but equity and venture financing have no equivalent in my own life, so this path needs dated outside facts, not my instinct, to be judged.",
+      "wrong_signal": "The company cannot clearly say whether Alex's own results would be publishable if it folded or pivoted. I never once had to ask that question of my own work."
+    }
+  ],
+  "cruxes": [
+    {
+      "question": "Is Alex's existing signal (about 800 stars, two occasional contributors, one workshop paper) closer to an already-observed anomaly worth years of work, or a project with no deeper vein in it?",
+      "my_position": "Treat it as a real, if modest, signal, closer to Becquerel's uranium rays than to nothing, worth one more bounded push (O4) before a five-to-six-year commitment (O3).",
+      "would_change_if": "Usage or contributor growth stays flat or falls over several months of real effort, which would say the vein is likely exhausted.",
+      "options": ["O3", "O4"]
+    },
+    {
+      "question": "Does Alex need the PhD credential itself, or only the ownership and rigor a PhD happens to provide?",
+      "my_position": "The credential mattered to me chiefly because 1903 France would not take a woman seriously without one; if 2026 collaboration already runs on published code and results, the credential itself may be optional for Alex.",
+      "would_change_if": "A dated fact showing protein-ML roles or collaborations are gated on the credential itself, not on a public track record.",
+      "options": ["O1", "O3"]
+    },
+    {
+      "question": "Is a startup's broad ownership worth its survival risk, given Alex has never had to judge equity or venture financing before?",
+      "my_position": "The small, trusted-partnership shape resembles what built my own career, but I have no lived basis for equity or a venture-backed company's odds, and the dated facts here (F10, F12) say the odds have worsened, not improved, into 2026.",
+      "would_change_if": "A specific named offer with equity, runway, and publication terms that clearly beats the base rates in F10, F11, and F12.",
+      "options": ["O2", "O4"]
+    }
+  ],
+  "taste_advice": "Choose the problem that nobody well-funded is bothering to measure yet, and let the measurement, not an institution's opinion of you, carry the argument.",
+  "pairwise": [
+    {"a": "O1", "b": "O2", "pick": "O2", "why": "Broad ownership and a close partner beat a well-paid, narrow seat on someone else's roadmap."},
+    {"a": "O1", "b": "O3", "pick": "O3", "why": "A chosen question with a building mentor is the shape of my own career; a narrow seat inside a large team is not."},
+    {"a": "O2", "b": "O3", "pick": "O3", "why": "A thesis and its publications are mine regardless of what happens to the lab; a startup's output depends on the company surviving to let it be used or published at all."},
+    {"a": "O3", "b": "O4", "pick": "O4", "why": "O4 is the more direct version of the pattern that actually worked for me: self-directed, reversible within a stated window, and built on a signal that already exists."},
+    {"a": "O2", "b": "O4", "pick": "O4", "why": "Lower cash risk, full reversibility within the year, and no need to hand control of the work to financing mechanics I have never had to judge."}
+  ],
+  "web_searches": []
+}

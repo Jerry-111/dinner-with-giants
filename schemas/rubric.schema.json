@@ -1,0 +1,147 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/schemas/rubric.schema.json",
+  "title": "rubric.json",
+  "description": "Pre-registered rubric for one run. Frozen once R1 submissions are in. See docs/data-formats.md. Most keys are optional: tools/sim.py skips the matching check or table when a key is absent.",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["options"],
+  "properties": {
+    "version": {"type": "string"},
+    "note": {"type": "string"},
+    "options": {
+      "type": "object",
+      "description": "Option id -> human-readable description. IDs are whatever the run defines (O1..., D01...).",
+      "minProperties": 1,
+      "additionalProperties": {"type": "string"}
+    },
+    "short_options": {
+      "type": "array",
+      "description": "Option ids that may carry only {overall, one_line} in submissions.",
+      "items": {"type": "string"}
+    },
+    "dimensions": {
+      "type": "object",
+      "description": "Dimension id -> description. May be empty for a rubric with overall-only scoring.",
+      "additionalProperties": {"type": "string"}
+    },
+    "scale": {
+      "type": "object",
+      "description": "Integer score range. Defaults to 0-10 when absent.",
+      "properties": {
+        "min": {"type": "integer"},
+        "max": {"type": "integer"}
+      },
+      "additionalProperties": false
+    },
+    "overall": {"type": "string"},
+    "levers": {
+      "type": "object",
+      "additionalProperties": {"type": "string"}
+    },
+    "lever_allocation": {"type": "string"},
+    "named_questions": {
+      "type": "object",
+      "additionalProperties": {"type": "string"}
+    },
+    "conditional_questions": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "question": {"type": "string"},
+          "conditions": {
+            "type": "object",
+            "additionalProperties": {"type": "string"}
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "pairwise": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 2,
+        "items": {"type": "string"}
+      }
+    },
+    "weight_sets": {
+      "type": "object",
+      "description": "Named weight set -> dimension id -> weight.",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": {"type": "number"}
+      }
+    },
+    "personas": {
+      "type": "object",
+      "description": "Persona id -> display name and aliases.",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["name"],
+        "properties": {
+          "name": {"type": "string"},
+          "aliases": {"type": "array", "items": {"type": "string"}}
+        },
+        "additionalProperties": true
+      }
+    },
+    "baselines": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "groups": {
+      "type": "object",
+      "description": "Group label -> member persona ids.",
+      "additionalProperties": {
+        "type": "array",
+        "items": {"type": "string"}
+      }
+    },
+    "not_independent": {
+      "type": "array",
+      "description": "Groups of personas sharing a company, lab or long collaboration; never the only representation of one side at a table.",
+      "items": {
+        "type": "array",
+        "items": {"type": "string"}
+      }
+    },
+    "seating": {
+      "type": "object",
+      "properties": {
+        "table_size": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {"type": "integer"}
+        },
+        "seats_per_persona": {"type": "integer"}
+      },
+      "additionalProperties": false
+    },
+    "r1_requirements": {
+      "type": "object",
+      "properties": {
+        "paths_for_user": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {"type": "integer"}
+        },
+        "cruxes": {"type": "integer"}
+      },
+      "additionalProperties": true
+    },
+    "forbidden_words": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "aggregation": {
+      "type": "object",
+      "description": "Free-text aggregation rules for humans writing the report. tools/sim.py applies a fixed generic algorithm (median/IQR rank, sensitivity flips at 3+ rank places) regardless of this text.",
+      "additionalProperties": true
+    }
+  }
+}

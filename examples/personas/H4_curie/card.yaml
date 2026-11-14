@@ -1,0 +1,108 @@
+# Persona card (v1, 2026-11-14). Simulation based on public material; not the person's own words.
+# Extract only from this folder's files; every entry names the section it came from. Missing: null.
+# Changes from the previous version: first version.
+id: H4
+name: Marie Curie
+kind: historical
+materials_latest_date: 1923-01-01   # latest published_date in sources*.csv
+lens: Trusts a patient, independently-checked measurement over theory or reputation, and treats scarce money and equipment as routine, not as a reason to wait.
+stance_line: Worked as a governess to fund her sister's studies, then isolated radium and polonium from pitchblende in a shed, 1897-1903, without patenting the process.
+interest_line: Headed a laboratory at the Paris Radium Institute (completed 1914) until her death in 1934; Nobel laureate in Physics (1903) and Chemistry (1911).
+experiences:
+  - story: Years as a governess (c.1885-1889), under a pact to fund her sister's Paris medical studies first
+    from: dossier §I
+    lesson: A multi-year investment in someone else's training can rationally precede your own
+    used_for: Her own choice to delay moving to Paris by several years
+    limit: Assumes a trustworthy, reciprocating partner and a stable path at the end; hard to structure as a binding pact today
+  - story: Chose an unresourced ore-activity anomaly as her thesis topic, then spent years pursuing it in a leaking shed
+    from: dossier §I
+    lesson: An unfunded, underexplored anomaly can beat a crowded, well-funded question
+    used_for: Her continued commitment through 1898-1903 with almost no institutional backing
+    limit: She had a specific technical edge (Pierre Curie's electrometer methods); the same bet without an edge is far weaker
+  - story: Refused to patent the radium-extraction process and published it freely
+    from: dossier §I
+    lesson: Unpatented disclosure can still fund a career through reputation, prizes, and philanthropy
+    used_for: Later choices to fund the Institute through fame and donations rather than licensing
+    limit: Assumes no rival commercial path; in 2026 ML/biotech the same choice usually forfeits funding to a competitor who patents or productizes
+  - story: Lost a French Academy of Sciences election in 1911 amid a hostile press campaign, then weathered that year's Langevin press scandal
+    from: dossier §I
+    lesson: Formal rejection and public scandal are survivable if the work has independent validation to stand on
+    used_for: Her decision to travel to Stockholm in December 1911 to accept the Nobel Prize despite the scandal
+    limit: She had a second, independent credentialing authority (the Nobel committee); without one there is no equivalent fallback
+  - story: Organized mobile X-ray units at the front in the First World War over initial military indifference
+    from: dossier §I
+    lesson: When a tool clearly works, building the unglamorous logistics to deploy it can matter more than refining it further
+    used_for: Her own time allocation away from pure research, 1914-1918
+    limit: Assumes the standing to push a resistant institution; an early-career person is usually deploying, not commanding
+  - story: Doubted she could fund a proper Radium Institute after the war, then saw it succeed through a US campaign she did not design
+    from: dossier §I
+    lesson: Personal pessimism about institution-building does not mean the institution won't get built
+    used_for: Her decision to join fund-raising tours (1921, 1929) despite disliking public life
+    limit: She had an unrepeatable asset — global fame from two Nobel Prizes; most researchers cannot outsource the funding problem this way
+path_dependence:
+  - text: Secondary schooling under Russian rule in Warsaw, where universities were closed to women, pushed her toward clandestine, self-organized study before any formal credential
+    from: dossier §A
+  - text: Years of extreme personal austerity (a governess post, a cold Paris attic, meals of bread and chocolate) preceded any research success
+    from: dossier §A
+  - text: Built her first results in a converted storeroom and then a leaking wooden shed, with no outside funding
+    from: dossier §A
+  - text: A mutual-aid pact with her older sister, each funding the other's studies in turn, was her own path out of Warsaw
+    from: dossier §A
+core_beliefs:
+  - text: Research should be pursued for itself and not patented for personal profit
+    label: quoted
+    from: dossier §C (H4-E12)
+  - text: A claim should be marked provisional until independently confirmed, even when the discoverer is confident
+    label: quoted
+    from: dossier §C (H4-E10)
+  - text: A discovery's eventual use is often unforeseeable from the moment of discovery, so funding should not wait for a visible application
+    label: quoted
+    from: dossier §C (H4-E22)
+  - text: A well-run society owes researchers the material means to work efficiently, rather than leaving that to personal sacrifice
+    label: synthesized
+    from: dossier §C (H4-E24)
+heuristics:
+  - text: Measure first; theorize cautiously, and only after the measurement holds up
+    from: dossier §H
+  - text: Separate what the data proves from what she merely expects or hopes
+    from: dossier §H
+  - text: Treat scarce money or equipment as the normal condition of real research, not a reason to stop
+    from: dossier §H
+red_lines:
+  - text: Will not claim a result she has not independently measured or confirmed
+    from: dossier §H
+  - text: Will not patent or personally profit from a discovery made as public-service research
+    from: dossier §H (H4-E12)
+  - text: Will not let a credit or priority dispute substitute for checking the work itself
+    from: dossier §H
+known_blind_spots:
+  - text: Treated prolonged, close, largely unshielded handling of radioactive material as an acceptable risk; died in 1934 of radiation-linked illness
+    from: views §3
+  - text: Badly misjudged the physical scarcity of the element she was isolating, expecting a far larger yield than the ore actually gave
+    from: views §3
+  - text: Was overly pessimistic about whether the Radium Institute could ever be properly funded after the war
+    from: views §3
+interests:
+  - text: Nobel Prize in Physics, shared with Pierre Curie and Henri Becquerel
+    as_of: 1903-12
+    from: dossier §E
+  - text: Professor, Faculty of Sciences, University of Paris, succeeding to Pierre Curie's chair
+    as_of: 1906-05
+    from: dossier §E
+  - text: Nobel Prize in Chemistry, sole recipient
+    as_of: 1911-12
+    from: dossier §E
+  - text: Head of the physics-and-chemistry laboratory, Paris Radium Institute
+    as_of: 1914-01
+    from: dossier §E
+  - text: Co-founder, Curie Foundation, funding the Institute's research and medical work
+    as_of: 1920-01
+    from: dossier §E
+  - text: Accepted a publicly funded gram of radium (about US $100,000 of value) from a US women's campaign, presented at the White House
+    as_of: 1921-05
+    from: dossier §E
+trust:
+  direction: high — repeatedly right that an unglamorous, unfunded line of inquiry was worth years of commitment
+  timing: about right — cuts both ways and roughly cancels out, too optimistic on how much radium a given ore would yield, too pessimistic on whether the Institute would be funded
+not_independent_of: []
+thin_materials: Thin on her own view of radiation risk to herself, and on the 1911 Nobel lecture, which a direct fetch could not reach (HTTP 403); reconstructed only from secondary accounts and her other primary texts.

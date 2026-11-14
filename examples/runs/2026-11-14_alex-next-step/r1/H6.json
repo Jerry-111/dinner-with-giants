@@ -1,0 +1,140 @@
+{
+  "id": "H6",
+  "name": "Su Shi",
+  "round": "R1",
+  "notice": "Simulation based on public material; not the person's own words.",
+  "options": {
+    "O1": {
+      "learning": 6,
+      "upside": 7,
+      "optionality": 5,
+      "fit": 4,
+      "overall": 5,
+      "confidence": "medium",
+      "basis": "synthesized",
+      "one_line": "Real resources and real impact, but a narrow role inside a team whose own output may stay undisclosed (F18) risks leaving little afterward that is provably Alex's own.",
+      "late_modes": "If the science team's work becomes fully closed, joining later without an already-public record makes it harder to carry anything portable out of this path.",
+      "conflict": null
+    },
+    "O2": {
+      "learning": 8,
+      "upside": 6,
+      "optionality": 4,
+      "fit": 6,
+      "overall": 5,
+      "confidence": "medium",
+      "basis": "synthesized",
+      "one_line": "A concrete, owned stake close to the real problem, matching this persona's own taste for hands-on work, but the base rate for such ventures reaching a next stage is weak and unconfirmed (F10), and even the founding-engineer equity stake is modest (F11).",
+      "late_modes": "Joining after the first 12-18 months, once the seed-stage survival question (F10) has already resolved one way or the other, forfeits most of the 'founding' advantage the option is named for.",
+      "conflict": null
+    },
+    "O3": {
+      "learning": 8,
+      "upside": 6,
+      "optionality": 7,
+      "fit": 5,
+      "overall": 6,
+      "confidence": "high",
+      "basis": "synthesized",
+      "one_line": "The most portable credential of the four, with a newly hired mentor whose own stake in the work should run deep this early - but five to six years (F1-F3) is the least reversible-within-two-years path on the table.",
+      "late_modes": "An assistant professor several cohorts past their own hire date has less personal bandwidth to shape a first student's problem choice around that student, which is the main advantage this path offers.",
+      "conflict": null
+    },
+    "O4": {
+      "learning": 6,
+      "upside": 5,
+      "optionality": 8,
+      "fit": 8,
+      "overall": 7,
+      "confidence": "medium",
+      "basis": "synthesized",
+      "one_line": "The closest match to this persona's own most productive period - forced, unstructured time that became durable, shared work - but that period was involuntary and open-ended, where this choice is deliberate and time-boxed.",
+      "late_modes": "A second or third independent year without a grant, a co-maintainer, or growing adoption is a materially weaker bet than the first year; the conditions under Q2 matter more than the choice itself.",
+      "conflict": null
+    }
+  },
+  "levers": {"L1": 30, "L2": 25, "L3": 10, "L4": 20, "L5": 15},
+  "lever_reason": "Mentor quality and scope of ownership matter most because they decide whether the work becomes Alex's own judgment or someone else's narrow assignment; compute and data access is the one factor this persona has the least basis to weigh, having never depended on anything like it.",
+  "questions": {
+    "Q1": {
+      "position": "conditional",
+      "score": 6,
+      "condition": "Only if the specific mentor is genuinely investing personal reputation in this student's problem, not a generic supervisor, and only while the academic-placement share keeps recovering (F8) rather than reversing again."
+    },
+    "Q2": {
+      "position": "for",
+      "score": 7,
+      "condition": "Mainly when C1 (savings) and C4 (a deferrable or reopenable offer) both hold; C2 and C3 strengthen the case further, and for Alex specifically C2 is already true."
+    }
+  },
+  "conditions": {"Q2": ["C1", "C2", "C3", "C4"]},
+  "paths_for_user": [
+    {
+      "name": "Build in public for one bounded year, then let the signal decide",
+      "options": ["O4"],
+      "next_12_months": "Keep growing the existing toolkit with a defined savings runway and a scheduled monthly check-in with an experienced mentor; apply to one open-source-for-science grant cycle (F16, F17) rather than relying on sponsorship income to live on.",
+      "why": "Forced, unstructured time, once paired with real subsistence support rather than hope alone, produced the most durable and widely shared work of this career (dossier §G, §I; H6-E02-H6-E04, [synthesized]). Even already-established open-source maintainers draw non-employer income only part of the time (self-check below), so a funding plan, not community goodwill, should carry the year.",
+      "wrong_signal": "Three months in, no growth in contributors or users and no grant application filed - the C2/C1 conditions this path depends on have stopped holding in practice, and the year has quietly become open-ended drift."
+    },
+    {
+      "name": "Take the PhD now, choosing the mentor over the subfield",
+      "options": ["O3"],
+      "next_12_months": "Spend the first year testing whether the newly hired assistant professor is personally invested in this specific problem choice, not treating any protein-ML lab as interchangeable.",
+      "why": "The 1057 exam taught this persona that early recognition only compounds into a real career when a senior figure stakes personal reputation on the junior one, not from raw institutional prestige alone (dossier §A, §I; H6-E01, [quoted]). A newly hired professor, like a patron still building a name, has unusual incentive to invest personally.",
+      "wrong_signal": "If, within the first year, problems are being chosen by committee requirement or by what is fundable rather than by real conversation with the mentor, the one advantage this path has over the others is not materializing."
+    },
+    {
+      "name": "Join the resourced lab, but only onto a problem you can point to afterward",
+      "options": ["O1"],
+      "next_12_months": "Before accepting, get specific about whether the science team's output will ever be public - papers, open benchmarks, released code - not only well funded.",
+      "why": "The work that outlasted this persona's own career (the Hangzhou causeway, the famine relief) was visible and attributable, not merely well resourced (dossier §B, §I; H6-E01, [synthesized]). A large team's undisclosed work, a pattern the evidence brief notes is spreading (F18), risks repeating the opposite: real resources, little afterward that is provably Alex's own.",
+      "wrong_signal": "A few months in, the day-to-day work has no plausible path to ever being named as Alex's own contribution, even internally - the resourcing is real but the credit this path should build is not compounding."
+    }
+  ],
+  "cruxes": [
+    {
+      "question": "Does a research-scientist role on a large lab's science team build durable, attributable judgment, or mostly skill that is hard to point to afterward?",
+      "my_position": "Leans toward hard to point to afterward, given the evidence brief's note that several large labs now withhold detail on their most resource-intensive systems (F18); but this is thin, and a self-check this round found at least one such posting does not even require a PhD, which cuts against how narrow or elite the role really is.",
+      "would_change_if": "A specific lab's own dated policy on whether science-team output is normally published under an individual researcher's name.",
+      "options": ["O1"]
+    },
+    {
+      "question": "Is the academic-placement rebound in F8 (31.59% of 2024 AI PhD graduates into academia, off a confirmed 2022 industry peak of 77%) a structural reversal, or one year's blip that could re-reverse before a 2026 PhD finishes?",
+      "my_position": "Treats a single year's swing with real caution. Reform swings that looked decisive after one year reversed again within a decade more than once across this persona's own career (dossier §D); one data point should not be read as settling O3's placement odds over five to six years.",
+      "would_change_if": "A second or third year of data showing the academic-placement share continuing to rise rather than just one year's move.",
+      "options": ["O3"]
+    },
+    {
+      "question": "Are 12 months of savings (C1) and an already-active user community (C2, already true for Alex) enough to make the independent year survivable, or does it also need a credible, reopenable path back into a paid role (C4)?",
+      "my_position": "Leans toward: C1 and C2 alone are not enough. This persona's own closest analogue to an independent year was not actually voluntary or reversible, which is exactly the risk a deliberately chosen version should guard against; the open question is whether Alex's own offers can in fact be deferred, which neither the brief nor scope.md states.",
+      "would_change_if": "Direct confirmation of whether Alex has, or could obtain, a deferrable or reopenable offer before committing savings to O4.",
+      "options": ["O4"]
+    }
+  ],
+  "taste_advice": "Reread the same hard paper or codebase several times, each pass for one thing only - correctness, then design, then failure modes - before trusting yourself to skim ten more broadly.",
+  "pairwise": [
+    {"a": "O1", "b": "O2", "pick": "O2", "why": "A concrete, owned role close to the actual problem fits this persona's own taste better than a narrow seat inside a larger, possibly undisclosed team, even though O2 carries real survival risk."},
+    {"a": "O1", "b": "O3", "pick": "O3", "why": "A durable, portable credential and a mentor with a personal stake outweighs O1's resources and narrower, possibly uncredited role."},
+    {"a": "O2", "b": "O3", "pick": "O3", "why": "O3's optionality and lower survival-base-rate risk outweigh O2's higher hands-on learning, given how weak and unconfirmed the seed-to-next-stage data (F10) is."},
+    {"a": "O3", "b": "O4", "pick": "O4", "why": "O4 maps directly onto this persona's own most-cited experience and scores higher on fit and optionality; it is also reversible within two years in a way a multi-year PhD is not."},
+    {"a": "O2", "b": "O4", "pick": "O4", "why": "Higher optionality and fit, and lower exposure to an unverified survival base rate, with the caution that O4's safety depends entirely on the Q2 conditions actually holding."}
+  ],
+  "web_searches": [
+    {
+      "query": "do research scientist jobs at large AI labs require a PhD 2026",
+      "url": "https://jobs.accel.com/companies/facebook-2-07d2eb1b-d3ad-4084-93df-74a124ac9233/jobs/81106379-research-scientist-artificial-intelligence",
+      "published": "undated",
+      "sentence": "is in the process of obtaining a Bachelor's degree or equivalent practical experience",
+      "for_claim": "O1",
+      "result": "supports"
+    },
+    {
+      "query": "GitHub Sponsors typical income solo open source maintainer survey",
+      "url": "https://dev.to/tidelift/despite-increasing-demands-most-maintainers-still-dont-get-paid-for-their-work-5ckn",
+      "published": "2023-05-02",
+      "sentence": "Over twice the percentage of semi-professional maintainers (62%) received income from non-employer sources",
+      "for_claim": "O4",
+      "result": "unclear"
+    }
+  ]
+}

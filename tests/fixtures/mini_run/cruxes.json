@@ -1,0 +1,69 @@
+{
+ "cruxes": [
+  {
+   "id": "X1",
+   "question": "Does O1 beat O2 on impact?",
+   "why_it_matters": "Decides whether the user should prioritize O1 or O2.",
+   "options": [
+    "O1",
+    "O2"
+   ],
+   "sides": [
+    {
+     "label": "O1 is ahead",
+     "position": "O1 has stronger early evidence.",
+     "members": [
+      "P1",
+      "P4"
+     ]
+    },
+    {
+     "label": "O2 is ahead",
+     "position": "O2 has better long-run fit.",
+     "members": [
+      "P2",
+      "P3"
+     ]
+    }
+   ],
+   "evidence_needed": "An independent trial comparing O1 and O2 head to head."
+  },
+  {
+   "id": "X2",
+   "question": "Is O3 or O4 the safer bet?",
+   "why_it_matters": "Decides the fallback option.",
+   "options": [
+    "O3",
+    "O4"
+   ],
+   "sides": [
+    {
+     "label": "O3 is safer",
+     "position": "O3 has a longer track record.",
+     "members": [
+      "P1",
+      "P3"
+     ]
+    },
+    {
+     "label": "O4 is safer",
+     "position": "O4 has fewer dependencies.",
+     "members": [
+      "P2",
+      "P4"
+     ]
+    }
+   ],
+   "evidence_needed": "A comparable failure-rate study."
+  }
+ ],
+ "open_questions": [
+  {
+   "question": "Would a hybrid of O1 and O3 work?",
+   "asked_by": [
+    "P1"
+   ],
+   "why": "Neither option alone dominates."
+  }
+ ]
+}

@@ -1,0 +1,43 @@
+# Persona card (v<N>, <YYYY-MM-DD>). Simulation based on public material; not the person's own words.
+# Extract only from this folder's files; every entry names the section it came from. Missing: null.
+# Changes from the previous version:
+id: P1
+name: Display name
+kind: historical   # historical | public_figure | archetype | fictional
+materials_latest_date: 1790-04-17   # latest published_date in sources*.csv
+lens: One line on how this persona looks at problems.
+stance_line: Under 25 words. Lived experience only, no evaluation. Printed at the top of every post.
+interest_line: Under 25 words. Dated facts only. Printed at the top of every post.
+# Words listed in rubric.json `forbidden_words` (for example "discount") must not appear here:
+# `python3 tools/sim.py scan` checks. Interests are shown; the reader judges them.
+experiences:              # 3–6, from dossier §I (or §A/§B/§G). Experience arguments may only use these.
+  - story: What happened
+    from: dossier §I
+    lesson: The lesson drawn
+    used_for: What the person judged with it
+    limit: Where the analogy may break
+path_dependence:          # 3–5
+  - text: ...
+    from: dossier §A
+core_beliefs:             # 3–6
+  - text: ...
+    label: quoted|synthesized|inferred
+    from: ...
+heuristics:               # 3–5: what the persona asks first when judging something
+  - text: ...
+    from: dossier §H
+red_lines:                # 2–4: what the persona will not do or believe
+  - text: ...
+    from: ...
+known_blind_spots:        # 2–3: from the prediction record or dossier. For the report; not a weight.
+  - text: ...
+    from: views §3
+interests:                # each with a date
+  - text: ...
+    as_of: YYYY-MM
+    from: dossier §E
+trust:                    # for the report
+  direction: high|medium|low, plus one line of basis
+  timing: early|late|about right, plus one line of basis
+not_independent_of: []    # other personas sharing an organization, lab or long collaboration
+thin_materials: One line on where the material is thin.

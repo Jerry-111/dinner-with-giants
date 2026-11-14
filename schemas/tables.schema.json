@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/schemas/tables.schema.json",
+  "title": "tables.json",
+  "type": "object",
+  "required": ["tables"],
+  "properties": {
+    "tables": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "crux", "members"],
+        "properties": {
+          "id": {"type": "string"},
+          "crux": {"type": "string"},
+          "members": {
+            "type": "array",
+            "items": {"type": "string"}
+          },
+          "why": {
+            "type": "object",
+            "description": "Persona id -> one line on why this seat; 'observer' if no stake.",
+            "additionalProperties": {"type": "string"}
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

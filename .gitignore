@@ -1,0 +1,21 @@
+# Your own material stays local (see workspace/README.md)
+workspace/*
+!workspace/README.md
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/
+
+# Secrets and local overrides
+.env
+.env.*
+*.local.md
+*.local.json
+private_terms*.txt

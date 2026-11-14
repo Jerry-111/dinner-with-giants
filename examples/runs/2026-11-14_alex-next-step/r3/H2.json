@@ -1,0 +1,131 @@
+{
+  "id": "H2",
+  "name": "Charles Darwin",
+  "round": "R3",
+  "notice": "Simulation based on public material; not the person's own words.",
+  "options": {
+    "O1": {
+      "learning": 6,
+      "upside": 6,
+      "optionality": 7,
+      "fit": 5,
+      "overall": 5,
+      "confidence": "low",
+      "basis": "inferred",
+      "one_line": "Real compute and data access (F18), and ownership can in principle exist inside a resourced team (B/X1/H3) -- but whether a typical research-engineer seat actually grants that latitude is still unshown, so this stays a dimension-level update, not yet a change in overall confidence.",
+      "late_modes": "Once a lab's current model has finished training and shipped, a narrow new hire mostly maintains or fine-tunes it rather than shaping it; ask which phase of the compute cycle (F18) the team is in before joining.",
+      "conflict": null
+    },
+    "O2": {
+      "learning": 7,
+      "upside": 4,
+      "optionality": 3,
+      "fit": 7,
+      "overall": 5,
+      "confidence": "medium",
+      "basis": "inferred",
+      "one_line": "Broad ownership still resembles H2's own apprenticeship, but two debate points now weigh harder: Wedgwood resolved a present, fixed fact, not a future financing contingency (B/X3/H3, B/X3/H4), and even fully verified equity has no tangible floor to fall back on (A/X3/H1, conceded).",
+      "late_modes": "Once a seed-stage company is already 12-18 months in without a credible next round, given how far conversion to Series A has fallen (F10) and weak 2026 biotech financing (F12), a 'founding engineer' joining late is joining survival mode, not the broad-ownership formative phase this option is valued for.",
+      "conflict": null
+    },
+    "O3": {
+      "learning": 8,
+      "upside": 7,
+      "optionality": 5,
+      "fit": 7,
+      "overall": 7,
+      "confidence": "medium",
+      "basis": "synthesized",
+      "one_line": "Freedom to choose problems and years of patient hypothesis-testing still match H2's own method closely; the X1 debate (not H2's own table) left the PI-funding and PhD-gating questions open rather than resolving them either way, so this holds unchanged.",
+      "late_modes": "Once a newly hired PI's first grant cycle is already committed to other students' projects, a late-joining student gets leftover problems, not the open choice of problems this path is valued for; ask what is still genuinely unclaimed.",
+      "conflict": "Never held a university post (card.yaml interests, 1839-1882), yet O3's freedom to choose problems is the thing H2 prizes most in that career; this sympathy could inflate O3's score beyond what the timeline and funding evidence alone support."
+    },
+    "O4": {
+      "learning": 7,
+      "upside": 5,
+      "optionality": 8,
+      "fit": 8,
+      "overall": 7,
+      "confidence": "medium",
+      "basis": "synthesized",
+      "one_line": "Still the closest living analogue to H2's own unpaid, self-directed work; the debate confirmed, rather than changed, the view that reversibility (C1/C4) and a backstop (C3/C5) cover different failure modes and neither substitutes for the other, so the overall number holds.",
+      "late_modes": "Once savings or a deferred offer (C1, C4) are already running out, starting the year without them means it was never the patient, low-pressure version of this path; a self-check confirmed deferral is conditional on institutional approval, never a background guarantee.",
+      "conflict": "O4 reproduces H2's own unpaid, self-directed, decades-long pattern most closely (card.yaml interests: independently wealthy from 1839, never held a post); this is the option H2 would most want to vindicate, which could inflate its score beyond what the thin base-rate evidence supports."
+    }
+  },
+  "levers": {"L1": 25, "L2": 20, "L3": 10, "L4": 15, "L5": 30},
+  "lever_reason": "The debate reinforced that financial runway (L5) is the more reliably securable safeguard -- savings and a deferral can be arranged directly and were confirmed, by a self-check, to be a real if conditional mechanism -- while mentor quality (L1) varies widely, and a typical volunteer co-maintainer was shown to be a thinner commitment than the historical examples (Pierre, a spouse, a brother) first suggested (B/X2/H1). Shifted five points from L1 to L5 accordingly.",
+  "questions": {
+    "Q1": {
+      "position": "conditional",
+      "score": 7,
+      "condition": "Pays off for building independent judgment about which problems matter and a public, defensible track record (F13's academic-origin half of the 2024 Nobel, confirmed unchanged through fact-check; F8's academic placement share rising to 31.59% in 2024 off a confirmed 2022 industry peak); pays off less if the goal is to be the one training the largest model, where compute is concentrating in industry (F18, 2025 only). The X1 table's open question -- whether ownership can exist inside a resourced O1 seat -- would narrow this gap if confirmed, but remains unshown."
+    },
+    "Q2": {
+      "position": "conditional",
+      "score": 7,
+      "condition": "Strongest when C1 (savings) and C4 (a deferrable or reopenable offer) are arranged in advance, which the debate confirmed is never automatic; a reviewing mentor or co-maintainer (C3/C5) adds real, distinct value -- catching a stalled trajectory a solo worker might not self-diagnose for months -- but a typical volunteer backstop is thinner than history's best examples and should not be assumed to substitute for reversibility. Raised confidence in this framing slightly after three rounds of testing it against the strongest opposing case (a human backstop alone)."
+    }
+  },
+  "conditions": {"Q2": ["C1", "C3", "C4"]},
+  "paths_for_user": [
+    {
+      "name": "Patient specialist (PhD)",
+      "options": ["O3"],
+      "next_12_months": "Pick the new PI's single most promising, narrowly scoped question and land one defensible result in year one, so the thesis has a concrete start rather than drifting across the 7.9-8.6-year field medians (F1-F3, errata-corrected) that sit above the stated 5-6.",
+      "why": "Matches H2's own method of long, patient work with real freedom of problem choice; the 2024 Nobel split (F13) shows academic-origin protein work can still define the field even against a well-resourced industry lab.",
+      "wrong_signal": "No funded result with the PI inside a year, or confirmation the PI's own grant funding is not yet secured."
+    },
+    {
+      "name": "Independent year, priced honestly",
+      "options": ["O4"],
+      "next_12_months": "Bank 12 months' savings (C1) and confirm an offer can be deferred (C4) before starting -- a self-check found this is conditional on institutional approval, not automatic. Line up one senior, genuinely engaged reviewer (C3); do not assume a part-time co-maintainer will catch a stalled trajectory the way a fully committed partner would.",
+      "why": "The closest living analogue to H2's own unpaid, self-directed work, with the one gap in the analogy (no personal fortune backing it) explicitly funded instead of assumed.",
+      "wrong_signal": "No grant interest or co-maintainer by month six, or a reviewer who is not actually engaged enough to flag a sound-but-not-converting direction."
+    },
+    {
+      "name": "Startup only with a named mentor and a clear-eyed view of the floor",
+      "options": ["O2"],
+      "next_12_months": "Get a named senior technical mentor and written equity/vesting terms before signing -- but weigh this against a residual, structural risk that written terms cannot fix: unlike a partnership with a physical asset to walk away with, Alex's equity has no tangible floor even once verified (conceded, A/X3/H1).",
+      "why": "Broad ownership still resembles H2's own apprenticeship and fits Alex's stated preference for building tools people use; the debate narrowed, rather than removed, the case for this option.",
+      "wrong_signal": "The company's path to a next round stalls (F10) with no senior technical reviewer in place, or the written terms confirm there is nothing to recover if the company fails."
+    }
+  ],
+  "cruxes": [
+    {
+      "question": "Does the PhD's stated 5-6 years hold, or does it run to the 7.9-8.6-year field medians (F1-F3, errata-corrected)?",
+      "my_position": "Expect it to run longer than stated unless the specific lab already has funding and at least one clearly bounded problem ready on day one.",
+      "would_change_if": "The lab has an existing grant and a clearly scoped first project ready for a student, rather than being built from nothing by a brand-new PI.",
+      "options": ["O3"]
+    },
+    {
+      "question": "Can Alex actually fund twelve months of independent runway (C1), and can an offer genuinely be deferred (C4)?",
+      "my_position": "Without both confirmed before starting, the year degrades into a short, anxious sprint; a self-check confirmed deferral is never a background guarantee, so this must be actively arranged.",
+      "would_change_if": "Alex has twelve months of savings banked and a specific offer confirmed deferrable, or a CZI- or NSF POSE-type grant (F16, F17) committed before the year begins.",
+      "options": ["O4"]
+    },
+    {
+      "question": "Does a verified founding-engineer role still leave Alex with no tangible floor if the company fails?",
+      "my_position": "Yes, even once named mentor and written terms are confirmed -- this is a residual, structural weakness verification narrows but does not close.",
+      "would_change_if": "The written terms include something recoverable if the company fails (accelerated vesting, a buyback, or similar), not just a percentage on paper.",
+      "options": ["O2"]
+    }
+  ],
+  "taste_advice": "Pick the work you can keep doing when no one is watching and nothing has worked yet; do not pick the option with the best story.",
+  "pairwise": [
+    {"a": "O1", "b": "O2", "pick": "O2", "why": "Closer than at R1 -- O1's narrow-role problem may be less universal than first argued, but the latitude is unconfirmed, while O2's fit and learning remain real even after its own downgrade."},
+    {"a": "O1", "b": "O3", "pick": "O3", "why": "Patient, self-directed hypothesis-testing with real freedom of problem choice is still the closest match to what actually worked for H2."},
+    {"a": "O2", "b": "O3", "pick": "O3", "why": "O3's external confirmation loop (a committee, a defense, publication) still matches H2's heuristic of seeking independent confirmation better than a startup's internal, revocable ownership -- more so now that O2's tangible-floor weakness is confirmed."},
+    {"a": "O3", "b": "O4", "pick": "O3", "why": "Still close: O4 has better reversibility, but O3 bakes in the independent, external confirmation H2's own method relied on more reliably than a solo maintainer year, especially given how thin a typical volunteer backstop turned out to be."},
+    {"a": "O2", "b": "O4", "pick": "O4", "why": "O4 remains explicitly time-boxed and self-funded with real grant paths documented (F16, F17); O2's downside widened this round, not narrowed."}
+  ],
+  "changes": [
+    {"option": "O2", "from": 6, "to": 5, "because": "B/X3/H3, B/X3/H4", "argument_restated": "Wedgwood's letter resolved a present, fixed, merely-unknown fact about the Beagle voyage; a seed-stage company's survival depends on a future, not-yet-determined financing event that no present paperwork can settle. Verifying today's terms narrows uncertainty at the margin; it does not touch the structural part of the risk.", "why": "This is a real limit on my strongest argument for O2 that I underweighted through rounds A and B; combined with Franklin's own conceded disanalogy (A/X3/H1: those partners could keep the physical press if a deal failed, Alex's equity has no such floor even once written), the net case for O2 is weaker than I scored it."}
+  ],
+  "held_despite": [
+    {"post": "B/X2/H5", "why": "Accepted that a genuinely engaged reviewer catches trajectory problems, not just correctness errors (Lovelace's Babbage/Note-A example). Score unchanged because this is a real but complementary function -- it explains why a backstop matters, not why reversibility stops mattering; a sound-but-not-yet-converting result still needs savings or a deferral to be acted on safely, which no reviewer supplies by itself."}
+  ],
+  "still_disagree": "At X2: a human backstop and reversibility were shown to cover different failure modes, and I still hold that only reversibility (C1/C4) makes a right-but-slow result survivable, which the strongest backstop cannot do alone. At X3: after conceding the base-rate framing largely to the structural side, I still hold a narrower residual claim -- verified, company-specific facts carry non-zero predictive weight within a declining cohort, even though a self-check this round found only mixed, correlational evidence for it, not a clean causal fact.",
+  "learned": "That my own best analogy for 'verification fixes an apparent risk' (the Wedgwood letter) only works for a present, fixed-but-hidden fact, and breaks cleanly against a genuinely open future contingency like a financing round -- a distinction I hadn't drawn carefully before two independent posts (H3 and H4) pressed on it from different angles at the same table.",
+  "searches": []
+}

@@ -1,0 +1,153 @@
+{
+  "id": "H6",
+  "name": "Su Shi",
+  "round": "R3",
+  "notice": "Simulation based on public material; not the person's own words.",
+  "options": {
+    "O1": {
+      "learning": 7,
+      "upside": 7,
+      "optionality": 5,
+      "fit": 4,
+      "overall": 6,
+      "confidence": "medium",
+      "basis": "synthesized",
+      "one_line": "Real resources and real impact; this persona's own clearest durable, attributable work (the Hangzhou causeway) came from resourced authority, not personal endorsement, so O1 can meet the same bar as O3 -- but only if the specific role grants real ownership of a chosen sub-problem, which an entry-level seat is not guaranteed to do.",
+      "late_modes": "If the science team's work becomes fully closed, or the role stays an assigned slice rather than an owned sub-problem, joining later without an already-public, attributable record makes this path harder to carry anything portable out of.",
+      "conflict": null
+    },
+    "O2": {
+      "learning": 8,
+      "upside": 6,
+      "optionality": 4,
+      "fit": 6,
+      "overall": 5,
+      "confidence": "medium",
+      "basis": "synthesized",
+      "one_line": "A concrete, owned stake close to the real problem, matching this persona's own taste for hands-on work; the debate at X3 did not move this -- the specific 2024 conversion and 1H-2026 funding figures did not hold up on checking, but the direction (weaker than 2018) stands, and a thin equity grant with no governance is a real weakness even once verified.",
+      "late_modes": "Joining after the first 12-18 months, once the seed-stage survival question has already resolved one way or the other, forfeits most of the 'founding' advantage the option is named for.",
+      "conflict": null
+    },
+    "O3": {
+      "learning": 8,
+      "upside": 6,
+      "optionality": 7,
+      "fit": 5,
+      "overall": 6,
+      "confidence": "high",
+      "basis": "synthesized",
+      "one_line": "The most portable, structurally reliable route to owning a chosen problem, with a newly hired mentor whose own stake should run deep this early -- unchanged by the debate, since no specific post resolved whether this PI holds funding or a placement record.",
+      "late_modes": "An assistant professor several cohorts past their own hire date has less personal bandwidth to shape a first student's problem choice around that student.",
+      "conflict": null
+    },
+    "O4": {
+      "learning": 6,
+      "upside": 5,
+      "optionality": 7,
+      "fit": 8,
+      "overall": 6,
+      "confidence": "medium",
+      "basis": "synthesized",
+      "one_line": "Still the closest match to this persona's own most productive period, but the debate showed a human backstop and an arranged exit solve two different failure modes -- treating a hoped-for co-maintainer relationship as equivalent to a confirmed, reopenable offer overstated the safety net.",
+      "late_modes": "A second or third independent year without a grant, a co-maintainer, or growing adoption is a materially weaker bet than the first year.",
+      "conflict": null
+    }
+  },
+  "levers": {"L1": 25, "L2": 30, "L3": 10, "L4": 20, "L5": 15},
+  "lever_reason": "The debate's main lesson moved weight from mentor quality (L1) to scope of ownership (L2): a mentor's personal investment is one route to owning a chosen problem, but resourced administrative authority is another, equally real one -- ownership itself is the deeper variable, so it now gets the largest share.",
+  "questions": {
+    "Q1": {
+      "position": "conditional",
+      "score": 6,
+      "condition": "Only if either path grants real ownership of a chosen problem -- a genuinely invested mentor for O3, or a role with real decision latitude for O1 -- and only while the academic-placement share keeps recovering (F8) rather than reversing again."
+    },
+    "Q2": {
+      "position": "for",
+      "score": 6,
+      "condition": "Mainly when C1 (savings) and C4 (a deferrable or reopenable offer) are both actively arranged in advance, not assumed; a human backstop (C2/C3) sharpens the work but should not be treated as a substitute for an arranged exit."
+    }
+  },
+  "conditions": {"Q2": ["C1", "C2", "C3", "C4"]},
+  "paths_for_user": [
+    {
+      "name": "Build in public for one bounded year, exit route arranged first",
+      "options": ["O4"],
+      "next_12_months": "Before starting the clock, actively arrange savings and a specific deferral or reopenable offer (C1, C4) -- do not treat a co-maintainer's goodwill or institutional ties as a substitute for that arrangement. Keep growing the toolkit and apply to one open-source-for-science grant cycle.",
+      "why": "Forced, unstructured time, once paired with real subsistence support, produced the most durable work of this persona's career (dossier §G, §I; H6-E02-H6-E04, `[synthesized]`); the debate's correction is that a backstop checks the work, it does not create the way back.",
+      "wrong_signal": "Three months in, no growth in contributors or users, no grant filed, and no confirmed deferral -- the plan has quietly become open-ended drift, not a bounded experiment."
+    },
+    {
+      "name": "Take the PhD, confirming the mentor's funding and placement record first",
+      "options": ["O3"],
+      "next_12_months": "Before committing, ask directly whether this specific incoming professor already holds secured multi-year funding and has placed an earlier student well -- the one fact this whole debate could not settle from the outside.",
+      "why": "A senior figure's personal, invested backing compounds a career the way Ouyang Xiu's did in 1057 (dossier §A, §I; H6-E01, `[quoted]`); a newly hired mentor is that same shape of opportunity, but unproven until checked.",
+      "wrong_signal": "Within the first year, problems are chosen by committee or funding pressure rather than real conversation with the mentor."
+    },
+    {
+      "name": "Join the resourced lab, but confirm real ownership of a sub-problem",
+      "options": ["O1"],
+      "next_12_months": "Before accepting, ask what specific, chosen sub-problem Alex would own and decide alone -- not only whether the output will eventually be public. Hangzhou's causeway shows resourced authority can build durable, attributable work; a role with no such latitude cannot.",
+      "why": "This persona's own best-remembered administrative work came from real decision authority over a resourced problem, not from a title or an endorsement alone (dossier §B, §I; H6-E01, `[synthesized]`).",
+      "wrong_signal": "A few months in, the work is an assigned, interchangeable slice of a larger pipeline with no problem Alex can point to as a personal decision."
+    }
+  ],
+  "cruxes": [
+    {
+      "question": "Does a research-scientist role on a large lab's science team build durable, attributable judgment, or mostly skill that is hard to point to afterward?",
+      "my_position": "Both routes can work: Hangzhou's resourced authority produced durable, attributable results without a mentor's personal endorsement, so O1 can meet the same bar as O3 -- but only if the role grants real decision latitude over a chosen sub-problem, which an entry-level seat is not guaranteed to do.",
+      "would_change_if": "A specific lab's own account of whether a research engineer owns and argues a problem, or receives an assigned slice.",
+      "options": ["O1"]
+    },
+    {
+      "question": "Is the academic-placement rebound in F8 (31.59% of 2024 AI PhD graduates into academia, off a confirmed 2022 industry peak of 77%) a structural reversal, or one year's blip?",
+      "my_position": "Still unresolved; no new data surfaced in this debate. This persona's own repeated experience of first-year reform swings reversing within a decade counsels real caution about reading one year's rebound as settled for a five-to-six-year commitment.",
+      "would_change_if": "A second or third year of data showing the academic-placement share continuing to rise.",
+      "options": ["O3"]
+    },
+    {
+      "question": "Are savings (C1) and an already-active user community (C2, already true for Alex) enough to make the independent year survivable without a confirmed, reopenable offer (C4)?",
+      "my_position": "Holds more firmly than at R1: a backstop (C3/C5) addresses bad-judgment risk; reversibility (C1/C4) addresses good-work-not-yet-converted risk. A typical 2026 co-maintainer is a thinner, unbound relationship than the marriage- or kinship-bound backstops this debate's examples relied on, so C1 and C4 should be arranged, not assumed, however strong the backstop looks.",
+      "would_change_if": "Confirmation that Alex's prospective co-maintainer already shares commit and release authority now, or that an offer can in fact be deferred.",
+      "options": ["O4"]
+    }
+  ],
+  "taste_advice": "Reread the same hard paper or codebase several times, each pass for one thing only - correctness, then design, then failure modes - before trusting yourself to skim ten more broadly.",
+  "pairwise": [
+    {"a": "O1", "b": "O2", "pick": "O1", "why": "Resourced authority used well now scores level with O2, and O2's survival odds were reinforced, not relieved, by the X3 debate; a founding stake with no governance floor is a thinner bet than a resourced role with real ownership."},
+    {"a": "O1", "b": "O3", "pick": "O3", "why": "Tied on overall score, but O3's ownership is closer to structurally guaranteed -- a chosen dissertation problem -- while O1's depends entirely on which specific role Alex gets; absent that confirmation, the more reliable structure gets the pick."},
+    {"a": "O2", "b": "O3", "pick": "O3", "why": "O3's optionality and lower survival-base-rate exposure still outweigh O2's higher hands-on learning."},
+    {"a": "O3", "b": "O4", "pick": "O4", "why": "Also tied on overall score; O4 is already underway with a real signal (users, contributors), while O3 carries open, person-specific uncertainty about a not-yet-vetted mentor -- the lower-uncertainty option gets the tie-break."},
+    {"a": "O2", "b": "O4", "pick": "O4", "why": "Higher optionality and fit, and lower exposure to an unverified survival base rate, with the caution that O4's safety depends entirely on the Q2 conditions actually being arranged."}
+  ],
+  "changes": [
+    {
+      "option": "O1",
+      "from": 5,
+      "to": 6,
+      "because": "B/X1/H3 point 1",
+      "argument_restated": "This career's own best-remembered work, the Hangzhou causeway and famine relief, came from resourced provincial administrative authority, not from Ouyang Xiu's personal endorsement -- a real, lived counter-example to treating mentorship as the only route to durable, attributable work.",
+      "why": "Durable, attributable work needs actual authority over a resourced problem; a well-used O1 seat can supply that just as a good mentor can, so O1's learning and overall score move up to reflect that it is not structurally barred from the outcome O3 is credited with."
+    },
+    {
+      "option": "O4",
+      "from": 7,
+      "to": 6,
+      "because": "B/X2/H4 point 2",
+      "argument_restated": "Calling a co-maintainer's possible institutional ties 'a reopenable offer by another name' treated a hoped-for upside as if it were already a secured fact; until conversion into paid work is named and confirmed, it is a bonus scenario, not an equivalent safeguard.",
+      "why": "The earlier bridge was softening O4's risk based on a possibility, not a fact; removing that softening is the honest correction, so optionality and overall move down one point."
+    }
+  ],
+  "held_despite": [
+    {
+      "post": "B/X1/H1",
+      "why": "Accepted that a resourced lab's compute and data solve a different, instrumental problem than attribution does; score unchanged beyond the Hangzhou-driven move, because capability and attribution are separate axes, not an additional reason to rank O1 over O3."
+    },
+    {
+      "post": "B/X2/H2",
+      "why": "Accepted that a deferrable offer is conditional and must be actively arranged, not assumed; this reinforces the existing case for reversibility rather than moving the O4 score any further on its own."
+    }
+  ],
+  "still_disagree": "With Curie (H4) and Lovelace (H5) at X2, that a human backstop can substitute for an arranged exit route; and with Franklin (H1) and Faraday (H3) at X1, that O1's resources alone -- absent confirmed ownership of a specific problem -- beat O3's mentorship. Both disagreements turn on facts (a named co-maintainer's real commitment; a specific PI's funding and placement record) that no amount of further argument here can settle from the outside.",
+  "learned": "That this career's own clearest case of durable, attributable work (the Hangzhou causeway) came from resourced administrative authority, not from the kind of personal mentorship this career's early success (Ouyang Xiu) depended on -- two different, equally real routes to the same outcome, not one true mechanism. Hadn't weighed that before Faraday pointed to it.",
+  "searches": []
+}

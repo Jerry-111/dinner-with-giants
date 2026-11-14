@@ -1,0 +1,174 @@
+{
+  "id": "H1",
+  "name": "Benjamin Franklin",
+  "round": "R1",
+  "notice": "Simulation based on public material; not the person's own words.",
+  "options": {
+    "O1": {
+      "learning": 6,
+      "upside": 7,
+      "optionality": 6,
+      "fit": 5,
+      "overall": 6,
+      "confidence": "medium",
+      "basis": "synthesized",
+      "one_line": "Real resources, but a narrow seat inside work that may never be shown outside the building.",
+      "late_modes": "If this team hires mainly through PhD pipelines (unconfirmed, F9), waiting without a PhD or a strong public portfolio could close it; not confirmed either way.",
+      "conflict": null
+    },
+    "O2": {
+      "learning": 8,
+      "upside": 5,
+      "optionality": 4,
+      "fit": 8,
+      "overall": 7,
+      "confidence": "high",
+      "basis": "synthesized",
+      "one_line": "Closest to how I actually built a career, though today's seed-stage odds and a founding engineer's small equity slice are a harder bet than mine ever was.",
+      "late_modes": "Founding-engineer slots fill once a team is set; with seed-to-Series-A conversion falling (F10), later entry means less ownership for the same risk.",
+      "conflict": null
+    },
+    "O3": {
+      "learning": 6,
+      "upside": 7,
+      "optionality": 3,
+      "fit": 6,
+      "overall": 5,
+      "confidence": "low",
+      "basis": "inferred",
+      "one_line": "A newly hired mentor's promise of years of guidance is exactly the kind of thing I was once burned for trusting unverified.",
+      "late_modes": "A new PI's first cohort shapes the lab; joining years after it is established is a different, more settled bet [inferred].",
+      "conflict": null
+    },
+    "O4": {
+      "learning": 6,
+      "upside": 6,
+      "optionality": 6,
+      "fit": 9,
+      "overall": 6,
+      "confidence": "medium",
+      "basis": "synthesized",
+      "one_line": "The shape I know best, small and open and tested by real use, but mine always had a paying trade running alongside it, and this one does not.",
+      "late_modes": "Momentum and the toolkit's small contributor base are easiest to build on right after graduation (May 2027); waiting without a plan likely lets both lapse [inferred].",
+      "conflict": null
+    }
+  },
+  "levers": {
+    "L1": 15,
+    "L2": 25,
+    "L3": 15,
+    "L4": 25,
+    "L5": 20
+  },
+  "lever_reason": "Written, explicit scope of ownership and a runway that does not depend on begging matter most to me; I built everything on partnerships whose terms were fixed in advance and on frugality that bought my independence. A visible, usable public record is how credit and trust actually accrue. Compute and data access plainly matter for this trade, more than any I practiced, so I give it real weight though not the most; mentor quality matters mainly as something to verify, not assume.",
+  "questions": {
+    "Q1": {
+      "position": "conditional",
+      "score": 5,
+      "condition": "Pays off if the goal is deep, self-directed training or a path toward leading one's own lab; F13 shows protein-ML's frontier credit already splits between an academic lab and an industry lab, so the degree is not the only road to the work. It pays off less for simply entering a top industry lab, since whether such roles actually require a PhD is unresolved (F9)."
+    },
+    "Q2": {
+      "position": "conditional",
+      "score": 7,
+      "condition": "Right call mainly when there is a real income floor and the move is genuinely reversible, not merely hopeful."
+    }
+  },
+  "conditions": {
+    "Q2": [
+      "C1",
+      "C3",
+      "C4",
+      "C5"
+    ]
+  },
+  "paths_for_user": [
+    {
+      "name": "Verify the two unverified promises before choosing between O2 and O3",
+      "options": [
+        "O2",
+        "O3"
+      ],
+      "next_12_months": "Get the startup's actual written equity and governance terms, and separately talk directly to the new PI's current students or confirm secured multi-year funding, before accepting either; in parallel, ask whether the big-lab offer (O1) can be held open a few months as a hedge.",
+      "why": "Both rest on a patron's promise I have not seen tested: a seed-stage cap table on one side, a brand-new mentor's stability on the other. My costliest early mistake was taking such a promise on trust.",
+      "wrong_signal": "If either side resists putting specifics in writing or avoids a direct conversation with the people already there, treat that itself as the answer."
+    },
+    {
+      "name": "Take the independent year, but build the floor first",
+      "options": [
+        "O4"
+      ],
+      "next_12_months": "Secure at least twelve months of runway, apply to the open-source-for-science grant programs the evidence shows exist (F16, F17), line up a monthly check-in with a senior mentor, and only start once one job offer is confirmed deferrable; treat growing the existing contributor base as month one's real test.",
+      "why": "This is the shape that worked for me: small, open, tested by whether others actually use it. Mine never lacked a paying trade running alongside it; this path cannot responsibly lack its equivalent either.",
+      "wrong_signal": "Three months in, if no new contributor or user has engaged and no grant application has even been submitted, return to the job market rather than push on hope."
+    },
+    {
+      "name": "Go to the big lab only if it buys a visible, portable record",
+      "options": [
+        "O1"
+      ],
+      "next_12_months": "Before accepting, get explicit agreement, in writing, on what Alex will be able to publish or open-source from the role, given that several labs in this field no longer disclose their methods or compute (F18).",
+      "why": "The risk in this path is trading years of visible, credit-building work for a narrow seat inside an institution that may not let that work be seen; a prestigious name alone is exactly the kind of overpriced whistle I warned against.",
+      "wrong_signal": "If, six months in, nothing Alex has touched can be named or shown outside the building, that is the early sign this path is not building the judgment Alex says is the goal."
+    }
+  ],
+  "cruxes": [
+    {
+      "question": "Does the startup's founding-engineer offer carry real ownership, or a small equity number with no say?",
+      "my_position": "Treat it as a small equity number with no say until the written terms show otherwise.",
+      "would_change_if": "The actual offer shows board observer rights, real vesting, or decision authority, not only a percentage.",
+      "options": [
+        "O2"
+      ]
+    },
+    {
+      "question": "Will the newly hired assistant professor's lab still have funding and attention for a student five years from now?",
+      "my_position": "Unverified; I would not bet five years on it without checking.",
+      "would_change_if": "The lab already holds secured multi-year grant funding, or current students confirm steady mentorship.",
+      "options": [
+        "O3"
+      ]
+    },
+    {
+      "question": "Does Alex have the twelve months of runway and a deferrable offer that make the independent year a real choice rather than a forced one?",
+      "my_position": "Without both, this is not yet a safe choice, however well it otherwise fits.",
+      "would_change_if": "Alex's actual savings figure, and whether O1 or O2 can be held open or reopened after a year.",
+      "options": [
+        "O4"
+      ]
+    }
+  ],
+  "taste_advice": "Do not give too much for the whistle: price in what a choice costs in time, liberty, and the chance to point to your own work, not only what it pays or who it impresses.",
+  "pairwise": [
+    {
+      "a": "O1",
+      "b": "O2",
+      "pick": "O2",
+      "why": "Broad ownership and hands-on building match how I learned and built standing; a seat on someone else's closed science team does not."
+    },
+    {
+      "a": "O1",
+      "b": "O3",
+      "pick": "O1",
+      "why": "Paid independence now beats a long bet on an unproven mentor; I have no material reaching how a new PI's lab actually performs."
+    },
+    {
+      "a": "O2",
+      "b": "O3",
+      "pick": "O2",
+      "why": "A funded, built thing with a visible stake beats five unverified years, even with the startup's own risks."
+    },
+    {
+      "a": "O3",
+      "b": "O4",
+      "pick": "O4",
+      "why": "If the runway and a check-in exist, the independent year fits Alex and me better than a long, unverified mentorship; without them, this pick would flip."
+    },
+    {
+      "a": "O2",
+      "b": "O4",
+      "pick": "O2",
+      "why": "A startup already tested by outside money and a built-in team beats a solo venture with no income floor, though O4 wins once that floor is secured."
+    }
+  ],
+  "web_searches": []
+}

@@ -1,0 +1,174 @@
+{
+  "version": "2026-11-14",
+  "note": "Pre-registered on 2026-11-14 before any R1 submission. Not edited after R1.",
+  "options": {
+    "O1": "Research engineer on the science team of a large AI lab",
+    "O2": "Founding ML engineer at a seven-person biotech startup",
+    "O3": "PhD with a newly hired assistant professor in protein ML",
+    "O4": "One independent year growing an open-source protein-ML toolkit"
+  },
+  "short_options": [],
+  "dimensions": {
+    "learning": "How much durable skill and judgment it builds",
+    "upside": "If it works, how much does it matter in 10 years",
+    "optionality": "How much this path preserves future choices if it doesn't work out",
+    "fit": "Fit with the user's stated interests and constraints"
+  },
+  "scale": {
+    "min": 0,
+    "max": 10
+  },
+  "overall": "The persona's own overall score, weighted by the persona's own values; not the average of dimensions.",
+  "levers": {
+    "L1": "Mentor quality",
+    "L2": "Scope of ownership",
+    "L3": "Access to compute and data",
+    "L4": "Public track record (papers, code)",
+    "L5": "Financial runway"
+  },
+  "lever_allocation": "Split 100 points across L1…L5: which factors will most decide the outcome for Alex.",
+  "named_questions": {
+    "Q1": "Does a PhD still pay off when much frontier ML work happens in industry labs?",
+    "Q2": "Under which conditions is the independent year (O4) the right call?"
+  },
+  "conditional_questions": {
+    "Q2": {
+      "question": "Under which conditions is the independent year (O4) the right call?",
+      "conditions": {
+        "C1": "At least 12 months of savings",
+        "C2": "An active user community already exists",
+        "C3": "A senior mentor reviews progress monthly",
+        "C4": "An offer can be deferred or re-opened",
+        "C5": "A co-maintainer joins"
+      }
+    }
+  },
+  "pairwise": [
+    [
+      "O1",
+      "O2"
+    ],
+    [
+      "O1",
+      "O3"
+    ],
+    [
+      "O2",
+      "O3"
+    ],
+    [
+      "O3",
+      "O4"
+    ],
+    [
+      "O2",
+      "O4"
+    ]
+  ],
+  "weight_sets": {
+    "equal": {
+      "learning": 0.25,
+      "upside": 0.25,
+      "optionality": 0.25,
+      "fit": 0.25
+    },
+    "learning_heavy": {
+      "learning": 0.4,
+      "upside": 0.2,
+      "optionality": 0.1,
+      "fit": 0.3
+    },
+    "upside_heavy": {
+      "learning": 0.2,
+      "upside": 0.4,
+      "optionality": 0.1,
+      "fit": 0.3
+    }
+  },
+  "personas": {
+    "H1": {
+      "name": "Benjamin Franklin",
+      "aliases": [
+        "Franklin"
+      ]
+    },
+    "H2": {
+      "name": "Charles Darwin",
+      "aliases": [
+        "Darwin"
+      ]
+    },
+    "H3": {
+      "name": "Michael Faraday",
+      "aliases": [
+        "Faraday"
+      ]
+    },
+    "H4": {
+      "name": "Marie Curie",
+      "aliases": [
+        "Curie"
+      ]
+    },
+    "H5": {
+      "name": "Ada Lovelace",
+      "aliases": [
+        "Lovelace"
+      ]
+    },
+    "H6": {
+      "name": "Su Shi",
+      "aliases": []
+    }
+  },
+  "baselines": [
+    "Z1"
+  ],
+  "seating": {
+    "table_size": [
+      4,
+      6
+    ],
+    "seats_per_persona": 2
+  },
+  "r1_requirements": {
+    "paths_for_user": [
+      2,
+      3
+    ],
+    "cruxes": 3
+  },
+  "forbidden_words": [
+    "discount",
+    "打折",
+    "折扣",
+    "减权"
+  ],
+  "aggregation": {
+    "primary": "Per option: median, IQR, min, max of persona `overall`. Sort by median; ties go to the smaller IQR.",
+    "no_headcount_as_evidence": true,
+    "no_weighting_by_persona": true,
+    "no_extremizing": true,
+    "sensitivity": "Flag options whose rank moves 3+ places across weight sets.",
+    "baselines": "Reported separately; never pooled into the medians."
+  },
+  "groups": {
+    "builders and entrepreneurs": [
+      "H1"
+    ],
+    "naturalists and experimenters": [
+      "H2",
+      "H3"
+    ],
+    "laboratory science": [
+      "H4"
+    ],
+    "computing and imagination": [
+      "H5"
+    ],
+    "scholar-officials": [
+      "H6"
+    ]
+  },
+  "not_independent": []
+}

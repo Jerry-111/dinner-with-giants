@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/schemas/card.schema.json",
+  "title": "card.yaml",
+  "description": "Machine-readable persona summary, printed at the top of every prompt and post. See templates/persona/card.yaml and docs/data-formats.md.",
+  "type": "object",
+  "required": ["id", "name"],
+  "properties": {
+    "id": {"type": "string"},
+    "name": {"type": "string"},
+    "kind": {"type": "string", "enum": ["historical", "public_figure", "archetype", "fictional"]},
+    "materials_latest_date": {"type": "string"},
+    "lens": {"type": "string"},
+    "stance_line": {"type": "string"},
+    "interest_line": {"type": "string"},
+    "aliases": {"type": "array", "items": {"type": "string"}},
+    "experiences": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "story": {"type": "string"},
+          "from": {"type": "string"},
+          "lesson": {"type": "string"},
+          "used_for": {"type": "string"},
+          "limit": {"type": "string"}
+        },
+        "additionalProperties": true
+      }
+    },
+    "path_dependence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {"text": {"type": "string"}, "from": {"type": "string"}},
+        "additionalProperties": true
+      }
+    },
+    "core_beliefs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {"type": "string"},
+          "label": {"type": "string", "enum": ["quoted", "synthesized", "inferred", "原话", "归纳", "推断"]},
+          "from": {"type": "string"}
+        },
+        "additionalProperties": true
+      }
+    },
+    "heuristics": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {"text": {"type": "string"}, "from": {"type": "string"}},
+        "additionalProperties": true
+      }
+    },
+    "red_lines": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {"text": {"type": "string"}, "from": {"type": "string"}},
+        "additionalProperties": true
+      }
+    },
+    "known_blind_spots": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {"text": {"type": "string"}, "from": {"type": "string"}},
+        "additionalProperties": true
+      }
+    },
+    "interests": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {"type": "string"},
+          "as_of": {"type": "string"},
+          "from": {"type": "string"}
+        },
+        "additionalProperties": true
+      }
+    },
+    "trust": {
+      "type": "object",
+      "properties": {
+        "direction": {"type": "string"},
+        "timing": {"type": "string"}
+      },
+      "additionalProperties": true
+    },
+    "not_independent_of": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "thin_materials": {"type": "string"}
+  },
+  "additionalProperties": true
+}

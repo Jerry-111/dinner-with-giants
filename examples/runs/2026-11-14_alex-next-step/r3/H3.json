@@ -1,0 +1,143 @@
+{
+  "id": "H3",
+  "name": "Michael Faraday",
+  "round": "R3",
+  "notice": "Simulation based on public material; not the person's own words.",
+  "options": {
+    "O1": {
+      "learning": 7,
+      "upside": 7,
+      "optionality": 6,
+      "fit": 6,
+      "overall": 7,
+      "confidence": "medium",
+      "basis": "synthesized",
+      "one_line": "Still the resourced choice, but the 2024 Nobel's even split and the unshown question of individual attribution inside a science-team seat both weaken what was my most confident score.",
+      "late_modes": null,
+      "conflict": null
+    },
+    "O2": {
+      "learning": 7,
+      "upside": 7,
+      "optionality": 5,
+      "fit": 6,
+      "overall": 6,
+      "confidence": "medium",
+      "basis": "synthesized",
+      "one_line": "A cohort base rate is not a fixed law; specific, verifiable facts can move one company's odds within it, though the cohort's own average, and the equity's lack of any tangible floor, still argue for caution.",
+      "late_modes": "If seed financing keeps weakening the way F10 and F12 (as corrected) describe, waiting longer to join at the ground floor makes it less likely this particular company survives to a point where the equity means anything.",
+      "conflict": null
+    },
+    "O3": {
+      "learning": 8,
+      "upside": 6,
+      "optionality": 5,
+      "fit": 6,
+      "overall": 6,
+      "confidence": "medium",
+      "basis": "synthesized",
+      "one_line": "Unchanged: deep mentorship built my own career, but a newly hired professor is an unproven patron whose incentive runs differently from an already-eminent one, and the years-long commitment still sits uneasily against reversibility.",
+      "late_modes": null,
+      "conflict": null
+    },
+    "O4": {
+      "learning": 6,
+      "upside": 6,
+      "optionality": 8,
+      "fit": 8,
+      "overall": 7,
+      "confidence": "medium",
+      "basis": "synthesized",
+      "one_line": "Unchanged: still the closest thing here to my own method, a bounded, testable speculation, now sharpened by a lesson from the table I did not sit at -- a 2026 co-maintainer is a thinner backstop than the deep partnerships history offers as comparison, which argues for fixing the clock myself rather than leaning on a reviewer alone.",
+      "late_modes": null,
+      "conflict": null
+    }
+  },
+  "levers": {
+    "L1": 28,
+    "L2": 25,
+    "L3": 20,
+    "L4": 17,
+    "L5": 10
+  },
+  "lever_reason": "I lower mentor quality slightly and raise public track record: the debate's clearest throughline was that a resourced setting's or a mentor's endorsement predicts enablement, not correctness or credit, and only an attributable, citable record settles which it was.",
+  "questions": {
+    "Q1": {
+      "position": "against",
+      "score": 5,
+      "condition": null
+    },
+    "Q2": {
+      "position": "conditional",
+      "score": null,
+      "condition": "Unchanged: yes once there is enough runway not to need an early result, a sign the work already has real users, someone outside checking progress on a schedule, and a dated end fixed before the year starts, not only a reviewer."
+    }
+  },
+  "conditions": {
+    "Q2": ["C1", "C2", "C3", "C4"]
+  },
+  "paths_for_user": [
+    {
+      "name": "Resourced apprentice",
+      "options": ["O1"],
+      "next_12_months": "Join the large lab's science team; spend the first year learning its tools, but deliberately seek one piece of work a team paper, patent, or internal record credits to Alex by name, not only to the team.",
+      "why": "Still where the field's biggest resourced results are produced (F13, F15, F18), but the 2024 Nobel's even split shows resourced teams are not the only route, so attribution has to be actively sought, not assumed.",
+      "wrong_signal": "A year in, nothing exists that is credited specifically to Alex rather than the team: the role has become pure service to someone else's question."
+    },
+    {
+      "name": "Bounded test",
+      "options": ["O4"],
+      "next_12_months": "Fix one dated, public goal for the toolkit at the outset, keep a monthly check-in with an outside reviewer, and fix the twelfth-month decision date before the year starts, in writing, not left to how the work feels partway through.",
+      "why": "A disciplined, clocked test of an idea Alex has already partly validated; a dated, pre-committed end matters as much as the reviewer, since a 2026 co-maintainer is a thinner backstop than history's deepest partnerships.",
+      "wrong_signal": "No growth in users and no outside reviewer willing to keep checking in by month six, or the dated end quietly slides once month twelve arrives."
+    },
+    {
+      "name": "Mentored depth, hedged",
+      "options": ["O3"],
+      "next_12_months": "Start the PhD, but treat year one as a trial: confirm the new professor's funding runway and get early, named credit on one piece of work.",
+      "why": "A mentor genuinely invested in one student can build judgment fast; a newly hired professor's incentive runs toward investing in that student's output, not yet toward rivalry, which is one difference from my own case with Davy.",
+      "wrong_signal": "By the end of year one, no funded multi-year plan from the professor and no work Alex can point to as clearly their own."
+    }
+  ],
+  "cruxes": [
+    {
+      "question": "Does a typical large-lab research-engineer seat grant enough latitude to own and argue a chosen sub-problem, the way a mentored PhD student can own one?",
+      "my_position": "Unshown either way after three rounds; I score O1 assuming some latitude is possible, not guaranteed, which is why I no longer score it as clearly ahead of O3.",
+      "would_change_if": "A dated, named example of a large-lab research engineer credited individually, by name, for a specific sub-result within a larger team project.",
+      "options": ["O1", "O3"]
+    },
+    {
+      "question": "Does verifying one seed-stage company's mentor, equity and runway meaningfully move its odds off the 2026 cohort's weaker base rate, or mostly confirm what was already true?",
+      "my_position": "It moves a company's position within the distribution, by my own concession, but does not raise the distribution itself, and a debate-logged self-check found only correlational, not causal, evidence that a named mentor predicts fundraising success.",
+      "would_change_if": "A dated, causal (not merely correlational) study linking a named technical mentor's presence to a seed-stage company's odds of reaching Series A.",
+      "options": ["O2"]
+    },
+    {
+      "question": "Is a dated, pre-committed stopping point, decided before the independent year starts, as load-bearing a safeguard as either reversibility or a human backstop?",
+      "my_position": "Yes, and it is the one safeguard neither side at the table I did not sit at was built around; my own decade-long, unresolved search lacked exactly this.",
+      "would_change_if": "Evidence that pre-committed deadlines are routinely extended anyway once real progress is visible, which would weaken the safeguard's force.",
+      "options": ["O4"]
+    }
+  ],
+  "taste_advice": "Fix the clock before you start, not after, and seek a named, attributable piece of work inside any team you join, resourced or not — once inside an open-ended test or an unattributed role you will always find a reason to extend it or to let it extend you. I did, for about a decade, with gravity and electricity, and never found the link.",
+  "pairwise": [
+    {"a": "O1", "b": "O2", "pick": "O1", "why": "A resourced, reversible seat still beats an equity bet in a weakened funding climate, even after conceding verification can help a specific company (F10, F12)."},
+    {"a": "O1", "b": "O3", "pick": "O1", "why": "My own career argues for the best-resourced institution available over a single, unproven new patron, even granting the attribution question is unresolved for both."},
+    {"a": "O2", "b": "O3", "pick": "O3", "why": "Mentored, publishable research still outlasts a commercial bet whose core ownership has no tangible floor, even once verified."},
+    {"a": "O3", "b": "O4", "pick": "O4", "why": "A one-year, clocked test that matches a tool Alex already has users for still beats a multi-year commitment to an as-yet-unproven mentor."},
+    {"a": "O2", "b": "O4", "pick": "O4", "why": "Ownership of a bounded, public test of your own work still beats ownership of equity whose odds of paying out thinned in 2026, even after the verification concession."}
+  ],
+  "changes": [
+    {"option": "O1", "from": 8, "to": 7, "because": "B/X1/H2_interjection (Darwin's interjection)", "argument_restated": "The 2024 Nobel Prize in Chemistry split evenly between AlphaFold2, from a resourced industry lab, and an academic lineage, the University of Washington's Institute for Protein Design; the prize credited both, so a resourced team is not the only route to the field's biggest result.", "why": "My A-round claim that the field's two biggest results both came from resourced teams overstated the case; I held the general resource argument but lowered confidence in its exclusivity."},
+    {"option": "O2", "from": 5, "to": 6, "because": "B/X3/H2 (Darwin)", "argument_restated": "A seed-stage funding base rate is a statistic averaged across many different companies, not a single fixed relationship; because it varies and moves with time, specific, verifiable facts about one company, such as confirmed runway, a named mentor, and written vesting, can move that company's odds within the distribution in a way no experiment could move a true law of nature.", "why": "I had treated the funding climate as if it were as fixed as the gravity-electricity question I once tested for a decade; it is not, so verification deserves more weight than I first gave it, though it does not fix the cohort's own weaker average."}
+  ],
+  "held_despite": [
+    {"post": "B/X1/H5", "why": "Accepted that AlphaFold2 and ESM3 show which setting produced the biggest aggregate result, not whose judgment becomes individually attributable. Score held near its new level (O1=7) rather than moved further, because the scribe's own table notes record this specific question -- whether a research-engineer seat grants that latitude -- as unshown in either direction, not resolved against O1."},
+    {"post": "B/X3/H1", "why": "Accepted that a named mentor and confirmed runway move one company's odds within its cohort. No additional change beyond the O2 5-to-6 move already credited to Darwin's point, since both arguments rest on the same underlying concession about verification."}
+  ],
+  "still_disagree": "After three rounds I still hold that resourced settings and verification processes are better at enabling and funding work than at correctly judging it in the moment, which is why I still rank O1 and O4 above O2 and O3: both keep Alex closer to resources or to a record Alex owns outright, rather than closer to one institution's or one investor's current opinion of the work.",
+  "learned": "That a resourced institution's judgment and a result's actual truth can diverge sharply, and not only in my own favor: the same table that argued resourced teams do the field's biggest work also surfaced that the French Academy of Sciences rejected a career now honored with two Nobel Prizes the same year one was awarded, and that a named startup mentor correlates with, but has not been shown to cause, fundraising success. I expected resourcing arguments and attribution arguments to move together; this debate separated them more sharply than I had.",
+  "searches": [
+    {"query": "large AI lab research engineer named individual authorship credit papers science team", "url": "none found specific to lab attribution practice", "published": null, "sentence": "General authorship norms found; no lab-specific attribution policy surfaced.", "for_claim": "X1 crux: does an O1 research-engineer seat grant individually attributable latitude", "result": "unclear"}
+  ]
+}

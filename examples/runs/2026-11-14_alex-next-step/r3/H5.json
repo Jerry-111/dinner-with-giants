@@ -1,0 +1,162 @@
+{
+  "id": "H5",
+  "name": "Ada Lovelace",
+  "round": "R3",
+  "notice": "Simulation based on public material; not the person's own words.",
+  "options": {
+    "O1": {
+      "learning": 7,
+      "upside": 6,
+      "optionality": 7,
+      "fit": 5,
+      "overall": 6,
+      "confidence": "low",
+      "basis": "synthesized",
+      "one_line": "Ownership can exist inside a resourced setting, as my own Notes show; whether a typical research-engineer seat actually grants it is still unshown.",
+      "late_modes": "Unchanged from R1: if industry's resource lead keeps widening while academia's placement share also recovers (F18, F8), non-PhD-shaped seats may get scarcer as both pools compete for them.",
+      "conflict": null
+    },
+    "O2": {
+      "learning": 7,
+      "upside": 5,
+      "optionality": 3,
+      "fit": 6,
+      "overall": 5,
+      "confidence": "medium",
+      "basis": "synthesized",
+      "one_line": "Unchanged: broad ownership suits my judgment, but the funding climate and the fragility of a close working partnership both still cut against it.",
+      "late_modes": "Unchanged from R1 (F12).",
+      "conflict": null
+    },
+    "O3": {
+      "learning": 7,
+      "upside": 6,
+      "optionality": 3,
+      "fit": 5,
+      "overall": 6,
+      "confidence": "medium",
+      "basis": "synthesized",
+      "one_line": "Still the strongest match to how I actually grew, but the open questions -- this PI's funding, and whether O1 even needs the credential O3 supplies -- are exactly as open as at R1.",
+      "late_modes": "Unchanged from R1.",
+      "conflict": null
+    },
+    "O4": {
+      "learning": 6,
+      "upside": 5,
+      "optionality": 7,
+      "fit": 8,
+      "overall": 6,
+      "confidence": "medium",
+      "basis": "synthesized",
+      "one_line": "Still the shape of my own best-credited work, but reversibility turned out to need its own, separate safeguard -- not something a backstop alone covers -- and a typical volunteer co-maintainer is a thinner commitment than my own historical examples.",
+      "late_modes": "Unchanged from R1 (F14, F15, F16, F17).",
+      "conflict": "H5's own most durable, publicly credited work (the 1843 Notes) was produced through an unpaid, self-directed project of similar shape to O4 (dossier §B Win 1, §I row 1); read the scores above against that resemblance."
+    }
+  },
+  "levers": {
+    "L1": 25,
+    "L2": 30,
+    "L3": 10,
+    "L4": 15,
+    "L5": 20
+  },
+  "lever_reason": "Unchanged from R1: scope of ownership and mentor quality are what my own experience turns on most directly; financial runway matters more than it looks, since I never had independent income and saw what filling that gap by other means can cost.",
+  "questions": {
+    "Q1": {
+      "position": "conditional",
+      "score": 6,
+      "condition": "Pays off if the chosen problems need sustained, mentored depth (my own strongest pattern). Pays off less if a science-team role already gives comparable access without the multi-year cost -- but comparable current large-lab research-scientist postings found this round list a doctorate as a minimum, not merely preferred, which weakens the idea that O1 is a clean PhD-free alternative to O3; this is drawn from general postings, not confirmed for the specific seat in scope.md."
+    },
+    "Q2": {
+      "position": "conditional",
+      "score": 6,
+      "condition": "Yes if C1 (savings runway), C3 (a mentor who reviews monthly), C4 (a deferrable or reopenable offer) and C5 (a co-maintainer) hold. Revised from R1: a sound-but-unconverted result is a distinct failure mode from a wrong-direction one, and only reversibility covers the first; a backstop alone, however engaged, does not substitute for it."
+    }
+  },
+  "conditions": {
+    "Q2": ["C1", "C3", "C4", "C5"]
+  },
+  "paths_for_user": [
+    {
+      "name": "Prove the toolkit first",
+      "options": ["O4"],
+      "next_12_months": "Spend the year deepening the existing tool, recruit a co-maintainer and a mentor who reviews monthly, apply to an open-source-for-science grant cycle (F16, F17), and fix a dated point in advance to decide whether to continue.",
+      "why": "Closest structural match to my own most durable, credited work; revised to add a pre-committed date, since neither a backstop nor savings alone forces a decision by then.",
+      "wrong_signal": "By month six to nine, no mentor, co-maintainer, or funding interest has materialized, and the fixed decision date keeps getting pushed back rather than kept."
+    },
+    {
+      "name": "Mentored depth, eyes open on time cost",
+      "options": ["O3"],
+      "next_12_months": "Start the PhD, but treat year one as a trial of both the supervisor's funding and the sharpness of their feedback.",
+      "why": "Matches my own fastest growth, through sustained correspondence with an engaged tutor; the supervisor and the funding behind them are both still unverified.",
+      "wrong_signal": "A year in, feedback is still only general encouragement, or the lab's funding past year two is still unconfirmed."
+    },
+    {
+      "name": "Broad ownership, funded clock",
+      "options": ["O2"],
+      "next_12_months": "Join, but get the mentor, scope, and equity in writing, and ask about runway past eighteen months.",
+      "why": "Matches my strongest heuristic, breadth of ownership and a named contribution; revised to note that even clean paperwork would not have caught my own partnership's actual failure, which was about credit and direction, not money.",
+      "wrong_signal": "The company's own survival, or a dispute over direction and credit with no financial cause, becomes the main internal topic within the first year."
+    }
+  ],
+  "cruxes": [
+    {
+      "question": "Do large-AI-lab science-team research-engineer roles actually require a PhD, or do they accept a strong publication or engineering record instead?",
+      "my_position": "Still unresolved, and now muddied further: a posting cited this round as counter-evidence could not be verified, and comparable current postings run the other way, toward requiring a doctorate.",
+      "would_change_if": "A specific large lab's own stated hiring bar, or a named hire's actual background, becomes known.",
+      "options": ["O1", "O3"]
+    },
+    {
+      "question": "Does the newly hired supervisor in O3 give sharp, corrective feedback, or mostly encouragement?",
+      "my_position": "Unchanged: unknown, and still the single biggest swing factor under O3.",
+      "would_change_if": "A documented instance, within the first term, of specific critical feedback rather than general praise.",
+      "options": ["O3"]
+    },
+    {
+      "question": "Does Alex secure both a co-maintainer or reviewing mentor and a real way back to paid work, before or during the independent year?",
+      "my_position": "Revised from R1: both matter and neither substitutes for the other -- a backstop catches a wrong direction; reversibility covers a right direction that has not yet converted.",
+      "would_change_if": "A named co-maintainer or mentor commits, and an offer is confirmed deferrable, within the first one to three months.",
+      "options": ["O4"]
+    }
+  ],
+  "taste_advice": "Choose the version of the work that proves the system's real reach, not the one that is merely easiest to finish -- but only once someone else is positioned to catch the mistake if that choice is wrong, and only with a date fixed in advance to judge whether it is working.",
+  "pairwise": [
+    {"a": "O1", "b": "O2", "pick": "O1", "why": "Revised from R1: the debate showed ownership can coexist with a resourced setting more readily than I first scored; nothing strengthened O2's case the same way, and O2 still carries the funding-climate and partnership risk from my own analysis."},
+    {"a": "O1", "b": "O3", "pick": "O3", "why": "Even at an equal overall score now, O3's structure is built around chosen ownership by design; O1 has only been shown capable of it, not shown to typically provide it."},
+    {"a": "O2", "b": "O3", "pick": "O3", "why": "Unchanged: O3's risk is slowness and low pay; O2's risk includes the funding climate and a partnership breakdown of the kind I lived through myself."},
+    {"a": "O3", "b": "O4", "pick": "O4", "why": "Even tied on overall, O4 keeps the next two years reversible, which O3 structurally cannot, and remains the closer match to my own most durable work."},
+    {"a": "O2", "b": "O4", "pick": "O4", "why": "Unchanged: same breadth and ownership as O2 without betting on a fragile funding window or a cap-table relationship that can break under strain."}
+  ],
+  "web_searches": [],
+  "changes": [
+    {
+      "option": "O1",
+      "from": 5,
+      "to": 6,
+      "because": "B/X1/H3, point: my own 1843 Notes were claimed from inside Babbage's resourced apparatus, not instead of one.",
+      "argument_restated": "I never left the Engine to go build something separate; I argued a chosen question from within a system someone else had resourced and built. That means a resourced setting does not by itself rule out real, attributable ownership -- the deciding factor is whether the relationship grants latitude, which Babbage's did for me.",
+      "why": "This was a fair correction to my own too-clean split between 'a narrow resourced seat' and 'chosen ownership elsewhere.' It does not prove a typical research-engineer seat grants that latitude -- that remains unshown -- but it raises my estimate of how often ownership and resources can coexist, which is what the score change reflects."
+    },
+    {
+      "option": "O4",
+      "from": 7,
+      "to": 6,
+      "because": "B/X2/H2 and B/X2/H6, point: my De Morgan/horse-racing comparison held a deferrable offer absent in both cases, so it is evidence about review mattering, not evidence that reversibility does not.",
+      "argument_restated": "Both of my clearest self-directed examples lacked any deferrable offer at all, so comparing them only shows what a reviewing partner adds, not what reversibility would add on its own; I cannot use my own history to argue reversibility is unnecessary.",
+      "why": "Once that was named by two people independently, the table's wider finding -- that a sound-but-unconverted result is a different failure mode from a wrong-direction one, and that a typical volunteer co-maintainer is a thinner commitment than my own best historical examples -- held up without a counter from my side. O4 is still my best personal match, but its safety needs both a reviewer and real reversibility, not mainly the former."
+    }
+  ],
+  "held_despite": [
+    {
+      "post": "B/X1/H3",
+      "why": "Accepted that Davy's mentorship curdling into opposition against Faraday is a real, documented mentor risk. O3's score was not moved for it, because the analogy breaks: a first-year PI's incentive runs toward investing in a first student, not rivalry, and a modern PhD answers to a committee beyond one mentor, which Faraday's Institution never gave him."
+    },
+    {
+      "post": "B/X2/H6",
+      "why": "Accepted that a sufficiently committed co-maintainer could function as a reopenable offer by another route. O4's score was not raised back up for this, because that requires a confirmed conversion commitment that neither scope.md nor the brief states; as written it is a possible bonus, not a default property of having a co-maintainer."
+    }
+  ],
+  "still_disagree": "At X1, after conceding that ownership can exist inside a resourced system, I still rank O3 at least even with O1: O3's structure is built around a chosen question by design, while nothing shown this round demonstrates a typical large-lab research-engineer seat grants the same latitude Babbage gave me.",
+  "learned": "That my two clearest personal examples -- De Morgan's correction, and the horse-racing collapse -- could teach a true lesson about one variable (review) while saying nothing at all about a different one (reversibility) that never varied between them. Two people caught this the same way; I would not have caught it alone.",
+  "searches": []
+}

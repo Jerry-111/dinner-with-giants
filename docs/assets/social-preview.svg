@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <rect width="1280" height="640" fill="#faf7f2"/>
+  <text x="80" y="230" font-size="104" font-weight="700" fill="#0f172a">debattable</text>
+  <text x="84" y="300" font-size="44" fill="#475569">辩论桌</text>
+  <text x="84" y="380" font-size="32" fill="#0f172a">Debate tables for hard decisions.</text>
+  <text x="84" y="428" font-size="24" fill="#475569">Persona agents argue from sources and experience;</text>
+  <text x="84" y="462" font-size="24" fill="#475569">fact-checks and judges keep them honest;</text>
+  <text x="84" y="496" font-size="24" fill="#475569">a baseline shows what they added.</text>
+  <text x="84" y="572" font-size="20" fill="#94a3b8">Runs inside Claude Code or Codex · MIT</text>
+  <circle cx="965" cy="320" r="170" fill="#ffffff" stroke="#0f172a" stroke-width="4"/>
+  <path d="M965,164 Q965,320 965,476" fill="none" stroke="#c2410c" stroke-opacity="0.55" stroke-width="3"/><path d="M1100,242 Q965,320 830,398" fill="none" stroke="#c2410c" stroke-opacity="0.55" stroke-width="3"/><path d="M1100,398 Q965,320 830,242" fill="none" stroke="#c2410c" stroke-opacity="0.55" stroke-width="3"/><path d="M965,164 Q965,320 1100,398" fill="none" stroke="#c2410c" stroke-opacity="0.55" stroke-width="3"/><path d="M965,476 Q965,320 830,242" fill="none" stroke="#c2410c" stroke-opacity="0.55" stroke-width="3"/>
+  <circle cx="965" cy="320" r="46" fill="#c2410c"/>
+  <text x="965" y="331" text-anchor="middle" font-size="30" font-weight="700" fill="#ffffff">crux</text>
+  <circle cx="965" cy="88" r="30" fill="#1e293b"/><text x="965" y="44" text-anchor="middle" font-size="22" fill="#334155">Franklin</text><circle cx="1166" cy="204" r="30" fill="#1e293b"/><text x="1166" y="160" text-anchor="middle" font-size="22" fill="#334155">Darwin</text><circle cx="1166" cy="436" r="30" fill="#1e293b"/><text x="1166" y="492" text-anchor="middle" font-size="22" fill="#334155">Faraday</text><circle cx="965" cy="552" r="30" fill="#1e293b"/><text x="965" y="608" text-anchor="middle" font-size="22" fill="#334155">Curie</text><circle cx="764" cy="436" r="30" fill="#1e293b"/><text x="764" y="492" text-anchor="middle" font-size="22" fill="#334155">Lovelace</text><circle cx="764" cy="204" r="30" fill="#1e293b"/><text x="764" y="160" text-anchor="middle" font-size="22" fill="#334155">Su Shi</text>
+</svg>

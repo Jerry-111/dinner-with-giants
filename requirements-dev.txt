@@ -1,0 +1,10 @@
+# Development-only dependencies for tools/sim.py and its test suite.
+# tools/sim.py itself needs nothing beyond the Python 3.9+ standard library.
+# Both of these are optional; see tools/README.md.
+
+# Optional: run the test suite with `pytest` instead of `python -m unittest`.
+pytest>=7
+
+# Optional: full card.yaml parsing in `roster` (a regex fallback is used
+# automatically when this is not installed).
+pyyaml>=6

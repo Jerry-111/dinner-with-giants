@@ -1,0 +1,148 @@
+{
+  "id": "Z1",
+  "name": "Baseline analyst",
+  "round": "R1",
+  "notice": "Baseline analyst; does not simulate any persona.",
+  "options": {
+    "O1": {
+      "learning": 8,
+      "upside": 7,
+      "optionality": 7,
+      "fit": 6,
+      "overall": 7,
+      "confidence": "medium",
+      "basis": "synthesized",
+      "one_line": "Strong compounding capital (brand, mentors, compute/data access) with moderate ownership; leaveable inside two years, so it does not foreclose founding something later.",
+      "late_modes": "Not urgently late: large-lab science-team hiring keeps expanding, but each year of delay raises the bar as the field's prestige draws more applicants (F13); waiting mainly costs competitiveness, not eligibility. [inferred]",
+      "conflict": null
+    },
+    "O2": {
+      "learning": 7,
+      "upside": 8,
+      "optionality": 4,
+      "fit": 7,
+      "overall": 6,
+      "confidence": "medium",
+      "basis": "synthesized",
+      "one_line": "Fastest route to real ownership and breadth, but rides a biotech seed/Series-A market at roughly a decade low; the upside is only as good as this specific company's runway.",
+      "late_modes": "The most time-locked option: 'founding engineer' scope and equity (F11) exist only before the team staffs up; once this company fills the role or passes roughly a dozen people, this exact door closes, even though similar roles keep opening elsewhere. [synthesized]",
+      "conflict": null
+    },
+    "O3": {
+      "learning": 8,
+      "upside": 7,
+      "optionality": 3,
+      "fit": 5,
+      "overall": 5,
+      "confidence": "medium",
+      "basis": "synthesized",
+      "one_line": "Deepest structured training and a shot at a strong early record under a hungry new PI, but a roughly 7-9 year modal timeline collides with Alex's own two-year-reversibility rule.",
+      "late_modes": "Gradual, not sudden: a brand-new PI gives the earliest students the most direct attention and the most say in lab direction; later cohorts get a busier advisor and a more fixed agenda, so the advantage decays over a few admissions cycles rather than vanishing at once. [inferred]",
+      "conflict": null
+    },
+    "O4": {
+      "learning": 6,
+      "upside": 7,
+      "optionality": 9,
+      "fit": 9,
+      "overall": 7,
+      "confidence": "low",
+      "basis": "inferred",
+      "one_line": "Best match to Alex's stated preferences and the only option that is cheaply reversible, but the brief has no base rate for whether a solo maintainer's year compounds or just stalls.",
+      "late_modes": "Not late yet: structure prediction is already commoditized (F14) and the newest generative models are going proprietary/API-gated (F15), leaving an open lane around interoperability and data tooling that larger players have not closed — but that lane stays open only as long as no better-funded team targets it. [synthesized]",
+      "conflict": null
+    }
+  },
+  "levers": {
+    "L1": 30,
+    "L2": 20,
+    "L3": 20,
+    "L4": 20,
+    "L5": 10
+  },
+  "lever_reason": "Mentor quality swings the outcome most because it varies more within an option (this PI, these co-founders, this senior reviewer) than between options; ownership, compute/data access and public track record matter nearly as much because each compounds toward Alex's own five-year goal of being trusted on problem judgment, while runway mainly gates the one option (O4) that is already cheap to reverse.",
+  "questions": {
+    "Q1": {
+      "position": "conditional",
+      "score": 5,
+      "condition": "Pays off more if the target role or Alex's longer-run goal actually filters on the credential (tenure-track academia, or a research-scientist title that screens on a PhD) or needs 7+ years of depth; pays off less if the goal is judgment-by-portfolio, where shipped code, benchmarks and a track record can substitute, and where bio/biomedical PhDs already show the field's most fluid, least 'definite-plan' outcomes of any broad field (F7)."
+    },
+    "Q2": {
+      "position": "conditional",
+      "score": 7,
+      "condition": "Right call once Alex has roughly a year of runway, a mentor who reviews progress on a fixed cadence, and a way back into the job or PhD market if the year does not produce a grant, a co-maintainer, or real usage growth; weaker without those, since the brief finds no base rate for solo maintainers succeeding versus stalling."
+    }
+  },
+  "conditions": {
+    "Q2": ["C1", "C3", "C4"]
+  },
+  "paths_for_user": [
+    {
+      "name": "Default to the lab, keep the tool alive nights-and-weekends",
+      "options": ["O1"],
+      "next_12_months": "Take the research-engineer offer; negotiate explicitly for science-team scope rather than pure infrastructure work; keep pushing commits to the OSS tool on a fixed weekly cadence so it does not go dormant.",
+      "why": "Suits Alex if real risk tolerance (unstated in the brief) turns out to be closer to cautious than bold: it banks compute/data access and a strong brand (F18) without closing off founding something later, since the role is leaveable inside two years and the tool stays alive as a live option.",
+      "wrong_signal": "If by month 9-12 the day-to-day work is pure infrastructure upkeep with no channel to influence which protein-ML problems get worked on, the 'trusted for judgment' goal this path was meant to serve is not being served — push for a role change internally or treat the job as a savings vehicle for O4."
+    },
+    {
+      "name": "Defer and take the independent year, but only once C1/C3/C4 are real",
+      "options": ["O4"],
+      "next_12_months": "Bank at least 12 months of costs (C1); line up a specific senior person who agrees to review progress monthly (C3); only decline or defer other offers once at least one is confirmed reopenable (C4) — do not start the clock before these are in place.",
+      "why": "Suits Alex if 'being trusted for judgment' and 'founding something later' should drive the choice rather than whichever option is easiest to defend on paper; this is the only option that is cheap to reverse and it matches the stated preference for building tools over writing papers.",
+      "wrong_signal": "If around month 4-6 contributor count, usage and inbound interest (grant, co-maintainer, acquihire conversation) are all flat relative to before the year started, the year is extending a plateau rather than breaking one — stop and take the next offer instead of running it to month 12 on hope."
+    },
+    {
+      "name": "Join the startup, but diligence the runway like an investor would",
+      "options": ["O2"],
+      "next_12_months": "Before accepting, ask directly for cash-in-bank and months of runway, not just the pitch; confirm at least one co-founder can act as a real technical mentor given Alex's two years of research experience; get the equity grant and vesting in writing and sanity-check it against the roughly 0.6%-4.1% founding-engineer range (F11).",
+      "why": "Suits Alex if the specific founders and the specific problem are unusually strong matches and Alex wants maximum breadth and ownership fastest, accepting that this is the option with the weakest base rates this cycle (F10, F12) and the least reversibility of the non-PhD paths.",
+      "wrong_signal": "If in the first 90 days the work is mostly undifferentiated engineering rather than ML, or a next-round conversation keeps slipping with no term sheet in sight, that is the weak biotech seed-to-Series-A funnel (F10, F12) playing out at this company — an early exit cue, not a reason to wait it out."
+    }
+  ],
+  "cruxes": [
+    {
+      "question": "Do large-AI-lab 'science team' research-engineer roles actually gate on a PhD, or mainly on a strong engineering/publication record?",
+      "my_position": "Likely mixed and role-specific, not a hard gate for engineer-titled roles: a same-season sample of postings shows some protein-AI employers listing a PhD for ML-engineer-titled roles and others not mentioning one for similarly scoped work, and the evidence brief itself could not pin this down (F9).",
+      "would_change_if": "Alex's actual target team states a PhD requirement (or explicitly waives it) in the specific posting or in a conversation with the hiring manager.",
+      "options": ["O1", "O3"]
+    },
+    {
+      "question": "Can Alex's current OSS project (about 800 stars, two occasional contributors) turn into a self-sustaining, growing project within one dedicated year?",
+      "my_position": "Plausible but not the base case. No outcomes study of solo- or pair-maintained scientific software was found; the closest evidence is that being a single, mostly-unpaid maintainer is the modal case for open-source projects generally, which is not evidence that such projects typically grow.",
+      "would_change_if": "A co-maintainer, a grant decision (CZI or NSF POSE), or a clear jump in contributors/usage shows up within the first three to four months.",
+      "options": ["O4"]
+    },
+    {
+      "question": "Does this specific seven-person biotech startup have enough runway to survive to its next financing round in the current climate?",
+      "my_position": "Assume not, unless shown otherwise: 2026's first half had the fewest disclosed early-stage biotech deals in a decade and seed-to-Series-A conversion generally is near its lowest point since the data series begins (F10, F12).",
+      "would_change_if": "The company can show, not merely state, at least 18 months of cash already in the bank and a named, credible lead for the next round.",
+      "options": ["O2"]
+    }
+  ],
+  "taste_advice": "Pick the next 12 months by what a stranger could verify at the end of them — a shipped feature with outside users, a benchmark others cite, a grant decision, an offer letter — rather than by how productive the year felt from the inside; across early-career ML and computational-biology moves, paths that look equally diligent in the moment diverge entirely in how legible they are to the next hiring committee, admissions committee, or investor twelve months later. [inferred]",
+  "pairwise": [
+    {"a": "O1", "b": "O2", "pick": "O1", "why": "Lower variance, stronger compute/mentorship access, comparable fit; O2's upside is real but current seed-to-Series-A and biotech-financing base rates are weak (F10, F12). [synthesized]"},
+    {"a": "O1", "b": "O3", "pick": "O1", "why": "O1 avoids the roughly 7-9 year time cost and preserves optionality; O3's mentorship/learning edge does not offset the reversibility and fit gap against a tool-building preference. [synthesized]"},
+    {"a": "O2", "b": "O3", "pick": "O2", "why": "O2 reaches a legible ownership signal faster and stays closer to Alex's stated tool-building preference within a shorter reversibility window than a multi-year PhD, despite weaker funding base rates. [synthesized]"},
+    {"a": "O3", "b": "O4", "pick": "O4", "why": "O4 preserves optionality and fit far better; O3's structured mentorship and credential do not outweigh the opportunity cost of 7-9 years against Alex's explicit two-year-reversibility constraint. [synthesized]"},
+    {"a": "O2", "b": "O4", "pick": "O4", "why": "Similar ownership and building character, but O4 is fully self-directed and reversible with no dependence on a financing climate that is currently historically weak for biotech seed/Series-A rounds (F10, F12). [synthesized]"}
+  ],
+  "web_searches": [
+    {
+      "query": "\"research engineer\" protein science team AI lab job posting PhD required OR preferred 2026",
+      "url": "https://jobs.generalcatalyst.com/companies/lila-sciences-2/jobs/76522823-ml-engineer-ls-ai",
+      "published": "2026-04-28",
+      "sentence": "Paraphrase, not verbatim (source page fetch was blocked): ML Engineer role on protein structure/co-folding work lists a PhD in a computing or quantitative field.",
+      "for_claim": "Q1 / Crux1 — whether AI-lab science-team engineer roles require a PhD",
+      "result": "Mixed: this posting lists a PhD; a same-week Profluent ML Research Engineer posting and a Biohub Research Engineer posting of similar scope did not mention one. Confirms the brief's F9 gap rather than closing it."
+    },
+    {
+      "query": "solo maintainer open source scientific software sustainability outcomes study",
+      "url": "https://arxiv.org/abs/2309.12120",
+      "published": "2023 (preprint, v3)",
+      "sentence": "Paraphrase, not verbatim: standalone, context-free repository metrics could not reliably flag which projects stayed sustainable over a year.",
+      "for_claim": "O4 / Crux2 — base rate for a solo/pair-maintained scientific toolkit succeeding vs. stalling",
+      "result": "No systematic solo-vs-team outcomes study found for scientific software. Closest data point: a cited 2024 Tidelift survey found 61% of unpaid OSS maintainers are solo, so single-maintainer status alone is not an unusual signal — but it does not establish the odds of growth either."
+    }
+  ]
+}

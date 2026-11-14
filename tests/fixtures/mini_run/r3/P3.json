@@ -1,0 +1,109 @@
+{
+ "id": "P3",
+ "name": "Persona Three",
+ "round": "R3",
+ "notice": "Simulation based on public material; not the person's own words.",
+ "options": {
+  "O1": {
+   "impact": 5,
+   "fit": 5,
+   "overall": 5,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "O1's lead still looks like noise.",
+   "late_modes": null,
+   "conflict": null
+  },
+  "O2": {
+   "impact": 7,
+   "fit": 7,
+   "overall": 7,
+   "confidence": "high",
+   "basis": "quoted",
+   "one_line": "O2 still fits best.",
+   "late_modes": null,
+   "conflict": null
+  },
+  "O3": {
+   "impact": 6,
+   "fit": 6,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "O3's record is partly survivorship bias.",
+   "late_modes": null,
+   "conflict": null
+  },
+  "O4": {
+   "overall": 6,
+   "one_line": "O4 is now about even with O3."
+  }
+ },
+ "levers": {
+  "L1": 30,
+  "L2": 20,
+  "L3": 50
+ },
+ "lever_reason": "Still the real constraint.",
+ "questions": {
+  "Q1": {
+   "position": "conditional",
+   "score": 5,
+   "condition": "Only if C2 holds."
+  }
+ },
+ "conditions": {
+  "Q1": [
+   "C2"
+  ]
+ },
+ "paths_for_user": [
+  {
+   "name": "Path B",
+   "options": [
+    "O2"
+   ],
+   "next_12_months": "Pilot O2 and re-check fit quarterly.",
+   "why": "Fit matters more than headline impact here.",
+   "wrong_signal": "If fit scores drop after the pilot."
+  },
+  {
+   "name": "Path C",
+   "options": [
+    "O3"
+   ],
+   "next_12_months": "Keep O3 as the safe fallback.",
+   "why": "O3's track record is the longest.",
+   "wrong_signal": "If O3's failure rate rises."
+  }
+ ],
+ "taste_advice": "Favor fit over headline impact.",
+ "pairwise": [
+  {
+   "a": "O1",
+   "b": "O2",
+   "pick": "O2",
+   "why": "O2 still fits better."
+  },
+  {
+   "a": "O3",
+   "b": "O4",
+   "pick": "O3",
+   "why": "O3's record is still longer."
+  }
+ ],
+ "changes": [
+  {
+   "option": "O3",
+   "from": 7,
+   "to": 6,
+   "because": "B/X1/P4",
+   "argument_restated": "O3's clean record is partly survivorship bias, not pure skill.",
+   "why": "Lowering confidence in O3's safety claim."
+  }
+ ],
+ "held_despite": [],
+ "still_disagree": null,
+ "learned": "P4's point about survivorship bias generalizes beyond O3.",
+ "searches": []
+}

@@ -1,0 +1,141 @@
+{
+  "id": "H4",
+  "name": "Marie Curie",
+  "round": "R3",
+  "notice": "Simulation based on public material; not the person's own words.",
+  "options": {
+    "O1": {
+      "learning": 5,
+      "upside": 6,
+      "optionality": 4,
+      "fit": 4,
+      "overall": 4,
+      "confidence": "medium",
+      "basis": "inferred",
+      "one_line": "Still the path furthest from what worked for me, and the X1 table's own fact-check leaves whether it even requires a PhD more unsettled than before, not less.",
+      "late_modes": "Joining to run an already-standard pipeline rather than to open a genuinely new question is late; joining to help choose what the team measures next is not.",
+      "conflict": null
+    },
+    "O2": {
+      "learning": 7,
+      "upside": 6,
+      "optionality": 5,
+      "fit": 6,
+      "overall": 6,
+      "confidence": "low",
+      "basis": "synthesized",
+      "one_line": "My own 'no diligence changes the odds' framing overstated it; specific, confirmed facts about one company can move its position within a bad cohort, even though the cohort's own climate (corrected, still weak) does not move.",
+      "late_modes": "If the specific target or platform is already crowded with funded competitors, that is late; an under-examined angle at a small company is not.",
+      "conflict": null
+    },
+    "O3": {
+      "learning": 8,
+      "upside": 6,
+      "optionality": 5,
+      "fit": 5,
+      "overall": 6,
+      "confidence": "high",
+      "basis": "synthesized",
+      "one_line": "Unchanged: the closest institutional analogue to my own doctorate, if the question is truly Alex's own and not leftover work.",
+      "late_modes": "None observed: a newly hired assistant professor's first years are, if anything, the earliest and highest-ownership moment an academic lab offers.",
+      "conflict": null
+    },
+    "O4": {
+      "learning": 8,
+      "upside": 5,
+      "optionality": 8,
+      "fit": 8,
+      "overall": 7,
+      "confidence": "high",
+      "basis": "synthesized",
+      "one_line": "Still the closest shape to how radium was found, but I overcredited any backstop as doing Pierre's work, and reversibility turned out to need active arranging too, not a background guarantee.",
+      "late_modes": "If the toolkit's niche is already being absorbed into a well-resourced lab's own open infrastructure, a solo year re-covering the same ground is late; moving to an adjacent, still-unclaimed problem is not.",
+      "conflict": null
+    }
+  },
+  "levers": {
+    "L1": 25,
+    "L2": 30,
+    "L3": 10,
+    "L4": 25,
+    "L5": 10
+  },
+  "lever_reason": "Ownership of the question and a real check on the work still matter more than the size of the budget; the debate sharpened this into two distinct risks (a wrong direction unflagged, a right result not yet fundable) rather than one, which is why both a backstop and real runway still rank above compute and data.",
+  "questions": {
+    "Q1": {
+      "position": "conditional",
+      "score": 6,
+      "condition": "Yes, but only if the specific mentor and problem give real ownership, not labor inside someone else's funded program. The X1 table's fact-check left O1's own PhD requirement more open, not settled, so this is not a reason to prefer O1 instead."
+    },
+    "Q2": {
+      "position": "conditional",
+      "score": 7,
+      "condition": "Yes, if savings cover the year (C1), a signal already exists (C2), someone checks the work (C5), and, where it can actually be arranged in advance rather than assumed, a deferrable offer (C4) — the debate showed these answer two different risks, not one, so both matter more than I first scored."
+    }
+  },
+  "conditions": {
+    "Q2": ["C1", "C2", "C4", "C5"]
+  },
+  "paths_for_user": [
+    {
+      "name": "Signal-first independent year",
+      "options": ["O4"],
+      "next_12_months": "Grow the toolkit under the C1/C2/C5 conditions, arrange C4 in advance if at all possible, and fix a dated stopping point before the year starts, not after.",
+      "why": "Matches my own 1897-1903 pattern, but the debate showed a realistic backstop is thinner than Pierre and a deferral has to be actively secured, not assumed [dossier §I; B/X2/H1_interjection; B/X2/H2].",
+      "wrong_signal": "No growth in users or contributors, and savings running out, before any outside interest appears, with no pre-set date forcing the decision."
+    },
+    {
+      "name": "Own a question inside a new lab",
+      "options": ["O3"],
+      "next_12_months": "Join the assistant professor's lab and use year one to confirm the question is Alex's own before the multi-year commitment feels irreversible.",
+      "why": "Resembles my own doctoral years; the X1 debate left O1's own credential requirements unsettled, so this path's ownership case stands on its own, not on O1 being an easier alternative.",
+      "wrong_signal": "By month twelve the problems being assigned are the advisor's leftovers."
+    },
+    {
+      "name": "Verify the startup against the corrected base rate",
+      "options": ["O2"],
+      "next_12_months": "Get written answers on a named technical mentor, vesting, and runway past eighteen months; judge the specific company against the cohort, not instead of it.",
+      "why": "The debate corrected my own cited figures (errata_B) and showed company-specific facts predict position within a weak cohort, even though they don't lift the cohort's climate.",
+      "wrong_signal": "The company cannot answer any of the three tests, or treats the question as beside the point."
+    }
+  ],
+  "taste_advice": "Choose the problem nobody well-funded is bothering to measure yet, let the measurement carry the argument over any institution's opinion of you, and make sure at least one other person is honestly positioned to tell you when it isn't working.",
+  "pairwise": [
+    {"a": "O1", "b": "O2", "pick": "O2", "why": "Broad ownership and a closer partner still beat a well-paid, narrow seat, and O2's position within its cohort is less fixed than I first scored."},
+    {"a": "O1", "b": "O3", "pick": "O3", "why": "A chosen question with a building mentor remains the shape of my own career; X1's own fact-check left O1 no more accessible or less gated than before."},
+    {"a": "O2", "b": "O3", "pick": "O3", "why": "A thesis and its publications are mine regardless of what happens to the lab; a startup's output still depends on the company surviving to let it be used, even once verified."},
+    {"a": "O3", "b": "O4", "pick": "O4", "why": "O4 remains closer to what actually worked for me, though by a narrower margin now that I credit the realistic backstop as thinner than Pierre."},
+    {"a": "O2", "b": "O4", "pick": "O4", "why": "Lower cash risk and a dated stopping point beat handing control to financing mechanics I have no instinct for, even after moving O2 up slightly."}
+  ],
+  "changes": [
+    {
+      "option": "O4",
+      "from": 8,
+      "to": 7,
+      "because": "B/X2/H6 point 2 and B/X2/H1_interjection point 1",
+      "argument_restated": "A volunteer co-maintainer is a far thinner, unbound commitment than the live-in, co-equal research partnership I actually had with Pierre; I scored O4 as if any backstop would do nearly as much work as mine did. Separately, B/X2/H2's logged self-check showed a deferral needs the offer accepted first, then separate approval, so reversibility (optionality) is arranged in advance, not a background guarantee the way I first scored it.",
+      "why": "The argument still favors a human check or a dated stopping point over money alone, but by less than I first scored, since the real backstop on offer is weaker than my own example and the exit route is not automatic either."
+    },
+    {
+      "option": "O2",
+      "from": 5,
+      "to": 6,
+      "because": "B/X3/H2 point 2, and evidence/errata_B.md's correction to F12",
+      "argument_restated": "I originally argued no amount of diligence at one company changes its odds; that overstated it, since a company confirming a named mentor, written vesting, and runway past eighteen months is not drawn from the same odds, within the cohort, as one that cannot. Separately, the figure I cited for how much 1H-2026 biotech financing fell (about a quarter) was wrong; the corrected decline is about 15 percent, real but smaller than I argued from.",
+      "why": "The move is small and conditional, since Alex has no confirmed answer to those three tests yet, and the aggregate climate, while corrected, is still weaker than 2018-2023."
+    }
+  ],
+  "held_despite": [
+    {
+      "post": "B/X2/H3_interjection",
+      "why": "Accepted that a pre-committed, dated stopping point is a real, missing third safeguard; O4's score did not move on this point alone, because it is a practice Alex can adopt under any backstop arrangement, not evidence that changes the weighing between a human check and reversibility."
+    },
+    {
+      "post": "B/X3/H1",
+      "why": "Accepted that naming a company-specific test concedes such facts can matter in principle; O2's score did not move on this point alone, because Alex has no confirmed answer to that test yet, so the concession is about method, not this case's facts."
+    }
+  ],
+  "still_disagree": "At X2, four tablemates hold reversibility (C1/C4) as the decisive safeguard; I still weight a human backstop, or a dated stopping point, higher for the specific failure I think is costliest for Alex: an unflagged wrong direction, which money alone does not catch. I moved O4 down one point because the realistic backstop is thinner than mine was, not because that ranking of failure modes changed.",
+  "learned": "I did not expect reversibility and a human backstop to turn out to answer two cleanly different failure modes, a wrong direction unflagged versus a right result not yet converted to income, rather than competing answers to one problem. Once that split was named, most of the table's disagreement turned out to be about which failure Alex is more exposed to, not about which safeguard works better in the abstract.",
+  "searches": []
+}

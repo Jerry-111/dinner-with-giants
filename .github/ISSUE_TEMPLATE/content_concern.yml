@@ -1,0 +1,21 @@
+name: Content concern
+description: Something in this repository misrepresents a person, contains personal data, or may infringe a right.
+labels: ["content-concern"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        If the concern involves personal data, please report it privately instead: Security tab → "Report a vulnerability".
+        Content under a good-faith concern is removed first and discussed after.
+  - type: input
+    id: where
+    attributes:
+      label: File(s) or link(s)
+    validations:
+      required: true
+  - type: textarea
+    id: concern
+    attributes:
+      label: The concern
+    validations:
+      required: true

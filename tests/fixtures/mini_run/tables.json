@@ -1,0 +1,36 @@
+{
+ "tables": [
+  {
+   "id": "X1",
+   "crux": "X1",
+   "members": [
+    "P1",
+    "P2",
+    "P3",
+    "P4"
+   ],
+   "why": {
+    "P1": "Backs O1.",
+    "P2": "Backs O2.",
+    "P3": "Backs O2.",
+    "P4": "Backs O1."
+   }
+  },
+  {
+   "id": "X2",
+   "crux": "X2",
+   "members": [
+    "P1",
+    "P2",
+    "P3",
+    "P4"
+   ],
+   "why": {
+    "P1": "Backs O3.",
+    "P2": "Backs O4.",
+    "P3": "Backs O3.",
+    "P4": "Backs O4."
+   }
+  }
+ ]
+}

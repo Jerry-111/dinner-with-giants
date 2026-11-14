@@ -1,0 +1,99 @@
+{
+ "id": "Z1",
+ "name": "Baseline analyst",
+ "round": "R1",
+ "notice": "Simulation based on public material; not the person's own words.",
+ "options": {
+  "O1": {
+   "impact": 6,
+   "fit": 6,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "O1 looks average on paper.",
+   "late_modes": null,
+   "conflict": null
+  },
+  "O2": {
+   "impact": 6,
+   "fit": 6,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "O2 looks average on paper.",
+   "late_modes": null,
+   "conflict": null
+  },
+  "O3": {
+   "impact": 6,
+   "fit": 6,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "O3 looks average on paper.",
+   "late_modes": null,
+   "conflict": null
+  },
+  "O4": {
+   "overall": 6,
+   "one_line": "O4 looks average on paper."
+  }
+ },
+ "levers": {
+  "L1": 34,
+  "L2": 33,
+  "L3": 33
+ },
+ "lever_reason": "No strong prior on which lever dominates.",
+ "questions": {
+  "Q1": {
+   "position": "conditional",
+   "score": 5,
+   "condition": "No strong basis either way."
+  }
+ },
+ "conditions": {
+  "Q1": [
+   "C1"
+  ]
+ },
+ "paths_for_user": [
+  {
+   "name": "Path generic",
+   "options": [
+    "O1",
+    "O2"
+   ],
+   "next_12_months": "Keep options open.",
+   "why": "No option clearly dominates from the brief alone.",
+   "wrong_signal": "If one option pulls far ahead."
+  }
+ ],
+ "cruxes": [
+  {
+   "question": "Does any option clearly dominate?",
+   "my_position": "Not from the brief alone.",
+   "would_change_if": "New independent evidence separates the options.",
+   "options": [
+    "O1",
+    "O2"
+   ]
+  }
+ ],
+ "taste_advice": null,
+ "pairwise": [
+  {
+   "a": "O1",
+   "b": "O2",
+   "pick": "O1",
+   "why": "Marginal, low-confidence preference."
+  },
+  {
+   "a": "O3",
+   "b": "O4",
+   "pick": "O3",
+   "why": "Marginal, low-confidence preference."
+  }
+ ],
+ "web_searches": []
+}

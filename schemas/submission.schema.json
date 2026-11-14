@@ -1,0 +1,147 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/schemas/submission.schema.json",
+  "title": "R1 / R3 / baseline submission",
+  "description": "Shape of r1/<ID>.json, r3/<ID>.json and baselines/<Z>_r1.json, baselines/<Z>_r3.json. See docs/data-formats.md. Baselines use the same shape with name 'Baseline analyst' and conflict null everywhere.",
+  "type": "object",
+  "required": ["id", "round", "options"],
+  "properties": {
+    "id": {"type": "string"},
+    "name": {"type": "string"},
+    "round": {"type": "string", "enum": ["R1", "R3"]},
+    "notice": {"type": "string"},
+    "options": {
+      "type": "object",
+      "description": "Option id -> scores. A short option may carry only {overall, one_line}.",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "overall": {"type": ["integer", "null"]},
+          "confidence": {"type": ["string", "null"], "enum": ["low", "medium", "high", "低", "中", "高", null]},
+          "basis": {"type": ["string", "null"], "enum": ["quoted", "synthesized", "inferred", "原话", "归纳", "推断", null]},
+          "one_line": {"type": "string"},
+          "late_modes": {"type": ["string", "null"]},
+          "conflict": {"type": ["string", "null"]}
+        },
+        "additionalProperties": {"type": ["integer", "null"]}
+      }
+    },
+    "levers": {
+      "type": "object",
+      "additionalProperties": {"type": "integer"}
+    },
+    "lever_reason": {"type": "string"},
+    "questions": {
+      "type": "object",
+      "description": "Named-question id -> position/score/condition.",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "position": {"type": "string", "enum": ["for", "against", "conditional", "支持", "反对", "有条件", "附条件"]},
+          "score": {"type": ["integer", "null"]},
+          "condition": {"type": ["string", "null"]}
+        },
+        "additionalProperties": true
+      }
+    },
+    "conditions": {
+      "type": "object",
+      "description": "Conditional-question id -> list of selected condition ids.",
+      "additionalProperties": {
+        "type": "array",
+        "items": {"type": "string"}
+      }
+    },
+    "paths_for_user": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {"type": "string"},
+          "options": {"type": "array", "items": {"type": "string"}},
+          "next_12_months": {"type": "string"},
+          "why": {"type": "string"},
+          "wrong_signal": {"type": "string"}
+        },
+        "additionalProperties": true
+      }
+    },
+    "cruxes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "question": {"type": "string"},
+          "my_position": {"type": "string"},
+          "would_change_if": {"type": "string"},
+          "options": {"type": "array", "items": {"type": "string"}}
+        },
+        "additionalProperties": true
+      }
+    },
+    "taste_advice": {"type": "string"},
+    "pairwise": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["a", "b", "pick"],
+        "properties": {
+          "a": {"type": "string"},
+          "b": {"type": "string"},
+          "pick": {"type": "string"},
+          "why": {"type": "string"}
+        },
+        "additionalProperties": true
+      }
+    },
+    "web_searches": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "query": {"type": "string"},
+          "url": {"type": "string"},
+          "published": {"type": "string"},
+          "sentence": {"type": "string"},
+          "for_claim": {"type": "string"},
+          "result": {"type": "string", "enum": ["supports", "refutes", "unclear", "支持", "反驳", "不清楚"]}
+        },
+        "additionalProperties": true
+      }
+    },
+    "changes": {
+      "type": "array",
+      "description": "R3 only: required (may be empty).",
+      "items": {
+        "type": "object",
+        "properties": {
+          "option": {"type": "string"},
+          "from": {"type": ["integer", "null"]},
+          "to": {"type": ["integer", "null"]},
+          "because": {"type": "string"},
+          "argument_restated": {"type": "string"},
+          "why": {"type": "string"}
+        },
+        "additionalProperties": true
+      }
+    },
+    "held_despite": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "post": {"type": "string"},
+          "why": {"type": "string"}
+        },
+        "additionalProperties": true
+      }
+    },
+    "still_disagree": {"type": ["string", "null"]},
+    "learned": {"type": ["string", "null"]},
+    "searches": {
+      "type": "array",
+      "items": {"type": "object"}
+    }
+  },
+  "additionalProperties": true
+}

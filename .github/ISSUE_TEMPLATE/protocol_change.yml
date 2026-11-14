@@ -1,0 +1,30 @@
+name: Protocol change
+description: Propose a change to a rule or step of the protocol, backed by a run.
+labels: ["protocol"]
+body:
+  - type: textarea
+    id: rule
+    attributes:
+      label: The rule
+      description: One or two lines.
+    validations:
+      required: true
+  - type: textarea
+    id: failure
+    attributes:
+      label: The failure it fixes
+      description: What happened in a run, how often, how you measured it. Anonymize.
+    validations:
+      required: true
+  - type: textarea
+    id: metric
+    attributes:
+      label: How we will know it worked
+      description: The metric and the expected direction, decided before the next run.
+    validations:
+      required: true
+  - type: textarea
+    id: cost
+    attributes:
+      label: Cost
+      description: Extra agents, minutes, tokens.

@@ -1,0 +1,37 @@
+{
+ "tables": [
+  {
+   "id": "X1",
+   "crux": "X1",
+   "members": ["H1", "H3", "H5", "H6"],
+   "why": {
+    "H1": "Side A (resourced lab beats unproven mentor): pairwise picks O1 over O3 ('paid independence now beats a long bet on an unproven mentor'); own R1 crux doubts the newly hired PI's lab will still have funding and attention five years out. Minority seat: alone among this table at O3-overall=5, below H3/H5/H6's 6.",
+    "H3": "Side A: his own R1 crux states this exact question almost verbatim ('does a single, newly hired mentor give more durable judgment than a large, resourced team... No, not by default'); picks O1 over O3 pairwise. Minority seat: alone among this table (and the whole roster) at O1-overall=8, his highest score of any option.",
+    "H5": "Side B (chosen question under mentorship beats resources): pairwise picks O3 over O1 ('sustained, chosen-problem mentorship is closer to how I actually grew; a narrow employed role is not'); her own crux holds the PhD-gating question on O1 open rather than settled, adding nuance to Side B.",
+    "H6": "Side B: pairwise picks O3 over O1 ('a durable, portable credential and a mentor with a personal stake outweighs O1's resources and narrower, possibly uncredited role'); his own cruxes separately probe O1's attributability and O3's placement-rebound durability."
+   }
+  },
+  {
+   "id": "X2",
+   "crux": "X2",
+   "members": ["H2", "H4", "H5", "H6"],
+   "why": {
+    "H2": "Side A (reversibility is essential): ticks C4 among his conditions and his own R1 crux centers on banked runway before the clock starts ('the independent year quietly become three or four months before paid work is needed again'). Minority seat: alone at this table still picking O3 over O4 pairwise ('O3 bakes in the independent, external confirmation... more reliably'), against H4/H5/H6 who all pick O4.",
+    "H4": "Side B (a human backstop matters more): ticks C5 (co-maintainer) but not C4; her own crux asks whether the existing signal (stars, contributors) is itself enough, and her Q2 answer requires a partner checking the work, not a deferrable offer.",
+    "H5": "Side B: ticks C3 and C5 but not C2 or C4 -- the only persona on this table requiring neither a pre-existing community nor a reopenable offer; her own crux is explicitly about securing a co-maintainer or reviewing mentor before or during the year.",
+    "H6": "Side A: ticks C4 among four conditions, the most of anyone at this table; his own crux asks directly whether C1+C2 alone are enough without it. Minority seat: the lone 'for' (not 'conditional') position on Q2 in the entire roster, worth surfacing against three conditional tablemates."
+   }
+  },
+  {
+   "id": "X3",
+   "crux": "X3",
+   "members": ["H1", "H2", "H3", "H4"],
+   "why": {
+    "H1": "Side A (verify the specifics; risk is fixable): his own crux treats the founding-engineer equity as unproven until written terms show otherwise, yet he ranks O2 at 7, his single highest-scored option and the most bullish score any persona gave O2. Minority seat on that enthusiasm against H2/H3/H4's cooler 6/5/5.",
+    "H2": "Side A: his own crux treats the 'broad-role' story as unproven until a named mentor and scope are confirmed in writing -- a verification framing, not a structural-risk one, distinguishing him from H3/H4.",
+    "H3": "Side B (the risk is structural, not paperwork): his own crux argues the 2026 funding climate itself makes founding-engineer equity riskier than the usual story 'at this particular moment.' Minority seat: alone at this table still picking O1 over O2 pairwise, against H1/H2/H4 who all pick O2.",
+    "H4": "Side B: has no lived basis for judging equity or venture odds and reads the dated facts (F10, F12) as having worsened, not improved. Minority seat: scores O1 at 4, the single lowest score any persona in the roster gave any option for O1."
+   }
+  }
+ ]
+}

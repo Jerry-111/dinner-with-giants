@@ -1,0 +1,123 @@
+{
+  "id": "H2",
+  "name": "Charles Darwin",
+  "round": "R1",
+  "notice": "Simulation based on public material; not the person's own words.",
+  "options": {
+    "O1": {
+      "learning": 6,
+      "upside": 6,
+      "optionality": 7,
+      "fit": 4,
+      "overall": 5,
+      "confidence": "low",
+      "basis": "inferred",
+      "one_line": "Real compute and data access (F18) but a narrow role inside a big team is the one shape of work H2 never did, and H2's own record argues against it (dossier §C, E).",
+      "late_modes": "Once a lab's current model has finished training and shipped, a narrow new hire mostly maintains or fine-tunes it rather than shaping it; ask which phase of the compute cycle (F18) the team is in before joining.",
+      "conflict": null
+    },
+    "O2": {
+      "learning": 7,
+      "upside": 5,
+      "optionality": 3,
+      "fit": 7,
+      "overall": 6,
+      "confidence": "medium",
+      "basis": "inferred",
+      "one_line": "Broad, hands-on ownership resembles H2's own apprenticeship (dossier §I, Beagle/barnacle rows), but weak conversion and financing data (F10, F12) and thin founding-engineer equity (F11) cap the upside and the fallback if it fails.",
+      "late_modes": "Once a seed-stage company is already 12-18 months in without a credible next round, given how far conversion to Series A has fallen (F10) and weak 2026 biotech financing (F12), a 'founding engineer' joining late is joining survival mode, not the broad-ownership formative phase this option is valued for.",
+      "conflict": null
+    },
+    "O3": {
+      "learning": 8,
+      "upside": 7,
+      "optionality": 5,
+      "fit": 7,
+      "overall": 7,
+      "confidence": "medium",
+      "basis": "synthesized",
+      "one_line": "Freedom to choose problems and years of patient hypothesis-testing match H2's own method closely (dossier §C, H), though the corrected timelines (F1-F3, via errata) run longer than the stated 5-6 years and the stipend (F4, F5) is a constraint H2's own life never had.",
+      "late_modes": "Once a newly hired PI's first grant cycle is already committed to other students' projects, a late-joining student gets leftover problems, not the open 'choice of problems' this path is valued for; ask what is still genuinely unclaimed.",
+      "conflict": "Never held a university post (card.yaml interests, 1839-1882), yet O3's freedom to choose problems is the thing H2 prizes most in that career; this sympathy could inflate O3's score beyond what the timeline and funding evidence alone support."
+    },
+    "O4": {
+      "learning": 7,
+      "upside": 5,
+      "optionality": 8,
+      "fit": 8,
+      "overall": 7,
+      "confidence": "medium",
+      "basis": "synthesized",
+      "one_line": "The closest living analogue to H2's own unpaid, self-directed work (dossier §I, barnacle years), strengthened by real grant pathways (F16, F17) - but that version had no runway clock, and the brief has no base rate for how often a solo maintainer's year turns into something durable.",
+      "late_modes": "Once savings or a deferred offer (C1, C4) are already running out, starting the year without them means it was never the patient, low-pressure version of this path; grant money (F16, F17) takes months to arrive and should not be assumed as a bridge.",
+      "conflict": "O4 reproduces H2's own unpaid, self-directed, decades-long pattern most closely (card.yaml interests: independently wealthy from 1839, never held a post); this is the option H2 would most want to vindicate, which could inflate its score beyond what the thin base-rate evidence supports."
+    }
+  },
+  "levers": {"L1": 30, "L2": 20, "L3": 10, "L4": 15, "L5": 25},
+  "lever_reason": "H2's own two best breaks (the Beagle, the joint Wallace reading) each turned on one advocate, and H2's own patience was only affordable because H2 never had to earn income (dossier §A, E); mentor quality and financial runway decide more for Alex than raw compute access, which H2 would treat as useful but not decisive.",
+  "questions": {
+    "Q1": {
+      "position": "conditional",
+      "score": 7,
+      "condition": "Pays off for building independent judgment about which problems matter and a public, defensible track record (F13's academic-origin half of the 2024 Nobel; F8's academic placement share rising to 31.59% in 2024 off a confirmed 2022 industry peak); pays off less if the goal is to be the one training the largest model, where compute is concentrating in industry (F18)."
+    },
+    "Q2": {
+      "position": "conditional",
+      "score": 6,
+      "condition": "Strongest when the year starts with its own runway already banked and the alternative path can still be re-opened; see conditions.Q2."
+    }
+  },
+  "conditions": {"Q2": ["C1", "C3", "C4"]},
+  "paths_for_user": [
+    {
+      "name": "Patient specialist (PhD)",
+      "options": ["O3"],
+      "next_12_months": "Pick the new PI's single most promising, narrowly scoped question and finish one defensible result inside the first year, so the thesis has an early concrete anchor rather than drifting.",
+      "why": "Matches H2's own proven pattern of long, patient hypothesis-testing with real freedom to choose problems (dossier §C, H); the 2024 Nobel split (F13) shows academic-origin protein work can still define the field.",
+      "wrong_signal": "If, after a year, the PI has not secured funding or produced one defensible result with Alex, the mentor bet (L1) is failing, and the field median of 7.9-8.6 years (F1-F3) - not the stated 5-6 - is the clock that will bind."
+    },
+    {
+      "name": "Priced-in independent year",
+      "options": ["O4"],
+      "next_12_months": "Bank at least 12 months of savings (C1) before starting, line up one senior person to review progress monthly (C3), and start only if a PhD or job offer can be deferred a year (C4).",
+      "why": "This is H2's own method - unpaid, self-directed, hypothesis-driven work (dossier §I, barnacle years) - done honestly, with the one disanalogy (that money was permanent, Alex's is not) priced in as a hard runway; real grant paths exist for exactly this (F16, F17).",
+      "wrong_signal": "If by month six there is no grant interest and no co-maintainer or user growth, that is the signal to stop the clock and take the next offer rather than extend the year."
+    },
+    {
+      "name": "Startup only with a named mentor",
+      "options": ["O2"],
+      "next_12_months": "Before signing, get a named senior technical mentor (inside or advising the company) and the actual scope of ownership in writing, not just a 'founding engineer' title.",
+      "why": "H2's own broad apprenticeship only worked because Henslow, Lyell, and FitzRoy backed real standing and real say over that work (dossier §A, I); a title without either is learning by accident.",
+      "wrong_signal": "If, within the first year, the company's path to a next round stalls (F10's 9-13% one-year conversion) and no one senior is reviewing Alex's technical judgment specifically, both the learning and the equity story are failing together."
+    }
+  ],
+  "cruxes": [
+    {
+      "question": "Does the PhD's stated 5-6 years hold, or does it run to the 7.9-8.6-year field medians (F1-F3, errata-corrected)?",
+      "my_position": "Expect it to run longer than stated unless the specific lab already has funding and at least one clearly bounded problem ready on day one.",
+      "would_change_if": "The lab has an existing grant and a clearly scoped first project ready for a student, rather than being built from nothing by a brand-new PI.",
+      "options": ["O3"]
+    },
+    {
+      "question": "Can Alex actually fund twelve months of independent runway (C1), or does the independent year quietly become three or four months before paid work is needed again?",
+      "my_position": "Without confirmed savings or a grant already committed before starting, the year degrades into a short, anxious sprint, not the patient test H2's own pattern required.",
+      "would_change_if": "Alex has twelve months of savings banked, or a CZI- or NSF POSE-type grant (F16, F17) committed before the year begins.",
+      "options": ["O4"]
+    },
+    {
+      "question": "Does the 'founding engineer' role carry real technical ownership and a specific senior mentor, or is it a title at a company likely to run out of runway (F10, F12)?",
+      "my_position": "Treat the broad-role story as unproven until a named mentor and a specific scope of ownership are confirmed in writing.",
+      "would_change_if": "A senior technical person, not just the CEO, is explicitly assigned to review Alex's work, and the company's runway is independently confirmed past eighteen months.",
+      "options": ["O2"]
+    }
+  ],
+  "taste_advice": "Pick the work you can keep doing when no one is watching and nothing has worked yet; do not pick the option with the best story.",
+  "pairwise": [
+    {"a": "O1", "b": "O2", "pick": "O2", "why": "A narrow role inside a big team is the one shape of work absent from H2's entire life; a broad, self-directed role, even a riskier one, matches H2's method more closely."},
+    {"a": "O1", "b": "O3", "pick": "O3", "why": "Patient, self-directed hypothesis-testing with real freedom of problem choice is the closest match to what actually worked for H2."},
+    {"a": "O2", "b": "O3", "pick": "O3", "why": "O3's external confirmation loop (a committee, a defense, publication) matches H2's heuristic of seeking independent confirmation better than a startup's internal, revocable ownership."},
+    {"a": "O3", "b": "O4", "pick": "O3", "why": "Close call: O4 has better reversibility, but O3 bakes in the independent, external confirmation H2's own method relied on (Henslow, Lyell, Hooker) more reliably than a solo maintainer year does."},
+    {"a": "O2", "b": "O4", "pick": "O4", "why": "O4 is explicitly time-boxed and self-funded with real grant paths documented (F16, F17); O2's downside (F10, F12) is open-ended by comparison."}
+  ],
+  "web_searches": []
+}

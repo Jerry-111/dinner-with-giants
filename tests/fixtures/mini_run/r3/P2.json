@@ -1,0 +1,103 @@
+{
+ "id": "P2",
+ "name": "Persona Two",
+ "round": "R3",
+ "notice": "Simulation based on public material; not the person's own words.",
+ "options": {
+  "O1": {
+   "impact": 6,
+   "fit": 5,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "O1 is still fine but overrated.",
+   "late_modes": null,
+   "conflict": null
+  },
+  "O2": {
+   "impact": 7,
+   "fit": 6,
+   "overall": 6,
+   "confidence": "high",
+   "basis": "quoted",
+   "one_line": "O2 still ages better than O1.",
+   "late_modes": null,
+   "conflict": null
+  },
+  "O3": {
+   "impact": 5,
+   "fit": 5,
+   "overall": 6,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "O3 is closer to O4 than I first scored it.",
+   "late_modes": null,
+   "conflict": null
+  },
+  "O4": {
+   "overall": 5,
+   "one_line": "O4 is still a reasonable fallback."
+  }
+ },
+ "levers": {
+  "L1": 20,
+  "L2": 50,
+  "L3": 30
+ },
+ "lever_reason": "Durability still dominates.",
+ "questions": {
+  "Q1": {
+   "position": "against",
+   "score": 3,
+   "condition": null
+  }
+ },
+ "conditions": {
+  "Q1": []
+ },
+ "paths_for_user": [
+  {
+   "name": "Path B",
+   "options": [
+    "O2"
+   ],
+   "next_12_months": "Pilot O2 at small scale.",
+   "why": "O2's advantage compounds over time.",
+   "wrong_signal": "If O2's early pilots show no compounding."
+  }
+ ],
+ "taste_advice": "Do not overweight O1's early numbers.",
+ "pairwise": [
+  {
+   "a": "O1",
+   "b": "O2",
+   "pick": "O2",
+   "why": "O2's advantage still compounds."
+  },
+  {
+   "a": "O3",
+   "b": "O4",
+   "pick": "O4",
+   "why": "O4 still has fewer dependencies."
+  }
+ ],
+ "changes": [
+  {
+   "option": "O3",
+   "from": 5,
+   "to": 6,
+   "because": "C/X1/P4",
+   "argument_restated": "O3 is less proven than claimed, so it should not sit far above O4.",
+   "why": "Narrowing the gap with O4 given weaker evidence for O3."
+  }
+ ],
+ "held_despite": [
+  {
+   "post": "B/X1/P1",
+   "why": "I accept O1's early numbers are real, but the lead is still too recent to move O2 down."
+  }
+ ],
+ "still_disagree": "I still think O1's lead will fade.",
+ "learned": null,
+ "searches": []
+}

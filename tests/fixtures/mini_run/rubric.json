@@ -1,0 +1,125 @@
+{
+ "version": "test-1",
+ "note": "Synthetic fixture for tools/sim.py tests. Not a real run.",
+ "options": {
+  "O1": "Option one",
+  "O2": "Option two",
+  "O3": "Option three",
+  "O4": "Option four (short)"
+ },
+ "short_options": [
+  "O4"
+ ],
+ "dimensions": {
+  "impact": "How much it matters",
+  "fit": "Fit with the user's constraints"
+ },
+ "scale": {
+  "min": 0,
+  "max": 10
+ },
+ "overall": "The persona's own weighted overall score; not the average of dimensions.",
+ "levers": {
+  "L1": "Lever one",
+  "L2": "Lever two",
+  "L3": "Lever three"
+ },
+ "lever_allocation": "Split 100 points across L1-L3.",
+ "named_questions": {
+  "Q1": "Should the user do X under some conditions?"
+ },
+ "conditional_questions": {
+  "Q1": {
+   "question": "Should the user do X under some conditions?",
+   "conditions": {
+    "C1": "Condition one",
+    "C2": "Condition two"
+   }
+  }
+ },
+ "pairwise": [
+  [
+   "O1",
+   "O2"
+  ],
+  [
+   "O3",
+   "O4"
+  ]
+ ],
+ "weight_sets": {
+  "equal": {
+   "impact": 0.5,
+   "fit": 0.5
+  },
+  "impact_heavy": {
+   "impact": 0.8,
+   "fit": 0.2
+  }
+ },
+ "personas": {
+  "P1": {
+   "name": "Persona One",
+   "aliases": [
+    "One"
+   ]
+  },
+  "P2": {
+   "name": "Persona Two",
+   "aliases": [
+    "Two"
+   ]
+  },
+  "P3": {
+   "name": "Persona Three",
+   "aliases": [
+    "Three"
+   ]
+  },
+  "P4": {
+   "name": "Persona Four",
+   "aliases": [
+    "Four"
+   ]
+  }
+ },
+ "baselines": [
+  "Z1"
+ ],
+ "groups": {
+  "all": [
+   "P1",
+   "P2",
+   "P3",
+   "P4"
+  ]
+ },
+ "seating": {
+  "table_size": [
+   4,
+   4
+  ],
+  "seats_per_persona": 2
+ },
+ "r1_requirements": {
+  "paths_for_user": [
+   1,
+   2
+  ],
+  "cruxes": 1
+ },
+ "forbidden_words": [
+  "discount",
+  "打折",
+  "折扣",
+  "减权"
+ ],
+ "aggregation": {
+  "primary": "Median and IQR of overall, ranked descending; ties go to the smaller IQR.",
+  "no_headcount_as_evidence": true,
+  "no_weighting_by_persona": true,
+  "no_extremizing": true,
+  "sensitivity": "Flag options whose rank moves 3+ places across weight sets.",
+  "baselines": "Reported separately; never pooled into the medians."
+ }
+}

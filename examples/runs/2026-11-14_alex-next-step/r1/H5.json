@@ -1,0 +1,131 @@
+{
+  "id": "H5",
+  "name": "Ada Lovelace",
+  "round": "R1",
+  "notice": "Simulation based on public material; not the person's own words.",
+  "options": {
+    "O1": {
+      "learning": 6,
+      "upside": 6,
+      "optionality": 7,
+      "fit": 5,
+      "overall": 5,
+      "confidence": "low",
+      "basis": "inferred",
+      "one_line": "Resourced and reversible, but a narrow role inside a large team dilutes whose judgment the result is credited to.",
+      "late_modes": "If industry's resource lead over everyone else keeps widening (F18) while academia's share of new AI PhDs also keeps recovering (F8), non-PhD research-engineer seats at the top labs may get scarcer, not more open, as both pools compete for the same slots; low confidence, no direct 2026 source on hiring bars (open question, F9).",
+      "conflict": null
+    },
+    "O2": {
+      "learning": 7,
+      "upside": 5,
+      "optionality": 3,
+      "fit": 6,
+      "overall": 5,
+      "confidence": "medium",
+      "basis": "synthesized",
+      "one_line": "Broad ownership suits how I judge a path, but the funding weather and the fragility of a close working partnership both cut against it right now.",
+      "late_modes": "Early-stage biotech funding has thinned into 2026 (F12: fewest disclosed seed/Series-A deals for a first half in a decade); if seed-stage seats like this one keep getting scarcer, waiting likely means fewer such openings, not more, though F10's exact conversion numbers are themselves unverified.",
+      "conflict": null
+    },
+    "O3": {
+      "learning": 7,
+      "upside": 6,
+      "optionality": 3,
+      "fit": 5,
+      "overall": 6,
+      "confidence": "medium",
+      "basis": "synthesized",
+      "one_line": "Sustained, chosen-problem mentorship is how I grew fastest myself, but a newly hired supervisor is an untested version of that, over a span too long to call reversible.",
+      "late_modes": "The non-late window is the PI's first cohort, when attention per student is highest; waiting to join a more established lab trades that for a more proven but less formative setup. Low confidence; no 2026 source on this specific pattern.",
+      "conflict": null
+    },
+    "O4": {
+      "learning": 6,
+      "upside": 5,
+      "optionality": 9,
+      "fit": 8,
+      "overall": 7,
+      "confidence": "medium",
+      "basis": "synthesized",
+      "one_line": "The shape of my own best-credited work; the honest risk is that it is also the shape of my own worst failure if no one is positioned to check me.",
+      "late_modes": "A well-resourced incumbent could absorb this toolkit's niche (F14's structure database keeps growing; F15's smaller open model checkpoint already covers some of the same ground), and named grant cycles (F16, F17) have specific application windows that, once missed, cost roughly a year.",
+      "conflict": "H5's own most durable, publicly credited work (the 1843 Notes) was produced through an unpaid, self-directed project of similar shape to O4 (dossier §B Win 1, §I row 1); read the favorable scores above against that resemblance."
+    }
+  },
+  "levers": {
+    "L1": 25,
+    "L2": 30,
+    "L3": 10,
+    "L4": 15,
+    "L5": 20
+  },
+  "lever_reason": "Scope of ownership and mentor quality are what my own experience turns on most directly (dossier §A, §I); financial runway matters more than it looks because I never had independent income of my own and saw what filling that gap by other means can cost (dossier §E, §B Failure 1); compute and data access is least central to how I judge any of these four paths.",
+  "questions": {
+    "Q1": {
+      "position": "conditional",
+      "score": 6,
+      "condition": "Pays off if the chosen problems need the depth and freedom only sustained, mentored study gives (my own strongest pattern, dossier §A, §G); pays off less if a science-team role already gives comparable access to compute, data and real problems without the multi-year cost -- and the brief cannot say whether such roles actually require a PhD (open question, bears on F9)."
+    },
+    "Q2": {
+      "position": "conditional",
+      "score": 6,
+      "condition": "Yes if C1 (savings runway), C3 (a mentor who reviews monthly, not just praises) and C5 (a co-maintainer) all hold; without C3 and C5 together, O4 repeats the shape of my own worst failure, not my best work (dossier §B, §I rows 1 and 5)."
+    }
+  },
+  "conditions": {
+    "Q2": ["C1", "C3", "C5"]
+  },
+  "paths_for_user": [
+    {
+      "name": "Prove the toolkit first",
+      "options": ["O4"],
+      "next_12_months": "Spend the year deepening the existing tool, actively recruit a co-maintainer and a mentor who will review progress monthly, and apply to at least one open-source-for-science grant cycle (F16, F17).",
+      "why": "Closest structural match to how my own most durable, credited work got made: unpaid, self-directed, built on something already underway, with one engaged outside check on the work (dossier §B Win 1, §G).",
+      "wrong_signal": "By month six to nine, no mentor or co-maintainer has materialized despite real effort, and the only feedback is self-supplied -- the same shape as my own worst failure (dossier §B Failure 1, §I row 5), not my best one."
+    },
+    {
+      "name": "Mentored depth, eyes open on time cost",
+      "options": ["O3"],
+      "next_12_months": "Start the PhD, but treat the first year explicitly as a trial of the supervisor relationship: does the feedback get specific and critical, not just encouraging.",
+      "why": "Matches my own fastest period of growth, sustained correspondence with an engaged tutor (dossier §A, §D), but the supervisor here is untested, and F1-F3 (corrected) put real completion times near 8 years regardless of field.",
+      "wrong_signal": "A year in, the feedback is still only 'very good, quite right' with no harder correction -- the exact pattern my own warmest tutor later admitted to (dossier §A, H5-E09) -- which is a weak sign for the five years still to come."
+    },
+    {
+      "name": "Broad ownership, funded clock",
+      "options": ["O2"],
+      "next_12_months": "Join, but ask directly about the company's own runway and next-raise timeline before and after starting, given F12's weaker 2026 funding climate.",
+      "why": "Matches my strongest heuristic -- breadth of ownership and a named, attributable contribution -- more than O1's narrower role does (dossier §C, §H).",
+      "wrong_signal": "If the company's own survival becomes the main internal topic within the first year, that is the shape of my own unsupervised, high-confidence venture outrunning its resources (dossier §B Failure 1), not of a partnership built to last."
+    }
+  ],
+  "cruxes": [
+    {
+      "question": "Do large-AI-lab science-team research-engineer roles actually require a PhD, or do they accept a strong publication or engineering record instead?",
+      "my_position": "No confident direction either way -- the brief itself could not settle this (open question on F9), so I hold O1 and O3 as live alternatives rather than one gating the other.",
+      "would_change_if": "A specific large lab's own stated hiring bar, or a named hire's actual background, becomes known.",
+      "options": ["O1", "O3"]
+    },
+    {
+      "question": "Does the newly hired supervisor in O3 give sharp, corrective feedback, or mostly encouragement?",
+      "my_position": "Unknown, and the single biggest swing factor in O3's score -- my own experience is that even a genuinely admiring tutor can be too kind to say where the real weaknesses are (dossier §A, H5-E09).",
+      "would_change_if": "A documented instance, within the first term, of specific critical feedback rather than general praise.",
+      "options": ["O3"]
+    },
+    {
+      "question": "Does Alex secure a co-maintainer or a mentor who reviews progress regularly, before or during the independent year?",
+      "my_position": "Without one, O4 is close in shape to my own worst failure (an unsupervised, self-confident venture with no backstop); with one, it is close in shape to my own best work.",
+      "would_change_if": "A named co-maintainer or reviewing mentor commits, observably, within the first one to three months.",
+      "options": ["O4"]
+    }
+  ],
+  "taste_advice": "Choose the version of the work that proves the system's real reach, not the one that is merely easiest to finish -- but only once someone else is positioned to catch the mistake if that choice is wrong.",
+  "pairwise": [
+    {"a": "O1", "b": "O2", "pick": "O2", "why": "Breadth of ownership and an attributable contribution matter more to my judgment than a safer but narrower seat on someone else's team."},
+    {"a": "O1", "b": "O3", "pick": "O3", "why": "Sustained, chosen-problem mentorship is closer to how I actually grew; a narrow employed role is not."},
+    {"a": "O2", "b": "O3", "pick": "O3", "why": "O3's risk is slowness and low pay; O2's risk includes the funding climate (F12) and a partnership breakdown of the kind I lived through myself (dossier §B Failure 2) -- the second risk is sharper."},
+    {"a": "O3", "b": "O4", "pick": "O4", "why": "O4 keeps the next two years reversible, which O3 structurally cannot, and it is the closer match to my own most durable work."},
+    {"a": "O2", "b": "O4", "pick": "O4", "why": "Same ownership and breadth as O2 without betting on a fragile funding window or a cap-table relationship that can break under strain."}
+  ],
+  "web_searches": []
+}

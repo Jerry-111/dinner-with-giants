@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this protocol or its tooling, please cite it."
+title: "debattable: debate tables for hard decisions"
+abstract: "A protocol, templates and tooling for persona-grounded multi-agent deliberation run by coding agents: independent scoring, crux-based debate tables with anti-herding rules, timed fact-checks, judges, private re-scoring, and measurement against a no-persona baseline."
+type: software
+authors:
+  - name: "The debattable contributors"
+license: MIT
+version: 0.1.0
+keywords:
+  - multi-agent
+  - large language models
+  - deliberation
+  - debate
+  - personas
+  - decision-making

@@ -1,0 +1,96 @@
+{
+ "id": "P2",
+ "name": "Persona Two",
+ "round": "R1",
+ "notice": "Simulation based on public material; not the person's own words.",
+ "options": {
+  "O1": {
+   "impact": 6,
+   "fit": 5,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "O1 is fine but overrated.",
+   "late_modes": null,
+   "conflict": null
+  },
+  "O2": {
+   "impact": 7,
+   "fit": 6,
+   "overall": 6,
+   "confidence": "high",
+   "basis": "quoted",
+   "one_line": "O2 ages better than O1.",
+   "late_modes": null,
+   "conflict": null
+  },
+  "O3": {
+   "impact": 5,
+   "fit": 5,
+   "overall": 5,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "O3 is unproven outside small samples.",
+   "late_modes": null,
+   "conflict": null
+  },
+  "O4": {
+   "overall": 5,
+   "one_line": "O4 is a reasonable fallback."
+  }
+ },
+ "levers": {
+  "L1": 20,
+  "L2": 50,
+  "L3": 30
+ },
+ "lever_reason": "The second lever matters most for durability.",
+ "questions": {
+  "Q1": {
+   "position": "against",
+   "score": 3,
+   "condition": null
+  }
+ },
+ "conditions": {
+  "Q1": []
+ },
+ "paths_for_user": [
+  {
+   "name": "Path B",
+   "options": [
+    "O2"
+   ],
+   "next_12_months": "Pilot O2 at small scale.",
+   "why": "O2's advantage compounds over time.",
+   "wrong_signal": "If O2's early pilots show no compounding."
+  }
+ ],
+ "cruxes": [
+  {
+   "question": "Is O1's early lead durable?",
+   "my_position": "No, it will fade within a year.",
+   "would_change_if": "O1 keeps its lead after a second independent test.",
+   "options": [
+    "O1",
+    "O2"
+   ]
+  }
+ ],
+ "taste_advice": "Do not overweight O1's early numbers.",
+ "pairwise": [
+  {
+   "a": "O1",
+   "b": "O2",
+   "pick": "O2",
+   "why": "O2's advantage compounds."
+  },
+  {
+   "a": "O3",
+   "b": "O4",
+   "pick": "O4",
+   "why": "O4 has fewer dependencies."
+  }
+ ],
+ "web_searches": []
+}

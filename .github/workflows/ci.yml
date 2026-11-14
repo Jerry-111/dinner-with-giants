@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.9", "3.10", "3.11", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Run the test suite
+        run: python -m unittest discover -s tests -v
+
+      - name: Lint the bundled examples
+        run: |
+          if [ -d examples ]; then
+            python tools/sim.py lint examples
+          else
+            echo "examples/ does not exist yet; skipping."
+          fi
+
+      - name: Scan the repository for leaked private data
+        run: python tools/sim.py privacy-scan .

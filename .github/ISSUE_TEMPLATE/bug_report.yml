@@ -1,0 +1,23 @@
+name: Bug report
+description: Something in the tooling, templates or protocol does not work as documented.
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: Command or step, what you expected, what you got. Paste error output.
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Environment
+      description: "Agent (Claude Code, Codex, other) and version, Python version, OS."
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy
+      options:
+        - label: I removed personal data (names, context files, local paths, e-mails) from what I pasted.
+          required: true

@@ -1,0 +1,107 @@
+{
+ "id": "P1",
+ "name": "Persona One",
+ "round": "R1",
+ "notice": "Simulation based on public material; not the person's own words.",
+ "options": {
+  "O1": {
+   "impact": 8,
+   "fit": 6,
+   "overall": 7,
+   "confidence": "high",
+   "basis": "quoted",
+   "one_line": "O1 has the strongest early impact.",
+   "late_modes": null,
+   "conflict": null
+  },
+  "O2": {
+   "impact": 5,
+   "fit": 5,
+   "overall": 5,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "O2 is solid but unremarkable.",
+   "late_modes": null,
+   "conflict": null
+  },
+  "O3": {
+   "impact": 6,
+   "fit": 7,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "O3 fits the user's constraints well.",
+   "late_modes": null,
+   "conflict": null
+  },
+  "O4": {
+   "overall": 4,
+   "one_line": "O4 is a minor fallback."
+  }
+ },
+ "levers": {
+  "L1": 50,
+  "L2": 30,
+  "L3": 20
+ },
+ "lever_reason": "Impact and fit dominate the next few years.",
+ "questions": {
+  "Q1": {
+   "position": "for",
+   "score": 7,
+   "condition": null
+  }
+ },
+ "conditions": {
+  "Q1": [
+   "C1"
+  ]
+ },
+ "paths_for_user": [
+  {
+   "name": "Path A",
+   "options": [
+    "O1"
+   ],
+   "next_12_months": "Commit to O1 and track early signals.",
+   "why": "O1 has the clearest upside.",
+   "wrong_signal": "If adoption of O1 stalls within 6 months."
+  }
+ ],
+ "cruxes": [
+  {
+   "question": "Does O1 really beat O2 on impact?",
+   "my_position": "Yes, the early evidence favors O1.",
+   "would_change_if": "A credible study shows O2 scaling faster than O1.",
+   "options": [
+    "O1",
+    "O2"
+   ]
+  }
+ ],
+ "taste_advice": "Move on O1 before the window closes.",
+ "pairwise": [
+  {
+   "a": "O1",
+   "b": "O2",
+   "pick": "O1",
+   "why": "O1 has higher near-term impact."
+  },
+  {
+   "a": "O3",
+   "b": "O4",
+   "pick": "O3",
+   "why": "O3 has a stronger track record."
+  }
+ ],
+ "web_searches": [
+  {
+   "query": "O1 independent results",
+   "url": "https://example.org/o1-results",
+   "published": "2026-01-01",
+   "sentence": "Independent testers reported consistent gains from O1 within weeks.",
+   "for_claim": "O1",
+   "result": "supports"
+  }
+ ]
+}

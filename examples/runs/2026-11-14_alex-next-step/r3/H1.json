@@ -1,0 +1,204 @@
+{
+  "id": "H1",
+  "name": "Benjamin Franklin",
+  "round": "R3",
+  "notice": "Simulation based on public material; not the person's own words.",
+  "options": {
+    "O1": {
+      "learning": 6,
+      "upside": 7,
+      "optionality": 6,
+      "fit": 5,
+      "overall": 6,
+      "confidence": "medium",
+      "basis": "synthesized",
+      "one_line": "Still the safer paid default while a new mentor's funding and placement record go unverified, though whether O1 itself skips the PhD gate stayed genuinely unresolved.",
+      "late_modes": "If this team hires mainly through PhD pipelines (still unconfirmed, F9), waiting without a PhD or a strong public portfolio could close it; the one posting offered against this did not hold up.",
+      "conflict": null
+    },
+    "O2": {
+      "learning": 8,
+      "upside": 5,
+      "optionality": 3,
+      "fit": 8,
+      "overall": 6,
+      "confidence": "high",
+      "basis": "synthesized",
+      "one_line": "A written, named-mentor offer is a better bet than an unverified one, but even fully verified, 2026 equity has no tangible floor to fall back on the way my own partnerships did.",
+      "late_modes": "Founding-engineer slots fill once a team is set; with seed-to-Series-A conversion weaker than 2018 (direction confirmed, specific figures withdrawn), later entry means less ownership for the same risk.",
+      "conflict": null
+    },
+    "O3": {
+      "learning": 6,
+      "upside": 7,
+      "optionality": 4,
+      "fit": 6,
+      "overall": 6,
+      "confidence": "low",
+      "basis": "synthesized",
+      "one_line": "Less risky than my first read: a funded PhD is a real offer, not a fabricated promise like Keith's; the live question is mentorship continuity, not whether the program exists.",
+      "late_modes": "A new PI's first cohort shapes the lab; joining years after it is established is a different, more settled bet [inferred].",
+      "conflict": null
+    },
+    "O4": {
+      "learning": 6,
+      "upside": 6,
+      "optionality": 6,
+      "fit": 9,
+      "overall": 6,
+      "confidence": "medium",
+      "basis": "synthesized",
+      "one_line": "Still the best fit for what Alex wants to become, but only once a floor (savings, a reopenable offer) and a genuinely bound backstop are in place, not assumed.",
+      "late_modes": "Momentum and the toolkit's small contributor base are easiest to build on right after graduation (May 2027); waiting without a plan likely lets both lapse [inferred].",
+      "conflict": null
+    }
+  },
+  "levers": {
+    "L1": 15,
+    "L2": 25,
+    "L3": 15,
+    "L4": 25,
+    "L5": 20
+  },
+  "lever_reason": "Unchanged by the debate: written, explicit scope of ownership and a runway that does not depend on begging still matter most to me, with a visible public record close behind. Compute and data access matter for this trade more than any I practiced, so they keep real weight; mentor quality still matters mainly as something to verify, not assume, which the debate reinforced rather than changed.",
+  "questions": {
+    "Q1": {
+      "position": "conditional",
+      "score": 5,
+      "condition": "Still pays off for deep, self-directed training or a path toward leading one's own lab; the 2024 Nobel split (F13) held up on checking, confirming protein-ML's frontier credit sits on both sides, not only industry. Whether O1 itself needs a PhD (F9) stayed unresolved after the debate: the one posting offered as counter-evidence could not be verified, and comparable current postings run the other way."
+    },
+    "Q2": {
+      "position": "conditional",
+      "score": 7,
+      "condition": "Right call mainly with a real income floor and a genuinely bound backstop, not merely a volunteer co-maintainer; a firm, dated end to the year, fixed in advance, is a reasonable third safeguard alongside C1-C5."
+    }
+  },
+  "conditions": {
+    "Q2": [
+      "C1",
+      "C3",
+      "C4",
+      "C5"
+    ]
+  },
+  "paths_for_user": [
+    {
+      "name": "Verify both unverified promises, but weigh what verification actually proves",
+      "options": [
+        "O2",
+        "O3"
+      ],
+      "next_12_months": "Get O2's written vesting, named technical mentor, and runway past eighteen months, treating a named mentor as only weakly linked to fundraising success, not a guarantee; separately confirm O3's specific PI holds secured multi-year funding and a placement record.",
+      "why": "Both rest on a promise I had not seen tested, though O3's is a real, funded offer rather than Keith's outright fabrication, and O2's verification narrows but does not remove its missing tangible floor.",
+      "wrong_signal": "If either side will not produce the specific fact, or the 'named mentor' turns out to be the CEO wearing two hats, treat that as the answer."
+    },
+    {
+      "name": "Take the independent year, with a floor and a bound backstop, not a volunteer alone",
+      "options": [
+        "O4"
+      ],
+      "next_12_months": "Secure twelve months of runway and a confirmed-deferrable offer; line up a senior reviewer who is actually obligated, not merely well-meaning, since a typical open-source co-maintainer is an unbound volunteer; consider fixing a dated end to the year in advance as its own safeguard.",
+      "why": "This is still the shape closest to how I actually worked, but every venture of mine ran beside a paying trade or a bound partner, never on hope alone.",
+      "wrong_signal": "Three months in, no new contributor, no grant application, and no one actually checking the work: return to paid work rather than push on."
+    },
+    {
+      "name": "Take the big lab only for a visible, portable record",
+      "options": [
+        "O1"
+      ],
+      "next_12_months": "Get in writing what Alex may publish or open-source, since several leading labs still do not disclose their methods; do not assume O1 avoids the credential question either, since that stayed unresolved.",
+      "why": "The risk in this path is trading years of visible, credit-building work for a narrow seat inside an institution that may not let that work be seen.",
+      "wrong_signal": "Six months in, nothing Alex has touched can be named or shown outside the building."
+    }
+  ],
+  "cruxes": [
+    {
+      "question": "Does the startup's founding-engineer offer carry real ownership, or a small equity number with no say?",
+      "my_position": "Confirmed closer to the latter: even written, it lacks the tangible floor my own partnerships had.",
+      "would_change_if": "The actual offer shows board observer rights, real vesting, or decision authority, not only a percentage.",
+      "options": [
+        "O2"
+      ]
+    },
+    {
+      "question": "Will the newly hired assistant professor's lab still have funding and attention for a student five years from now?",
+      "my_position": "Still unverified, but a real, funded offer, not a fabricated one; I would not bet five years on it without checking.",
+      "would_change_if": "The lab already holds secured multi-year grant funding, or current students confirm steady mentorship.",
+      "options": [
+        "O3"
+      ]
+    },
+    {
+      "question": "Does Alex have the twelve months of runway and a deferrable offer that make the independent year a real choice rather than a forced one?",
+      "my_position": "Without both, plus a genuinely bound backstop, this is not yet a safe choice, however well it otherwise fits.",
+      "would_change_if": "Alex's actual savings figure, and whether O1 or O2 can be held open or reopened after a year.",
+      "options": [
+        "O4"
+      ]
+    }
+  ],
+  "taste_advice": "Do not give too much for the whistle. This held up through the whole debate: a founding-engineer title with no tangible floor, a famous lab's name with no visible record, and a new mentor's unverified promise are the same shape of overpayment, priced in time and the chance to point to one's own work, not in money alone.",
+  "pairwise": [
+    {
+      "a": "O1",
+      "b": "O2",
+      "pick": "O2",
+      "why": "Fit and hands-on ownership still favor O2 for what Alex wants to become, even after lowering its score for the missing floor."
+    },
+    {
+      "a": "O1",
+      "b": "O3",
+      "pick": "O1",
+      "why": "I still default to the paid, demonstrated seat while the mentor's funding and placement record stay unverified, even though that mentor's offer is real, not fabricated."
+    },
+    {
+      "a": "O2",
+      "b": "O3",
+      "pick": "O2",
+      "why": "A shorter, exitable commitment with real market validation still beats a longer, harder-to-leave bet on an unverified mentor, even with both scores now closer than I first gave them."
+    },
+    {
+      "a": "O3",
+      "b": "O4",
+      "pick": "O4",
+      "why": "With the floor secured, O4 still fits Alex and me better than a long, unverified mentorship; without it, this pick flips to O3."
+    },
+    {
+      "a": "O2",
+      "b": "O4",
+      "pick": "O2",
+      "why": "A startup already tested by outside money still beats a solo year with no floor, though O4 overtakes it the moment that floor is in hand."
+    }
+  ],
+  "changes": [
+    {
+      "option": "O3",
+      "from": 5,
+      "to": 6,
+      "because": "B/X1/H5",
+      "argument_restated": "Lovelace pointed out that Keith's letters of credit never existed at all, a promise fabricated from the start, while a funded PhD position is real; the actual uncertainty is mentorship quality and continuity over years, a smaller, different risk than a hollow lie.",
+      "why": "I had overstated my own analogy. The risk is real but categorically smaller than a fabricated promise, so O3 should not score as low as a true Keith-style bet implied."
+    },
+    {
+      "option": "O2",
+      "from": 7,
+      "to": 6,
+      "because": "B/X3/H3",
+      "argument_restated": "Faraday pointed out that my own print partners could walk away holding the physical press if a deal failed, while Alex's startup equity has no such tangible floor even once fully written down (Curie, B/X3/H4, made the same point independently), which sits oddly against ranking O2 highest of the four.",
+      "why": "Even fully verified, 2026 founding-engineer equity lacks the tangible recourse that made my own partnership bets safer than they otherwise looked; I had anchored too much on 'verified equals like my own case.'"
+    }
+  ],
+  "held_despite": [
+    {
+      "post": "B/X1/H6",
+      "why": "Accepted that a senior figure staking personal reputation on a junior one compounds durably; O3's score did not move on this point alone, since a newly hired mentor has not yet shown they will do that, which is a verification question, not a reason to raise the score on principle."
+    },
+    {
+      "post": "B/X3/H5_interjection",
+      "why": "Accepted that a credit or direction dispute between partners is a real risk neither money nor runway fixes; O2's score did not move further on this point, since I was already pricing governance and scope risk into it, not equity size alone."
+    }
+  ],
+  "still_disagree": "At X1, Su Shi and I still read an unconfirmed PI's funding in opposite directions: he treats the silence as a strike against the mentor, I treat it as a reason to default to the paid seat until checked, from the same missing fact. At X3, Faraday and Curie still hold O2's risk as mainly structural; I hold it as verification plus a real residual gap, now scored closer to theirs than when the debate started, because of the specific floor they named, not because of their numbers.",
+  "learned": "That the floor under a deal matters on its own, apart from whether its terms are written down. I came in treating 'get it in writing' as the fix for an unverified promise; the debate showed that even a fully written 2026 startup stake lacks the tangible recourse my own partnerships had, a different, deeper gap than the one I set out to close.",
+  "searches": []
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/schemas/judge_scores.schema.json",
+  "title": "judge/scores_<batch>.json and judge/scores.json",
+  "type": "object",
+  "required": ["posts"],
+  "properties": {
+    "posts": {
+      "type": "object",
+      "description": "Post id (round/table/persona) -> scorecard.",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "claim_clear": {"type": ["integer", "null"], "minimum": 1, "maximum": 5},
+          "evidence_holds": {"type": ["integer", "null"], "minimum": 1, "maximum": 5},
+          "answers_strongest": {"type": ["integer", "null"], "minimum": 1, "maximum": 5},
+          "source_independent": {"type": ["integer", "null"], "minimum": 1, "maximum": 5},
+          "flags": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": ["not_an_argument", "social_reason", "retracted", "source_challenged", "experience_unverified"]
+            }
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

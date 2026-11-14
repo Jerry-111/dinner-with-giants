@@ -1,0 +1,280 @@
+{
+ "posts": {
+  "A/X1/H1": {
+   "claim_clear": 4,
+   "evidence_holds": 4,
+   "answers_strongest": null,
+   "source_independent": 2
+  },
+  "A/X1/H3": {
+   "claim_clear": 4,
+   "evidence_holds": 2,
+   "answers_strongest": null,
+   "source_independent": 3,
+   "flags": [
+    "retracted"
+   ]
+  },
+  "A/X1/H5": {
+   "claim_clear": 4,
+   "evidence_holds": 4,
+   "answers_strongest": null,
+   "source_independent": 2
+  },
+  "A/X1/H6": {
+   "claim_clear": 4,
+   "evidence_holds": 4,
+   "answers_strongest": null,
+   "source_independent": 3
+  },
+  "B/X1/H1": {
+   "claim_clear": 4,
+   "evidence_holds": 4,
+   "answers_strongest": 4,
+   "source_independent": 2
+  },
+  "B/X1/H2_interjection": {
+   "claim_clear": 5,
+   "evidence_holds": 5,
+   "answers_strongest": 5,
+   "source_independent": 5,
+   "flags": [
+    "source_challenged"
+   ]
+  },
+  "B/X1/H3": {
+   "claim_clear": 4,
+   "evidence_holds": 4,
+   "answers_strongest": 4,
+   "source_independent": 2
+  },
+  "B/X1/H4_interjection": {
+   "claim_clear": 4,
+   "evidence_holds": 4,
+   "answers_strongest": 2,
+   "source_independent": 3
+  },
+  "B/X1/H5": {
+   "claim_clear": 5,
+   "evidence_holds": 5,
+   "answers_strongest": 5,
+   "source_independent": 2
+  },
+  "B/X1/H6": {
+   "claim_clear": 4,
+   "evidence_holds": 2,
+   "answers_strongest": 4,
+   "source_independent": 2,
+   "flags": [
+    "retracted"
+   ]
+  },
+  "C/X1/H1": {
+   "claim_clear": 5,
+   "evidence_holds": 4,
+   "answers_strongest": 4,
+   "source_independent": 2
+  },
+  "C/X1/H3": {
+   "claim_clear": 5,
+   "evidence_holds": 5,
+   "answers_strongest": 5,
+   "source_independent": 4,
+   "flags": [
+    "source_challenged"
+   ]
+  },
+  "C/X1/H5": {
+   "claim_clear": 4,
+   "evidence_holds": 4,
+   "answers_strongest": 5,
+   "source_independent": 3,
+   "flags": [
+    "source_challenged"
+   ]
+  },
+  "C/X1/H6": {
+   "claim_clear": 4,
+   "evidence_holds": 4,
+   "answers_strongest": 4,
+   "source_independent": 3
+  },
+  "A/X2/H2": {
+   "claim_clear": 5,
+   "evidence_holds": 4,
+   "answers_strongest": null,
+   "source_independent": 2
+  },
+  "A/X2/H4": {
+   "claim_clear": 4,
+   "evidence_holds": 4,
+   "answers_strongest": null,
+   "source_independent": 2
+  },
+  "A/X2/H5": {
+   "claim_clear": 4,
+   "evidence_holds": 4,
+   "answers_strongest": null,
+   "source_independent": 2,
+   "flags": [
+    "retracted"
+   ]
+  },
+  "A/X2/H6": {
+   "claim_clear": 4,
+   "evidence_holds": 3,
+   "answers_strongest": null,
+   "source_independent": 2,
+   "flags": [
+    "retracted"
+   ]
+  },
+  "B/X2/H1_interjection": {
+   "claim_clear": 5,
+   "evidence_holds": 4,
+   "answers_strongest": 4,
+   "source_independent": 2
+  },
+  "B/X2/H2": {
+   "claim_clear": 5,
+   "evidence_holds": 5,
+   "answers_strongest": 5,
+   "source_independent": 4
+  },
+  "B/X2/H3_interjection": {
+   "claim_clear": 4,
+   "evidence_holds": 4,
+   "answers_strongest": 3,
+   "source_independent": 2
+  },
+  "B/X2/H4": {
+   "claim_clear": 4,
+   "evidence_holds": 4,
+   "answers_strongest": 4,
+   "source_independent": 2
+  },
+  "B/X2/H5": {
+   "claim_clear": 4,
+   "evidence_holds": 3,
+   "answers_strongest": 4,
+   "source_independent": 2
+  },
+  "B/X2/H6": {
+   "claim_clear": 4,
+   "evidence_holds": 3,
+   "answers_strongest": 5,
+   "source_independent": 3
+  },
+  "C/X2/H2": {
+   "claim_clear": 5,
+   "evidence_holds": 4,
+   "answers_strongest": 5,
+   "source_independent": 2
+  },
+  "C/X2/H4": {
+   "claim_clear": 5,
+   "evidence_holds": 4,
+   "answers_strongest": 5,
+   "source_independent": 2
+  },
+  "C/X2/H5": {
+   "claim_clear": 5,
+   "evidence_holds": 3,
+   "answers_strongest": 4,
+   "source_independent": 2
+  },
+  "C/X2/H6": {
+   "claim_clear": 5,
+   "evidence_holds": 4,
+   "answers_strongest": 5,
+   "source_independent": 3
+  },
+  "A/X3/H1": {
+   "claim_clear": 4,
+   "evidence_holds": 2,
+   "answers_strongest": null,
+   "source_independent": 3,
+   "flags": [
+    "retracted"
+   ]
+  },
+  "A/X3/H2": {
+   "claim_clear": 4,
+   "evidence_holds": 4,
+   "answers_strongest": null,
+   "source_independent": 3
+  },
+  "A/X3/H3": {
+   "claim_clear": 4,
+   "evidence_holds": 3,
+   "answers_strongest": null,
+   "source_independent": 3
+  },
+  "A/X3/H4": {
+   "claim_clear": 5,
+   "evidence_holds": 3,
+   "answers_strongest": null,
+   "source_independent": 4,
+   "flags": [
+    "retracted"
+   ]
+  },
+  "B/X3/H1": {
+   "claim_clear": 4,
+   "evidence_holds": 4,
+   "answers_strongest": 4,
+   "source_independent": 2
+  },
+  "B/X3/H2": {
+   "claim_clear": 5,
+   "evidence_holds": 4,
+   "answers_strongest": 5,
+   "source_independent": 3,
+   "flags": [
+    "retracted"
+   ]
+  },
+  "B/X3/H3": {
+   "claim_clear": 4,
+   "evidence_holds": 4,
+   "answers_strongest": 5,
+   "source_independent": 3
+  },
+  "B/X3/H4": {
+   "claim_clear": 4,
+   "evidence_holds": 4,
+   "answers_strongest": 4,
+   "source_independent": 3
+  },
+  "B/X3/H5_interjection": {
+   "claim_clear": 5,
+   "evidence_holds": 4,
+   "answers_strongest": 2,
+   "source_independent": 2
+  },
+  "C/X3/H1": {
+   "claim_clear": 5,
+   "evidence_holds": 4,
+   "answers_strongest": 4,
+   "source_independent": 2
+  },
+  "C/X3/H2": {
+   "claim_clear": 5,
+   "evidence_holds": 5,
+   "answers_strongest": 5,
+   "source_independent": 4
+  },
+  "C/X3/H3": {
+   "claim_clear": 5,
+   "evidence_holds": 5,
+   "answers_strongest": 5,
+   "source_independent": 3
+  },
+  "C/X3/H4": {
+   "claim_clear": 5,
+   "evidence_holds": 4,
+   "answers_strongest": 4,
+   "source_independent": 4
+  }
+ }
+}

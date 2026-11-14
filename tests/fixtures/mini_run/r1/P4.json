@@ -1,0 +1,99 @@
+{
+ "id": "P4",
+ "name": "Persona Four",
+ "round": "R1",
+ "notice": "Simulation based on public material; not the person's own words.",
+ "options": {
+  "O1": {
+   "impact": 8,
+   "fit": 6,
+   "overall": 7,
+   "confidence": "high",
+   "basis": "quoted",
+   "one_line": "O1's early numbers are real.",
+   "late_modes": null,
+   "conflict": null
+  },
+  "O2": {
+   "impact": 6,
+   "fit": 6,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "O2 is a reasonable second choice.",
+   "late_modes": null,
+   "conflict": null
+  },
+  "O3": {
+   "impact": 5,
+   "fit": 5,
+   "overall": 5,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "O3's safety record is overstated.",
+   "late_modes": null,
+   "conflict": null
+  },
+  "O4": {
+   "overall": 6,
+   "one_line": "O4 has fewer moving parts."
+  }
+ },
+ "levers": {
+  "L1": 40,
+  "L2": 40,
+  "L3": 20
+ },
+ "lever_reason": "The first two levers matter about equally.",
+ "questions": {
+  "Q1": {
+   "position": "附条件",
+   "score": 6,
+   "condition": "C1 and C2 both hold."
+  }
+ },
+ "conditions": {
+  "Q1": [
+   "C1",
+   "C2"
+  ]
+ },
+ "paths_for_user": [
+  {
+   "name": "Path A",
+   "options": [
+    "O1"
+   ],
+   "next_12_months": "Commit to O1 early.",
+   "why": "O1's lead is real, not noise.",
+   "wrong_signal": "If a second test fails to replicate it."
+  }
+ ],
+ "cruxes": [
+  {
+   "question": "Is O3's track record as clean as claimed?",
+   "my_position": "No, it is overstated.",
+   "would_change_if": "An independent audit confirms O3's record.",
+   "options": [
+    "O3",
+    "O4"
+   ]
+  }
+ ],
+ "taste_advice": "Do not let O3's reputation substitute for evidence.",
+ "pairwise": [
+  {
+   "a": "O1",
+   "b": "O2",
+   "pick": "O1",
+   "why": "O1's early numbers are real."
+  },
+  {
+   "a": "O3",
+   "b": "O4",
+   "pick": "O4",
+   "why": "O4 has fewer moving parts."
+  }
+ ],
+ "web_searches": []
+}

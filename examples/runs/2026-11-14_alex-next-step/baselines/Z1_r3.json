@@ -1,0 +1,170 @@
+{
+  "id": "Z1",
+  "name": "Baseline analyst",
+  "round": "R3",
+  "notice": "Baseline analyst; does not simulate any persona.",
+  "options": {
+    "O1": {
+      "learning": 8,
+      "upside": 7,
+      "optionality": 7,
+      "fit": 7,
+      "overall": 8,
+      "confidence": "medium",
+      "basis": "synthesized",
+      "one_line": "Now the clear top pick: compute/data/brand plus a debate-tested (if unconfirmed-for-a-typical-seat) case that a resourced seat doesn't structurally cap personal ownership.",
+      "late_modes": "Unchanged from R1: not urgently late, since science-team hiring keeps expanding, but each year of delay raises the bar as the field's prestige draws more applicants (F13). [inferred]",
+      "conflict": null
+    },
+    "O2": {
+      "learning": 7,
+      "upside": 8,
+      "optionality": 4,
+      "fit": 7,
+      "overall": 6,
+      "confidence": "medium",
+      "basis": "synthesized",
+      "one_line": "Held at 6: the scariest specific funding numbers I cited in R1 didn't hold up, but the table's own consensus is that the weaker-than-2018 direction still stands, and a founding-engineer grant has no tangible floor even once verified.",
+      "late_modes": "Unchanged from R1: the most time-locked option, since founding-engineer scope and equity exist only before the team staffs up. [synthesized]",
+      "conflict": null
+    },
+    "O3": {
+      "learning": 8,
+      "upside": 7,
+      "optionality": 3,
+      "fit": 5,
+      "overall": 5,
+      "confidence": "medium",
+      "basis": "synthesized",
+      "one_line": "Held at 5: whether unconfirmed PI funding should count against it now is a real open question, but it doesn't touch the actual case against O3 — the ~7-9 year timeline against Alex's two-year-reversibility rule.",
+      "late_modes": "Unchanged from R1: a new PI's early-lab advantage decays over a few admissions cycles rather than vanishing at once. [inferred]",
+      "conflict": null
+    },
+    "O4": {
+      "learning": 6,
+      "upside": 7,
+      "optionality": 8,
+      "fit": 9,
+      "overall": 7,
+      "confidence": "low",
+      "basis": "inferred",
+      "one_line": "Held at 7, optionality tightened 9->8: a deferred or reopened offer must be actively arranged, never assumed — exactly why C1/C3/C4 were already required, now joined by a pre-committed, dated end to the year.",
+      "late_modes": "Unchanged from R1: not late yet, since structure prediction is commoditized (F14) and the newest generative models are going proprietary (F15), leaving an open lane larger players haven't closed. [synthesized]",
+      "conflict": null
+    }
+  },
+  "levers": {
+    "L1": 30,
+    "L2": 20,
+    "L3": 15,
+    "L4": 20,
+    "L5": 15
+  },
+  "lever_reason": "Mentor quality still swings the outcome most — every table's 'fact that would settle it' was a mentor/PI/co-founder question, not a resourcing question. Financial runway moved up (10->15) and compute/data access down (20->15): the debate spent its energy on savings, deferral mechanics and equity floors, not on compute/data specifics, so the weighting now better reflects what the three tables actually argued about.",
+  "questions": {
+    "Q1": {
+      "position": "conditional",
+      "score": 6,
+      "condition": "Pays off more where the specific role screens on the credential: errata_B found the one posting cited against a PhD screen unverifiable, and comparable current research-*scientist* postings require a PhD as a minimum, not a preference. But Alex's actual target title, research engineer, is the bucket where my own R1 self-check still found mixed practice (one ML-engineer posting required a PhD, a comparable research-engineer posting did not) — the title distinction, not the field overall, is the surviving crux."
+    },
+    "Q2": {
+      "position": "conditional",
+      "score": 7,
+      "condition": "Unchanged core conditions (C1, C3, C4), with one addition: a deferred or reopened offer (C4) must be actively arranged in advance through a real approval chain, never assumed as a background guarantee (X2 table, citing a verified policy check). Add a pre-committed, dated end to the year as a third kind of safeguard, distinct from both reversibility (C1/C4) and a human backstop (C3/C5)."
+    }
+  },
+  "conditions": {
+    "Q2": ["C1", "C3", "C4"]
+  },
+  "paths_for_user": [
+    {
+      "name": "Default to the lab, now the clearer top pick (O1)",
+      "options": ["O1"],
+      "next_12_months": "Take the offer; negotiate explicitly for science-team scope; ask directly whether the role lets you define and be credited for a specific sub-problem, not just execute someone else's agenda; keep a fixed weekly commit cadence on the OSS tool.",
+      "why": "Banks compute/data access and brand (F18) at low variance, and the debate weakened my main reason for ranking it below a clean 'best': ownership is at least achievable inside a resourced seat, even though it isn't guaranteed by the seat alone.",
+      "wrong_signal": "By month 9-12, if there is no channel to claim or get credit for a specific problem, the ownership case this path now leans on isn't materializing — push for a change or treat the job as a savings vehicle for O4."
+    },
+    {
+      "name": "Defer and take the independent year, with three safeguards (O4)",
+      "options": ["O4"],
+      "next_12_months": "Bank 12 months of costs (C1); line up a named monthly reviewer (C3); actively arrange — not assume — that an offer is deferrable or reopenable, through its real approval chain (C4); set a pre-committed, dated end to the year before starting.",
+      "why": "Still the best match to Alex's stated preferences and the most reversible option, but the debate showed the safeguards need active arrangement and that 'the year doesn't pan out' is two different failure modes (slow-but-right-direction vs. wrong-direction), each needing its own safeguard.",
+      "wrong_signal": "By month 4-6, contributors and usage flat against the pre-year baseline, or the dated end arriving with none of C1/C3/C4 actually confirmed in writing."
+    },
+    {
+      "name": "Join the startup, verified, with the equity floor in mind (O2)",
+      "options": ["O2"],
+      "next_12_months": "Get cash-in-bank and runway numbers, not just the pitch; confirm a named technical mentor besides the CEO; get equity, vesting and governance in writing against the ~0.6%-4.1% founding-engineer range (F11); remember verification narrows this company's odds within the base rate, it doesn't remove the base rate.",
+      "why": "Real ownership and upside if the specific company is sound; the scariest R1 figures didn't hold up under fact-check, but the table's own consensus is that the weaker-than-2018 direction still stands, and an equity grant with no tangible floor is a real weakness even once everything else is verified.",
+      "wrong_signal": "Undifferentiated engineering work, a next round that keeps slipping, or a mentor who turns out to be the CEO alone, in the first 90 days."
+    }
+  ],
+  "cruxes": [
+    {
+      "question": "Do large-AI-lab 'science team' research-engineer roles actually gate on a PhD, or mainly on a strong engineering/publication record?",
+      "my_position": "Narrower than in R1 but still open. Errata_B found the one posting cited against a PhD screen unverifiable, and comparable current research-scientist postings require a PhD as a minimum. But Alex's actual target title, research engineer, remains the bucket where practice is genuinely mixed (my own R1 self-check: one ML-engineer posting required a PhD, a comparable research-engineer posting did not) — the title distinction is the surviving crux, not the field overall.",
+      "would_change_if": "Alex's actual target team states a PhD requirement (or explicitly waives it) in the specific posting or in a conversation with the hiring manager.",
+      "options": ["O1", "O3"]
+    },
+    {
+      "question": "Can Alex's current OSS project (about 800 stars, two occasional contributors) turn into a self-sustaining, growing project within one dedicated year?",
+      "my_position": "Still the open base rate the brief and the debate both leave unanswered. A maintainer-burnout statistic the debate leaned on (60% have quit or considered quitting) is accurate as quoted but drawn from a 437-respondent, self-selected survey, not 'open-source maintainers' generally (errata_B) — it should carry less weight than a flat population figure implies. The debate's clearer contribution is a distinction, not a base rate: a slow-but-right-direction year and a wrong-direction year are different failures.",
+      "would_change_if": "A co-maintainer, a grant decision (CZI or NSF POSE), or a clear jump in contributors/usage shows up within the first three to four months.",
+      "options": ["O4"]
+    },
+    {
+      "question": "Does this specific seven-person biotech startup have enough runway to survive to its next financing round in the current climate?",
+      "my_position": "Still assume not, unless verified — but the specific numbers soften: errata_B corrected both figures I cited in R1 (2024 seed-to-Series-A conversion is unconfirmed, not 9-13%; 1H26 biotech funding fell to $4.4B, -15% YoY, not $3.97B from $5.40B). The weaker-than-2018 direction still stands per the debate's own consensus, and verification can move one company's position within that base rate without changing the cohort average.",
+      "would_change_if": "The company can show, not merely state, at least 18 months of cash already in the bank and a named, credible lead for the next round.",
+      "options": ["O2"]
+    }
+  ],
+  "taste_advice": "Pick the next 12 months by what a stranger could verify at the end of them, and match each specific safeguard to the specific failure mode it actually covers rather than treating 'it might not work out' as one risk — a savings cushion and a reopenable offer protect against a slow year, a named reviewer protects against a wrong-direction year, and they are not substitutes for each other. [inferred, sharpened by the debate's own best distinction]",
+  "pairwise": [
+    {"a": "O1", "b": "O2", "pick": "O1", "why": "Lower variance, stronger compute/mentorship access, and now a stronger fit case after the debate weakened the 'big lab caps ownership' assumption; O2's upside is real but rides a funding climate that is directionally weak even after its specific R1 figures were corrected. [synthesized]"},
+    {"a": "O1", "b": "O3", "pick": "O1", "why": "O1 avoids the roughly 7-9 year time cost and preserves optionality; O3's mentorship/learning edge and the still-open PI-funding question do not offset the reversibility and timeline gap against Alex's own two-year rule. [synthesized]"},
+    {"a": "O2", "b": "O3", "pick": "O2", "why": "O2 reaches a legible ownership signal faster and stays closer to Alex's tool-building preference within a shorter reversibility window than a multi-year PhD, despite a still-weak funding climate. [synthesized]"},
+    {"a": "O3", "b": "O4", "pick": "O4", "why": "O4 preserves optionality and fit far better; O3's structured mentorship and credential do not outweigh the opportunity cost of 7-9 years against Alex's explicit two-year-reversibility constraint. [synthesized]"},
+    {"a": "O2", "b": "O4", "pick": "O4", "why": "Similar ownership and building character, but O4 is fully self-directed and reversible once its three safeguards are actively arranged, while O2 depends on a financing climate that is still weak even after correction (F10, F12). [synthesized]"}
+  ],
+  "changes": [
+    {
+      "option": "O1",
+      "from": 7,
+      "to": 8,
+      "because": "board/summary/X1.md consensus, citing B/X1/H3",
+      "argument_restated": "Ownership of a chosen research direction is not something only a PhD or a founder gets — a research engineer on a resourced team can still claim and be credited for a specific problem, the same way the 2024 Nobel Prize split credit between a large resourced team (AlphaFold2) and an academic lineage (the Institute for Protein Design) without ranking one route above the other.",
+      "why": "My R1 fit score assumed big-lab scale structurally caps personal ownership and attribution. This argument directly rebuts that assumption. It isn't fully proven — the table itself calls it 'unshown' whether a typical seat grants that latitude — but my own R3 self-check found at least one named large-lab culture (Anthropic, per an AI-roles-continuum paper) that deliberately blends the research-engineer and researcher roles rather than keeping engineers execution-only. That moved fit from 6 to 7 and, combined with O1's already-low variance, made it the clear top option rather than tied with O4."
+    }
+  ],
+  "held_despite": [
+    {
+      "post": "board/summary/X3.md consensus; evidence/errata_B.md (F10, F12 corrections)",
+      "why": "Accepted that my R1 figures (9-13% 2024 seed-to-Series-A conversion; $3.97B/137 deals, down from $5.40B) do not hold up — fact-check ② found a smaller, differently-measured biotech-funding decline (-15% YoY, to $4.4B) and no confirmed like-for-like 2024 conversion figure. Held O2's overall at 6 because the table's own consensus is that the weaker-than-2018 direction stands even after withdrawing both numbers."
+    },
+    {
+      "post": "board/summary/X3.md consensus",
+      "why": "Accepted that verification (confirmed runway, a named mentor, written equity terms) can shift one company's position within the 2026 base rate, and that a founding-engineer grant with no tangible floor is a real weakness even once verified. Held O2's overall at 6: verification is exactly the mechanism my R1 path already called for, and the equity-floor point reinforces rather than changes an already-low optionality score."
+    },
+    {
+      "post": "board/summary/X1.md disagreement",
+      "why": "Accepted that whether unconfirmed PI funding should count against O3 now, or only once confirmed absent, is a genuinely live question I can't resolve either. Held O3's scores because my R1 case against it rests mainly on the timeline/fit mismatch, not on the funding question, so this open disagreement doesn't move the number."
+    },
+    {
+      "post": "board/summary/X2.md consensus",
+      "why": "Accepted that a deferred or reopened offer must be actively arranged in advance through a real approval chain, and is never a background guarantee. Tightened O4's optionality from 9 to 8 but held the overall at 7, since my R1 conditions (C1, C3, C4) already treated these as things Alex must arrange, not assume."
+    }
+  ],
+  "still_disagree": "The X2 table leans 4-2 toward reversibility (savings plus a reopenable offer) over a human backstop as the more load-bearing safeguard for the independent year. I don't think that framing is right. The table's own best insight — that a slow-but-right-direction year and a wrong-direction mistake are different failure modes — implies reversibility and a backstop catch different things, so Q2 should require both together (C1/C4 and C3), not pick a winner between them.",
+  "learned": "That 'the independent year doesn't pan out' is not one failure mode but two: a good year that simply hasn't converted to paid work yet, versus a wrong-direction mistake. My R1 treated this as a single, generic risk that savings and a mentor both generically hedge against; the debate showed they actually cover two different failures, which sharpens exactly what each of Q2's conditions is for.",
+  "searches": [
+    {
+      "query": "research engineer named author byline credit AI lab science team publication 2026",
+      "url": "https://arxiv.org/abs/2601.06087",
+      "published": "2026 (preprint)",
+      "sentence": "Paraphrase, not verbatim: describes Anthropic's engineer-researcher blend as a deliberate cultural choice and notes OpenAI hires research engineers alongside research scientists.",
+      "for_claim": "O1 fit change — whether ownership/attribution is achievable inside a resourced research-engineer seat (board/summary/X1.md, citing B/X1/H3)",
+      "result": "No direct data on byline/credit practice, but corroborates that at least one named large-lab culture treats research engineers as blended research contributors rather than execution-only support — consistent with, but short of confirming, the table's own 'unshown for a typical seat' caveat."
+    }
+  ]
+}

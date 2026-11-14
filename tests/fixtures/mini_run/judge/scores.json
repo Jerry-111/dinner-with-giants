@@ -1,0 +1,50 @@
+{
+ "posts": {
+  "A/X1/P1": {
+   "claim_clear": 4,
+   "evidence_holds": 3,
+   "answers_strongest": null,
+   "source_independent": 3,
+   "flags": []
+  },
+  "A/X1/P3": {
+   "claim_clear": 4,
+   "evidence_holds": 4,
+   "answers_strongest": null,
+   "source_independent": 3,
+   "flags": []
+  },
+  "B/X1/P1": {
+   "claim_clear": 5,
+   "evidence_holds": 4,
+   "answers_strongest": 4,
+   "source_independent": 2,
+   "flags": [
+    "source_challenged"
+   ]
+  },
+  "B/X1/P4_interjection": {
+   "claim_clear": 4,
+   "evidence_holds": 4,
+   "answers_strongest": 3,
+   "source_independent": 4,
+   "flags": []
+  },
+  "C/X1/P2": {
+   "claim_clear": 3,
+   "evidence_holds": 3,
+   "answers_strongest": 3,
+   "source_independent": 3,
+   "flags": [
+    "retracted"
+   ]
+  },
+  "C/X1/P4": {
+   "claim_clear": 4,
+   "evidence_holds": 3,
+   "answers_strongest": 3,
+   "source_independent": 3,
+   "flags": []
+  }
+ }
+}

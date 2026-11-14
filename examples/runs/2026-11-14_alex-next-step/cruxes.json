@@ -1,0 +1,88 @@
+{
+ "cruxes": [
+  {
+   "id": "X1",
+   "question": "Does a seat on a large AI lab's resourced science team (O1) build more durable, attributable judgment than a newly hired assistant professor's mentorship (O3) -- or does owning a chosen question under real mentorship outweigh a bigger team's resources and redundancy?",
+   "why_it_matters": "Directly answers Q1 (does a PhD still pay off against industry-lab work): O1 has the widest overall-score spread of any option (4-8 across personas), driven almost entirely by this split. It is also the clearest test of the friend's claim that 'if you don't start a PhD now, you never will' -- several personas tie O3's only real advantage to a newly hired PI's first-cohort attention, a window that itself narrows with time.",
+   "options": ["O1", "O3"],
+   "sides": [
+    {
+     "label": "Resourced lab beats an unproven mentor",
+     "position": "A large lab's compute, data and structural redundancy outweigh a single, newly hired PI's deeper but single-threaded mentorship and unproven funding; the PhD is not obviously required for the work that matters most.",
+     "members": ["H1", "H3"]
+    },
+    {
+     "label": "A chosen question under real mentorship beats institutional resources",
+     "position": "Sustained, mentored ownership of a problem Alex actually chooses builds judgment and a defensible record better than a narrow seat inside someone else's resourced team; the credential itself is secondary to that ownership.",
+     "members": ["H2", "H4", "H5", "H6"]
+    }
+   ],
+   "evidence_needed": "Whether this specific incoming PI already holds secured multi-year funding and a record of placing early students well (cuts the single-mentor risk), and whether large-lab science-team research-engineer roles actually gate on a PhD (F9 is unresolved either way)."
+  },
+  {
+   "id": "X2",
+   "question": "Does the independent year (O4) need a credible way back into paid work -- savings plus a deferrable or reopenable offer (C4) -- to be safe, or does a human backstop who actually checks the work (a co-maintainer or reviewing mentor, C3/C5) matter more than reversibility?",
+   "why_it_matters": "This is Q2 itself (under which conditions O4 is the right call). Every persona wrote an R1 crux about O4's conditions, but they split on which safety net is load-bearing: an exit route back to paid work, or a partner positioned to catch mistakes. Which one Alex can actually secure should decide whether to take the year now.",
+   "options": ["O4"],
+   "sides": [
+    {
+     "label": "Reversibility is the essential safeguard",
+     "position": "The year is only safe with a funded runway and a deferrable or reopenable offer; without a real way back, the 'independent year' is a forced bet, not a chosen one.",
+     "members": ["H1", "H2", "H3", "H6"]
+    },
+    {
+     "label": "A human backstop matters more than an exit route",
+     "position": "What makes the year safe is someone else positioned to check the work -- a co-maintainer or a reviewing mentor -- not necessarily a deferrable offer; an already-existing signal of demand plus a real partner is enough.",
+     "members": ["H4", "H5"]
+    }
+   ],
+   "evidence_needed": "Whether Alex's current or prospective offers can in fact be deferred or reopened after a year (C4), and whether a specific co-maintainer or senior reviewer has already committed (C5/C3) -- neither scope.md nor the brief states either fact."
+  },
+  {
+   "id": "X3",
+   "question": "Is the founding-engineer startup's ownership and mentorship story (O2) a risk that better paperwork and a named mentor can fix, or a structural problem -- 2026's weak biotech seed-to-Series-A climate -- that no single company's specifics can fix?",
+   "why_it_matters": "Decides how much to discount O2 relative to O1 and O4, and is the direct test of the former manager's claim that 'a startup teaches you more in a year than a big lab in three': if the ownership story is mostly unverified paperwork, the faster-learning promise may not survive contact with a seed-stage company's actual survival odds.",
+   "options": ["O2"],
+   "sides": [
+    {
+     "label": "Verify the specifics; the risk is fixable",
+     "position": "The real risk is an unverified title -- confirm the written ownership terms, a named technical mentor and the scope of the role, and the broad-ownership, fast-learning case for O2 can still hold.",
+     "members": ["H1", "H2"]
+    },
+    {
+     "label": "The risk is structural, not paperwork",
+     "position": "2026's seed-to-Series-A and early-biotech funding climate is near a historic low; no amount of diligence at one seven-person company changes those base rates, so O2's odds of paying out are worse than the usual startup story assumes.",
+     "members": ["H3", "H4"]
+    }
+   ],
+   "evidence_needed": "The company's actual equity, vesting and governance terms in writing; a named senior technical mentor (not just the CEO); and independently confirmed runway past eighteen months."
+  }
+ ],
+ "open_questions": [
+  {
+   "question": "Do large-AI-lab science-team research-engineer roles actually require a PhD, or do they accept a strong publication or engineering record instead?",
+   "asked_by": ["H1", "H5", "H6"],
+   "why": "The evidence brief could not settle this (F9). It decides whether O1 is actually open to Alex without first committing to O3, which is the heart of Q1 and of crux X1."
+  },
+  {
+   "question": "Is there any outcomes data on whether a solo- or pair-maintained scientific open-source project (like Alex's toolkit) tends to grow or stall over a dedicated year?",
+   "asked_by": ["H2", "H5"],
+   "why": "No base rate exists in the brief. Without it, O4's central promise -- that the existing signal is worth one more bounded push -- is unverifiable either way, and crux X2 cannot be fully settled."
+  },
+  {
+   "question": "Can Alex's actual O1 or O2 offer be deferred or reopened after a year away (C4)?",
+   "asked_by": ["H1", "H6"],
+   "why": "Neither scope.md nor the brief states this. It is the single fact that most separates a chosen independent year from a forced one, and it is the main split at table X2."
+  },
+  {
+   "question": "Does the specific newly hired assistant professor already hold secured multi-year grant funding, and do they give sharp critical feedback or mainly encouragement?",
+   "asked_by": ["H1", "H3", "H5"],
+   "why": "Both facts are, by H5's own account, the single biggest swing factor under O3, and the main unverified risk H1 and H3 each flag before trusting a multi-year commitment to this mentor."
+  },
+  {
+   "question": "Is the 2024 academic-placement share rebound (F8, 31.59%) a durable structural reversal, or a one-year move that could re-reverse before a 2026 PhD finishes?",
+   "asked_by": ["H6"],
+   "why": "Q1's more optimistic case partly leans on this trend continuing for five to six more years; one year of data is thin evidence for a multi-year commitment."
+  }
+ ]
+}

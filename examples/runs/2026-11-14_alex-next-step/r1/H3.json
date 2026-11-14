@@ -1,0 +1,131 @@
+{
+  "id": "H3",
+  "name": "Michael Faraday",
+  "round": "R1",
+  "notice": "Simulation based on public material; not the person's own words.",
+  "options": {
+    "O1": {
+      "learning": 7,
+      "upside": 8,
+      "optionality": 6,
+      "fit": 7,
+      "overall": 8,
+      "confidence": "medium",
+      "basis": "synthesized",
+      "one_line": "Matches where protein-ML's biggest resourced results are actually made right now (F13-F15, F18), but a research-engineer seat risks owning someone else's question, not your own.",
+      "late_modes": null,
+      "conflict": null
+    },
+    "O2": {
+      "learning": 7,
+      "upside": 6,
+      "optionality": 5,
+      "fit": 6,
+      "overall": 5,
+      "confidence": "low",
+      "basis": "inferred",
+      "one_line": "A broad, hands-on role fits how I myself learned, but 2026's weaker seed-to-Series-A conversion and early-biotech funding (F10, F12) make the equity bet thinner than the founder story usually assumes.",
+      "late_modes": "If seed financing keeps weakening the way F10 and F12 describe, waiting longer to join at the ground floor makes it less likely this particular company survives to a point where the equity means anything.",
+      "conflict": null
+    },
+    "O3": {
+      "learning": 8,
+      "upside": 6,
+      "optionality": 5,
+      "fit": 6,
+      "overall": 6,
+      "confidence": "medium",
+      "basis": "synthesized",
+      "one_line": "Deep mentorship built my own career, but a newly hired professor is an unproven patron, and the years-long commitment (F1-F3) sits uneasily against a two-year reversibility goal.",
+      "late_modes": null,
+      "conflict": null
+    },
+    "O4": {
+      "learning": 6,
+      "upside": 6,
+      "optionality": 8,
+      "fit": 8,
+      "overall": 7,
+      "confidence": "medium",
+      "basis": "synthesized",
+      "one_line": "The closest thing here to my own method, a bounded, testable speculation, but only if Alex keeps the clock I let slip for a decade on gravity and electricity.",
+      "late_modes": null,
+      "conflict": null
+    }
+  },
+  "levers": {
+    "L1": 30,
+    "L2": 25,
+    "L3": 20,
+    "L4": 15,
+    "L5": 10
+  },
+  "lever_reason": "My own turn came from one mentor's quality and from a well-equipped institution I could not have matched alone; in a field where the field's own prize-winning results come out of resourced teams (F13-F15, F18), I weight mentor quality and compute/data access above a public record, which in turn I weight above raw financial runway.",
+  "questions": {
+    "Q1": {
+      "position": "against",
+      "score": 4,
+      "condition": null
+    },
+    "Q2": {
+      "position": "conditional",
+      "score": null,
+      "condition": "Yes to the independent year once there is enough runway to not need an early result, a sign the work already has real users rather than starting from nothing, and some outside person checking progress on a schedule."
+    }
+  },
+  "conditions": {
+    "Q2": ["C1", "C2", "C3", "C4"]
+  },
+  "paths_for_user": [
+    {
+      "name": "Resourced apprentice",
+      "options": ["O1"],
+      "next_12_months": "Join the large lab's science team; spend the first year learning its tools and shipping one piece of work clearly attributable by name.",
+      "why": "This is where the field's biggest resourced results are produced right now (F13, F15, F18), and the role stays reversible.",
+      "wrong_signal": "A year in, nothing exists that is credited specifically to Alex rather than to the team: the role has become pure service to someone else's question."
+    },
+    {
+      "name": "Bounded test",
+      "options": ["O4"],
+      "next_12_months": "Fix one dated, public goal for the toolkit at the outset, keep a monthly check-in with an outside reviewer, and decide at month twelve, not later.",
+      "why": "A disciplined, clocked test of an idea Alex has already partly validated (the existing tool and its users), not speculation from nothing.",
+      "wrong_signal": "No growth in users and no outside reviewer willing to keep checking in by month six: the two things my own decade-long, unresolved search lacked, and should have ended it on sooner."
+    },
+    {
+      "name": "Mentored depth, hedged",
+      "options": ["O3"],
+      "next_12_months": "Start the PhD, but treat year one as a trial of the specific mentor: confirm the new professor's funding runway and get early, named credit on one piece of work.",
+      "why": "A mentor genuinely invested in one student can build judgment faster than anything else, but a newly hired professor is not yet a settled patron.",
+      "wrong_signal": "By the end of year one, no funded multi-year plan from the professor and no work Alex can point to as clearly their own: the single-mentor risk I lived through with Davy in 1823-24, repeating."
+    }
+  ],
+  "cruxes": [
+    {
+      "question": "Does a single, newly hired mentor give more durable judgment than a large, resourced team, once you weigh how exposed you are if that one relationship sours or the mentor's funding does not stabilize?",
+      "my_position": "No, not by default: a large lab's resource depth and structural redundancy outweigh a brand-new PI's deeper but single-threaded mentorship, going by what happened to my own standing once Davy's support turned to opposition in 1823-24.",
+      "would_change_if": "The specific professor already holds secured multi-year funding and a record of placing early students well, which would cut the single-point-of-failure risk.",
+      "options": ["O1", "O3"]
+    },
+    {
+      "question": "Is Alex's existing open-source tool and its users already enough proof of demand to make the independent year a tested continuation rather than open-ended speculation?",
+      "my_position": "If the user base is genuinely active, yes: that is closer to extending a result already in hand than to speculating from zero, which is the kind of bet I would take.",
+      "would_change_if": "Evidence that the existing user base is inactive or stalled, which would make the year closer to my own unresolved, decade-long gravity-electricity search than to a bounded test.",
+      "options": ["O4"]
+    },
+    {
+      "question": "Does the 2026 funding and hiring climate for early-stage biotech make founding-engineer equity meaningfully riskier than the usual startup story assumes?",
+      "my_position": "Yes: with seed-to-Series-A conversion down and early biotech funding contracting (F10, F12), the realistic odds the equity ever pays out sit lower now than the standard story, favoring the secure or self-directed paths over this one at this particular moment.",
+      "would_change_if": "A specific sign this company already has runway past eighteen months, or a lead investor committed to a near-term Series A.",
+      "options": ["O2"]
+    }
+  ],
+  "taste_advice": "Fix the clock before you start, not after: decide in advance what result, or what silence, would end the experiment, because once you are inside it you will always find a reason to extend it. I did, for about a decade, with gravity and electricity, and never found the link.",
+  "pairwise": [
+    {"a": "O1", "b": "O2", "pick": "O1", "why": "A resourced, reversible seat beats a fragile equity bet in a weakening funding climate (F10, F12)."},
+    {"a": "O1", "b": "O3", "pick": "O1", "why": "My own career argues for the best-resourced institution available over a single, unproven new patron, even before counting the years a PhD takes (F1-F3)."},
+    {"a": "O2", "b": "O3", "pick": "O3", "why": "Mentored, publishable research outlasts a commercial bet whose IP is rarely published and whose financing climate has weakened (F10, F12)."},
+    {"a": "O3", "b": "O4", "pick": "O4", "why": "A one-year, clocked test that matches a tool Alex already has users for beats a multi-year commitment to an as-yet-unproven mentor."},
+    {"a": "O2", "b": "O4", "pick": "O4", "why": "Ownership of a bounded, public test of your own work beats ownership of equity whose odds of paying out have thinned in 2026 (F10, F12)."}
+  ],
+  "web_searches": []
+}
