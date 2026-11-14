@@ -35,7 +35,7 @@ Open an issue with the **Protocol change** template and include:
 
 ## Development
 
-Requirements: Python 3.9 or newer. The tooling uses the standard library only.
+Requirements: Python 3.9 or newer (CI runs 3.10–3.13). The tooling uses the standard library only.
 
 ```bash
 python3 -m unittest discover -s tests -v

@@ -4,7 +4,7 @@ A single-file, standard-library-only helper CLI for the persona-debate protocol.
 subcommand is driven by the run's own `rubric.json` (see `docs/data-formats.md`); nothing here
 is hard-coded to a particular run, option set, or persona roster.
 
-Requires Python 3.9 or later. No install step and no network access are needed. `pyyaml` is an
+Requires Python 3.9 or later (CI covers 3.10–3.13; 3.9 is end-of-life and no longer on GitHub's Ubuntu runners, but the tests pass on it locally). No install step and no network access are needed. `pyyaml` is an
 optional dependency (see `requirements-dev.txt`) that improves `card.yaml` parsing in `roster`;
 without it, a regex-based fallback is used automatically.
 

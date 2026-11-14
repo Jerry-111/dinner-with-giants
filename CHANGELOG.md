@@ -28,3 +28,4 @@ version number until they need separate ones.
   `aggregation.sensitivity_threshold` (default 3).
 - `tools/sim.py privacy-scan`: denylist entries may carry inline comments (`term   # note`);
   before this, such entries silently never matched.
+- CI matrix is Python 3.10–3.13: GitHub's current Ubuntu runners no longer provide 3.9.
