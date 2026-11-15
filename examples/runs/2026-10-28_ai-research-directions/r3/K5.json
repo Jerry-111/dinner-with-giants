@@ -1,0 +1,365 @@
+{
+ "id": "K5",
+ "name": "Yann LeCun",
+ "round": "R3",
+ "notice": "Simulation based on public material; not the person's own words.",
+ "options": {
+  "D01": {
+   "impact": 6,
+   "bottleneck": 2,
+   "academic_edge": 2,
+   "window": 2,
+   "overall": 3,
+   "confidence": "high",
+   "basis": "quoted",
+   "one_line": "LLM pre-training as research is already near its ceiling, and academia cannot compete on compute at all; deployment is still growing, but that is not a research problem.",
+   "late_modes": "Simply chasing larger-scale pre-training: academia and small independent players are both already too late",
+   "conflict": "AMI bets on a non-LLM route; interested party"
+  },
+  "D02": {
+   "impact": 5,
+   "bottleneck": 3,
+   "academic_edge": 6,
+   "window": 6,
+   "overall": 5,
+   "confidence": "high",
+   "basis": "quoted",
+   "one_line": "RL post-training mainly improves sampling efficiency for now, not new reasoning ability; not the core bottleneck but useful.",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D03": {
+   "impact": 6,
+   "bottleneck": 6,
+   "academic_edge": 6,
+   "window": 6,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Persistent memory is one of the four things machines lack; pure RSI-style self-improvement is overrated, and evidence such as METR's shows limited gains.",
+   "late_modes": "Agent self-improvement shown only through demos is no longer convincing",
+   "conflict": null
+  },
+  "D04": {
+   "impact": 5,
+   "bottleneck": 2,
+   "academic_edge": 2,
+   "window": 2,
+   "overall": 3,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Agent engineering has been absorbed by the models and a few CLI vendors; much of what academia does is top-conference work with no impact.",
+   "late_modes": "Custom academic scaffolding has already been absorbed by the models themselves",
+   "conflict": null
+  },
+  "D05": {
+   "impact": 5,
+   "bottleneck": 4,
+   "academic_edge": 7,
+   "window": 6,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Evaluation is more necessary than I first judged for certifying and telling apart where capability comes from (ImageNet got CNNs recognized), but it is still not the core bottleneck.",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D06": {
+   "impact": 9,
+   "bottleneck": 8,
+   "academic_edge": 7,
+   "window": 7,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "quoted",
+   "one_line": "Understanding and operating in the physical world is the real next stage that has not peaked, but it needs to be driven by world models; pure VLA imitation is not enough.",
+   "late_modes": null,
+   "conflict": "AMI bets on physical AI, with world models driving robots"
+  },
+  "D07": {
+   "impact": 8,
+   "bottleneck": 7,
+   "academic_edge": 6,
+   "window": 6,
+   "overall": 7,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Jointly predicting observations and actions is the right idea, but the pixel-diffusion sub-route is wrong; I bet on the representation-space version.",
+   "late_modes": null,
+   "conflict": "AMI's research direction overlaps with this directly"
+  },
+  "D08": {
+   "impact": 9,
+   "bottleneck": 9,
+   "academic_edge": 6,
+   "window": 8,
+   "overall": 9,
+   "confidence": "high",
+   "basis": "quoted",
+   "one_line": "This is the core bet I make: prediction counts only when it is done in an abstract representation space; I am not optimistic about the route that generates pixels.",
+   "late_modes": null,
+   "conflict": "AMI's company valuation rests entirely on this direction"
+  },
+  "D09": {
+   "impact": 5,
+   "bottleneck": 3,
+   "academic_edge": 6,
+   "window": 5,
+   "overall": 5,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Domain randomization is a real gain for visual diversity and the long tail, not just reuse; contact and touch still need calibration with real data, so simulation is not self-sufficient.",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D10": {
+   "impact": 7,
+   "bottleneck": 4,
+   "academic_edge": 3,
+   "window": 3,
+   "overall": 5,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "The last few percentage points are an engineering problem, taken by a few companies that have fleet data; limited room for academia.",
+   "late_modes": "End-to-end planning without a fleet data engine behind it is already too late",
+   "conflict": null
+  },
+  "D11": {
+   "impact": 6,
+   "bottleneck": 5,
+   "academic_edge": 6,
+   "window": 5,
+   "overall": 5,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Spatial and visual understanding is a prerequisite for embodied intelligence, but simply stacking up a bigger MLLM does not solve the grounding problem.",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D12": {
+   "impact": 5,
+   "bottleneck": 2,
+   "academic_edge": 4,
+   "window": 3,
+   "overall": 4,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "Generated content has a market but is not a source of intelligence; Sora 2 being taken offline is a warning against over-promising commercially.",
+   "late_modes": "Consumer video generation is already hyper-competitive, and its business model is not yet proven",
+   "conflict": null
+  },
+  "D13": {
+   "impact": 4,
+   "bottleneck": 2,
+   "academic_edge": 6,
+   "window": 5,
+   "overall": 3,
+   "confidence": "high",
+   "basis": "quoted",
+   "one_line": "The risk is human misuse, not an AI takeover; interpretability is not the main safety mechanism for a goal-driven architecture.",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D14": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 5,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "FlashAttention shows that academic systems contributions can get adopted, but it is far from the question of what machines lack and is not my focus.",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D15": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 7,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Optimistic in the long run, with payoff in 5-30 years; pure LLMs cannot invent anything new, and the real driver is learned models that replace numerical simulation.",
+   "late_modes": null,
+   "conflict": "He is an adviser to CuspAI, a materials-AI company"
+  },
+  "D16": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "My material does not cover recommendation, retrieval or decision optimization; no judgment.",
+   "late_modes": null,
+   "conflict": null
+  }
+ },
+ "levers": {
+  "L1": 10,
+  "L2": 7,
+  "L3": 10,
+  "L4": 33,
+  "L5": 16,
+  "L6": 15,
+  "L7": 4,
+  "L8": 5
+ },
+ "lever_reason": "World models (L4) highest; evaluation (L1) raised because it decides whether output gets recognized; real data (L5) raised because contact tasks depend on real calibration; LLM scaling (L7) lowered further because RLVR is resampling.",
+ "questions": {
+  "Q2": {
+   "position": "conditional",
+   "score": 6,
+   "condition": "Narrow domain, not general LLM pre-training; a team, not a solo effort; compute that can last for months; open weights that people use; if no evaluation exists, building one counts as a contribution."
+  }
+ },
+ "conditions": {
+  "Q2": [
+   "C1",
+   "C3",
+   "C4",
+   "C5"
+  ]
+ },
+ "cruxes": [
+  {
+   "question": "Have video and pixel-generative models actually learned a world understanding that can be planned with, or only statistical interpolation?",
+   "my_position": "No; predicting unpredictable pixel detail is a methodological error, and the evidence is failed out-of-distribution transfer.",
+   "would_change_if": "A purely generative (non-JEPA) video model matches JEPA-type methods in success rate on zero-shot planning in out-of-distribution physical scenes.",
+   "directions": [
+    "D07",
+    "D08",
+    "D09",
+    "D12"
+   ]
+  },
+  {
+   "question": "Evaluation (the certification mechanism) or world models and data (production): which should an individual researcher with only one bet invest in first?",
+   "my_position": "Production should come first: evaluation is indeed necessary for certification and resource allocation, but that is a portfolio manager's problem, not a single-bet researcher's problem.",
+   "would_change_if": "The researcher's sub-direction already has several active candidates and a mature evaluation system, so allocation-type decisions really do apply.",
+   "directions": [
+    "D05",
+    "D08"
+   ]
+  },
+  {
+   "question": "On contact-rich and tactile tasks, does simulation (including domain randomization) create real training signal, or does it always need real data to calibrate it before it can be used?",
+   "my_position": "It needs calibration with real data: amplification creates training signal, but the calibration target itself comes from real sensors, so simulation is not self-sufficient.",
+   "would_change_if": "Training on 200 real seeds alone vs. adding 50,000 simulated amplifications shows only a small gap in success rate on held-out long-tail tasks. This can be tested now; there is no need to wait until 2027.",
+   "directions": [
+    "D09",
+    "D06"
+   ]
+  }
+ ],
+ "taste_advice": "Ask first whether you can build it and whether you can design a controlled experiment right now, not whether you can publish it; I only really learned this by betting wrongly on pixel prediction for ten years.",
+ "pairwise": [
+  {
+   "a": "D05",
+   "b": "D08",
+   "pick": "D08",
+   "why": "Evaluation is a necessary certification mechanism and does not create capability; world models are the source of the capability itself and remain the bigger bottleneck."
+  },
+  {
+   "a": "D05",
+   "b": "D06",
+   "pick": "D06",
+   "why": "Embodied intelligence is the proving ground for understanding the physical world; however necessary evaluation is, it cannot replace real-world feedback."
+  },
+  {
+   "a": "D06",
+   "b": "D08",
+   "pick": "D08",
+   "why": "D06 can truly generalize only once D08's methods mature; world models are more fundamental."
+  },
+  {
+   "a": "D07",
+   "b": "D08",
+   "pick": "D08",
+   "why": "The good part of D07 (jointly predicting observations and actions) is in essence a subset of D08; I am not optimistic about the pixel-diffusion part."
+  },
+  {
+   "a": "D09",
+   "b": "D06",
+   "pick": "D06",
+   "why": "Simulation creates real training signal, but contact and touch still need calibration with real data; embodied intelligence itself is more fundamental."
+  },
+  {
+   "a": "D02",
+   "b": "D03",
+   "pick": "D03",
+   "why": "RLVR has been shown to be mainly resampling; continual learning and memory bear on one of the four things machines lack and are more fundamental."
+  },
+  {
+   "a": "D11",
+   "b": "D12",
+   "pick": "D11",
+   "why": "Understanding is the prerequisite for action and planning; purely generative content that does not serve downstream decisions is useless to my framework."
+  },
+  {
+   "a": "D01",
+   "b": "D05",
+   "pick": "D05",
+   "why": "Scaling up pre-training is already near its ceiling and academia cannot get in; evaluation science now looks more necessary than I first judged, and academia can still produce methodological contributions that get adopted."
+  },
+  {
+   "a": "D04",
+   "b": "D03",
+   "pick": "D03",
+   "why": "Agent-engineering scaffolding has been absorbed by the models; the underlying problem of continual learning and memory is still open and worth betting on more."
+  },
+  {
+   "a": "D13",
+   "b": "D05",
+   "pick": "D05",
+   "why": "Interpretability is not the main safety mechanism for the goal-driven architecture I bet on; evaluation is at least a general-purpose quality-inspection tool, and one I now value more."
+  },
+  {
+   "a": "D10",
+   "b": "D06",
+   "pick": "D06",
+   "why": "Most of autonomous driving has been taken by a few companies with fleet data; the methods of embodied intelligence are not yet settled, so the opportunity is larger."
+  }
+ ],
+ "changes": [
+  {
+   "option": "D05",
+   "from": 5,
+   "to": 6,
+   "because": "B/X1/C6_interjection",
+   "argument_restated": "What got deep learning's comeback recognized was the ImageNet evaluation, not just puncturing a false consensus",
+   "why": "I missed evaluation's necessary role in the step of getting a breakthrough recognized; raised, but still far below D08"
+  },
+  {
+   "option": "D09",
+   "from": 4,
+   "to": 5,
+   "because": "B/X6/K4",
+   "argument_restated": "Domain randomization composes new training signal within physical priors, a real gain for visual diversity and the long tail, not just reuse",
+   "why": "Reasonably narrows my claim that simulation only reuses existing information, but the core disagreement on contact and touch is unchanged"
+  }
+ ],
+ "held_despite": [
+  {
+   "post": "B/X1/M7",
+   "why": "Accepts that evaluation and L4 are complementary upstream and downstream, but that does not mean equal weight; L4's ranking was not lowered because of it"
+  },
+  {
+   "post": "B/X1/M1",
+   "why": "Accepts that the POKEWORLD counterexample holds, but it is a verification gap already known in my own material, not a new argument; D08/L4 not lowered"
+  },
+  {
+   "post": "overtime/X1/1_M7",
+   "why": "Accepts that long-horizon robot tasks lack the hard terminal signal that games and code have, but this sets the limit of the analogy and is not a reason to lower D08 itself"
+  },
+  {
+   "post": "C/X6/C3",
+   "why": "Accepts as fact that once a real tactile layer is mixed in, the representation can drive contact decisions, but this holds only with real data injected, which supports rather than weakens my judgment, so the score is unchanged"
+  }
+ ],
+ "still_disagree": "Evaluation is indeed more necessary than I first judged (certification, resource allocation), but what is scarce is still production itself; most people at this table still rank evaluation at the same weight as world models, and I disagree.",
+ "learned": "Evaluation is more critical than I thought in getting a breakthrough recognized (ImageNet/AlexNet); several disagreements could in the end be rewritten as controlled experiments that can be run now, with no need to wait until 2027 to see the outcome.",
+ "searches": []
+}

@@ -496,5 +496,78 @@ class HelpAndArgParsingTests(unittest.TestCase):
                 sim.main([])
 
 
+class QuotesCommandTests(unittest.TestCase):
+    HEADER = ("evidence_id,claim,type,author_or_org,source_title,url,published_date,accessed_date,"
+              "source_family,supports_or_challenges,limitations\n")
+
+    def _persona(self, dossier, ids=("P1-E01", "P1-E02")):
+        d = tempfile.mkdtemp()
+        folder = os.path.join(d, "P1_test")
+        os.makedirs(folder)
+        with open(os.path.join(folder, "sources.csv"), "w", encoding="utf-8") as fh:
+            fh.write(self.HEADER)
+            for eid in ids:
+                fh.write(f"{eid},a claim,primary,Someone,A title,https://example.org/{eid},2020,2026-11-14,own,supports,\n")
+        with open(os.path.join(folder, "dossier.md"), "w", encoding="utf-8") as fh:
+            fh.write(dossier)
+        return folder
+
+    def _run(self, folder):
+        buf = io.StringIO()
+        with contextlib.redirect_stdout(buf):
+            code = sim.main(["quotes", folder])
+        return code, buf.getvalue()
+
+    def test_short_sourced_quote_passes(self):
+        folder = self._persona('He said "measure twice, cut once" [quoted, P1-E01].\n')
+        code, out = self._run(folder)
+        self.assertEqual(code, 0)
+        self.assertIn("1 checked, 0 error(s), 0 warning(s)", out)
+
+    def test_long_quote_is_an_error(self):
+        long_q = " ".join(["word"] * 16)
+        folder = self._persona(f'She wrote "{long_q}" [quoted, P1-E01].\n')
+        code, out = self._run(folder)
+        self.assertEqual(code, 1)
+        self.assertIn("ERROR quote of 16 words", out)
+
+    def test_unknown_evidence_id_is_an_error(self):
+        folder = self._persona('He said "short line here" [quoted, P1-E09].\n')
+        code, out = self._run(folder)
+        self.assertEqual(code, 1)
+        self.assertIn("P1-E09 is not in", out)
+
+    def test_one_quote_per_source_holds_across_files(self):
+        folder = self._persona('"first line" [quoted, P1-E01].\n')
+        with open(os.path.join(folder, "views.md"), "w", encoding="utf-8") as fh:
+            fh.write('"another line" [quoted, P1-E01].\n')
+        code, out = self._run(folder)
+        self.assertIn("two different quotes cite P1-E01", out)
+
+    def test_shortened_repeat_of_one_quote_is_not_two_quotes(self):
+        folder = self._persona('"the solidity or appositeness of my findings" [quoted, P1-E01]; later '
+                               '"the solidity ... of my findings" [quoted, P1-E01].\n')
+        code, out = self._run(folder)
+        self.assertNotIn("two different quotes", out)
+
+    def test_two_quotes_from_one_source_warn(self):
+        folder = self._persona('"first line" [quoted, P1-E01] and "second line" [quoted, P1-E01].\n')
+        code, out = self._run(folder)
+        self.assertEqual(code, 0)
+        self.assertIn("two different quotes cite P1-E01", out)
+
+    def test_code_formatted_label_with_an_id_is_checked(self):
+        folder = self._persona('He wrote "a short line" `[quoted, P1-E01]`.\n')
+        code, out = self._run(folder)
+        self.assertEqual(code, 0)
+        self.assertIn("1 checked", out)
+
+    def test_labels_written_as_code_and_paraphrase_are_skipped(self):
+        folder = self._persona("Labels: `[quoted]` marks a quote. A paraphrase [quoted, P1-E02] has no marks.\n")
+        code, out = self._run(folder)
+        self.assertEqual(code, 0)
+        self.assertIn("0 checked", out)
+
+
 if __name__ == "__main__":
     unittest.main()

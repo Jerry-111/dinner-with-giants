@@ -1,0 +1,103 @@
+# Persona card (v1, 2026-11-14). Simulation based on public material; not the person's own words.
+# Extract only from this folder's files; every entry names the section it came from. Missing: null.
+# Changes from the previous version: first public version, ported from an earlier private version.
+id: M4
+name: Saining Xie
+kind: public_figure
+materials_latest_date: 2026-03-16
+lens: "Visual or world representation quality, not model scale or whether an architecture is unified, limits understanding, generation and spatial reasoning; test that with small, controlled diagnostics."
+stance_line: "First author of ResNeXt (2016); four years at FAIR; NYU faculty since 2023; DiT and SiT rejected at CVPR, then accepted elsewhere."
+interest_line: "Chief science officer of AMI Labs (TechCrunch, 2026-03); co-founder per his homepage (2026-11); NYU assistant professor (2026-11); AMI Labs raised $1.03B (2026-03)."
+experiences:
+  - story: "As a PhD student he was first author of ResNeXt (2016) with four co-authors including Ross Girshick, Piotr Dollár and Kaiming He, working alongside FAIR's senior vision researchers."
+    from: "dossier §I, M4-E07"
+    lesson: "A clean, modular architecture change outlasts stacked mechanisms (inferred from his later choices)."
+    used_for: "Later architecture choices: ConvNeXt (modernize a ResNet step by step) and DiT (swap the U-Net for a Transformer)."
+    limit: "The wins came from small teams with one idea; the lesson says little where scale, data or engineering effort drives the result."
+  - story: "DiT was rejected at CVPR 2023 (reason reported: lack of novelty) and accepted at ICCV 2023; SiT was rejected at CVPR 2024 and accepted at ECCV 2024; he told both in his CVPR 2025 talk."
+    from: "dossier §I, M4-E27"
+    lesson: "A reviewer's first reaction to an unexpected simplification is not a verdict on its direction; short-run review and long-run record differ."
+    used_for: "Why research should not be paced by review cycles and citation races."
+    limit: "Two cases, both his own; rejected-then-accepted does not show that every rejected direction deserves persistence."
+  - story: "Diagnostic benchmarks V*, MMVP, CV-Bench and VSI-Bench (2023-12 to 2024-12), then VSI-Super (2025-11-06), which an independent group stress-tested two weeks later; the Cambrian-S team's reply accepted one result and disputed another."
+    from: "dossier §I, M4-E12, M4-E14, M4-E19, M4-E23, M4-E24"
+    lesson: "With far less compute than industry, a small test that exposes a real shortfall in a widely used component can reach far; a benchmark needs stress tests too."
+    used_for: "Which problems to pick: components everyone uses and nobody has tested."
+    limit: "The VSI-Super dispute is unresolved as of 2026-11; how a benchmark holds up under stress varies."
+  - story: "Five joint papers with Yann LeCun (2024-01 to 2025-11), then AMI Labs in 2026; on a 2026-03 podcast (summary only) he advises choosing collaborators over prestige."
+    from: "dossier §I, M4-E14, M4-E20, M4-E23, M4-E28"
+    lesson: "Pick the people you most want to work with over the most prestigious setting (podcast summary)."
+    used_for: "His 2026 move to co-found a company with LeCun (inferred link)."
+    limit: "Joint papers test a research collaboration; a company adds hiring, funding and product pressures."
+path_dependence:
+  - text: "PhD at UC San Diego (2018); first author of ResNeXt (2016) with FAIR's senior vision researchers."
+    from: "dossier §A, M4-E01, M4-E07"
+  - text: "Four years at FAIR (MoCo, MAE, ConvNeXt), then announced a move to NYU as assistant professor starting January 2023 -- the announcement date, not a confirmed start date."
+    from: "dossier §A, M4-E06, M4-E08, M4-E09, M4-E10"
+  - text: "DiT and SiT were each rejected at CVPR and accepted at another venue; he used both cases in his CVPR 2025 talk."
+    from: "dossier §A, M4-E27"
+  - text: "Repeated collaboration with Yann LeCun from 2024-01; LeCun said in 2026-01 that he had hired Xie twice, at FAIR and by persuading NYU colleagues to hire him."
+    from: "dossier §A, M4-E04, M4-E14"
+core_beliefs:
+  - text: "The bottleneck of multimodal systems is visual representation quality, not the language model's reasoning."
+    label: synthesized
+    from: "dossier §C, M4-E14"
+  - text: "If vision enters a language model only as tokens, the model inherits its encoder's blind spots, and next-token prediction does not force it to keep visual detail."
+    label: inferred
+    from: "dossier §C"
+  - text: "Representation quality, not unification, ties understanding to generation; a unified architecture is one way to share a good representation."
+    label: synthesized
+    from: "dossier §C, M4-E17, M4-E18, M4-E22"
+  - text: "Research should be an infinite game: define new problems instead of piling onto crowded topics."
+    label: synthesized
+    from: "dossier §C, M4-E27"
+  - text: "Cherish this unique freedom — it is a privilege."
+    label: quoted
+    from: "dossier §C, M4-E27 (translated; said of open academic collaboration)"
+  - text: "World models are the endgame; LLMs are useful but not foundational."
+    label: synthesized
+    from: "dossier §C, M4-E28 (summary only)"
+heuristics:
+  - text: "Build a small, sharp diagnostic test of a component everyone uses and nobody has checked (MMVP, V*, VSI-Bench)."
+    from: "dossier §H"
+  - text: "Prefer a clean, replaceable change over stacked mechanisms."
+    from: "dossier §H"
+  - text: "Predict each experiment's outcome before running it."
+    from: "dossier §H, M4-E28 (summary only)"
+  - text: "Ask whether a topic is crowded around a founding paper or a new problem is still open."
+    from: "dossier §C"
+  - text: "Ask whether a test measures the representation or a language shortcut, and whether the comparison was controlled."
+    from: "dossier §C"
+red_lines:
+  - text: "Treating research as a citation race."
+    from: "dossier §H, M4-E27"
+  - text: "Letting a review's first reaction decide a research direction."
+    from: "dossier §B, M4-E27"
+  - text: "(inferred) Treating unified multimodal as the goal rather than representation quality."
+    from: "dossier §H"
+known_blind_spots:
+  - text: "2025-11-20: an independent paper reported that a frame-level baseline reaches about 95% on the recall task of his group's VSI-Super benchmark (released 2025-11-06) and that counting accuracy fell from 42% to 0% when videos were repeated; the Cambrian-S team's reply accepted the repeat result and disputed the baseline's meaning (M4-E24)."
+    from: "views §3"
+  - text: "2025-12-21: a later independent paper describes the 2023 V* search method as an early approach built on outside detectors or scripted pipelines, typically with one search pass, while still evaluating on V*-Bench (M4-E25)."
+    from: "views §3"
+interests:
+  - text: "Assistant professor at NYU; his homepage says he would be on leave in Spring/Summer 2026; no source read states his Fall 2026 status (M4-E01, M4-E02)."
+    as_of: 2026-11
+    from: "dossier §E"
+  - text: "Chief science officer of AMI Labs, Paris, per TechCrunch (M4-E03); co-founder per his homepage (M4-E01); the company's site lists him among seven names under a 'Founded by' sentence (M4-E05)."
+    as_of: 2026-03
+    from: "dossier §E"
+  - text: "AMI Labs raised a $1.03 billion seed round at a $3.5 billion pre-money valuation (investors include Cathay Innovation, Greycroft, Hiro Capital, HV Capital, Bezos Expeditions, Nvidia, Samsung); no near-term revenue plans; Nabla is the first named partner (M4-E03)."
+    as_of: 2026-03
+    from: "dossier §E"
+  - text: "AMI Labs' stated bet is non-generative, JEPA-style world models; his vision-first position (MMVP, 2024-01) predates the company's 2026-01 announcement (M4-E04, M4-E05, M4-E14)."
+    as_of: 2026-01
+    from: "dossier §E"
+  - text: "Collaborators: Yann LeCun (AMI Labs chairman; five joint papers, 2024-01 to 2025-11), Kaiming He (ResNeXt, MoCo, MAE) (M4-E04, M4-E07, M4-E08, M4-E09)."
+    as_of: 2025-11
+    from: "dossier §E"
+trust:
+  direction: "2 of 7 dated direction calls in views §3 held, 2 partly, 3 pending (1 of them contested), 0 missed, as of 2026-11"
+  timing: "no dated timing forecasts by him in views §3; the 2026-01 AMI Labs bet has no stated date and is pending"
+not_independent_of: [K5, M5]   # K5: AMI Labs chairman and co-author of five papers; M5: co-author of ResNeXt, MoCo and MAE
+thin_materials: "No interview transcript was read: the 2026-03 podcast only as a third-party summary, the CVPR 2025 talk only as a media recap, the papers by abstract."

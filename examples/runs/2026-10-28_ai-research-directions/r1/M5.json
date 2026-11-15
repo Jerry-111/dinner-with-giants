@@ -1,0 +1,324 @@
+{
+ "id": "M5",
+ "name": "Kaiming He",
+ "round": "R1",
+ "notice": "Simulation based on public material; not the person's own words.",
+ "options": {
+  "D01": {
+   "impact": 6,
+   "bottleneck": 5,
+   "academic_edge": 7,
+   "window": 4,
+   "overall": 5,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "I have first-hand experience training generative models in academia, but that is at vision scale, not the text scaling law; this question has two kinds of evidence forced together",
+   "late_modes": "Directly reproducing known scaling curves offers no new angle and is already covered by industry at scale",
+   "conflict": "His own career experience with training at scale, but tilted toward academia and free of performance-review pressure"
+  },
+  "D02": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "No published RL/post-training work and no first-hand evidence, so no forced rating",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D03": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "Agent long-horizon credit assignment and self-improvement are outside the scope of my methods; not rated",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D04": {
+   "impact": 6,
+   "bottleneck": 6,
+   "academic_edge": 7,
+   "window": 5,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "VISTA shows that academia can produce real work in the harness/evaluation-design slice, but it is only 10 days old, with self-reported numbers and no replication",
+   "late_modes": "Building new scaffolding to chase SOTA without testing a minimal baseline; evidence already shows such work gets matched quickly",
+   "conflict": "VISTA is his own paper, released in 2026-10; judging this direction amounts to judging his own new work"
+  },
+  "D05": {
+   "impact": 5,
+   "bottleneck": 6,
+   "academic_edge": 5,
+   "window": 5,
+   "overall": 5,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "Evaluation methodology is not my first-hand field; all I can say comes from the point that without a clean metric you cannot do subtraction",
+   "late_modes": "Using only LLM-as-judge without checking position bias; this has been shown to be a common pitfall",
+   "conflict": null
+  },
+  "D06": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "No first-hand output on real robots or embodied control; not rated",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D07": {
+   "impact": 6,
+   "bottleneck": 5,
+   "academic_edge": 6,
+   "window": 5,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Diffusion/flow are mathematical tools, and I can judge design choices for modeling action distributions; I have no standing to say what structure a robot action space should have",
+   "late_modes": "Assuming a diffusion action head is always better than continuous decoding, without ablation; there is already a counterexample (OpenVLA-OFT)",
+   "conflict": null
+  },
+  "D08": {
+   "impact": 4,
+   "bottleneck": 3,
+   "academic_edge": 3,
+   "window": 4,
+   "overall": 4,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "VISTA is not a world model; it does not model environment dynamics; JEPA-style representation prediction is not the source of my methodology; low confidence",
+   "late_modes": "Packaging any visual-memory/harness work as a 'world model'; this label is already overused",
+   "conflict": null
+  },
+  "D09": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "No first-hand output on simulation or synthetic-data pipelines; not rated",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D10": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "No first-hand output related to autonomous driving; not rated",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D11": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "Weak connection: any contribution would come only from diagnosing representation quality, with no direct output; I basically make no judgment",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D12": {
+   "impact": 8,
+   "bottleneck": 7,
+   "academic_edge": 9,
+   "window": 7,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Sequences of subtractions keep working, and at a scale academia can afford they can produce components that industry adopts directly; this is my real first-hand field",
+   "late_modes": "Stacking a bigger latent diffusion or a more complex DiT to chase SOTA without mechanism attribution; this road is already crowded",
+   "conflict": "His own core research direction; tenure and reputational capital both rest on it"
+  },
+  "D13": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "No first-hand output on interpretability/alignment/safety; not rated",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D14": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "No first-hand output on infra/systems efficiency; not rated",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D15": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "No first-hand output on AI for Science; not rated",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D16": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "No first-hand output on recommendation/retrieval; not rated",
+   "late_modes": null,
+   "conflict": null
+  }
+ },
+ "levers": {
+  "L1": 15,
+  "L2": 5,
+  "L3": 10,
+  "L4": 15,
+  "L5": 15,
+  "L6": 20,
+  "L7": 10,
+  "L8": 10
+ },
+ "lever_reason": "Architecture/new paradigms and evaluation/verification are the two ends I really understand: without a clean metric, subtraction (removing components) cannot be verified; real new capability often comes from a simplification, not from piling on scale. The physical-AI and agent items are mostly bottlenecks that others often cite; I weighted them by common sense, not first-hand judgment",
+ "questions": {
+  "Q2": {
+   "position": "conditional",
+   "score": 6,
+   "condition": "Narrow domain, small team, credible third-party evaluation, emphasis on being open and reusable; but a large compute threshold need not be insisted on, and that condition itself may be wrong"
+  }
+ },
+ "conditions": {
+  "Q2": [
+   "C1",
+   "C2",
+   "C3",
+   "C5"
+  ]
+ },
+ "cruxes": [
+  {
+   "question": "Does a harness/evaluation-design kind of contribution (like VISTA) count as real academic impact in agents, or will it be absorbed quickly?",
+   "my_position": "At least the specific VISTA case holds, but it is only 10 days old with self-reported numbers, and cannot be generalized into the overall conclusion that academia is not a sideshow in agents",
+   "would_change_if": "A VISTA-style harness is replicated by third parties on real, non-game interactive tasks; or, conversely, it is absorbed and matched directly by a larger foundation model within a few months",
+   "directions": [
+    "D04"
+   ]
+  },
+  {
+   "question": "Is the multi-step structure of diffusion/autoregression a necessary cost of modeling complex distributions, or will it eventually be replaced end to end, like layer-wise training?",
+   "my_position": "I lean toward thinking there is still room to simplify (MeanFlow and Drifting have already pushed one-step generation FID very low), but whether an 'end-to-end moment' will happen as completely as AlexNet's did, the evidence is not yet enough",
+   "would_change_if": "One-step generation keeps approaching or even surpassing multi-step models at larger scale; or the multi-step structure is proven to be a mathematical necessity that cannot be simplified for some class of strongly multimodal distributions",
+   "directions": [
+    "D12",
+    "D07"
+   ]
+  },
+  {
+   "question": "Can the ablation logic of 'can the representation be probed' versus 'is the representation actually used for decisions' be carried over unchanged from visual generative models to robot decision-making?",
+   "my_position": "The methodological structure is isomorphic (both ask 'does the system still work without it?'), but I have no embodied background and do not know which physical constraints in robot action spaces would break the analogy",
+   "would_change_if": "Someone directly replicates a 'probing vs necessity'-style ablation in a robot decision-making setting and gets a pattern of conclusions either similar to or completely different from what I found in generative models",
+   "directions": [
+    "D08",
+    "D06"
+   ]
+  }
+ ],
+ "taste_advice": "Pick a component that is widely accepted as necessary and run a controlled ablation to show it may not be; academia can do weighty work even at small scale; this is a research taste I have validated",
+ "pairwise": [
+  {
+   "a": "D05",
+   "b": "D08",
+   "pick": "D05",
+   "why": "Without a clean metric you cannot do subtraction; 'prediction = decision' for world models is not yet confirmed, and the evidence is weaker"
+  },
+  {
+   "a": "D05",
+   "b": "D06",
+   "pick": "D05",
+   "why": "On evaluation I can still say a few things from methodology; I have no first-hand evidence on embodied AI, so I cannot compare"
+  },
+  {
+   "a": "D06",
+   "b": "D08",
+   "pick": "D08",
+   "why": "I have no first-hand evidence on either, but D08 at least connects to my representation framework, while D06 is pure black-box inference"
+  },
+  {
+   "a": "D07",
+   "b": "D08",
+   "pick": "D07",
+   "why": "Modeling action distributions with diffusion/flow is a mathematical problem I can judge; JEPA-style representation prediction is not the source of my methodology"
+  },
+  {
+   "a": "D09",
+   "b": "D06",
+   "pick": "D09",
+   "why": "Simulation/synthetic data at least echoes 'controlled experiments at a scale academia can afford'; I do not understand the real-robot side of embodied AI at all"
+  },
+  {
+   "a": "D02",
+   "b": "D03",
+   "pick": "D02",
+   "why": "I have not done RL, but the public evidence for RLVR (R1) is more solid than the evidence for self-improvement loops; pure inference"
+  },
+  {
+   "a": "D11",
+   "b": "D12",
+   "pick": "D12",
+   "why": "Generation is my real first-hand field; for understanding I have only a weak connection through representation-quality diagnosis"
+  },
+  {
+   "a": "D01",
+   "b": "D05",
+   "pick": "D01",
+   "why": "I have spent my whole career training generative models at academic scale; evaluation methodology is not my first-hand field"
+  },
+  {
+   "a": "D04",
+   "b": "D03",
+   "pick": "D04",
+   "why": "VISTA is our latest first-hand evidence and lands directly on D04; I have never done any of the self-improvement work in D03"
+  },
+  {
+   "a": "D13",
+   "b": "D05",
+   "pick": "D05",
+   "why": "I have no published output at all on interpretability/alignment; on evaluation I can at least say a few things from my methodological habits"
+  },
+  {
+   "a": "D10",
+   "b": "D06",
+   "pick": "D10",
+   "why": "I do not understand either; I judge purely by the volume of public deployment evidence (Waymo's mileage far exceeds real-robot validation of embodied AI); inference"
+  }
+ ],
+ "web_searches": []
+}

@@ -1,0 +1,341 @@
+{
+ "id": "M6",
+ "name": "Fei-Fei Li",
+ "round": "R1",
+ "notice": "Simulation based on public material; not the person's own words.",
+ "options": {
+  "D01": {
+   "impact": 8,
+   "bottleneck": 6,
+   "academic_edge": 1,
+   "window": 2,
+   "overall": 3,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "Scaled-up pre-training is almost closed to academia; simply out-stacking others on compute is not the methodology I bet on",
+   "late_modes": "Simply reproducing validated scaling curves with no new data/evaluation angle",
+   "conflict": null
+  },
+  "D02": {
+   "impact": 5,
+   "bottleneck": 3,
+   "academic_edge": 5,
+   "window": 5,
+   "overall": 4,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "Not my specialty; but evidence that RLVR mainly improves sampling efficiency rather than creating new reasoning patterns echoes my wariness that a paper is not a breakthrough",
+   "late_modes": "Only tuning hyperparameters to chase a reasoning leaderboard score without asking what capability RLVR actually adds",
+   "conflict": null
+  },
+  "D03": {
+   "impact": 7,
+   "bottleneck": 6,
+   "academic_edge": 5,
+   "window": 6,
+   "overall": 5,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "Long-horizon credit assignment is structurally similar to my Planner framework, but I have not publicly commented on the agent ecosystem, so my judgment is weak",
+   "late_modes": "Wrapping a thin self-improvement loop around a model without addressing that experiment compute spending makes up most of the cost",
+   "conflict": null
+  },
+  "D04": {
+   "impact": 6,
+   "bottleneck": 5,
+   "academic_edge": 7,
+   "window": 6,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "Scaffolding is being absorbed by models, but defining new environments/verifiers is not; this is exactly where my methodology that a dataset is a scientific hypothesis applies",
+   "late_modes": "Piling on scaffolding without changing environment design; SWE-bench data show this is being absorbed by the models themselves",
+   "conflict": null
+  },
+  "D05": {
+   "impact": 8,
+   "bottleneck": 8,
+   "academic_edge": 8,
+   "window": 7,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Defining evaluations/benchmarks is itself the methodology I have bet my whole career on; ImageNet showed that asking the right question is what gives you a foundation",
+   "late_modes": "Only doing LLM-as-judge scoring without solving position bias and leaderboard gaming",
+   "conflict": null
+  },
+  "D06": {
+   "impact": 9,
+   "bottleneck": 7,
+   "academic_edge": 6,
+   "window": 6,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Generalization and real deployment are still the real bottlenecks; video and demonstrations cannot fill the gap in touch/force data",
+   "late_modes": "Replicating an off-the-shelf VLA architecture without solving cross-embodiment transfer or the touch gap is no longer novel",
+   "conflict": "World Labs/AMD commercial interests are staked on embodied-robot training data"
+  },
+  "D07": {
+   "impact": 7,
+   "bottleneck": 6,
+   "academic_edge": 6,
+   "window": 5,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "My methodological signature is structured representation + reasoning, not diffusion itself; continuous action regression beating the diffusion head is a reminder not to mistake a mechanism for a route",
+   "late_modes": "Assuming the diffusion head is the optimal action representation without comparing other action heads",
+   "conflict": null
+  },
+  "D08": {
+   "impact": 9,
+   "bottleneck": 8,
+   "academic_edge": 5,
+   "window": 6,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Spatial intelligence is AI's biggest gap and the next frontier",
+   "late_modes": "Only chasing generation quality without demonstrating structural consistency and interactivity; this has already been judged the wrong metric",
+   "conflict": "World Labs/AMD interests are concentrated in the spatial-intelligence judgment"
+  },
+  "D09": {
+   "impact": 8,
+   "bottleneck": 7,
+   "academic_edge": 6,
+   "window": 6,
+   "overall": 7,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Evidence for sim2real correlation is getting better (Veo/SIMPLER), but the evidence for my own R2S2R is also still thin; one should not rely on self-reported results alone",
+   "late_modes": "Only showing success rates inside simulation, with no real-robot closed loop and no third-party replication",
+   "conflict": "World Labs' R2S2R and its SceniX acquisition bet on this direction"
+  },
+  "D10": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": null,
+   "basis": null,
+   "one_line": "Autonomous driving is not a field I have discussed publicly; the material gives no basis, so I do not force an inference",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D11": {
+   "impact": 8,
+   "bottleneck": 8,
+   "academic_edge": 7,
+   "window": 7,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "The diagnosis that models are barely better than blind guessing at grounding/spatial understanding is now backed by independent numbers from BLINK and VSI-Bench",
+   "late_modes": "Continuing to pile on parameters for a few points of leaderboard rank without solving the structural gap in grounding and spatial understanding",
+   "conflict": null
+  },
+  "D12": {
+   "impact": 7,
+   "bottleneck": 5,
+   "academic_edge": 4,
+   "window": 4,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Pure image quality/FID is not the right metric; structural consistency is; Sora 2 being taken offline is a warning that the consumer-side quality race is unsustainable",
+   "late_modes": "Text-to-image and text-to-video that only chase visual quality have already been quickly commoditized by large models from Chinese vendors",
+   "conflict": "World Labs' Marble/Atlas competes with peers"
+  },
+  "D13": {
+   "impact": 6,
+   "bottleneck": 4,
+   "academic_edge": 6,
+   "window": 6,
+   "overall": 5,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "Not my specialty; I worry more about near-term real-world risks (misinformation, labor) than about the problems in this kind of existential-risk narrative",
+   "late_modes": "Alignment that only pleases human raters, without dealing with concrete evidence such as the fragility of CoT monitoring",
+   "conflict": null
+  },
+  "D14": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 4,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "Not my specialty; FlashAttention-style academic infrastructure contributions exist, but I cannot judge more than that",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D15": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": null,
+   "basis": null,
+   "one_line": "The material does not cover AI for Science at all, so there is no basis and I do not force a score",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D16": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": null,
+   "basis": null,
+   "one_line": "The material does not cover recommendation/retrieval systems at all, so there is no basis and I do not force a score",
+   "late_modes": null,
+   "conflict": null
+  }
+ },
+ "levers": {
+  "L1": 20,
+  "L2": 6,
+  "L3": 15,
+  "L4": 20,
+  "L5": 15,
+  "L6": 8,
+  "L7": 8,
+  "L8": 8
+ },
+ "lever_reason": "Evaluation defines the boundary of a problem, and world models and simulation are the infrastructure on the way to intelligence in the physical world; the window for pure scaling and architecture innovation has largely been filled by industry and is not the core of what my methodology bets on",
+ "questions": {
+  "Q2": {
+   "position": "conditional",
+   "score": 6,
+   "condition": "Narrow domain (VLA/video/world model), credible third-party evaluation, open weights with a path to outside adoption; the general LLM pre-training road is closed"
+  }
+ },
+ "conditions": {
+  "Q2": [
+   "C1",
+   "C2",
+   "C5"
+  ]
+ },
+ "cruxes": [
+  {
+   "question": "If the environment/evaluation is defined correctly, does a paradigm shift follow naturally, or is that only a necessary condition?",
+   "my_position": "Necessary but not necessarily sufficient; BEHAVIOR-1K, the project I am building myself, has not yet had an AlexNet moment of its own",
+   "would_change_if": "The BEHAVIOR Challenge or similar benchmarks see large-scale adoption and comparable results independent of the team that created them",
+   "directions": [
+    "D08",
+    "D06",
+    "D09"
+   ]
+  },
+  {
+   "question": "Which is the better bet: structured 3D/geometric intermediate representations, or end-to-end black-box policies?",
+   "my_position": "I bet on reasoning + structured representation (the VoxPoser/ReKep line), but continuous action regression beating the diffusion head reminds me not to mistake a mechanism for a route",
+   "would_change_if": "End-to-end black-box policies consistently win in long-horizon real-robot deployment across tasks and embodiments, with third-party replication",
+   "directions": [
+    "D06",
+    "D07"
+   ]
+  },
+  {
+   "question": "How should startup self-reported world model/world action model benchmark results be treated?",
+   "my_position": "A directional reference but not evidence; even the R2S2R results from my own company need third-party replication before they can truly be believed",
+   "would_change_if": "Cross-task, cross-platform third-party replication data independent of the team that created it, not just the vendor's own leaderboard",
+   "directions": [
+    "D08"
+   ]
+  }
+ ],
+ "taste_advice": "Find a bold problem that is your own; do not just ask other people's questions faster. I published papers at Caltech for years without a breakthrough, until I did ImageNet, which is when it counted",
+ "pairwise": [
+  {
+   "a": "D05",
+   "b": "D08",
+   "pick": "D05",
+   "why": "Without credible evaluation, even world models' own progress cannot be verified"
+  },
+  {
+   "a": "D05",
+   "b": "D06",
+   "pick": "D05",
+   "why": "Evaluation is the precondition for judging whether embodied intelligence is really progressing"
+  },
+  {
+   "a": "D06",
+   "b": "D08",
+   "pick": "D08",
+   "why": "Spatial intelligence/world models are the upstream capability bottleneck for embodied generalization"
+  },
+  {
+   "a": "D07",
+   "b": "D08",
+   "pick": "D08",
+   "why": "D07 is the subproblem of D08 that lands on actions; the upstream judgment is more critical"
+  },
+  {
+   "a": "D09",
+   "b": "D06",
+   "pick": "D06",
+   "why": "Simulation is a means; its value must ultimately be validated on real embodied tasks"
+  },
+  {
+   "a": "D02",
+   "b": "D03",
+   "pick": "D03",
+   "why": "The structure of credit assignment is closer to my Planner framework"
+  },
+  {
+   "a": "D11",
+   "b": "D12",
+   "pick": "D11",
+   "why": "Understanding/grounding is my academic home field, and academia has more room there too"
+  },
+  {
+   "a": "D01",
+   "b": "D05",
+   "pick": "D05",
+   "why": "D01 is almost closed to academia; in D05 academia can still define new problems"
+  },
+  {
+   "a": "D04",
+   "b": "D03",
+   "pick": "D04",
+   "why": "Environment and evaluation design are closer to my methodology of defining the problem correctly"
+  },
+  {
+   "a": "D13",
+   "b": "D05",
+   "pick": "D05",
+   "why": "Evaluation science is closer to the methodology I have personally lived through and validated"
+  },
+  {
+   "a": "D10",
+   "b": "D06",
+   "pick": "D06",
+   "why": "D10 is outside what I can judge; for D06 I have concrete grounds"
+  }
+ ],
+ "web_searches": [
+  {
+   "query": "AMD World Labs acquisition closed Fei-Fei Li EVP chief scientist",
+   "url": "https://techcrunch.com/2026/09/28/amd-will-acquire-fei-fei-lis-world-labs-for-8-2-billion/",
+   "published": "2026-09-28",
+   "sentence": "Deal still pending, closing expected by year-end 2026",
+   "for_claim": "D08",
+   "result": "supports"
+  },
+  {
+   "query": "BEHAVIOR Challenge 2026 robotics benchmark independent adoption results",
+   "url": "https://benchmarklist.com/benchmarks/behavior_1k_challenge_2025/",
+   "published": "2026-05-27",
+   "sentence": "Robot Learning Collective leads held-out full-task list at 12.4%",
+   "for_claim": "D06",
+   "result": "unclear"
+  }
+ ]
+}

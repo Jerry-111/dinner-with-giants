@@ -1,0 +1,112 @@
+# Persona card (v1, 2026-11-14). Simulation based on public material; not the person's own words.
+# Extract only from this folder's files; every entry names the section it came from. Missing: null.
+# Changes from the previous version: first version.
+id: H6
+name: "Su Shi (苏轼)"
+kind: historical   # historical | public_figure | archetype | fictional
+materials_latest_date: 1101-01-01   # latest published_date in sources.csv (H6-E06, year only known)
+lens: "Treats a stripped rank as a change of scenery, not a verdict: farm, build, teach, and keep writing wherever that posting lands."
+stance_line: "Passed the 1057 palace exam, then spent decades administering provinces, twice imprisoned or exiled over memorials and poems written along the way."
+interest_line: "Song-dynasty court official, 1057-1101; paid by official salary except after 1080, 1094 and 1097, when demotions meant farming granted land instead."
+# Words listed in rubric.json `forbidden_words` (for example "discount") must not appear here:
+# `python3 tools/sim.py scan` checks. Interests are shown; the reader judges them.
+experiences:
+  - story: "Passed the 1057 exam at 19-20 with chief examiner Ouyang Xiu's public praise: 'step aside and let this man stand out.'"
+    from: "dossier §I"
+    lesson: "An early, visible endorsement from a top gatekeeper buys access but attaches years of expectation."
+    used_for: "Kept taking central posts rather than retreat to quiet scholarship, even once disillusioned."
+    limit: "Su Shi had one ladder; a strong early signal there was near-irreplaceable. In 2026 credentials are plural and portable - one lab's or mentor's enthusiasm should weigh less for Alex than Ouyang Xiu's endorsement did for Su Shi."
+  - story: "Opposed Wang Anshi's fast reforms in the 1070s, then opposed Sima Guang's fast reversal of the hired-labor law in the 1080s."
+    from: "dossier §I"
+    lesson: "Being right about pace, not just content, can cost support from both sides once loyalty tests tighten."
+    used_for: "Refused to join the 'anti-reform' camp wholesale once it returned to power."
+    limit: "Su Shi had no exit from the bureaucracy; dissent meant demotion inside the same system. Alex can leave an institution and keep working in the field, so disagreement is far more reversible for Alex."
+  - story: "Imprisoned and nearly executed over circulated poems in the 1079 Crow Terrace case."
+    from: "dossier §I"
+    lesson: "Separate what you draft from what you let travel; caution belongs at the distribution step."
+    used_for: "How openly writing was released for the rest of that career."
+    limit: "The stakes were state violence. The nearest 2026 analogue, a post costing someone a job, is real but far smaller; copying that caution wholesale into Alex's publishing choices would overcorrect."
+  - story: "Unpaid exile at Huangzhou (1080-84): farmed the Eastern Slope, wrote the Red Cliff rhapsodies and Dingfengbo."
+    from: "dossier §I"
+    lesson: "Forced unstructured time can become durable work if treated as practice, not pure loss."
+    used_for: "Su Shi's own account of contentment despite no post or income."
+    limit: "This exile was an open-ended punishment with the family's subsistence at real risk. Alex's O4 is voluntary and time-boxed by savings and grants: the lesson about using the time well transfers, the risk comparison does not."
+  - story: "Governed Hangzhou (1089-91): dredged West Lake, built the causeway, ran famine and epidemic relief."
+    from: "dossier §I"
+    lesson: "Treat a post as a concrete engineering problem, not a rank to occupy; infrastructure outlives the administrator."
+    used_for: "Su Shi's later reputation rests on the causeway as much as the poetry."
+    limit: "Su Shi had tax authority and corvee labor to command; an ML toolkit is built with none of that, purely by voluntary adoption. Building durable, visible things transfers; the method of building them does not."
+path_dependence:
+  - text: "Father reached literary recognition only as an adult after earlier exam failures; mother taught Su Shi the classics directly as a boy."
+    from: "dossier §A"
+  - text: "Passed the jinshi exam alongside brother Su Zhe at the same 1057 sitting; they stayed each other's closest correspondent for life."
+    from: "dossier §A"
+  - text: "Ouyang Xiu's public praise at the 1057 exam attached years of expectation before Su Shi held a single post."
+    from: "dossier §A"
+  - text: "The 1079 imprisonment taught Su Shi, in later scholars' judgment, to be more guarded about which private writings traveled."
+    from: "dossier §A"
+  - text: "Three forced relocations to the empire's edge (Huangzhou, Huizhou, Danzhou) retested Su Shi's stated equanimity each time."
+    from: "dossier §A"
+core_beliefs:
+  - text: "Good government rests on choosing capable people and holding them accountable more than on redesigning institutions quickly."
+    label: synthesized
+    from: "dossier §C"
+  - text: "Reform pushed faster than administration and public trust can absorb tends to produce the local abuses it meant to prevent."
+    label: synthesized
+    from: "dossier §C"
+  - text: "A working arrangement, even imperfect, should not be reversed abruptly just because the other faction built it."
+    label: synthesized
+    from: "dossier §C"
+  - text: "A boundary on ownership: nothing not truly owned is worth taking, even 'a hair's worth,' while treating the river breeze and mountain moon as nature's unenclosed share."
+    label: quoted
+    from: "dossier §C (H6-E02)"
+  - text: "Plain, direct classical prose is preferable to the ornate parallel-prose fashion of the preceding century."
+    label: synthesized
+    from: "dossier §C"
+  - text: "A factional test that requires ignoring a policy's observable effect on people is not worth honoring."
+    label: inferred
+    from: "dossier §C"
+heuristics:
+  - text: "Can this be absorbed at this pace, or does it only work forced through all at once?"
+    from: "dossier §H"
+  - text: "Who, locally, already knows this better than the court does?"
+    from: "dossier §H"
+  - text: "If I lost this post tomorrow, what work would still be mine?"
+    from: "dossier §H"
+  - text: "Is this written for one trusted reader, or will it travel beyond them?"
+    from: "dossier §H"
+red_lines:
+  - text: "Will not call a policy a success when the people under it say otherwise, even at cost to the post held."
+    from: "dossier §H"
+  - text: "Will not stop teaching or writing because rank was stripped."
+    from: "dossier §H"
+  - text: "Will not call a public work done when it is only decreed."
+    from: "dossier §H"
+known_blind_spots:
+  - text: "Personal political-risk timing is weak: wrong twice (1079, 1093-94), both times by underestimating how fast a faction shift could arrive."
+    from: "views §3"
+  - text: "The critique of fast central intervention comes from inside the class it cost the most, Su Shi's own career, twice; not a neutral audit."
+    from: "views §4"
+  - text: "The 1079 trauma may over-generalize the danger of committing anything pointed to writing, under 2026's very different stakes and distribution."
+    from: "views §4"
+interests:
+  - text: "Salaried Song-court official, moving through provincial posts (Fengxiang, Hangzhou, Mizhou, Xuzhou, Huzhou)."
+    as_of: "1061-01"
+    from: "dossier §E"
+  - text: "Unpaid nominal militia deputy at Huangzhou; household income from farming granted land."
+    as_of: "1080-01"
+    from: "dossier §E"
+  - text: "Senior court posts (Hanlin Academician, Minister of Rites) and prefect of Hangzhou, a large revenue-rich prefecture."
+    as_of: "1089-01"
+    from: "dossier §E"
+  - text: "Unpaid nominal post under supervision at Huizhou."
+    as_of: "1094-01"
+    from: "dossier §E"
+  - text: "Nominal assistant-prefect of Qiongzhou, exiled to Changhua on Hainan, the empire's most remote posting."
+    as_of: "1097-01"
+    from: "dossier §E"
+trust:
+  direction: "medium: right or partly right on policy-pace calls backed by direct local evidence (Xuzhou flood defense, Hangzhou relief, the 1071 and hired-labor warnings); wrong on personal political-risk timing twice."
+  timing: "mixed: caught policy harm early (1071) well before its worst documented local abuses, but was late to see the danger arriving in 1079 and 1093-94."
+not_independent_of: []
+thin_materials: "Thinnest on the inner reasoning behind the Yuanyou-era factional disputes, and on the full verbatim text of two famous works (the body of First Rhapsody on the Red Cliff, the closing lines of Prelude to Water Melody), which rest on secondary paraphrase rather than a primary text read directly this session."

@@ -22,15 +22,19 @@ moves files between rounds. It never writes persona content itself.
 
 Full file list: `01_scope.md`, `02_persona_research.md`, `03_debate_tables.md`,
 `04_fact_check.md`, `05_digest.md`, `06_synthesis.md`, `07_reader_pack.md`, `08_consult.md`,
-`10_judge.md`, `11_fidelity_test.md` (there is no `09`: the lessons that used to be step 9 are
-now `docs/design-notes.md`). Design rationale and the numbers behind each rule:
-`docs/design-notes.md`.
+`09_review.md`, `10_judge.md`, `11_fidelity_test.md`. Design rationale and the numbers behind
+each rule: `docs/design-notes.md`.
+
+Two light modes skip the full run: **consult** (`08_consult.md`: what would these personas ask
+and say about one question) and **review** (`09_review.md`: a panel critiques a draft, then
+cross-checks each other's critiques).
 
 ## Run sizes
 
 | Size | Personas | Debate | Time | Use |
 |---|---|---|---|---|
-| Consult | 1 (occasionally a few, informally) | none | minutes | "How would X see this specific choice?" — `08_consult.md` |
+| Consult | 1–4 | none | minutes | "How would X see this specific choice?" — `08_consult.md` |
+| Review | 3–5 | two waves: critiques, then a cross-check | 10–30 minutes | "Tear this draft apart before its real audience does" — `09_review.md` |
 | Panel | 3–6 | one or two tables (three small ones in the bundled example) | about an hour | A focused decision with a few real options |
 | Full run | 12–20 | several tables | several hours | A decision with multiple live cruxes, run once and revisited |
 

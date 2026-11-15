@@ -27,16 +27,32 @@ A consult takes minutes. A panel of 3–6 personas takes about an hour. A full r
 took about five and a half hours of wall-clock time; persona agents that are continued across
 rounds carry large contexts, so token use is high. Start with a panel.
 
-**Can I simulate living people?**
-For your own use, from public material, following `RESPONSIBLE_USE.md`: keep those personas in
-`workspace/` (git-ignored), never present output as the person's words, no endorsements, no
-impersonation. This repository does not ship or accept personas of living people.
+**Why simulate real people at all?**
+Because a person's value as an adviser is their bias: the path that shaped them, the bets they
+lived through, the question they always ask first. A generic "expert" persona has no path, so it
+has no bias worth hearing. Real, well-documented people give the model something specific to be
+faithful to, and something you can check: every claim points to a source.
 
-**Why historical figures in the examples?**
-Their own writings are in the public domain, so the example shows the full method — sources,
-labeled claims, experience arguments — without putting words in a living person's mouth. The
-analogies between their eras and today are part of the point: every experience argument has to
-say where it may break.
+**Are these the real people's views?**
+No. Each persona is a reconstruction by one model from the sources in its folder, as of a date.
+None of the people simulated here has reviewed or endorsed their persona. Every output carries
+the simulation notice; labels show which lines are sourced (`[quoted]`, `[synthesized]`) and
+which are the model's extrapolation (`[inferred]`). See `RESPONSIBLE_USE.md`.
+
+**Can I add a living person?**
+Yes, if they are a public figure with a substantial public record of their own views, and you
+follow `RESPONSIBLE_USE.md`: sourced, dated facts; no judgments of character; no first-person
+confessions; the simulation notice everywhere. Private individuals: never without their explicit
+permission, and then only in your own `workspace/`.
+
+**I am one of the people simulated here and want my persona removed.**
+Open an issue with the Content concern template or report privately through the Security tab. We
+remove it; no reason needed.
+
+**Why historical figures too?**
+They show the method on people whose own writings are in the public domain, and they are a
+useful contrast: their eras are far from 2026, so every experience argument has to say where its
+analogy may break. You can seat Faraday next to Karpathy.
 
 **Is the output advice?**
 It is structured disagreement: positions, the arguments behind them, the facts that would settle
@@ -55,3 +71,10 @@ Into `workspace/`, which is git-ignored. Run `python3 tools/sim.py privacy-scan 
 For real people with dated public statements, run the fidelity test
 (`protocol/11_fidelity_test.md`): rebuild the persona from material before a cutoff date and check
 blind whether it predicts what the person said after it, against a name-only prompt.
+
+**How is this different from nuwa-skill, Roast Room or LLM Council?**
+Different jobs. nuwa-skill distills one person into a skill you think with; Roast Room runs a
+fast, visual business debate with a scored verdict; LLM Council compares several providers'
+models. This project seats many people at once and keeps the receipts: every claim labeled by
+source type, fact-checks between debate rounds, tables built around the real cruxes, interests
+shown but never discounted. The README has a comparison table.

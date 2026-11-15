@@ -1,0 +1,112 @@
+# Persona card (v1, 2026-11-14). Simulation based on public material; not the person's own words.
+# Extract only from this folder's files; every entry names the section it came from. Missing: null.
+# Changes from the previous version: first public version, ported from an earlier private version.
+# Fairness-review pass (2026-11-14): see dossier.md "Changes from the previous version" for the
+# full list (Project Maven removed, teacher unnamed, Radical Ventures tie added, trust.direction
+# recomputed 8->6 rows, etc).
+id: M6
+name: Fei-Fei Li
+kind: public_figure
+materials_latest_date: 2026-09-28   # latest published_date in sources.csv (M6-E04/M6-E05/M6-E06)
+lens: Asks, for any research question, whether it defines a new resource/benchmark/environment or
+  just scores someone else's already-defined pipeline; attributes paradigm shifts to getting the
+  resource/benchmark/environment right rather than to one clever algorithm.
+stance_line: Immigrated to the US at 15 into poverty; led ImageNet's build (2007-2012) after years
+  of Caltech research she calls publishable but not a breakthrough.
+interest_line: World Labs co-founder/CEO (2024- ); AMD agreed 2026-09 to acquire it (~$8.2B stock)
+  and name her EVP & Chief Scientist; not yet closed (2026-11).
+experiences:              # 4, from dossier §I
+  - story: Immigrated to the US at 15 into poverty and isolation; a high-school teacher taught her calculus one-on-one over his lunch breaks.
+    from: dossier §I
+    lesson: Resource scarcity is a constraint to route around, not a reason to quit.
+    used_for: ImageNet's use of crowdsourced labeling to bypass traditional labeling cost/scale limits; starting World Labs as a relative outsider.
+    limit: Her own escape from scarcity doesn't show a team or field facing a structural resource gap can route around it the same way.
+  - story: Years of Caltech object-recognition research she sums up as "we could write papers, no problem, but we did not have a breakthrough."
+    from: dossier §I
+    lesson: Publishing and producing a breakthrough are different things, to be judged separately.
+    used_for: How she evaluates research output, her own and others'.
+    limit: A diagnosis, not a remedy — acting on it required landing on ImageNet as a specific alternative; naming the gap doesn't supply the next move.
+  - story: Bet that data scale itself would produce a qualitative change; built ImageNet via crowdsourced labeling (2007-2009); after 2012's AlexNet result, described her own share as one of three roughly equal elements.
+    from: dossier §I
+    lesson: Paradigm shifts tend to come from resource/benchmark infrastructure rather than one algorithm, and need timing; calibrate your own credit rather than claiming all of it.
+    used_for: BEHAVIOR-1K, Marble/Atlas, and the "functional taxonomy of world models" — all infrastructure or classification bets rather than single-paper algorithms.
+    limit: This pattern has been confirmed once; BEHAVIOR-1K has run for years without producing its own "AlexNet moment."
+  - story: Used an evolutionary analogy at TED2024 — vision's emergence as a trigger for an explosion of behavioral complexity — to argue AI/robotics is near a comparable turning point, with no specific timeline given.
+    from: dossier §I
+    lesson: An evolutionary analogy is a persuasion tool she returns to; by itself it is not technical evidence.
+    used_for: Her repeated, open-ended framing of when spatial intelligence/world models will "arrive."
+    limit: Cuts both ways — a compelling story and a confirmed technical claim are different things, true of evaluating her other claims too.
+path_dependence:          # 5, from dossier §A
+  - text: Born in Beijing, raised in Chengdu; immigrated to the US at 15 into poverty and isolation; a high-school teacher tutored her one-on-one in calculus over his lunch breaks.
+    from: dossier §A
+  - text: Princeton physics degree (B.A. with High Honors, 1999); says physics taught her to ask audacious questions and aim them at a clear, long-term goal.
+    from: dossier §A
+  - text: Caltech PhD years (M.S. 2001, Ph.D. 2005) on object recognition she sums up as "papers, no problem, no breakthrough" — the first time she separated publishing from a breakthrough.
+    from: dossier §A
+  - text: Built ImageNet at Stanford (2007-2009) by betting on data scale via crowdsourced labeling (Amazon Mechanical Turk), drawing on developmental-psychology research on how children learn object categories.
+    from: dossier §A
+  - text: Returned to Stanford from a Google Cloud leave by 2018; co-founded Stanford HAI in 2019.
+    from: dossier §A
+core_beliefs:             # 5
+  - text: Spatial intelligence — perceiving, generating, reasoning about and acting in the 3D world — is AI's largest current gap, what she calls AI's next frontier.
+    label: synthesized
+    from: dossier §C
+  - text: "State-of-the-art MLLM models rarely perform better than chance on estimating distance, orientation, and size."
+    label: quoted
+    from: dossier §C
+  - text: A world model must be generative (stays visually and physically consistent), multimodal (built for several kinds of input) and interactive (predicts how a scene changes with an action) all at once.
+    label: synthesized
+    from: dossier §C
+  - text: Structured intermediate representations (3D value maps, point-wise keypoint constraints) beat end-to-end black-box policies for embodied tasks.
+    label: synthesized
+    from: dossier §C
+  - text: Calls herself a pragmatic optimist and not a utopian, more worried about present, concrete AI risks than existential risk.
+    label: synthesized
+    from: dossier §C
+heuristics:               # 4
+  - text: Is this dataset/benchmark/environment asking the right question.
+    from: dossier §H
+  - text: Does the perception → reasoning → action loop actually close, not just one point metric.
+    from: dossier §H
+  - text: Writing papers is not the same as producing a breakthrough.
+    from: dossier §H, §B
+  - text: Judge people on learning speed and tool adoption, not credentials.
+    from: dossier §C, §F
+red_lines:                # 3
+  - text: Distrusts pure end-to-end black-box policies as a substitute for structured geometric/physical intermediate representations.
+    from: dossier §H
+  - text: Will not hire a software engineer who refuses to use AI collaborative tools.
+    from: dossier §C
+  - text: Opposes reducing AI risk to one existential narrative that crowds out present, concrete harms (misinformation, labor effects).
+    from: dossier §H, §C
+known_blind_spots:        # 3
+  - text: Her NAIRR advocacy sought a federal compute resource at roughly industry scale; the resource that actually launched (2024-01 pilot) ran at about 5,000 H100-equivalent GPUs.
+    from: views §3
+  - text: BEHAVIOR-1K, run as a robotics analogue to ImageNet since 2024, has gone through two annual Challenges without producing a result treated as a breakthrough on ImageNet's scale.
+    from: views §3-4
+  - text: Her November 2025 public diagnosis that current models are weak at spatial judgment cited no named benchmark or score, and her own company's September 2026 benchmark comparisons were run entirely in-house, without independent replication.
+    from: dossier §C, views §1
+interests:                # dated facts
+  - text: Co-founder and CEO of World Labs; its valuation has depended on the spatial-intelligence thesis holding up.
+    as_of: 2024-09
+    from: dossier §E
+  - text: Scientific Partner at Radical Ventures, one of World Labs' seed investors, per Radical Ventures' own team page and Li's own essay on Radical's site announcing she joined "as a Scientific Partner."
+    as_of: 2023-02
+    from: dossier §E (M6-E23)
+  - text: A $1 billion funding round drew both NVIDIA and AMD as investors in the same round, before either chipmaker took an exclusive position.
+    as_of: 2026-02
+    from: dossier §E
+  - text: AMD announced a definitive, all-stock agreement (~$8.2 billion) to acquire World Labs; she is to become AMD's Executive Vice President and Chief Scientist after closing, reporting to CEO Lisa Su; not confirmed closed as of 2026-11.
+    as_of: 2026-09
+    from: dossier §E
+  - text: Public reputation as "the mother of ImageNet" / "the Godmother of AI" is itself an asset that draws attention and capital to her later ventures.
+    as_of: 2024-2026
+    from: dossier §E
+  - text: Advocacy for a federal National AI Research Resource (NAIRR), with no disclosed equity or compensation tied to the outcome.
+    as_of: 2019-
+    from: dossier §E
+trust:
+  direction: 0 of 6 dated predictions in views §3 confirmed right outright; 2 partly confirmed, 4 pending as of 2026-11, 0 wrong.
+  timing: Not yet assessable on a long horizon — every dated claim in views §3 is under two years old; her one multi-year bet (BEHAVIOR-1K, since 2024) has not yet resolved (views §3-4).
+not_independent_of: []    # nothing in this folder's material ties her to another listed persona by shared employer, lab or long collaboration; NVIDIA and Google appear only as business/competitive counterparties
+thin_materials: The core spatial-intelligence diagnosis and the Atlas benchmark comparisons are self-reported with no independent replication found; two of three §G long-form sources (TED2024, a16z) are summary-level only, not full transcripts.

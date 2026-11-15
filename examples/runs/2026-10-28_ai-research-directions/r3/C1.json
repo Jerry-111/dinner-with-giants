@@ -1,0 +1,350 @@
+{
+ "id": "C1",
+ "name": "Michael Mauboussin",
+ "round": "R3",
+ "notice": "Simulation based on public material; not the person's own words.",
+ "options": {
+  "D01": {
+   "impact": 9,
+   "bottleneck": 8,
+   "academic_edge": 3,
+   "window": 2,
+   "overall": 4,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "The model layer looks like economies of scale, not network effects: three to six similar suppliers compete; value mostly flows to users, and academia can hardly enter",
+   "late_modes": "Replicating the frontier pre-training recipe head-on to post scores: crowded, capital-driven, and quickly copied",
+   "conflict": "Buy-side institutions prefer the 'users benefit' narrative"
+  },
+  "D02": {
+   "impact": 7,
+   "bottleneck": 6,
+   "academic_edge": 6,
+   "window": 5,
+   "overall": 7,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "RLVR is mainly resampling/efficiency gain and not a new reasoning mode (X7 already confirmed), but reliable execution itself has real ROIC value, and my earlier score was too low",
+   "late_modes": "Climbing public RLVR leaderboards without looking at the base model's pass@k: it may be only a gain in sampling efficiency",
+   "conflict": null
+  },
+  "D03": {
+   "impact": 9,
+   "bottleneck": 8,
+   "academic_edge": 5,
+   "window": 6,
+   "overall": 7,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "Continual self-improvement is an exception mechanism of the learning-by-doing kind of increasing returns; the current evidence is thin (the METR/DGM figures have been withdrawn), and what I am betting on is option value, not delivered results",
+   "late_modes": "Packaging multi-round score gains as RSI: not normalized by compute, and not pre-registered",
+   "conflict": null
+  },
+  "D04": {
+   "impact": 6,
+   "bottleneck": 4,
+   "academic_edge": 3,
+   "window": 2,
+   "overall": 3,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "Scaffolding is being absorbed by the models themselves: the top of Terminal-Bench is all vendor CLI agents, so the moat around a custom harness is shallow",
+   "late_modes": "Tuning custom scaffolding for one benchmark: one model upgrade and a general solution matches it",
+   "conflict": null
+  },
+  "D05": {
+   "impact": 8,
+   "bottleneck": 9,
+   "academic_edge": 8,
+   "window": 7,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "A good metric needs both persistence and predictive power, which has been my standard for decades; without credible evaluation, skill cannot be told from luck, and capital gets staked on the wrong things",
+   "late_modes": "Chasing public leaderboard rank: unequal access to private-test data has already distorted the leaderboard",
+   "conflict": null
+  },
+  "D06": {
+   "impact": 8,
+   "bottleneck": 7,
+   "academic_edge": 5,
+   "window": 4,
+   "overall": 5,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "In a Cambrian-style wave of entry, with valuations already pricing in very high expectations; the real bottlenecks are resets, maintenance and reliability, which do not disappear with replication",
+   "late_modes": "Founding a company on full-humanoid demo valuations: the price already embeds very high expectations, and a shake-out must follow the wave of entry",
+   "conflict": null
+  },
+  "D07": {
+   "impact": 6,
+   "bottleneck": 6,
+   "academic_edge": 5,
+   "window": 4,
+   "overall": 5,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Real-robot evidence such as OpenVLA-OFT is more solid than my original judgment, but some claims about downstream adoption are wrong; it is still the downstream implementation layer of the world model and more replaceable",
+   "late_modes": "Specializing in the diffusion policy head: parallel decoding of continuous actions has been shown to match or even beat it",
+   "conflict": null
+  },
+  "D08": {
+   "impact": 8,
+   "bottleneck": 7,
+   "academic_edge": 6,
+   "window": 5,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "Evidence at the decision-driving layer is still missing and valuations still run ahead, but research time invested and capital pricing are two clocks and should be assessed separately",
+   "late_modes": "Treating gains on small simulation benchmarks as already delivered: long-horizon closed-loop real-robot results are not yet validated",
+   "conflict": null
+  },
+  "D09": {
+   "impact": 7,
+   "bottleneck": 7,
+   "academic_edge": 6,
+   "window": 5,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "If the sim2real correlation is repeatedly confirmed, it is a real lever on the hard bottleneck of scarce real data; domain randomization is a real gain for long-tail diversity",
+   "late_modes": "Shouting 'unlimited synthetic data' without giving verifiable quantitative results",
+   "conflict": null
+  },
+  "D10": {
+   "impact": 8,
+   "bottleneck": 6,
+   "academic_edge": 2,
+   "window": 2,
+   "overall": 3,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "The shake-out has begun (GM exited Cruise); learning by doing from fleet miles is a rare proprietary increasing return, and without fleet access this path is basically closed",
+   "late_modes": "A new team now going head-on at L4 robotaxi: the integrated leaders have already built a moat from fleet data",
+   "conflict": null
+  },
+  "D11": {
+   "impact": 7,
+   "bottleneck": 6,
+   "academic_edge": 5,
+   "window": 4,
+   "overall": 5,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "Building a VLM itself is as crowded as pre-training; but diagnosing where models really do not understand (such as the human-machine gap) has a low capital barrier and still has room",
+   "late_modes": "Stacking parameters head-on to build the next general VLM: as crowded and capital-intensive as pre-training",
+   "conflict": null
+  },
+  "D12": {
+   "impact": 6,
+   "bottleneck": 4,
+   "academic_edge": 5,
+   "window": 2,
+   "overall": 3,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Sora 2 was taken offline less than a year after launch, with users down by more than half; the commercial sustainability of consumer-grade generation is in doubt; the recipe itself diffuses very fast",
+   "late_modes": "Video generation that competes on visual realism: it will be commoditized, and it has nothing to do with decision value",
+   "conflict": null
+  },
+  "D13": {
+   "impact": 7,
+   "bottleneck": 5,
+   "academic_edge": 6,
+   "window": 6,
+   "overall": 5,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "I do not rate the safety technology itself; but value capture in this kind of work looks more like it depends on regulation and enterprise adoption thresholds than on product competition",
+   "late_modes": "Treating one specific tool as the end-state solution and grinding on details: a major lab has already lowered its priority because out-of-distribution results were no better than linear probes",
+   "conflict": null
+  },
+  "D14": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 8,
+   "confidence": null,
+   "basis": null,
+   "one_line": "Algorithm-system co-design is exactly what I called worth doing (1): feedback is fast and the value is directly internalized by the employer; FlashAttention is an example of academia building something that industry uses",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D15": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 4,
+   "confidence": null,
+   "basis": null,
+   "one_line": "Fast only in narrow areas that can be verified automatically; single-cell perturbation-prediction models currently cannot even beat simple baselines, and hype often runs ahead of the evidence",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D16": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 5,
+   "confidence": null,
+   "basis": null,
+   "one_line": "A classic second-order-beneficiary setting, and Tencent's TGR is already live; but Meituan's MTGR needing 10 to 100 times the compute of DLRM reminds us that a gain counts only after subtracting the cost of capital",
+   "late_modes": null,
+   "conflict": null
+  }
+ },
+ "levers": {
+  "L1": 23,
+  "L2": 8,
+  "L3": 8,
+  "L4": 11,
+  "L5": 21,
+  "L6": 7,
+  "L7": 12,
+  "L8": 10
+ },
+ "lever_reason": "Without credible evaluation, skill cannot be told from luck, but the X1 debate reminded me that evaluation is only a referee and creates no capability, so its ceiling is lower than data or architecture; proprietary data and efficiency remain hard-to-copy assets, and diminishing returns are the default",
+ "questions": {
+  "Q2": {
+   "position": "conditional",
+   "score": 6,
+   "condition": "Narrow domain, credible evaluation (which can be self-built and made public for outside replication), a small complementary team, an open model that people use; not a head-on fight in general pre-training, the battlefield of the strong"
+  }
+ },
+ "conditions": {
+  "Q2": [
+   "C1",
+   "C2",
+   "C3",
+   "C5"
+  ]
+ },
+ "cruxes": [
+  {
+   "question": "With academia's compute this small, can it still make contributions that industry will actually adopt?",
+   "my_position": "Yes, but only on narrow-domain problems with a low capital barrier that outsiders can verify; the X2 debate confirmed that building your own evaluation can itself count as a contribution",
+   "would_change_if": "A narrow-domain academic work is adopted at scale by a leading lab and publicly acknowledged, as FlashAttention was",
+   "directions": [
+    "D01",
+    "D05"
+   ]
+  },
+  {
+   "question": "Is the high valuation of JEPA-style world models today borrowing against capabilities that have not yet been validated?",
+   "my_position": "Capital pricing is still borrowing against unvalidated capabilities; but research time invested should be assessed separately from capital, a distinction I learned this round from the C5/C6 overtime convergence",
+   "would_change_if": "Large-scale, third-party-validated long-horizon closed-loop real-robot results appear, not just offline or short-horizon gains",
+   "directions": [
+    "D08"
+   ]
+  },
+  {
+   "question": "Is agent self-improvement (RSI) real evidence now, or still a narrative?",
+   "my_position": "Still mostly a narrative, and the evidence is thinner than in R1 (the DGM cost figure has been withdrawn); keeping D03 high is a bet on option value, not on present proof",
+   "would_change_if": "Compute-normalized, pre-registered experiments appear that show sustained multi-round gains in real capability, not cherry-picked results",
+   "directions": [
+    "D03",
+    "D04"
+   ]
+  }
+ ],
+ "taste_advice": "Do not use valuation or narrative to decide whether to do research: capital price and research opportunity are two clocks and can be read separately; what you should really look at is who the returns land with and how long they last",
+ "pairwise": [
+  {
+   "a": "D05",
+   "b": "D08",
+   "pick": "D05",
+   "why": "Without credible evaluation there is no way to know whether the world model's contribution is real"
+  },
+  {
+   "a": "D05",
+   "b": "D06",
+   "pick": "D05",
+   "why": "Claims about robot reliability likewise need evaluation to be believed"
+  },
+  {
+   "a": "D06",
+   "b": "D08",
+   "pick": "D08",
+   "why": "Separation-protocol-style research has a low capital barrier and is still open; the reliability bottleneck of embodied AI leans more toward engineering iteration"
+  },
+  {
+   "a": "D07",
+   "b": "D08",
+   "pick": "D08",
+   "why": "The world model is more fundamental; the policy head is only one implementation of it and is more replaceable"
+  },
+  {
+   "a": "D09",
+   "b": "D06",
+   "pick": "D09",
+   "why": "Simulation directly addresses the hard bottleneck of scarce real data and is closer to the root cause than embodied AI as a whole"
+  },
+  {
+   "a": "D02",
+   "b": "D03",
+   "pick": "D03",
+   "why": "D03 still bets on the scarce learning-by-doing mechanism, but, given how much I underrated D02's reliability value, the two are closer than they look"
+  },
+  {
+   "a": "D11",
+   "b": "D12",
+   "pick": "D11",
+   "why": "The gap in understanding tasks has not been closed; generation is already being commoditized and caught in price wars"
+  },
+  {
+   "a": "D01",
+   "b": "D05",
+   "pick": "D05",
+   "why": "The pre-training door is already closed to academia; evaluation is one of the few positions that combine a low barrier with a real bottleneck"
+  },
+  {
+   "a": "D04",
+   "b": "D03",
+   "pick": "D03",
+   "why": "Scaffolding is being absorbed by models; the core problem of continual learning is unsolved, so the moat is deeper"
+  },
+  {
+   "a": "D13",
+   "b": "D05",
+   "pick": "D05",
+   "why": "The value of safety and alignment is realized through regulation, an external variable; evaluation is an internal bottleneck that cannot be bypassed"
+  },
+  {
+   "a": "D10",
+   "b": "D06",
+   "pick": "D06",
+   "why": "The shake-out in autonomous driving has begun and requires fleet access; the shake-out in embodied AI has not fully arrived"
+  }
+ ],
+ "changes": [
+  {
+   "option": "D02",
+   "from": 6,
+   "to": 7,
+   "because": "summary/X7.md minority opinion C4",
+   "argument_restated": "The economic value of reliable deployed execution is underestimated, even if it does not count as teaching a new reasoning paradigm",
+   "why": "Gains in efficiency and reliability have real ROIC value, which is consistent with how I view D14 systems efficiency; my earlier score for it was too low"
+  },
+  {
+   "option": "D08",
+   "from": 5,
+   "to": 6,
+   "because": "overtime/X3/2_C5.md",
+   "argument_restated": "Going heavy refers to research time, not capital; the two should be assessed separately",
+   "why": "C5 and C6 independently converged on the same distinction, which shows the research opportunity itself is higher than the window score I originally gave"
+  }
+ ],
+ "held_despite": [
+  {
+   "post": "summary/X4.md",
+   "why": "METR's 70-90% compute trial-and-error, the withdrawn DGM cost figure and others all confirm the evidence is thin, but D03 is a bet on option value, not on present proof"
+  }
+ ],
+ "still_disagree": "X3: the evidence gap at the decision-driving layer and the inflated valuations exist together, and the fact that research timing is early does not prove the price is reasonable; X5: validation progress is not structural importance, and I still bet that D08 is harder to replicate",
+ "learned": "Capital price and research timing are two clocks that can be read separately; C5/C6 independently converged on the same distinction in overtime, which led me to score D08's window and the research opportunity itself separately",
+ "searches": []
+}

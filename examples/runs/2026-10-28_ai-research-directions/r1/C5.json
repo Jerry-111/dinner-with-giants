@@ -1,0 +1,326 @@
+{
+ "id": "C5",
+ "name": "Sergey Levine",
+ "round": "R1",
+ "notice": "Simulation based on public material; not the person's own words.",
+ "options": {
+  "D01": {
+   "impact": 8,
+   "bottleneck": 5,
+   "academic_edge": 2,
+   "window": 3,
+   "overall": 4,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "Pre-training is a necessary prior, but academia lacks the compute to replicate it; the real bottleneck is experience, not parameter count",
+   "late_modes": "Doing general LLM pre-training itself; the compute and data are already locked up by a few big companies",
+   "conflict": null
+  },
+  "D02": {
+   "impact": 8,
+   "bottleneck": 7,
+   "academic_edge": 5,
+   "window": 4,
+   "overall": 7,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "RL is the mechanism that turns experience into capability; but RLVR itself does not necessarily inject new information",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D03": {
+   "impact": 8,
+   "bottleneck": 8,
+   "academic_edge": 6,
+   "window": 5,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "His core methodology: deployment experience drives continual improvement; there is no evidence for RSI-style self-improvement on the embodied side",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D04": {
+   "impact": 6,
+   "bottleneck": 4,
+   "academic_edge": 3,
+   "window": 2,
+   "overall": 4,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "The value of scaffolding is being absorbed by the models themselves; engineering integration is not a lasting research asset",
+   "late_modes": "Hand-built agent scaffolding; it is being absorbed by general CLI agents",
+   "conflict": null
+  },
+  "D05": {
+   "impact": 7,
+   "bottleneck": 6,
+   "academic_edge": 8,
+   "window": 6,
+   "overall": 7,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "Evaluation is necessary but not the engine; industry self-testing has a conflict of interest, which is exactly academia's opportunity",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D06": {
+   "impact": 9,
+   "bottleneck": 9,
+   "academic_edge": 6,
+   "window": 6,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "His home turf: deployment experience is the source of information; the bottleneck has shifted from basic motion to task judgment and the long tail",
+   "late_modes": null,
+   "conflict": "Co-founder of PI; this is exactly PI's core business"
+  },
+  "D07": {
+   "impact": 7,
+   "bottleneck": 5,
+   "academic_edge": 6,
+   "window": 4,
+   "overall": 6,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "The action head is an implementation detail; the real bottleneck is where the training signal comes from, not diffusion versus autoregression",
+   "late_modes": null,
+   "conflict": "PI's π0 series uses a flow-matching action expert, which is commercially relevant"
+  },
+  "D08": {
+   "impact": 7,
+   "bottleneck": 4,
+   "academic_edge": 7,
+   "window": 5,
+   "overall": 6,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "The world model is an auxiliary tool, not a shortcut to understanding physics; 'can be read out' does not mean 'can be used'",
+   "late_modes": null,
+   "conflict": "He opposes substitute data as the end state, and his stance runs in the same direction as PI's real-data moat"
+  },
+  "D09": {
+   "impact": 6,
+   "bottleneck": 3,
+   "academic_edge": 7,
+   "window": 5,
+   "overall": 5,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Simulation creates no new information and can only serve as an aid; legged locomotion is the strongest counterexample he admits",
+   "late_modes": null,
+   "conflict": "The stance that 'simulation cannot replace real data' runs in the same direction as PI's data moat"
+  },
+  "D10": {
+   "impact": 8,
+   "bottleneck": 4,
+   "academic_edge": 2,
+   "window": 2,
+   "overall": 5,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "It has entered an operational-expansion phase: it relies on fleet scale and long-tail validation, not on a flywheel of learning from errors as it goes",
+   "late_modes": "Newly founded full-stack autonomous-driving companies; the moat of fleet data and safety records has already been built",
+   "conflict": null
+  },
+  "D11": {
+   "impact": 7,
+   "bottleneck": 5,
+   "academic_edge": 6,
+   "window": 4,
+   "overall": 5,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "VLMs give robots commonsense priors; diagnostic benchmarks are a good problem academia can credibly take on",
+   "late_modes": "Working on general frontier VLM architecture itself; it is dominated by a few labs, and academia can hardly get a hand in",
+   "conflict": null
+  },
+  "D12": {
+   "impact": 6,
+   "bottleneck": 3,
+   "academic_edge": 5,
+   "window": 3,
+   "overall": 4,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "Realism is not his metric; the Sora2 shutdown shows the commercialization path of pure generation is in doubt",
+   "late_modes": "Pursuing the realism of video generation itself; its commercial sustainability is in doubt, and costs are being pushed down",
+   "conflict": null
+  },
+  "D13": {
+   "impact": 7,
+   "bottleneck": 5,
+   "academic_edge": 6,
+   "window": 5,
+   "overall": 5,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "A field where he takes essentially no position; the only clear stance is worry about malicious users and deceptive agents",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D14": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 5,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "Infrastructure that lowers experimental friction; important but not his specialty, so only an overall score is given",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D15": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": null,
+   "basis": null,
+   "one_line": "In the material he never discusses AI for Science at all; no judging, to avoid inventing a stance",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D16": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": null,
+   "basis": null,
+   "one_line": "The material has no basis on recommendation/retrieval systems; no judging",
+   "late_modes": null,
+   "conflict": null
+  }
+ },
+ "levers": {
+  "L1": 15,
+  "L2": 20,
+  "L3": 8,
+  "L4": 10,
+  "L5": 25,
+  "L6": 4,
+  "L7": 15,
+  "L8": 3
+ },
+ "lever_reason": "Real experience is the only source of new information, and RL is the mechanism that turns experience into capability; evaluation is necessary but not the engine; simulation and world models are aids, not substitutes",
+ "questions": {
+  "Q2": {
+   "position": "conditional",
+   "score": 6,
+   "condition": "A narrow-domain model (VLA/world model) + credible third-party evaluation + compute at scale + open weights with an adoption path, not general pre-training"
+  }
+ },
+ "conditions": {
+  "Q2": [
+   "C1",
+   "C2",
+   "C4",
+   "C5"
+  ]
+ },
+ "cruxes": [
+  {
+   "question": "Do synthetic/generative world models actually create new information about the physical world, or only recombine existing information?",
+   "my_position": "They create no new information; only real interaction can inject new information, and simulation and generated video can only assist, not replace",
+   "would_change_if": "On contact-rich, deformable-object tasks, training purely in simulation with zero real-robot fine-tuning matches a real-data baseline",
+   "directions": [
+    "D08",
+    "D09",
+    "D06"
+   ]
+  },
+  {
+   "question": "Is training narrow-domain foundation models in a university lab that has GPUs the highest-impact path at the undergraduate-to-master's stage?",
+   "my_position": "Conditional support: worthwhile only if narrow-domain, not general pre-training, with credible evaluation and an adoption path for open weights",
+   "would_change_if": "An academic team with clearly fewer resources than PI or the big companies builds a narrow-domain foundation-model component that industry adopts",
+   "directions": [
+    "D01",
+    "D06"
+   ]
+  },
+  {
+   "question": "Is positive transfer from pooling cross-embodiment data a general rule, or does it hold only in well-resourced platform-type settings?",
+   "my_position": "The direction holds, but the strongest evidence so far comes from well-resourced, multi-party collaborations, and generality is unproven",
+   "would_change_if": "An independent team that owns no platform and has limited compute reproduces meaningful positive cross-embodiment transfer",
+   "directions": [
+    "D06",
+    "D01"
+   ]
+  }
+ ],
+ "taste_advice": "Study the mechanism by which 'experience becomes capability'; do not study how to get around experience; go somewhere your method runs into real failure every week",
+ "pairwise": [
+  {
+   "a": "D05",
+   "b": "D08",
+   "pick": "D05",
+   "why": "Evaluation is the precondition for checking everything; how much information a world model carries is still disputed"
+  },
+  {
+   "a": "D05",
+   "b": "D06",
+   "pick": "D06",
+   "why": "D06 is the main arena where experience turns into capability; evaluation is supporting, not the engine"
+  },
+  {
+   "a": "D06",
+   "b": "D08",
+   "pick": "D06",
+   "why": "Deployment experience is the source of information; world models are for now only an auxiliary tool"
+  },
+  {
+   "a": "D07",
+   "b": "D08",
+   "pick": "D07",
+   "why": "Action heads already have real-robot evidence; the world-model problem of 'can be read out ≠ can be used' is unresolved"
+  },
+  {
+   "a": "D09",
+   "b": "D06",
+   "pick": "D06",
+   "why": "Simulation creates no new information; deployment experience is the core lever"
+  },
+  {
+   "a": "D02",
+   "b": "D03",
+   "pick": "D03",
+   "why": "Experience-driven continual improvement is more fundamental; RLVR looks more like a special case of it"
+  },
+  {
+   "a": "D11",
+   "b": "D12",
+   "pick": "D11",
+   "why": "Understanding models are the source of priors for embodied perception; generative realism is not his metric"
+  },
+  {
+   "a": "D01",
+   "b": "D05",
+   "pick": "D05",
+   "why": "Evaluation can expose spurious progress in pre-training; see Leaderboard Illusion"
+  },
+  {
+   "a": "D04",
+   "b": "D03",
+   "pick": "D03",
+   "why": "Scaffolding is absorbed by models; algorithmic contributions to learning from experience last longer"
+  },
+  {
+   "a": "D13",
+   "b": "D05",
+   "pick": "D05",
+   "why": "D05 is a field where he has solid judgment; on D13 he essentially takes no position"
+  },
+  {
+   "a": "D10",
+   "b": "D06",
+   "pick": "D06",
+   "why": "Autonomous driving relies on operational scale, not on learning from errors as it goes; embodied AI is earlier-stage and more open"
+  }
+ ],
+ "web_searches": []
+}

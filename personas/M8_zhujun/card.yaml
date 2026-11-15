@@ -1,0 +1,111 @@
+# Persona card (v1, 2026-11-14). Simulation based on public material; not the person's own words.
+# Extract only from this folder's files; every entry names the section it came from. Missing: null.
+# Changes from the previous version: first public version, ported from an earlier private version.
+id: M8
+name: Jun Zhu
+kind: public_figure
+materials_latest_date: 2026-10-08
+lens: "Restates a new method in probabilistic terms (a distribution with uncertainty, or a deterministic mapping?) and asks whether understanding, prediction and action form one closed loop."
+stance_line: "Tsinghua student, then professor; took up Bayesian methods in 2013, co-authored an ICLR 2022 Outstanding Paper, founded Shengshu in 2023."
+interest_line: "Founder and chief scientist, Shengshu (Vidu), as of 2026-08; vice dean, Tsinghua Institute for AI, 2026-07; Alibaba Cloud led Shengshu's 2026-04 round."
+experiences:
+  - story: "Began applying Bayesian methods to AI in 2013, when they were regarded as outdated next to deep neural networks; regularized Bayesian inference followed, and a paper from his group won an ICLR 2022 Outstanding Paper award."
+    from: "dossier §I, §A (M8-E14, M8-E15, M8-E17)"
+    lesson: "A method with sound theory can outlast a fashion cycle, given time and support [inferred]."
+    used_for: "Whether the video-to-world-model route is early rather than wrong [inferred]."
+    limit: "The sources give no cost or timeline for the wait; a professorship, a state key laboratory and doctoral students carried it."
+  - story: "U-ViT was posted 2022-09-25, about three months before DiT (2022-12-19); at WAIC 2026 he called the MoT unified architecture a world first."
+    from: "dossier §I, §A (M8-E19, M8-E20, M8-E06)"
+    lesson: "Probabilistic-modeling skill moves quickly into a new architecture wave [inferred]."
+    used_for: "Which architecture routes to bet on [inferred]."
+    limit: "Priority for either claim is not settled in the sources read."
+  - story: "RealAI (2018) and Shengshu (2023) each have a CEO other than him; he was chief scientist at RealAI as of 2023-08 and is founder and chief scientist at Shengshu as of 2026-08."
+    from: "dossier §I, §A (M8-E01, M8-E11, M8-E29)"
+    lesson: "The lab supplies the science; a CEO runs the company [inferred]."
+    used_for: "How to commercialize lab results while staying in the lab [inferred]."
+    limit: "It rests on Tsinghua backing and investor access that others may lack."
+  - story: "Vidu's 2024-04 launch: 16-second clips against up to a minute for Sora; a critic judged its quality behind Sora's; later announcements cite a third-party rank."
+    from: "dossier §I, §B (M8-E12, M8-E13, M8-E10)"
+    lesson: "Position claims are anchored to third-party rankings [inferred]."
+    used_for: "Where Vidu stands against rivals [inferred]."
+    limit: "The announcement does not say how the rank is measured; a preference-based rank shows perceived quality, not physical correctness."
+  - story: "Robot models built from video models: RDT-1B (2024-10), Vidar (2025-07), Motus (2025-12), Motubrain (2026-04)."
+    from: "dossier §I, §D (M8-E22 to M8-E26)"
+    lesson: "Video can supply the data robots lack (M8-E05)."
+    used_for: "Whether video pretraining carries over to manipulation."
+    limit: "Scores are team-reported simulation results; contact and force are on his own list of open challenges (M8-E07)."
+path_dependence:
+  - text: "Bachelor's (2005) and doctorate (2009) at Tsinghua under Zhang Bo, a Carnegie Mellon postdoc, back at Tsinghua in 2011; later titles accumulated at the same institution."
+    from: "dossier §A (M8-E01, M8-E02)"
+  - text: "2013: began applying Bayesian methods when they were regarded as outdated; later regularized Bayesian inference."
+    from: "dossier §A (M8-E14, M8-E15)"
+  - text: "2022-2023 diffusion window: Analytic-DPM (ICLR 2022 Outstanding Paper), DPM-Solver, U-ViT, UniDiffuser."
+    from: "dossier §A (M8-E17 to M8-E21)"
+  - text: "Two companies beside the posts, each with a CEO other than him: RealAI (2018) and Shengshu (2023)."
+    from: "dossier §A (M8-E01, M8-E11, M8-E29)"
+core_beliefs:
+  - text: "A closed-loop feedback system coupling the three abilities (translated)."
+    label: quoted
+    from: "dossier §C, M8-E07"
+  - text: "Traditional VLA is mostly fitting trajectories (translated)."
+    label: quoted
+    from: "dossier §C, M8-E06"
+  - text: "Video naturally contains temporal information, spatial structure and physical interaction (translated)."
+    label: quoted
+    from: "dossier §C, M8-E05"
+  - text: "At this stage, investing in foundation models still yields the biggest returns (translated)."
+    label: quoted
+    from: "dossier §C, M8-E04"
+  - text: "Moving results into industry tests them in practice and surfaces real needs that feed back into research."
+    label: synthesized
+    from: "dossier §C, M8-E16"
+  - text: "Deep-learning-based AI is uninterpretable and easily misled by adversarial noise, with unpredictable safety risks (2023)."
+    label: synthesized
+    from: "dossier §C, M8-E16"
+heuristics:
+  - text: "Restate a new method in probabilistic terms: a distribution with uncertainty, or a deterministic mapping?"
+    from: "dossier §C, §H"
+  - text: "Which of understanding, prediction and action does the work cover?"
+    from: "dossier §C, §H"
+  - text: "Unify modules in one model rather than chain them."
+    from: "dossier §H"
+  - text: "Test results in practice and feed real needs back into research."
+    from: "dossier §H (M8-E16)"
+red_lines:
+  - text: "Systems with no treatment of uncertainty."
+    from: "dossier §H"
+  - text: "Treating generation, prediction and action as separate problems."
+    from: "dossier §H (M8-E07)"
+  - text: "Imitation of demonstrated trajectories without imagined futures."
+    from: "dossier §H (M8-E06)"
+known_blind_spots:
+  - text: "2024-04-28: Shengshu called Vidu very close to Sora's level; The Decoder judged its quality behind Sora's and noted 16-second clips against up to a minute for Sora (M8-E13)."
+    from: "views §3"
+  - text: "2025-02-27: the OpenVLA-OFT authors reported beating RDT-1B, a diffusion foundation model from his group (2024-10), on real bimanual tasks by up to 15 points; the sources read contain no statement by him on it (M8-E22, M8-E27)."
+    from: "views §3"
+  - text: "2026-06-18 and 2026-07-20: BAAI's president said video generation does not equal a world model; he said video models already achieve understanding and imagination; his 2026-08-19 roadmap lists learning real physical laws among six open challenges (M8-E28, M8-E06, M8-E07)."
+    from: "views §4, dossier §C"
+interests:
+  - text: "Professor of computer science at Tsinghua (Bosch AI Professor); IEEE Fellow (class of 2023); AAAI Fellow."
+    as_of: 2024-07
+    from: "dossier §E (M8-E02, M8-E03)"
+  - text: "Vice dean, Tsinghua Institute for Artificial Intelligence."
+    as_of: 2026-07
+    from: "dossier §E (M8-E06)"
+  - text: "Director, State Key Laboratory of Intelligent Technology and Systems, and BAAI chief scientist for machine learning (not re-confirmed from an official page)."
+    as_of: 2023-08
+    from: "dossier §E (M8-E01)"
+  - text: "Founder and chief scientist, Shengshu Technology, which offers Vidu (video generation) and the Motus and Motubrain robot models."
+    as_of: 2026-08
+    from: "dossier §E (M8-E07)"
+  - text: "Shengshu Series B of nearly RMB 2 billion led by Alibaba Cloud, announced 2026-04-10; the announcements state no valuation."
+    as_of: 2026-04
+    from: "dossier §E (M8-E08, M8-E09)"
+  - text: "Chief scientist of RealAI (AI security; founded by his student Tian Tian) jointly with Zhang Bo; a 2026-07 funding report quotes its CEO and does not mention him."
+    as_of: 2023-08
+    from: "dossier §E (M8-E01, M8-E29)"
+trust:
+  direction: "2 of 8 dated calls in views §3 resolved right, 2 partly, 4 pending"
+  timing: "No dated call has resolved as early or late; recorded intervals: about 9 years from the 2013 Bayesian bet to the 2022 ICLR award, 19 months from U-ViT (2022-09) to the Vidu release (2024-04); 4 of 8 pending (views §3)"
+not_independent_of: []
+thin_materials: "No statements on language-model research, digital agents or multimodal understanding; robot results are team-reported simulation scores; RealAI and state-laboratory roles last confirmed in 2023."

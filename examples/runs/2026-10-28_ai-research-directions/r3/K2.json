@@ -1,0 +1,376 @@
+{
+ "id": "K2",
+ "name": "Jeff Dean",
+ "round": "R3",
+ "notice": "Simulation based on public material; not the person's own words.",
+ "options": {
+  "D01": {
+   "impact": 9,
+   "bottleneck": 5,
+   "academic_edge": 2,
+   "window": 2,
+   "overall": 4,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "General methods mostly win, but there will not be 50 frontier pre-training efforts; neither academia nor students have the compute to enter",
+   "late_modes": "A general pre-trained model with a new architecture, trained from scratch: the oligopoly is already settled",
+   "conflict": "Google/Gemini is the main beneficiary of the general pre-training route"
+  },
+  "D02": {
+   "impact": 8,
+   "bottleneck": 6,
+   "academic_edge": 5,
+   "window": 4,
+   "overall": 7,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "RLVR mainly improves pass@1/sampling efficiency and does not teach new out-of-distribution reasoning; reliable execution itself is still valuable",
+   "late_modes": "Merely reproducing the standard RLHF/DPO pipeline",
+   "conflict": null
+  },
+  "D03": {
+   "impact": 9,
+   "bottleneck": 8,
+   "academic_edge": 6,
+   "window": 7,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "The direction of loop automation is unchanged, but 'improvement' lacks a measure of equal precision; I still bet on the 2027 prediction, but with lower confidence",
+   "late_modes": "Hand-written experiment scripts and manual tuning: being taken over by automation",
+   "conflict": "CEO of Discovery Loop, whose main business is exactly this"
+  },
+  "D04": {
+   "impact": 7,
+   "bottleneck": 6,
+   "academic_edge": 3,
+   "window": 3,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Scaffolding is being absorbed by models; what is left for researchers is environment design and evaluation, not hand-built orchestration",
+   "late_modes": "Custom academic scaffolds and hand-written prompt orchestration",
+   "conflict": null
+  },
+  "D05": {
+   "impact": 8,
+   "bottleneck": 9,
+   "academic_edge": 6,
+   "window": 6,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Evaluation credibility decides whether a field can plug into the automated loop; this is my most direct answer to Q1",
+   "late_modes": "Running off-the-shelf benchmarks to chase scores without asking whether the evaluator itself can be trusted",
+   "conflict": "Measurable targets are the premise of the company's business"
+  },
+  "D06": {
+   "impact": 8,
+   "bottleneck": 6,
+   "academic_edge": 4,
+   "window": 6,
+   "overall": 6,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "I have said little about this; inferred from my framework, slow real-data collection is robotics' biggest bottleneck, and a software loop cannot speed it up",
+   "late_modes": null,
+   "conflict": "Google has the Gemini Robotics team under it"
+  },
+  "D07": {
+   "impact": 6,
+   "bottleneck": 4,
+   "academic_edge": 5,
+   "window": 6,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "D07 has the touchstone of control-task success or failure and is easier to verify than D08's 'read out = put to use'; I underestimated it before",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D08": {
+   "impact": 8,
+   "bottleneck": 7,
+   "academic_edge": 5,
+   "window": 5,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "Learned simulators are still a good direction, but valuations of AMI Labs, General Intuition and others are piling up fast ahead of decision-layer evidence",
+   "late_modes": "Standalone video generation aimed at image quality: general models will catch up in 6–12 months",
+   "conflict": "One of the Gemini co-leads; Google has the Genie series"
+  },
+  "D09": {
+   "impact": 7,
+   "bottleneck": 7,
+   "academic_edge": 5,
+   "window": 7,
+   "overall": 7,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Simulation is the most direct tool for making the loop 100 times faster: screen ideas first in small, low-cost environments",
+   "late_modes": null,
+   "conflict": "A core tool of the automated loop, aligned with the company's interests"
+  },
+  "D10": {
+   "impact": 6,
+   "bottleneck": 3,
+   "academic_edge": 2,
+   "window": 3,
+   "overall": 4,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "The capability hurdle has been passed; what comes next is a race of deployment, replication and cost reduction, not exponential growth a researcher can bet on",
+   "late_modes": "Building an end-to-end planning algorithm from scratch: a few companies already hold deployment and data",
+   "conflict": "Waymo is part of the same Alphabet group"
+  },
+  "D11": {
+   "impact": 6,
+   "bottleneck": 4,
+   "academic_edge": 3,
+   "window": 3,
+   "overall": 4,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Multimodal understanding is being absorbed by mainline models like Gemini, and the window for independent research is narrowing",
+   "late_modes": "Building narrow multimodal understanding models (single-task VQA and the like)",
+   "conflict": "One of the Gemini co-leads"
+  },
+  "D12": {
+   "impact": 6,
+   "bottleneck": 4,
+   "academic_edge": 3,
+   "window": 3,
+   "overall": 4,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "A standalone generation track aimed at image quality will be caught up by general models; the collapse in Sora2 users confirms the commercial fragility",
+   "late_modes": "Video/image generation that only stacks image quality",
+   "conflict": "Gemini does image generation (Nano Banana)"
+  },
+  "D13": {
+   "impact": 7,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 5,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Safety is a discipline embedded in engineering, not a separate track; I have taken no position on whether academia has a distinctive advantage",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D14": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 9,
+   "confidence": null,
+   "basis": null,
+   "one_line": "FlashAttention-style work shows that academia can make systems contributions industry cannot do without",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D15": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 6,
+   "confidence": null,
+   "basis": null,
+   "one_line": "Learned surrogate models can replace expensive simulation and screen candidates; but medical data cannot be obtained and validation is slow",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D16": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 4,
+   "confidence": null,
+   "basis": null,
+   "one_line": "No direct stance; recommendation is another example of whether general models will eat vertical applications",
+   "late_modes": null,
+   "conflict": null
+  }
+ },
+ "levers": {
+  "L1": 20,
+  "L2": 10,
+  "L3": 10,
+  "L4": 8,
+  "L5": 10,
+  "L6": 5,
+  "L7": 12,
+  "L8": 25
+ },
+ "lever_reason": "Evaluation and systems efficiency decide whether a field can plug into the automated loop and how fast the loop can turn; scaled-up foundation models are the base but already have a consensus; new architecture paradigms are a bonus, not the main lever.",
+ "questions": {
+  "Q2": {
+   "position": "conditional",
+   "score": 5,
+   "condition": "Worth it only with a narrow-domain model, a complementary team of 2–4, and compute usable continuously for months; otherwise it is just practice runs alongside frontier institutions"
+  }
+ },
+ "conditions": {
+  "Q2": [
+   "C1",
+   "C3",
+   "C4",
+   "C5"
+  ]
+ },
+ "cruxes": [
+  {
+   "question": "For world models, the 'imagination layer' (prediction) has standards, but has the 'decision layer' (the policy actually using it) been validated?",
+   "my_position": "The imagination layer does have a third-party yardstick; the decision layer has none to date, and valuations of AMI Labs, General Intuition and others are running ahead of the evidence",
+   "would_change_if": "Public evidence shows that a world model without extra fine-tuning can accurately predict real outcomes on more than 10 real-robot tasks",
+   "directions": [
+    "D08"
+   ]
+  },
+  {
+   "question": "Should evaluation be in place before work starts, or built along the way, so long as it ends up actually being used?",
+   "my_position": "With team and compute in place, work can start first; when no ready-made evaluation exists, building your own and releasing it to the point where outsiders can reproduce it is a legitimate alternative path",
+   "would_change_if": "University projects generally take a long time to add a reproducible check, or self-built evaluations are never accepted externally; in that case, wait for evaluation first",
+   "directions": [
+    "D01",
+    "D06",
+    "D07",
+    "D08"
+   ]
+  },
+  {
+   "question": "How long can the engineering value of complex agent scaffolds hold up, and will models absorb it soon?",
+   "my_position": "Most hand-built orchestration will be absorbed, but the environment-design and evaluation layer will not, because that is defining the measurable target itself",
+   "would_change_if": "On a sufficiently hard new benchmark, a minimal scaffold keeps trailing a complex scaffold by a wide margin",
+   "directions": [
+    "D04",
+    "D05"
+   ]
+  }
+ ],
+ "taste_advice": "Write down predictions and review them a year later; after the distillation paper was rejected by NeurIPS I still bet on it, and it later became the basis of Gemini Flash.",
+ "pairwise": [
+  {
+   "a": "D05",
+   "b": "D08",
+   "pick": "D05",
+   "why": "Without credible evaluation, 'can be read out' for a world model cannot be verified"
+  },
+  {
+   "a": "D05",
+   "b": "D06",
+   "pick": "D05",
+   "why": "Evaluation is the precondition for plugging into the automated loop, and my material on robotics is also the thinnest"
+  },
+  {
+   "a": "D06",
+   "b": "D08",
+   "pick": "D08",
+   "why": "World models are still the half of the loop that can be accelerated, but valuations are running ahead of decision-layer evidence, so the margin shrinks"
+  },
+  {
+   "a": "D07",
+   "b": "D08",
+   "pick": "D08",
+   "why": "D08 is still the more general bet, but D07 has the touchstone of control-task success or failure, so the gap is smaller than I originally thought"
+  },
+  {
+   "a": "D09",
+   "b": "D06",
+   "pick": "D09",
+   "why": "Simulation is the tool that makes the loop fast; embodiment is held back by the speed of real-data collection"
+  },
+  {
+   "a": "D02",
+   "b": "D03",
+   "pick": "D02",
+   "why": "D02 now scores higher (7 vs 6): a confirmed reliability contribution is steadier than a compounding mechanism that has not met my own measurement standard"
+  },
+  {
+   "a": "D11",
+   "b": "D12",
+   "pick": "D11",
+   "why": "The image-quality race in the generation track easily crosses the red line of building hype before the work is done; understanding is closer to decisions"
+  },
+  {
+   "a": "D01",
+   "b": "D05",
+   "pick": "D05",
+   "why": "A consensus already exists on the pre-training recipe; evaluation credibility is the switch for whether the next step can be automated"
+  },
+  {
+   "a": "D04",
+   "b": "D03",
+   "pick": "D03",
+   "why": "After D03 dropped to 6 it ties with D04; if D03's mechanism holds, its ceiling is still higher than D04's, so at the margin I still bet on it"
+  },
+  {
+   "a": "D13",
+   "b": "D05",
+   "pick": "D05",
+   "why": "Safety still relies on credible measurement/evaluation; it is not a separate track"
+  },
+  {
+   "a": "D10",
+   "b": "D06",
+   "pick": "D06",
+   "why": "Autonomous driving has passed the capability hurdle and its window is held by a few companies; embodied AI is still early, with more room for research"
+  }
+ ],
+ "changes": [
+  {
+   "option": "D02",
+   "from": 6,
+   "to": 7,
+   "because": "summary/X7.md",
+   "argument_restated": "RLVR mainly improves pass@1/sampling efficiency; at large k the base model can match the RL model",
+   "why": "Academia (Yue et al., NeurIPS Oral) settled this question conclusively; the reliability contribution I value should be raised"
+  },
+  {
+   "option": "D03",
+   "from": 8,
+   "to": 6,
+   "because": "C/X4/C4 point 1; B/X4/M1 point 1",
+   "argument_restated": "The threshold-crossing analogy needs a measure as precise as latency, and improvement in RSI cannot be measured precisely now",
+   "why": "This is my own measurement-first standard not being met, not because the other side has more people"
+  },
+  {
+   "option": "D07",
+   "from": 5,
+   "to": 6,
+   "because": "summary/X5.md",
+   "argument_restated": "D07 has the touchstone of control-task success or failure; the yardstick for D08's 'read out = put to use' does not exist",
+   "why": "This table's 3-to-3 split shows D07's verifiability holds up better than the score I originally gave it; I underestimated it"
+  },
+  {
+   "option": "D08",
+   "from": 7,
+   "to": 6,
+   "because": "summary/X3.md",
+   "argument_restated": "Valuations of AMI Labs, General Intuition and others are piling up fast ahead of decision-layer evidence",
+   "why": "Valuations running ahead of evidence is exactly what my red line against building hype around unfinished work is meant to prevent; window lowered"
+  }
+ ],
+ "held_despite": [
+  {
+   "post": "C/X2/C6",
+   "why": "I accept the distinction that evaluation is after-the-fact verification, not advance approval, but it changed only how I argue, not D01/D06/D07/D08"
+  },
+  {
+   "post": "overtime/X2/2_M8",
+   "why": "I accept M8's test that no zero-verification case exists, but this only narrows the disagreement from whether to evaluate to how early evaluation should be in place"
+  },
+  {
+   "post": "overtime/X4/1_C4",
+   "why": "I accept that AlphaEvolve's narrow-domain self-report, not an independent audit, does not count as open-ended compounding, but D03 was already lowered to 6 in round C, so it is not lowered further because of this"
+  }
+ ],
+ "still_disagree": "X2: with team and compute in place, work can start first; this core does not change. X4: D03 drops to 6, but I still bet on independent verification appearing around 2027; this is not pure waiting.",
+ "learned": "There is no real case of 'proving you did it right even with zero verification'; the team-plus-compute route never skipped evaluation, only took different forms (built-in/self-built); this changed my understanding of the MapReduce example.",
+ "searches": []
+}

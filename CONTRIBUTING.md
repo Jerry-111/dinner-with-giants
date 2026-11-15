@@ -10,13 +10,16 @@ are evidence about what works.
 - **Tooling:** checks, aggregation, lints, tests (`tools/sim.py`, `tests/`).
 - **Templates and translations.** Chinese and English are maintained; other languages are welcome
   as `README.<lang>.md` and translated templates.
-- **Example packs** of historical figures whose writings are in the public domain, or clearly
-  fictional personas, with a complete `sources.csv`.
+- **Personas** for the library (`personas/`): public figures with a substantial public record of
+  their own views, historical figures, or clearly labeled archetypes, each with a complete
+  `sources.csv` and following `RESPONSIBLE_USE.md`.
 - **Docs, bug reports, questions.**
 
 ## What we do not accept
 
-- Personas of living people (see `RESPONSIBLE_USE.md`).
+- Personas of private individuals, minors, or people known mainly for their private lives.
+- Persona files that judge a person's character, honesty or motives instead of citing dated
+  predictions and outcomes (see `RESPONSIBLE_USE.md`).
 - Anything containing personal data: real users' context files, real runs about real people's
   lives, private names, e-mail addresses, local paths.
 - Long verbatim excerpts from copyrighted sources.
@@ -39,11 +42,14 @@ Requirements: Python 3.9 or newer (CI runs 3.10–3.13). The tooling uses the st
 
 ```bash
 python3 -m unittest discover -s tests -v
-python3 tools/sim.py lint examples
+python3 tools/sim.py lint personas examples
+python3 tools/sim.py quotes personas examples
 python3 tools/sim.py privacy-scan .
 ```
 
-Run all three before opening a pull request; CI runs them too.
+Run all four before opening a pull request; CI runs them too. For a new or updated persona, also
+run `python3 tools/sim.py quotes personas/<ID>_<slug> --fetch`: it fetches each cited page and
+looks for every quote verbatim; check the ones it reports by hand.
 
 Writing style for docs and templates: plain, dense English; short sentences; terms from
 `docs/glossary.md`; file names and fields from `docs/data-formats.md`. Persona outputs follow the

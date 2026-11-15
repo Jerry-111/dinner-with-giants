@@ -1,0 +1,373 @@
+{
+ "id": "K6",
+ "name": "Patrick Collison",
+ "round": "R3",
+ "notice": "Simulation based on public material; not the person's own words.",
+ "options": {
+  "D01": {
+   "impact": 8,
+   "bottleneck": 5,
+   "academic_edge": 3,
+   "window": 3,
+   "overall": 4,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "The door to frontier pre-training is left basically only to big companies; what academia can do is the narrow-domain, open-weights, evaluated kind",
+   "late_modes": "Simply reproducing or catching up with frontier pre-training: the resource threshold is locked up by big companies, and academia cannot catch up",
+   "conflict": "Meta board member; Meta runs its own large-scale pre-training (Llama)"
+  },
+  "D02": {
+   "impact": 7,
+   "bottleneck": 4,
+   "academic_edge": 4,
+   "window": 4,
+   "overall": 6,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "Mechanistically RLVR is resampling, not a new paradigm (the X7 disagreement on mechanism is fully resolved), but reliable and cheap execution has real economic value in itself (tokens/W); impact raised",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D03": {
+   "impact": 5,
+   "bottleneck": 6,
+   "academic_edge": 4,
+   "window": 4,
+   "overall": 4,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "METR data: on strong baselines, 70-90% of the cost of self-improvement is compute trial and error; the evidence is thinner than I thought in R1, so for now it is not a compounding mechanism one can bet on",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D04": {
+   "impact": 7,
+   "bottleneck": 5,
+   "academic_edge": 3,
+   "window": 3,
+   "overall": 5,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "My own company's data (more than 600 AI-written PRs, only 1 rolled back) shows that the execution side is being absorbed quickly and the window is closing fast",
+   "late_modes": "General agent scaffolding and harnesses: absorbed by frontier models themselves, and Stripe's own experience is the evidence",
+   "conflict": "Stripe uses AI heavily to write code; invested in Cursor's parent company via a16z"
+  },
+  "D05": {
+   "impact": 7,
+   "bottleneck": 8,
+   "academic_edge": 7,
+   "window": 5,
+   "overall": 7,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Verification is the bottleneck I keep talking about; LMArena going from a Berkeley project to a company shows that academia can build things that really get adopted",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D06": {
+   "impact": 6,
+   "bottleneck": 7,
+   "academic_edge": 4,
+   "window": 5,
+   "overall": 6,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "One of the thinnest spots in my material; but designing and verifying a signal for a system knowing its own errors is itself an edge of evaluation science, not just the pure inference of my R1",
+   "late_modes": "Leaderboard-chasing demos of generalized manipulation: without real-robot verification it is a show, and it may fail on a different robot body",
+   "conflict": null
+  },
+  "D07": {
+   "impact": 6,
+   "bottleneck": 6,
+   "academic_edge": 5,
+   "window": 4,
+   "overall": 6,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "Control has a clean touchstone in task success or failure, a real advantage D08 does not currently have; my worry about the WAM naming contest is unchanged",
+   "late_modes": "Chasing the name WAM to make demos: a naming and PR contest, and the RoboArena leaderboard-chasing controversy is the signal",
+   "conflict": null
+  },
+  "D08": {
+   "impact": 8,
+   "bottleneck": 7,
+   "academic_edge": 5,
+   "window": 4,
+   "overall": 7,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Whether it predicts real outcomes correctly outside the training data is the only criterion that makes sense to me for judging this kind of work",
+   "late_modes": "Simply chasing more realistic video generation and calling it a world model: generating something that looks right is not the same as predicting correctly",
+   "conflict": "Meta board member; the V-JEPA series is work from Meta/FAIR"
+  },
+  "D09": {
+   "impact": 7,
+   "bottleneck": 6,
+   "academic_edge": 5,
+   "window": 5,
+   "overall": 7,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "Computation is cheap and real experiments are expensive and slow; this is the same arbitrage structure I describe for biology experiments",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D10": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "No judgment: the material contains no judgment of his own on autonomous driving, which is exactly the boundary of his path dependence",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D11": {
+   "impact": 6,
+   "bottleneck": 4,
+   "academic_edge": 5,
+   "window": 4,
+   "overall": 5,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "Humans and models still differ by ten-odd to a few dozen points on spatial and visual reasoning, which shows a real unsolved problem and not just a way to publish papers",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D12": {
+   "impact": 6,
+   "bottleneck": 3,
+   "academic_edge": 4,
+   "window": 3,
+   "overall": 4,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Generation aimed at visual realism is the kind that gets commoditized fastest in the sorting machine, and Sora 2 shutting down after six months is a ready-made lesson",
+   "late_modes": "The race in generation aimed at visual realism: Sora 2 was shut down six months after launch, which shows this route is overtaken quickly",
+   "conflict": null
+  },
+  "D13": {
+   "impact": 7,
+   "bottleneck": 5,
+   "academic_edge": 6,
+   "window": 5,
+   "overall": 5,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "I trust invariants and hard constraints more than model alignment; this is an engineering habit, not a researched position",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D14": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "FlashAttention-style academic contributions show that a small team can build infrastructure adopted across the whole industry; this kind of work is underrated",
+   "late_modes": null,
+   "conflict": "Stripe acquired OpenRouter, i.e. AI model-routing infrastructure"
+  },
+  "D15": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "The direction he bets on most heavily (Arc): the read-think-write loop has compounding potential, but verification is the real bottleneck; the interest is extremely deep, disclosed only and not adjusted for",
+   "late_modes": null,
+   "conflict": "Arc is the institution he co-founded with his wife and has put the most into, a direct bet on AI × biology"
+  },
+  "D16": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 4,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "No first-hand material; the cost-effectiveness of trading compute for quality in generative recommendation reminds me of diminishing progress per dollar, but this is only an analogy",
+   "late_modes": null,
+   "conflict": null
+  }
+ },
+ "levers": {
+  "L1": 20,
+  "L2": 10,
+  "L3": 15,
+  "L4": 18,
+  "L5": 15,
+  "L6": 7,
+  "L7": 3,
+  "L8": 12
+ },
+ "lever_reason": "Evaluation is still the top lever; but after the debate I take the economic significance of reliable and cheap execution (tokens/W style) more seriously, raising L2 and taking the points from scaling (L7); scaling is not a lever an individual researcher should bet on",
+ "questions": {
+  "Q2": {
+   "position": "conditional",
+   "score": 5,
+   "condition": "Narrow-domain model + credible third-party evaluation + a team of 2-4 + months of compute + open weights; missing any one makes it more of an exercise than a real contribution"
+  }
+ },
+ "conditions": {
+  "Q2": [
+   "C1",
+   "C2",
+   "C3",
+   "C4",
+   "C5"
+  ]
+ },
+ "cruxes": [
+  {
+   "question": "Without credible evaluation, can a breakthrough in world models or architectures be recognized and adopted by the outside world?",
+   "my_position": "No; without a measurement anyone can trust, even the best representation is only a claim made in the lab and will not really be adopted downstream",
+   "would_change_if": "A model whose measurement method is widely questioned keeps delivering on its promise in independent real-robot tests or third-party replications",
+   "directions": [
+    "D05",
+    "D08"
+   ]
+  },
+  {
+   "question": "Can an academic lab with a few dozen GPUs still make a foundation-model contribution that industry will adopt?",
+   "my_position": "Yes, but only in the combination of narrow domain + strong evaluation + open weights; the door to general pre-training has closed",
+   "would_change_if": "Within two years, another case like FlashAttention or DPO appears: something that came from a small team and later became a default industry component",
+   "directions": [
+    "D01",
+    "D05"
+   ]
+  },
+  {
+   "question": "Is embodied intelligence now stuck on real-robot data and hardware, or on the model algorithms themselves?",
+   "my_position": "I lean toward data and hardware (thin evidence, inferred); this is where my material is thinnest and it should be questioned by people who understand robotics",
+   "would_change_if": "An algorithmic breakthrough that clearly improves cross-embodiment transfer without needing more real-robot data or cheaper hardware",
+   "directions": [
+    "D06",
+    "D09"
+   ]
+  }
+ ],
+ "taste_advice": "First let your model take one independent test it could lose, and only then talk about how useful it is; do not trust only the ruler you built yourself",
+ "pairwise": [
+  {
+   "a": "D05",
+   "b": "D08",
+   "pick": "D05",
+   "why": "Both are high, but evaluation is the source of verification, and world models too will in the end be tested by it"
+  },
+  {
+   "a": "D05",
+   "b": "D06",
+   "pick": "D05",
+   "why": "My material on D06 is too thin; D05 is the direction where my evidence is strongest and I am most confident"
+  },
+  {
+   "a": "D06",
+   "b": "D08",
+   "pick": "D08",
+   "why": "D08 at least has concrete work that can be tested (V-JEPA); on D06 I can almost only infer"
+  },
+  {
+   "a": "D07",
+   "b": "D08",
+   "pick": "D08",
+   "why": "D08's test criterion (predicting real outcomes) is more fundamental, while D07 easily falls into a naming and demo contest"
+  },
+  {
+   "a": "D09",
+   "b": "D06",
+   "pick": "D09",
+   "why": "I can work out the sim-to-real arbitrage structure by analogy with biology; I cannot judge D06 itself"
+  },
+  {
+   "a": "D02",
+   "b": "D03",
+   "pick": "D02",
+   "why": "After D02's impact was raised it now overtakes; the evidence for D03 is thinner than I thought in R1 (METR 70-90% is compute trial and error)"
+  },
+  {
+   "a": "D11",
+   "b": "D12",
+   "pick": "D11",
+   "why": "On understanding, the gap between humans and models is still ten-odd to a few dozen points, while generation has already entered sorting-machine-style hyper-competition"
+  },
+  {
+   "a": "D01",
+   "b": "D05",
+   "pick": "D05",
+   "why": "The door to pre-training has basically closed to academia, while the door to evaluation is still open"
+  },
+  {
+   "a": "D04",
+   "b": "D03",
+   "pick": "D04",
+   "why": "With D03's evidence now thinner, it ties with D04 or sits slightly below; D04's scaffolding problem remains but at least its evidence is firmer"
+  },
+  {
+   "a": "D13",
+   "b": "D05",
+   "pick": "D05",
+   "why": "For D05 I have a more direct framework and evidence; D13 is mostly inference"
+  },
+  {
+   "a": "D10",
+   "b": "D06",
+   "pick": "D06",
+   "why": "I am not sure about either, but D10 is locked up more tightly by a few giants and their fleet data, while D06 at least still has open problems"
+  }
+ ],
+ "web_searches": [],
+ "changes": [
+  {
+   "option": "D06",
+   "from": 5,
+   "to": 6,
+   "because": "B/X1/M1",
+   "argument_restated": "Whether a system knows it is wrong still has to be judged as right or not, so it is a variant of evaluation and not a parallel track apart from evaluation",
+   "why": "Moved academic_edge from 3 to 4: designing and verifying signals of knowing one's own errors is a real edge by which evaluation science can extend into robotics"
+  },
+  {
+   "option": "D02",
+   "from": 5,
+   "to": 6,
+   "because": "overtime/X7/1_C3",
+   "argument_restated": "Reliable and cheap execution (tokens/W) is in itself an industry-scale lever and should not count only as an efficiency footnote; this connects to my own framework of execution getting cheaper",
+   "why": "Raised impact: I used to conflate not being a new paradigm with not being important; this time I separate the two, so the mechanism judgment (resampling) is unchanged and the economic weight is raised"
+  },
+  {
+   "option": "D03",
+   "from": 5,
+   "to": 4,
+   "because": "A/X4/C4",
+   "argument_restated": "On strong baselines METR measured that in most self-improvement trajectories 70-90% of the cost is compute trial and error, not methodological progress",
+   "why": "My R1 D03 was a low-confidence inference, and this concrete data point is more pessimistic than I thought; impact, window and overall lowered"
+  },
+  {
+   "option": "D07",
+   "from": 5,
+   "to": 6,
+   "because": "A/X5/M3",
+   "argument_restated": "D07 has the clean touchstone of control-task success or failure, while the ruler for D08's readable = usable test does not exist yet",
+   "why": "Raised academic_edge: a direction with a clean pass/fail criterion suits rigorous verification-style work by a small team, which is exactly the edge I value"
+  }
+ ],
+ "held_despite": [
+  {
+   "post": "B/X7/C3",
+   "why": "Accepts that the mechanism of the MongoDB/Ruby analogy does not correspond (switching cost is not a capability ceiling), and the analogy was already withdrawn as evidence in the C closing round; but the D02 score did not change then, because it challenged how I chose my example, not the D02 judgment itself"
+  },
+  {
+   "post": "B/X1/K3",
+   "why": "Accepts the conceptual distinction that a benchmark or judge is not the system verifying itself, but L1/D05 were not lowered: in my framework this distinction was already a narrower subset of L1, not its opposite"
+  }
+ ],
+ "still_disagree": "Still disagree with C4 equating reliable execution with a new-capability lever: tokens/W matters economically and I have raised D02's impact, but execution efficiency and solving new problems are two kinds of lever and should not be scored together just because the economic impact is large.",
+ "learned": "The distinction between evaluation certifying a capability and producing it is a real bottleneck in mature fields that have active candidates and budgets to allocate (X1 overtime); in new fields with no evaluation establishment (robotics) the framework itself does not yet apply. L1's role depends strongly on how mature the field is; there is no single weight that fits everywhere.",
+ "searches": []
+}

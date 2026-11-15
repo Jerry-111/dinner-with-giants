@@ -1,0 +1,374 @@
+{
+ "id": "C2",
+ "name": "Bill Gurley",
+ "round": "R3",
+ "notice": "Simulation based on public material; not the person's own words.",
+ "options": {
+  "D01": {
+   "impact": 7,
+   "bottleneck": 4,
+   "academic_edge": 2,
+   "window": 2,
+   "overall": 4,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "The capital barrier blocks academia and individuals; what to really watch is who can push down the price per unit of capability",
+   "late_modes": "Going it alone on pre-training from scratch is already too late, unless one has scarce data or compute",
+   "conflict": null
+  },
+  "D02": {
+   "impact": 7,
+   "bottleneck": 6,
+   "academic_edge": 5,
+   "window": 4,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "A cheap cost-curve improvement, like revenue-quality analysis: cheap and verifiable, but one must separate real reasoning from resampling",
+   "late_modes": "Standardized general-purpose RLHF tuning is already commoditized; too late",
+   "conflict": null
+  },
+  "D03": {
+   "impact": 6,
+   "bottleneck": 7,
+   "academic_edge": 5,
+   "window": 5,
+   "overall": 4,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "My layered view has not changed, but the only concrete positive figure from the RSI camp (DGM, $22,000 in two weeks) has been withdrawn after fact-checking, so the evidence is thinner",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D04": {
+   "impact": 6,
+   "bottleneck": 4,
+   "academic_edge": 3,
+   "window": 2,
+   "overall": 3,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Scaffolding is being absorbed by the models themselves; the SWE-bench and Terminal-Bench evidence agree; this moat layer is thin",
+   "late_modes": "Productizing general agent scaffolding is already too late; native agents absorb it",
+   "conflict": null
+  },
+  "D05": {
+   "impact": 9,
+   "bottleneck": 9,
+   "academic_edge": 7,
+   "window": 7,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "This is my home ground: people who can tell real revenue from fake are always scarce, and if evaluation is not credible, no number along the whole chain can be trusted",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D06": {
+   "impact": 8,
+   "bottleneck": 8,
+   "academic_edge": 5,
+   "window": 6,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "The bar is not demo quality but how much it costs to move to a new site; touch and cross-embodiment transfer are unsolved, so the window has not closed",
+   "late_modes": "Standardized tabletop grasping demos are already too late; repeated demos are worth nothing",
+   "conflict": null
+  },
+  "D07": {
+   "impact": 7,
+   "bottleneck": 6,
+   "academic_edge": 6,
+   "window": 5,
+   "overall": 5,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Whether an action 'works or not' can still be observed independently, but my side's flagship evidence (LBM) is also only self-reported, with no replication outside the team, so the evidence is less solid than I originally thought",
+   "late_modes": "Defaulting to a diffusion head as the standard recipe; that approach is no longer fresh",
+   "conflict": null
+  },
+  "D08": {
+   "impact": 7,
+   "bottleneck": 6,
+   "academic_edge": 5,
+   "window": 5,
+   "overall": 5,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "V-JEPA2's real-robot numbers are real; but looking real is not the same as being physically right, which is what Second Life taught me",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D09": {
+   "impact": 7,
+   "bottleneck": 7,
+   "academic_edge": 6,
+   "window": 6,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Legged-locomotion domain randomization transfers zero-shot to real robots, which even the side doubtful of world models accepted; numbers like the simulation ranking checked against 1600 real-robot runs are still the ones I trust most",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D10": {
+   "impact": 9,
+   "bottleneck": 7,
+   "academic_edge": 4,
+   "window": 4,
+   "overall": 7,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "The logic I used in 2014 to size the Uber market is replaying here: real demand exists only when cost per mile is below the cost of owning a car; the safety data is all self-reported for now",
+   "late_modes": "Jumping in to compete with the top fleets on mileage data is already too late",
+   "conflict": null
+  },
+  "D11": {
+   "impact": 6,
+   "bottleneck": 7,
+   "academic_edge": 5,
+   "window": 6,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "The gap measured by BLINK and VSI-Bench is bigger than imagined; this is not a cosmetic problem but a real bottleneck",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D12": {
+   "impact": 5,
+   "bottleneck": 3,
+   "academic_edge": 5,
+   "window": 3,
+   "overall": 4,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Sora 2's ending is a story I have been telling for many years: it looks good but nobody stays to pay; this is Second Life",
+   "late_modes": "Competing purely on generation quality in a consumer video product is already too late; this is the Chinese labs' price war",
+   "conflict": null
+  },
+  "D13": {
+   "impact": 6,
+   "bottleneck": 4,
+   "academic_edge": 6,
+   "window": 6,
+   "overall": 5,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "I do not judge the technical merits; when someone calls for regulation, first ask who it benefits: it may be a moat, not goodwill",
+   "late_modes": null,
+   "conflict": "Anti-regulation stance, a planned P3 research institute: ideological interest"
+  },
+  "D14": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 7,
+   "confidence": null,
+   "basis": null,
+   "one_line": "FlashAttention shows academia can hold a key layer",
+   "late_modes": null,
+   "conflict": "Holds Nvidia stock; directly interested"
+  },
+  "D15": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 3,
+   "confidence": null,
+   "basis": null,
+   "one_line": "I do not judge the scientific value; models cannot even beat baselines (single-cell tasks), and with approvals and wet-lab experiments unchanged, payoff is slow",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D16": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 5,
+   "confidence": null,
+   "basis": null,
+   "one_line": "There is real online revenue, but MTGR's compute cost is 10-100 times DLRM's, so first ask whether that efficiency pays off",
+   "late_modes": null,
+   "conflict": null
+  }
+ },
+ "levers": {
+  "L1": 20,
+  "L2": 10,
+  "L3": 17,
+  "L4": 10,
+  "L5": 15,
+  "L6": 5,
+  "L7": 13,
+  "L8": 10
+ },
+ "lever_reason": "Evaluation is still the trust gate, but it depends on the setting: it matters most when managing a portfolio of many candidates, and it does not apply directly when a single researcher bets on a new paradigm with no active evaluation institutions in place; L1 goes from 22 down to 20; zero-shot real-robot transfer of legged domain randomization is accepted by both sides, and L3 goes from 15 up to 17.",
+ "questions": {
+  "Q2": {
+   "position": "conditional",
+   "score": 6,
+   "condition": "Narrow domain, a team, compute above the line, open weights that people use, credible third-party evaluation: all five must hold for it to count"
+  }
+ },
+ "conditions": {
+  "Q2": [
+   "C1",
+   "C2",
+   "C3",
+   "C4",
+   "C5"
+  ]
+ },
+ "cruxes": [
+  {
+   "question": "Are a world model's representations really used by the policy for decisions, or can they merely be probed?",
+   "my_position": "The evidence is more fine-grained now: domain randomization for legged locomotion is accepted by both opposing sides as transferring zero-shot to real robots; but for JEPA-style predictive world models, the 'encoded means used' claim still rests on a few self-reported cases (V-JEPA2/DROID)",
+   "would_change_if": "Large-scale closed-loop real-robot deployment appears, with downstream success attributable to the representation rather than merely correlated",
+   "directions": [
+    "D08"
+   ]
+  },
+  {
+   "question": "Is agent self-improvement real compounding, or circular revenue from setting your own questions and grading your own answers?",
+   "my_position": "In the evidence from METR, AIDE² and others, the cost of most self-improvement is simply compute spend; the DGM figure of $22,000 in two weeks, which used to count as concrete, was found on checking to have no primary source and has been withdrawn, so the evidence is thinner",
+   "would_change_if": "An agent keeps beating its own baseline on external evaluations it has not seen, with cost not growing linearly alongside",
+   "directions": [
+    "D03",
+    "D04"
+   ]
+  },
+  {
+   "question": "How much of today's AI capex is real demand, and how much is propped up by circular deals?",
+   "my_position": "The demand is real, but part of it is amplified by circular deals and off-balance-sheet financing; within 2-3 years we will see whether supply is excessive",
+   "would_change_if": "The share of related-party prepayments or equity swaps in cloud providers' capex funding keeps rising and is disclosed",
+   "directions": [
+    "D14"
+   ]
+  }
+ ],
+ "taste_advice": "What you make should be attributable to you and priceable even if you change companies; do not look good only in one company's reports",
+ "pairwise": [
+  {
+   "a": "D05",
+   "b": "D08",
+   "pick": "D05",
+   "why": "Evaluation is the underlying capability that can verify everything; world models are for now more story"
+  },
+  {
+   "a": "D05",
+   "b": "D06",
+   "pick": "D05",
+   "why": "Without credible evaluation, robot reliability numbers cannot be trusted either"
+  },
+  {
+   "a": "D06",
+   "b": "D08",
+   "pick": "D06",
+   "why": "Robots have more varied paths of real deployment and stress testing, while the evidence on representation quality still concentrates on single cases"
+  },
+  {
+   "a": "D07",
+   "b": "D08",
+   "pick": "D07",
+   "why": "The two scores are now tied, but whether an action 'works or not' can still be observed independently, while how to test whether a representation is 'actually used' is still disputed"
+  },
+  {
+   "a": "D09",
+   "b": "D06",
+   "pick": "D09",
+   "why": "Simulation decides whether the marginal cost of robot training can come down, and this round's evidence is harder"
+  },
+  {
+   "a": "D02",
+   "b": "D03",
+   "pick": "D02",
+   "why": "Post-training already has credible cost and effect numbers; self-improvement has lost one positive figure and is thinner"
+  },
+  {
+   "a": "D11",
+   "b": "D12",
+   "pick": "D11",
+   "why": "The gap in understanding (BLINK/VSI) matters more than the aesthetic gap in generation"
+  },
+  {
+   "a": "D01",
+   "b": "D05",
+   "pick": "D05",
+   "why": "The pre-training barrier is all capital; the evaluation barrier is method, and I understand the latter better"
+  },
+  {
+   "a": "D04",
+   "b": "D03",
+   "pick": "D03",
+   "why": "Scaffolding has already been absorbed by models; self-improvement at least has not been falsified, even though the evidence has thinned"
+  },
+  {
+   "a": "D13",
+   "b": "D05",
+   "pick": "D05",
+   "why": "Evaluation has greater industry leverage; my methods never covered the technical merits of safety in depth"
+  },
+  {
+   "a": "D10",
+   "b": "D06",
+   "pick": "D10",
+   "why": "The unit-economics path for autonomous driving is clearer, and there is far more mileage data than for robots"
+  }
+ ],
+ "changes": [
+  {
+   "option": "D03",
+   "from": 5,
+   "to": 4,
+   "because": "board/summary/X4.md",
+   "argument_restated": "The only concrete positive economic figure from the RSI camp (DGM producing results for $22,000 in two weeks) was found on checking to have no primary source and has been withdrawn",
+   "why": "With this data point removed, the positive evidence for RSI is thinner, leaving only narrow-domain, self-reported cases such as AlphaEvolve"
+  },
+  {
+   "option": "D07",
+   "from": 6,
+   "to": 5,
+   "because": "B/X5/M6 source_challenge (confirmed by errata_B)",
+   "argument_restated": "The 'validated' evidence my side often cites (LBM's real-robot blind randomized results) turns out on checking to be only the team's own paper, with no replication outside the team",
+   "why": "This is the same yardstick I used to criticize D08 for lacking independent validation, and it applies equally to my own side; it narrows my confidence in D07"
+  },
+  {
+   "option": "D09",
+   "from": 7,
+   "to": 8,
+   "because": "board/summary/X3.md",
+   "argument_restated": "Even the side that doubts the world-model evidence admits that legged locomotion trained with domain randomization transfers zero-shot to real robots; this is an established case",
+   "why": "This is a concrete positive case confirmed across the two opposing sides, and harder than the simulation evidence I cited in R1"
+  }
+ ],
+ "held_despite": [
+  {
+   "post": "B/X1/K3",
+   "why": "Accepts that narrow-domain self-generated signals (TD error) can replace part of evaluation; D05 needs no change"
+  },
+  {
+   "post": "C/X5/M4 (via board/summary/X5.md)",
+   "why": "DINOv2/SigLIP are general visual representations, not JEPA-style predictive world models, so this evidence does not directly prove D08's predictive claim; D08 stays"
+  },
+  {
+   "post": "board/summary/X7.md",
+   "why": "That RLVR is efficiency/reliability and not new capability has been confirmed repeatedly, but D02's score never assumed 'new capability', so it needs no change"
+  },
+  {
+   "post": "board/summary/X3.md + board/summary/X6.md",
+   "why": "The legged domain-randomization success and the Physical Atari cross-embodiment failure are two new pieces of evidence pointing in opposite directions and roughly cancel out; D06 needs no change"
+  },
+  {
+   "post": "board/summary/X2.md",
+   "why": "The conclusion that team plus compute and evaluation are jointly necessary confirms my original position of requiring all of C1-C5; Q2 needs no change"
+  }
+ ],
+ "still_disagree": "The D08 camp's 'more upstream' structural argument has not been overturned, but it rests mainly on narrative and early valuations; I still rank independently observable action success or failure ahead of representational elegance",
+ "learned": "Evaluation-first holds only in 'many candidates, staged bets' settings; when a single researcher bets on a new paradigm with no active evaluation institutions, this judgment does not apply directly",
+ "searches": []
+}

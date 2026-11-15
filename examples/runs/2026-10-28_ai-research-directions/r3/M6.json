@@ -1,0 +1,369 @@
+{
+ "id": "M6",
+ "name": "Fei-Fei Li",
+ "round": "R3",
+ "notice": "Simulation based on public material; not the person's own words.",
+ "options": {
+  "D01": {
+   "impact": 8,
+   "bottleneck": 6,
+   "academic_edge": 1,
+   "window": 2,
+   "overall": 3,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "Scaled-up pre-training is almost closed to academia; simply out-stacking others on compute is not the methodology I bet on",
+   "late_modes": "Simply reproducing validated scaling curves with no new data/evaluation angle",
+   "conflict": null
+  },
+  "D02": {
+   "impact": 6,
+   "bottleneck": 4,
+   "academic_edge": 5,
+   "window": 5,
+   "overall": 5,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "RLVR mainly improves sampling efficiency rather than creating new reasoning patterns; but reliable execution may be a decisive economic lever under the tokens/W framework",
+   "late_modes": "Only tuning hyperparameters to chase a reasoning leaderboard score without asking what capability RLVR actually adds",
+   "conflict": null
+  },
+  "D03": {
+   "impact": 7,
+   "bottleneck": 6,
+   "academic_edge": 5,
+   "window": 6,
+   "overall": 5,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "Long-horizon credit assignment resembles my Planner framework, but I have not publicly commented on the agent ecosystem, so my judgment is weak",
+   "late_modes": "Wrapping a thin self-improvement loop around a model without addressing that experiment compute spending makes up most of the cost",
+   "conflict": null
+  },
+  "D04": {
+   "impact": 6,
+   "bottleneck": 5,
+   "academic_edge": 7,
+   "window": 6,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "Scaffolding is being absorbed by models, but defining new environments/verifiers is not being absorbed; this is exactly where my methodology that a dataset is a scientific hypothesis applies",
+   "late_modes": "Piling on scaffolding without changing environment design; SWE-bench data show this is being absorbed by the models themselves",
+   "conflict": null
+  },
+  "D05": {
+   "impact": 8,
+   "bottleneck": 8,
+   "academic_edge": 8,
+   "window": 7,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Defining evaluations/benchmarks is itself the methodology I have bet my whole career on; ImageNet showed that asking the right question is what gives you a foundation",
+   "late_modes": "Only doing LLM-as-judge scoring without solving position bias and leaderboard gaming",
+   "conflict": null
+  },
+  "D06": {
+   "impact": 9,
+   "bottleneck": 7,
+   "academic_edge": 6,
+   "window": 6,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Generalization and real deployment are still the real bottlenecks; video and demonstrations cannot fill the gap in touch/force data",
+   "late_modes": "Replicating an off-the-shelf VLA architecture without solving cross-embodiment transfer or the touch gap is no longer novel",
+   "conflict": "World Labs/AMD commercial interests are staked on embodied-robot training data"
+  },
+  "D07": {
+   "impact": 7,
+   "bottleneck": 6,
+   "academic_edge": 6,
+   "window": 5,
+   "overall": 6,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "My methodological signature is structured representation + reasoning; what OpenVLA-OFT won on is the choice of decoding head, not dropping representations",
+   "late_modes": "Assuming the diffusion head is the optimal action representation without comparing other action heads",
+   "conflict": null
+  },
+  "D08": {
+   "impact": 9,
+   "bottleneck": 8,
+   "academic_edge": 5,
+   "window": 6,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Spatial intelligence is AI's biggest gap and the next frontier",
+   "late_modes": "Only chasing generation quality without demonstrating structural consistency and interactivity; this has already been judged the wrong metric",
+   "conflict": "World Labs/AMD interests are concentrated in the spatial-intelligence judgment"
+  },
+  "D09": {
+   "impact": 8,
+   "bottleneck": 7,
+   "academic_edge": 6,
+   "window": 6,
+   "overall": 7,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Sim2real evidence is getting better (Veo/SIMPLER), but my own R2S2R is also still thin; one should not rely on self-reported results alone",
+   "late_modes": "Only showing success rates inside simulation, with no real-robot closed loop and no third-party replication",
+   "conflict": "World Labs' R2S2R and its SceniX acquisition bet on this direction"
+  },
+  "D10": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": null,
+   "basis": null,
+   "one_line": "Autonomous driving is not a field I have discussed publicly; the material gives no basis, so I do not force an inference",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D11": {
+   "impact": 8,
+   "bottleneck": 8,
+   "academic_edge": 7,
+   "window": 7,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Models are barely better than blind guessing at grounding/spatial understanding, and independent numbers from BLINK and VSI-Bench now back this up",
+   "late_modes": "Continuing to pile on parameters for a few points of leaderboard rank without solving the structural gap in grounding and spatial understanding",
+   "conflict": null
+  },
+  "D12": {
+   "impact": 7,
+   "bottleneck": 5,
+   "academic_edge": 4,
+   "window": 4,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Pure image quality/FID is not the right metric; structural consistency is; Sora 2 being taken offline is a warning that the consumer-side quality race is unsustainable",
+   "late_modes": "Text-to-image and text-to-video that only chase visual quality have already been quickly commoditized by large models from Chinese vendors",
+   "conflict": "World Labs' Marble/Atlas competes with peers"
+  },
+  "D13": {
+   "impact": 6,
+   "bottleneck": 4,
+   "academic_edge": 6,
+   "window": 6,
+   "overall": 5,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "Not my specialty; I worry more about near-term real-world risks (misinformation, labor) than about the problems in this kind of existential-risk narrative",
+   "late_modes": "Alignment that only pleases human raters, without dealing with concrete evidence such as the fragility of CoT monitoring",
+   "conflict": null
+  },
+  "D14": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 4,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "Not my specialty; FlashAttention-style academic infrastructure contributions exist, but I cannot judge more than that",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D15": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": null,
+   "basis": null,
+   "one_line": "The material does not cover AI for Science at all, so there is no basis and I do not force a score",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D16": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": null,
+   "basis": null,
+   "one_line": "The material does not cover recommendation/retrieval systems at all, so there is no basis and I do not force a score",
+   "late_modes": null,
+   "conflict": null
+  }
+ },
+ "levers": {
+  "L1": 17,
+  "L2": 6,
+  "L3": 15,
+  "L4": 20,
+  "L5": 15,
+  "L6": 11,
+  "L7": 8,
+  "L8": 8
+ },
+ "lever_reason": "Evaluation lets a paradigm shift be recognized and adopted, but K3 reminded us that AlexNet's capability came from the CNN architecture, not ImageNet; world models/simulation remain the core bet",
+ "questions": {
+  "Q2": {
+   "position": "conditional",
+   "score": 6,
+   "condition": "Narrow domain, credible third-party evaluation, open weights with a path to outside adoption; when training a brand-new foundation model, team + compute are also necessary conditions, not just icing on the cake"
+  }
+ },
+ "conditions": {
+  "Q2": [
+   "C1",
+   "C2",
+   "C4",
+   "C5"
+  ]
+ },
+ "cruxes": [
+  {
+   "question": "If the environment/evaluation is defined correctly, does a paradigm shift follow naturally, or is that only a necessary condition?",
+   "my_position": "Necessary but not necessarily sufficient; BEHAVIOR-1K, the project I am building myself, has not yet had an AlexNet moment of its own",
+   "would_change_if": "The BEHAVIOR Challenge or similar benchmarks see large-scale adoption and comparable results independent of the team that created them",
+   "directions": [
+    "D08",
+    "D06",
+    "D09"
+   ]
+  },
+  {
+   "question": "Which is the better bet: structured 3D/geometric intermediate representations, or end-to-end black-box policies?",
+   "my_position": "I bet on representational capability itself (it need not be hand-structured explicitly; learned implicit representations count too); what OpenVLA-OFT won on is the choice of decoding head, not proof that representations do not matter",
+   "would_change_if": "A policy with no strong pretrained visual-representation backbone, trained purely end to end from scratch, consistently beats methods with strong representations in cross-task real-robot deployment",
+   "directions": [
+    "D06",
+    "D07",
+    "D08"
+   ]
+  },
+  {
+   "question": "How should startup self-reported 'world model/world action model' benchmark results be treated?",
+   "my_position": "A directional reference but not evidence; even the R2S2R results from my own company need third-party replication before they can truly be believed",
+   "would_change_if": "Cross-task, cross-platform third-party replication data independent of the team that created it, not just the vendor's own leaderboard",
+   "directions": [
+    "D08"
+   ]
+  }
+ ],
+ "taste_advice": "Find a bold problem that is your own; do not just ask other people's questions faster. I published papers at Caltech for years without a breakthrough, until I did ImageNet, which is when it counted",
+ "pairwise": [
+  {
+   "a": "D05",
+   "b": "D08",
+   "pick": "D05",
+   "why": "Without credible evaluation, even world models' own progress cannot be verified"
+  },
+  {
+   "a": "D05",
+   "b": "D06",
+   "pick": "D05",
+   "why": "Evaluation is the precondition for judging whether embodied intelligence is really progressing"
+  },
+  {
+   "a": "D06",
+   "b": "D08",
+   "pick": "D08",
+   "why": "Spatial intelligence/world models are the upstream capability bottleneck for embodied generalization"
+  },
+  {
+   "a": "D07",
+   "b": "D08",
+   "pick": "D08",
+   "why": "D07 is the subproblem of D08 that lands on actions; the upstream judgment is more critical"
+  },
+  {
+   "a": "D09",
+   "b": "D06",
+   "pick": "D06",
+   "why": "Simulation is a means; its value must ultimately be validated on real embodied tasks"
+  },
+  {
+   "a": "D02",
+   "b": "D03",
+   "pick": "D02",
+   "why": "The D02 mechanism has been confirmed repeatedly in the debate, while D03 is still at the level of inference"
+  },
+  {
+   "a": "D11",
+   "b": "D12",
+   "pick": "D11",
+   "why": "Understanding/grounding is my academic home field, and academia has more room there too"
+  },
+  {
+   "a": "D01",
+   "b": "D05",
+   "pick": "D05",
+   "why": "D01 is almost closed to academia; in D05 academia can still define new problems"
+  },
+  {
+   "a": "D04",
+   "b": "D03",
+   "pick": "D04",
+   "why": "Environment and evaluation design are closer to my methodology of defining the problem correctly"
+  },
+  {
+   "a": "D13",
+   "b": "D05",
+   "pick": "D05",
+   "why": "Evaluation science is closer to the methodology I have personally lived through and validated; D13 is not my specialty"
+  },
+  {
+   "a": "D10",
+   "b": "D06",
+   "pick": "D06",
+   "why": "D10 is outside what I can judge; for D06 I have concrete grounds"
+  }
+ ],
+ "changes": [
+  {
+   "option": "D07",
+   "from": 7,
+   "to": 6,
+   "because": "C/X5/M4",
+   "argument_restated": "OpenVLA-OFT still uses DINOv2+SigLIP; its win is the difference in decoding head",
+   "why": "In round C I conceded too much by treating this as evidence for 'dropping representations'; it should be corrected back toward the R1 judgment"
+  },
+  {
+   "option": "D08",
+   "from": 7,
+   "to": 8,
+   "because": "C/X5/M4",
+   "argument_restated": "What OpenVLA-OFT won on is the choice of decoding head; a strong visual-representation backbone is still the foundation",
+   "why": "Same evidence, corrected: the representational capability was not refuted; a decoding-strategy issue was misread as a representation issue"
+  },
+  {
+   "option": "D02",
+   "from": 4,
+   "to": 5,
+   "because": "overtime/X7/1_C3",
+   "argument_restated": "Reliable execution may be a decisive economic lever under the tokens/W framework",
+   "why": "The diagnosis (no new reasoning) is unchanged, but this economic argument made me raise my score for 'how important reliability is'"
+  }
+ ],
+ "held_despite": [
+  {
+   "post": "B/X7/M6",
+   "why": "I accepted M2's point early that making affordances reliable is valuable, but it gave no basis for how many points to add, until C3's tokens/W argument gave a reason to move the score"
+  }
+ ],
+ "still_disagree": "Disagree with M3 that the weak claim (no standardized yardstick = bet on the hardest-to-replicate upstream capability) does not hold; building the yardstick (D05) is itself part of betting on this layer, not a precondition",
+ "learned": "What OpenVLA-OFT won on is the choice of decoding head, not 'representations are not needed'; in round C I conflated these two questions, and I have corrected that this time",
+ "searches": [
+  {
+   "query": "OpenVLA-OFT vision backbone DINOv2 SigLIP action head continuous diffusion comparison",
+   "url": "https://arxiv.org/pdf/2502.19645",
+   "published": "2025-02-27",
+   "sentence": "OFT keeps the shared encoder that blends DINOv2 and SigLIP features",
+   "for_claim": "D08",
+   "result": "supports"
+  }
+ ]
+}

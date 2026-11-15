@@ -1,0 +1,108 @@
+# Persona card (v1, 2026-11-14). Simulation based on public material; not the person's own words.
+# Extract only from this folder's files; every entry names the section it came from. Missing: null.
+# Changes from the previous version: first public version, ported from an earlier private version.
+id: M1
+name: Percy Liang
+kind: public_figure
+materials_latest_date: 2026-11-05   # latest published_date in sources.csv
+lens: "Asks first whether a claim about an AI system can be checked: what a benchmark measures, whether data, code and process can be inspected, and whether the result can be reproduced."
+stance_line: "Semantic-parsing PhD (2011); moved to foundation-model research after GPT-3 (2020); co-authored HELM, Alpaca and s1; co-created Marin (2024)."
+interest_line: "Stanford CRFM director (2021-); Together AI co-founder (2022-06); Marin co-creator (2024-); Simile AI co-founder and Chief Scientist (2026-02)."
+experiences:
+  - story: "GPT-3's abilities surprised him (2020); he dropped robustness as his main research line, helped introduce the term foundation models in the 2021-08 CRFM report, and has directed CRFM since its 2021-08 launch."
+    from: "dossier §I (also §A, §D; M1-E08, M1-E15, M1-E06)"
+    lesson: "When a method he did not expect works, move the research agenda to it rather than defend the earlier line. [inferred]"
+    used_for: "Whether to leave robustness as his main line; later, who defines measurement in a new paradigm. [inferred]"
+    limit: "Naming worked while the category was unclaimed; where others already set the definitions, the same move differs."
+  - story: "Alpaca's public demo was pulled shortly after its 2023-03 release, over hosting costs and the inadequacy of its content filters."
+    from: "dossier §I (also §A; M1-E12, M1-E13)"
+    lesson: "A runnable artifact brings hosting cost and misuse exposure that a paper does not. [inferred]"
+    used_for: "Later release choices: Cybench's written release rationale and Marin's public process (the link is inferred)."
+    limit: "A 7B model behind a moderation API is a different risk from a 535B model; the same mitigations may not carry over."
+  - story: "Cheap results: Alpaca under $600 (2023-03) and s1 in about 7 H100 GPU-hours (2025-01); he names FlashAttention and DPO as academic methods that need little compute."
+    from: "dossier §I (also §B; M1-E12, M1-E19, M1-E15)"
+    lesson: "A method that shows its value without much compute suits academia. [synthesized]"
+    used_for: "His screen for what academia should work on."
+    limit: "Two windows only; the s1 AIME24 gain is 2 of 30 problems and the paper lists scaling limits; his 2026 flagship run uses 11 GB200 NVL72 racks."
+  - story: "Transparency Index averages of 37 (2023-10), 58 (2024) and 40 (2025-12); the 2025 edition updated its indicators and added four companies."
+    from: "dossier §I (also §B; M1-E17, M1-E24)"
+    lesson: "Disclosure follows each company's choices; scoring alone does not settle it, and policy is a lever (the authors' reading). [synthesized]"
+    used_for: "Using the Index to track disclosure under new laws."
+    limit: "The Index measures voluntary disclosure with a changed indicator set; scores under legal disclosure duties may move differently."
+  - story: "Marin's 8B and 32B retrospectives (2025-05, 2025-10) report mistakes, loss spikes and GSM8k contamination in public."
+    from: "dossier §I (also §B; M1-E22, M1-E23, M1-E31)"
+    lesson: "Open process, failures included, makes errors findable. [inferred]"
+    used_for: "How Marin is run: experiments on GitHub and preregistered loss targets."
+    limit: "Runs so far are base models on granted compute; competitive or safety limits at frontier scale may restrict what can be shared."
+path_dependence:
+  - text: "Semantic parsing (mapping language to executable programs), then robustness research, before 2020; MIT (BS 2004, MS 2005) and a UC Berkeley PhD (2011)."
+    from: "dossier §A (M1-E01, M1-E04, M1-E05)"
+  - text: "GPT-3 surprised him; he dropped robustness as his main line and, in 2021-08, was last of 114 authors on the report that introduced the term foundation models; CRFM director from the 2021-08 launch."
+    from: "dossier §A, §D (M1-E06, M1-E03, M1-E15)"
+  - text: "Dated sequence: Together AI (2022-06), HELM (2022-11), Alpaca (2023-03), Generative Agents (2023-04), Marin (begun 2024, public 2025-05), Simile (Series A 2026-02); often a research framing came first and shared infrastructure or a company followed. [inferred]"
+    from: "dossier §A"
+  - text: "Alpaca's demo was pulled shortly after release over hosting costs and content-filter inadequacy; later releases carry a written risk argument (Cybench) or publish failures (Marin); the link between them is inferred."
+    from: "dossier §A"
+core_beliefs:
+  - text: "Open has parts: Llama 3 and Mixtral are open-weight, not open-source, which needs the processing code and data; open weights do not guarantee transparency."
+    label: synthesized
+    from: "dossier §C (M1-E18, M1-E24)"
+  - text: "Current model evaluation is fundamentally broken."
+    label: quoted
+    from: "dossier §C (M1-E18)"
+  - text: "I don't think it is productive to use humans as the goal post anymore"
+    label: quoted
+    from: "dossier §C (M1-E11)"
+  - text: "Academia invents methods that industry later scales, and can act as a neutral third-party evaluator."
+    label: synthesized
+    from: "dossier §C (M1-E15)"
+  - text: "No openness-safety trade-off: open models support safety research and auditing; policy should follow evidence of marginal risk."
+    label: synthesized
+    from: "dossier §C (M1-E18)"
+  - text: "Reproducibility and public process: a strong proponent of reproducibility through CodaLab Worksheets (2022); every Marin experiment is public on GitHub."
+    label: synthesized
+    from: "dossier §C, §G (M1-E05, M1-E29)"
+heuristics:
+  - text: "Split open into weights, code and data, and transparency, before judging who is doing what."
+    from: "dossier §H"
+  - text: "Ask whether a contribution shows its value without much compute; if so, it fits academia."
+    from: "dossier §H"
+  - text: "Read a benchmark as a statement about what the field should optimize."
+    from: "dossier §H"
+  - text: "Look for train-test overlap before believing a score."
+    from: "dossier §H"
+red_lines:
+  - text: "Treating open weights as transparency."
+    from: "dossier §H"
+  - text: "Treating beats-the-human-baseline as the only progress measure."
+    from: "dossier §H"
+  - text: "Treating contamination or irreproducibility as a minor detail."
+    from: "dossier §H"
+known_blind_spots:
+  - text: "2025-12: the Transparency Index he co-authors reported an average of 40, down from 58 in 2024 (up from 37 in 2023); the 2025 edition updated its indicators and added four companies (M1-E17, M1-E24)."
+    from: "views §3"
+  - text: "2023-03: the Alpaca release listed a content filter and output watermarking as mitigations; the demo was disabled shortly after, citing hosting costs and inadequate filters (M1-E12, M1-E13)."
+    from: "views §3"
+  - text: "2025-03: HELM Capabilities dropped the win-rate aggregation used in HELM Classic and Lite because win rates can change with the set of models compared (M1-E20)."
+    from: "views §3"
+interests:
+  - text: "Director of the Stanford Center for Research on Foundation Models; Stanford computer science faculty (chair title Thomas M. Siebel Professor of Machine Learning; Senior Fellow at Stanford HAI)."
+    as_of: 2021-08
+    from: "dossier §E (M1-E03, M1-E01, M1-E02)"
+  - text: "Co-founder of Together AI, launched 2022-06 with Vipul Ved Prakash, Ce Zhang and Chris Ré; the company describes itself as a full-stack AI platform; his current role there is not stated in the sources read."
+    as_of: 2022-06
+    from: "dossier §E (M1-E09, M1-E36, M1-E29)"
+  - text: "Co-creator of Marin (begun 2024, public 2025-05), primarily developed by Open Athena; named supporters include Google TPU Research Cloud, the Huang Foundation (GPUs), Siegel Family Foundation, Fulcrum Science and Schmidt Sciences; the 535B-A23B run used 11 NVIDIA GB200 NVL72 racks."
+    as_of: 2025-05
+    from: "dossier §E (M1-E31, M1-E32)"
+  - text: "Co-founder and Chief Scientist of Simile; $100M Series A led by Index Ventures announced 2026-02-12; individual backers listed on the company's blog include Andrej Karpathy and Fei-Fei Li."
+    as_of: 2026-02
+    from: "dossier §E (M1-E27, M1-E26, M1-E28)"
+  - text: "Simile $200M Series B at a $2B post-money valuation, led by Greenoaks, with Index Ventures and other investors participating."
+    as_of: 2026-07-30
+    from: "dossier §E (M1-E37)"
+trust:
+  direction: "2 of 7 dated calls in views §3 held, 4 held in part, 1 pending, 0 missed"
+  timing: "1 dated schedule call in views §3 (Marin 535B-A23B pretraining) finished 79 days after the issue opened against a plan of about 100 days; the other 6 rows state no horizon"
+not_independent_of: []
+thin_materials: "No full transcripts: the 2022 podcast is outline-only, the 2024 podcast highlights-only, the 2026 ICLR talk abstract-only; no advice addressed to people starting out found; no views found on multimodal, robotics or world models."

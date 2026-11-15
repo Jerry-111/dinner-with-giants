@@ -399,7 +399,7 @@ after R3 closed, so its findings became corrections to the record, not further r
 found" cases relabel `[inferred]`: Su Shi's account of Su Zhe reviewing Su Shi's writing, and —
 more consequential — Curie's account of Pierre as a backstop checking Curie's results, X2's own
 nominated strongest backstop argument. This writer re-checked that passage against
-`examples/personas/H4_curie/dossier.md` §A/§B/§G (the sections `audit.md` cites): they cover the
+`personas/H4_curie/dossier.md` §A/§B/§G (the sections `audit.md` cites): they cover the
 Flying University, Paris, the shed lab, radium, wartime radiography, and 1911 — no passage frames
 Pierre as checking Curie's results. X2's 4–2 lean rests on reasoning that holds independently,
 but this one lived anchor
@@ -440,7 +440,7 @@ finished.
   flagged in-post where they may break (§3). Does building a career *outside* large institutions
   shape the O1 gap (§8)? Partly, not cleanly `[writer]`: Franklin, Lovelace, and Curie (whose
   dossier describes "routing around closed doors" rather than waiting for institutions,
-  `examples/personas/H4_curie/dossier.md` §A, `[inferred]`) all built outside large institutions;
+  `personas/H4_curie/dossier.md` §A, `[inferred]`) all built outside large institutions;
   Curie scores O1 lowest in the roster (§4, axis A) and Lovelace opened below the R3 median
   (§1). The complication: Faraday, the one persona whose career was 52 years inside one
   institution, gives O1 its highest persona score (8 at R1, §1) — still below the baseline's 8.

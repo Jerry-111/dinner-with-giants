@@ -1,0 +1,359 @@
+{
+ "id": "C3",
+ "name": "Jensen Huang",
+ "round": "R3",
+ "notice": "Simulation based on public material; not the person's own words.",
+ "options": {
+  "D01": {
+   "impact": 9,
+   "bottleneck": 7,
+   "academic_edge": 2,
+   "window": 3,
+   "overall": 5,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "The birthplace of the compute inflection, but the pre-training window has been locked up by big companies' compute, and a student can hardly get in from scratch",
+   "late_modes": "Training a general foundation model from scratch to start a company or publish papers; the compute barrier has been locked up by big companies",
+   "conflict": "NVIDIA sells compute; the more compute pre-training burns, the better for him"
+  },
+  "D02": {
+   "impact": 9,
+   "bottleneck": 9,
+   "academic_edge": 6,
+   "window": 7,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Reasoning is the second exponential; after the debate the mechanism was conceded to 'reliable low-cost extraction of latent capability', and the economic value is unchanged",
+   "late_modes": "Directly replicating the standard RLHF pipeline; it is already a commoditized baseline",
+   "conflict": "Reasoning demand is what he called the second exponential, and it directly drives compute sales"
+  },
+  "D03": {
+   "impact": 7,
+   "bottleneck": 6,
+   "academic_edge": 5,
+   "window": 6,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "Agents have large prospects, but self-modification needs a human in the loop; the X4 table confirmed there is still no compute-normalized independent evidence",
+   "late_modes": null,
+   "conflict": "Agents drive inference compute, which favors his demand narrative"
+  },
+  "D04": {
+   "impact": 6,
+   "bottleneck": 4,
+   "academic_edge": 4,
+   "window": 3,
+   "overall": 4,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Scaffolding will be absorbed by platform runtimes, which the SWE-bench/Terminal-Bench data already confirm",
+   "late_modes": "Building a pure wrapper-layer agent demo to raise money; it will be absorbed by platform runtimes",
+   "conflict": "Runtimes such as OpenClaw are pushed by NVIDIA's own ecosystem, and he has praised them by name"
+  },
+  "D05": {
+   "impact": 6,
+   "bottleneck": 5,
+   "academic_edge": 7,
+   "window": 6,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "Necessary trust infrastructure, not an engine of progress; the X1 table confirmed academia's edge is real but limited in size",
+   "late_modes": "Only chasing public leaderboard rank; it is being eroded by leaderboard gaming and contamination from proprietary data",
+   "conflict": null
+  },
+  "D06": {
+   "impact": 10,
+   "bottleneck": 8,
+   "academic_edge": 5,
+   "window": 7,
+   "overall": 9,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Physical AI is what he called the next ten-trillion-dollar market",
+   "late_modes": "Chasing eye-catching humanoid demos without reliability/intervention-rate metrics; easily copied by faster teams",
+   "conflict": "GR00T, robot computers and Physical AI are the new market he is betting on"
+  },
+  "D07": {
+   "impact": 8,
+   "bottleneck": 7,
+   "academic_edge": 6,
+   "window": 6,
+   "overall": 7,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "WAM-style action generation is the GR00T route; directly outputting actions can be verified on control tasks, and the structure of the evidence is more symmetric than D08's",
+   "late_modes": "Only replicating the published diffusion policy recipe as a baseline; it is no longer an incremental contribution",
+   "conflict": "Products such as GR00T map directly onto this direction"
+  },
+  "D08": {
+   "impact": 9,
+   "bottleneck": 7,
+   "academic_edge": 6,
+   "window": 6,
+   "overall": 7,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "The world model is the core of grounding, but the X3 table confirmed the 'decision-driving layer' lacks third-party validation and only the 'imagination layer' has a yardstick",
+   "late_modes": "Only chasing the realism of video frames; the generation side is being commoditized",
+   "conflict": "Cosmos is his open-model product, and the world-model narrative supports his compute sales"
+  },
+  "D09": {
+   "impact": 8,
+   "bottleneck": 8,
+   "academic_edge": 7,
+   "window": 6,
+   "overall": 7,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Simulation is his deepest path dependence, but the contact/touch gap moves continuously with calibration accuracy, so it is not a lever one can vouch for once and for all",
+   "late_modes": null,
+   "conflict": "Omniverse/Isaac Sim/DSX Air are his simulation product line"
+  },
+  "D10": {
+   "impact": 8,
+   "bottleneck": 6,
+   "academic_edge": 4,
+   "window": 6,
+   "overall": 7,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Robotaxi is starting to scale, but it is increasingly a game of a few platforms and their fleet data",
+   "late_modes": "Making incremental improvements in the style of L2 driver-assistance features; carmakers have already made them standard",
+   "conflict": "The DRIVE platform and the partnership with Uber are among his revenue lines"
+  },
+  "D11": {
+   "impact": 7,
+   "bottleneck": 5,
+   "academic_edge": 5,
+   "window": 5,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "The gaps exposed by understanding benchmarks are real (BLINK/VSI-Bench), but it is not the layer he talks about most",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D12": {
+   "impact": 7,
+   "bottleneck": 5,
+   "academic_edge": 5,
+   "window": 4,
+   "overall": 5,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Generation is being commoditized, and consumer-side sustainability is in doubt (Sora2 went offline less than a year after launch)",
+   "late_modes": "Building a pure consumer-grade text-to-image/text-to-video app; Sora2's shutdown is a ready-made counterexample",
+   "conflict": null
+  },
+  "D13": {
+   "impact": 7,
+   "bottleneck": 5,
+   "academic_edge": 6,
+   "window": 6,
+   "overall": 5,
+   "confidence": "low",
+   "basis": "synthesized",
+   "one_line": "He treats safety as an engineering-redundancy problem and distrusts closed-door work; the technical details of mechanistic interpretability are not his strong suit",
+   "late_modes": "Only patching known jailbreaks after the fact; defense lags attack structurally",
+   "conflict": "Publicly disagrees with Amodei; he argues for openness and against a few people doing safety behind closed doors"
+  },
+  "D14": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 9,
+   "confidence": null,
+   "basis": null,
+   "one_line": "Extreme co-design is his bedrock, and FlashAttention-style contributions have extremely high leverage",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D15": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 6,
+   "confidence": null,
+   "basis": null,
+   "one_line": "GPUs are what he called a time machine for science",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D16": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 4,
+   "confidence": null,
+   "basis": null,
+   "one_line": "Generative recommendation consumes compute, which favors him, but he has never directly discussed this vertical, so confidence is low",
+   "late_modes": null,
+   "conflict": null
+  }
+ },
+ "levers": {
+  "L1": 5,
+  "L2": 13,
+  "L3": 20,
+  "L4": 15,
+  "L5": 10,
+  "L6": 10,
+  "L7": 10,
+  "L8": 17
+ },
+ "lever_reason": "After the debate I re-attributed the value of RLVR from 'teaching new reasoning' (L2) to 'reliable low-cost extraction of latent capability' (systems efficiency, L8), so L2 gives 2 points to L8; the rest is unchanged.",
+ "questions": {
+  "Q2": {
+   "position": "conditional",
+   "score": 7,
+   "condition": "Narrow domain (not general LLM) + independent evaluation + small team + open weights adopted by outsiders; if training a new model from scratch, the compute threshold (C4) is also necessary, but not for fine-tuning or ablating an existing model"
+  }
+ },
+ "conditions": {
+  "Q2": [
+   "C1",
+   "C2",
+   "C3",
+   "C4",
+   "C5"
+  ]
+ },
+ "cruxes": [
+  {
+   "question": "Can simulation substitute for real robot data, especially for contact and touch?",
+   "my_position": "For non-contact, mostly yes; the contact/touch gap is not a fixed boundary but a threshold that moves continuously with the calibration error between the physics engine and real torque sensors",
+   "would_change_if": "On held-out long-tail tasks, the success-rate gap between training on 200 real seeds alone and adding 50,000 simulation-amplified ones is measured and found to be small",
+   "directions": [
+    "D06",
+    "D09"
+   ]
+  },
+  {
+   "question": "Should RLVR be scored for 'new capability' or for 'reliable execution efficiency'?",
+   "my_position": "On mechanism I concede to the resampling side (Yue et al. holds); but under the tokens/W framework, reliable execution by itself can decide the size of the industry within ten years, so the score should not be downgraded",
+   "would_change_if": "Inference-cost declines through 2027-28 turn out to be driven mainly by pre-training scale, not by reliability or systems investment",
+   "directions": [
+    "D02"
+   ]
+  },
+  {
+   "question": "Given insufficient validation of the 'decision-driving layer' of D08 world models, should one bet heavily now?",
+   "my_position": "The imagination layer has a yardstick and the decision-driving layer does not, so the two layers should be scored separately; until the decision layer has enough evidence, its window and overall should both sit one notch below the imagination layer",
+   "would_change_if": "An independent team uses the same representation to match a dedicated action policy on contact-rich real-robot tasks",
+   "directions": [
+    "D08"
+   ]
+  }
+ ],
+ "taste_advice": "Pick interfaces that can be reused across generations rather than betting on a single product; do not judge whether something is worth doing by 'how new it is', but by whether it can become reliable, scalable productivity",
+ "pairwise": [
+  {
+   "a": "D05",
+   "b": "D08",
+   "pick": "D08",
+   "why": "Even after its score was lowered, the world model is still above evaluation; evaluation is necessary, not the engine"
+  },
+  {
+   "a": "D05",
+   "b": "D06",
+   "pick": "D06",
+   "why": "Physical AI is a ten-trillion-dollar-scale market; evaluation is only infrastructure"
+  },
+  {
+   "a": "D06",
+   "b": "D08",
+   "pick": "D06",
+   "why": "Embodied AI is the destination and the world model is the method; the destination carries more weight"
+  },
+  {
+   "a": "D07",
+   "b": "D08",
+   "pick": "D07",
+   "why": "D08's decision-driving layer still lacks third-party validation, while D07 outputs actions directly and can be verified on control tasks, so the evidence is more symmetric"
+  },
+  {
+   "a": "D09",
+   "b": "D06",
+   "pick": "D06",
+   "why": "Physical AI is the destination; simulation is only a method for filling the data gap"
+  },
+  {
+   "a": "D02",
+   "b": "D03",
+   "pick": "D02",
+   "why": "Under the tokens/W framework, reliable execution is still the decisive lever, and self-improvement is still bound by the human-in-the-loop red line"
+  },
+  {
+   "a": "D11",
+   "b": "D12",
+   "pick": "D11",
+   "why": "Generation benchmarks are being commoditized; understanding gaps are more real and more lasting"
+  },
+  {
+   "a": "D01",
+   "b": "D05",
+   "pick": "D05",
+   "why": "The pre-training window has been locked up by big companies; evaluation still has room for independence"
+  },
+  {
+   "a": "D04",
+   "b": "D03",
+   "pick": "D03",
+   "why": "A pure wrapper layer will be absorbed by platforms; continual learning itself remains open"
+  },
+  {
+   "a": "D13",
+   "b": "D05",
+   "pick": "D05",
+   "why": "Safety is an engineering-redundancy problem; the value of evaluation independence is more direct"
+  },
+  {
+   "a": "D10",
+   "b": "D06",
+   "pick": "D06",
+   "why": "Autonomous driving is narrowing to a few platforms; physical AI is the bigger bet"
+  }
+ ],
+ "changes": [
+  {
+   "option": "D08",
+   "from": 8,
+   "to": 7,
+   "because": "X3 table record, mainly citing A/X3/C5",
+   "argument_restated": "A representation that 'can be read out' for physical properties is not the same as a policy that 'uses it to decide'; only the imagination layer has a third-party yardstick, and the decision-driving layer does not",
+   "why": "The decision-driving layer lacks third-party validation, the same kind of problem as the contact/touch split I made for D09, and it should be marked down in the same way"
+  },
+  {
+   "option": "D09",
+   "from": 8,
+   "to": 7,
+   "because": "C/X6/K5 (K3 and C5 independently made the same point in the same round)",
+   "argument_restated": "The RIVA and Isaac Lab examples I gave are all deterministic circuits or low-dimensional rigid-body motion, and none supports contact-rich manipulation",
+   "why": "Three people independently pointed out the same coverage gap from different angles; the evidence really is insufficient, and the score should reflect the gap"
+  }
+ ],
+ "held_despite": [
+  {
+   "post": "B/X7/C4",
+   "why": "Accepts that verifiable rewards and noisy rewards work through different mechanisms, but Yue et al. itself tested verifiable rewards, so D02 is not affected by this point"
+  },
+  {
+   "post": "overtime/X7/1_K4",
+   "why": "Accepts K4's point that the AlexNet analogy is a narrow claim, not a broad ceiling on capability, but this does not affect the independent value judgment of how high reliable execution should score; D02 stays at 8"
+  },
+  {
+   "post": "overtime/X6/2_K4",
+   "why": "Accepts K4's point that a methodological argument will not settle the question and a controlled experiment is required, but until there are experimental results D09 will not be moved further this time"
+  }
+ ],
+ "still_disagree": "K4/K6/M6 hold that reliable execution counts only as an efficiency score and not as a decisive lever; I still hold that, under the tokens/W framework, scaled reliable execution by itself can decide the size of the industry within ten years, no less important than new capability.",
+ "learned": "The simulation gap for contact/touch is not a fixed boundary but a threshold that moves continuously with the calibration error between the physics engine and real torque sensors, which is more accurate than my original binary framing of 'contact = a blind spot for simulation'.",
+ "searches": [],
+ "web_searches": []
+}

@@ -1,0 +1,377 @@
+{
+ "id": "C6",
+ "name": "Demis Hassabis",
+ "round": "R3",
+ "notice": "Simulation based on public material; not the person's own words.",
+ "options": {
+  "D01": {
+   "impact": 8,
+   "bottleneck": 4,
+   "academic_edge": 2,
+   "window": 3,
+   "overall": 5,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Scaling still has returns but is not the bottleneck; the X2 debate confirmed that training a brand-new foundation model needs a team plus a compute threshold, and that has not changed",
+   "late_modes": "Training a new general-purpose foundation model from scratch: already swallowed up by a few giants",
+   "conflict": "Google holds a compute advantage, so his optimism about scaling is naturally biased high"
+  },
+  "D02": {
+   "impact": 7,
+   "bottleneck": 6,
+   "academic_edge": 6,
+   "window": 5,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "RL plus search is an old recipe, but the X7 debate confirmed that RLVR mainly improves sampling efficiency and did not teach new out-of-distribution reasoning patterns",
+   "late_modes": "Replicating the standard RLVR/GRPO recipe: already open-sourced and homogenized",
+   "conflict": null
+  },
+  "D03": {
+   "impact": 8,
+   "bottleneck": 8,
+   "academic_edge": 6,
+   "window": 8,
+   "overall": 7,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Continual learning is still a named gap; but the X4 debate showed the RSI evidence is thin, and METR measured that for most trajectories 70-90% of the cost is compute spent on trial and error",
+   "late_modes": "Agent-framework wrappers with no added learning will be absorbed by the next generation of models",
+   "conflict": null
+  },
+  "D04": {
+   "impact": 6,
+   "bottleneck": 4,
+   "academic_edge": 3,
+   "window": 3,
+   "overall": 5,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "The value of scaffolding is being absorbed by the models themselves: the benchmark gap with and without a custom harness is already small",
+   "late_modes": "Building a custom harness/scaffold: the window is already closing",
+   "conflict": null
+  },
+  "D05": {
+   "impact": 9,
+   "bottleneck": 9,
+   "academic_edge": 8,
+   "window": 7,
+   "overall": 9,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Candidate generation is getting cheap and credible evaluation is getting scarce; this is the bottleneck that decides everything; the X1/X2 debates confirmed it repeatedly, and it is the direction I am most sure of",
+   "late_modes": "Simply replicating LLM-as-judge research runs into the consistency-bias paradox",
+   "conflict": null
+  },
+  "D06": {
+   "impact": 8,
+   "bottleneck": 7,
+   "academic_edge": 6,
+   "window": 7,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "He has publicly bet on a robotics breakthrough within a few years; the X6 debate refined the limit for contact/touch as a continuous function, not a hard ceiling",
+   "late_modes": "Generic pick-and-place demos: already exhausted by work like π0.5",
+   "conflict": "Gemini Robotics is a product line of his former employer Google DeepMind"
+  },
+  "D07": {
+   "impact": 8,
+   "bottleneck": 7,
+   "academic_edge": 6,
+   "window": 8,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "The X5 debate pointed out that D07 has a natural touchstone in control-task success or failure, while D08's yardstick does not exist yet; I underestimated this before",
+   "late_modes": "Applying an off-the-shelf diffusion policy to a new task: the recipe is already public",
+   "conflict": null
+  },
+  "D08": {
+   "impact": 9,
+   "bottleneck": 7,
+   "academic_edge": 5,
+   "window": 6,
+   "overall": 7,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "World models are still a necessary component, but the X3 debate persuaded me that conviction without a forced test window should not stay as high as 8",
+   "late_modes": "Chasing only video-generation visual quality: already decoupled from physical understanding and commoditized by large models",
+   "conflict": "Google DeepMind bets on this line through Genie/Veo, and he personally identifies with it deeply"
+  },
+  "D09": {
+   "impact": 8,
+   "bottleneck": 8,
+   "academic_edge": 5,
+   "window": 6,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "The easiest to replicate of the three-piece set; the X6 debate sharpened the limit in contact scenes into a continuous function of contact-force calibration accuracy",
+   "late_modes": "Claiming unlimited simulation data without giving verifiable metrics",
+   "conflict": "AlphaEvolve is a result from his lab"
+  },
+  "D10": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "No judgment: public material has no systematic stance; inferred from the three-piece set, simulator accuracy is still the closed-loop bottleneck",
+   "late_modes": null,
+   "conflict": "Waymo is also part of Alphabet, but outside his own business scope"
+  },
+  "D11": {
+   "impact": 7,
+   "bottleneck": 6,
+   "academic_edge": 6,
+   "window": 5,
+   "overall": 7,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "The X5 debate verified that OpenVLA won by 15 points through its DINOv2+SigLIP representations; backbone representation quality decides downstream control more than action-head design does; I underestimated this before",
+   "late_modes": "Chasing traditional VQA/caption leaderboards: already saturated",
+   "conflict": null
+  },
+  "D12": {
+   "impact": 6,
+   "bottleneck": 4,
+   "academic_edge": 5,
+   "window": 4,
+   "overall": 5,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "The image-quality race has been commoditized; generation not tied to physical understanding has limited long-term value",
+   "late_modes": "Merely chasing one-step generation speed and image quality: fierce competition and thin margins",
+   "conflict": "Veo and Nano Banana are products of his former employer"
+  },
+  "D13": {
+   "impact": 8,
+   "bottleneck": 6,
+   "academic_edge": 6,
+   "window": 6,
+   "overall": 7,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Deceptive capability is his red line; but tools like SAEs do worse than linear probes, and governance lags further behind than technology",
+   "late_modes": "Treating SAEs as the main interpretability method: already deprioritized by internal results",
+   "conflict": null
+  },
+  "D14": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 4,
+   "confidence": "low",
+   "basis": "synthesized",
+   "one_line": "Necessary underlying engineering, but the say on it rests with large labs that have compute and systems teams",
+   "late_modes": null,
+   "conflict": "Google's vertical integration around TPUs is one of the advantages he has publicly named"
+  },
+  "D15": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 7,
+   "confidence": "high",
+   "basis": "quoted",
+   "one_line": "Where his personal brand lies; but most scientific problems lack a credible simulator, and on the drug-clinical line his own timing call runs early",
+   "late_modes": null,
+   "conflict": "Founder and CEO of Isomorphic; the Nobel Prize and AlphaFold are his personal brand"
+  },
+  "D16": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 3,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "Clear objective function and plenty of data, so the three-piece set is largely complete; it spreads fast but has low marginal academic value",
+   "late_modes": null,
+   "conflict": null
+  }
+ },
+ "levers": {
+  "L1": 27,
+  "L2": 10,
+  "L3": 15,
+  "L4": 18,
+  "L5": 10,
+  "L6": 10,
+  "L7": 5,
+  "L8": 5
+ },
+ "lever_reason": "Evaluation was repeatedly confirmed by debates at three tables as the scarcest bottleneck, raised to 27; the validation gap for world models (L4) is clearer than in R1, lowered to 18; the rest is largely unchanged",
+ "questions": {
+  "Q2": {
+   "position": "conditional",
+   "score": 6,
+   "condition": "Narrow domain, credible third-party evaluation, a small complementary team, compute at scale, open weights possible; the X2 debate persuaded me that when training a truly new foundation model, C4 is also a necessary condition, not a substitute"
+  }
+ },
+ "conditions": {
+  "Q2": [
+   "C1",
+   "C2",
+   "C3",
+   "C4",
+   "C5"
+  ]
+ },
+ "cruxes": [
+  {
+   "question": "Should one go heavy on world models now: should research time and capital allocation give different answers?",
+   "my_position": "Research should be done now, but with an 18-month forced test window; capital allocation should wait for independent replication",
+   "would_change_if": "Decision-layer ablation experiments give a clear positive or negative result before 2027",
+   "directions": [
+    "D08"
+   ]
+  },
+  {
+   "question": "Is credible evaluation (CASP-style/blind testing) scarcer than LLM-judge-style evaluation, and more decisive for whether a result can be trusted?",
+   "my_position": "Yes; the LLM-judge yardstick wobbling shows precisely that CASP-style evaluation is scarcer and more valuable, not a rebuttal",
+   "would_change_if": "A CASP-like evaluation appears that can scale and is shown to resist gaming",
+   "directions": [
+    "D05"
+   ]
+  },
+  {
+   "question": "With thin evidence for agent self-improvement, should one bet on independent verification appearing in 2027, or default to doubt until it is seen?",
+   "my_position": "Default to doubt; METR measured that for most trajectories 70-90% of the cost is compute spent on trial and error, and DGM's cost claim has no primary source",
+   "would_change_if": "Under fixed compute, self-improvement clearly beats random search and is reproducible across teams",
+   "directions": [
+    "D03"
+   ]
+  }
+ ],
+ "taste_advice": "Pick problems that can be evaluated cleanly and falsified, and set yourself a forced test window, rather than holding a bet indefinitely while waiting for the evidence to catch up",
+ "pairwise": [
+  {
+   "a": "D05",
+   "b": "D08",
+   "pick": "D05",
+   "why": "Whether a world model itself can be trusted also has to be confirmed by evaluation; evaluation is more upstream, and the gap is clearer after the debate"
+  },
+  {
+   "a": "D05",
+   "b": "D06",
+   "pick": "D05",
+   "why": "Generalization claims in robot learning likewise need credible evaluation to confirm they are not score-gaming"
+  },
+  {
+   "a": "D06",
+   "b": "D08",
+   "pick": "D06",
+   "why": "I lowered D08 to 7 and kept D06 at 8; robotics already has public timeline predictions and a data path, which is more solid than D08's validation status"
+  },
+  {
+   "a": "D07",
+   "b": "D08",
+   "pick": "D07",
+   "why": "The X5 debate pointed out that D07 has a natural touchstone in control-task success or failure, while D08's yardstick does not exist yet, so D07 overtakes"
+  },
+  {
+   "a": "D09",
+   "b": "D06",
+   "pick": "D09",
+   "why": "Simulation is the piece of the three-piece set that is easiest to replicate and fastest to produce results, and it is an input to robot learning"
+  },
+  {
+   "a": "D02",
+   "b": "D03",
+   "pick": "D03",
+   "why": "X7 confirmed that RLVR is efficiency, not new capability; the continual-learning gap is also weakened by X4's RSI evidence, but is still relatively more fundamental"
+  },
+  {
+   "a": "D11",
+   "b": "D12",
+   "pick": "D11",
+   "why": "X5 confirmed that backbone representation quality determines downstream control performance, which is more fundamental than generation-type applications"
+  },
+  {
+   "a": "D01",
+   "b": "D05",
+   "pick": "D05",
+   "why": "The pre-training axis is expanding naturally and is not short of resources; evaluation is the scarce, blocking link"
+  },
+  {
+   "a": "D04",
+   "b": "D03",
+   "pick": "D03",
+   "why": "Scaffolding has been shown to get absorbed by models; continual learning will not be absorbed that way, and is the more fundamental gap"
+  },
+  {
+   "a": "D13",
+   "b": "D05",
+   "pick": "D05",
+   "why": "Alignment tools themselves need evaluation to confirm they work; evaluation is the more upstream capability"
+  },
+  {
+   "a": "D10",
+   "b": "D06",
+   "pick": "D06",
+   "why": "He has given systematic judgments on robot learning; on autonomous driving he has taken no public stance at all"
+  }
+ ],
+ "changes": [
+  {
+   "option": "D02",
+   "from": 7,
+   "to": 6,
+   "because": "X7 debate consensus (errata_B.md Table 1 confirms Yue et al., NeurIPS 2025 Oral)",
+   "argument_restated": "Under strictly verifiable rewards, at large k the base model matches or exceeds the RL model; RLVR did not teach new out-of-distribution reasoning patterns",
+   "why": "Once confirmed, this is a sampling-efficiency gain, not a new capability, and long-term impact should be scored more conservatively than before"
+  },
+  {
+   "option": "D03",
+   "from": 8,
+   "to": 7,
+   "because": "X4 record (METR data + the Darwin Gödel Machine cost claim, now withdrawn)",
+   "argument_restated": "On strong baselines, for most self-improvement trajectories 70-90% of the cost is compute spent on trial and error; DGM's claimed cost of $22,000 over two weeks has no primary source",
+   "why": "The RSI sub-part is weaker than I had weighted it, the continual-learning part is unchanged, and together the score drops one notch"
+  },
+  {
+   "option": "D07",
+   "from": 7,
+   "to": 8,
+   "because": "A/X5/M3",
+   "argument_restated": "D07 has the natural touchstone of control-task success or failure; the yardstick for D08, which tests whether 'read out' means 'put to use', does not exist yet",
+   "why": "I had underestimated D07's advantage over D08 of being easier to test honestly right now"
+  },
+  {
+   "option": "D08",
+   "from": 8,
+   "to": 7,
+   "because": "overtime/X3/1_C5 and 2_C5",
+   "argument_restated": "C5 said he bet on video prediction in 2016-18 and revised his judgment only after nearly a decade; what he bet was research time, and the cost was real; the time window should be designed for research, not for capital already committed",
+   "why": "Persuaded me to set myself an 18-month forced test window; conviction should not stay at a high level without forced testing"
+  },
+  {
+   "option": "D11",
+   "from": 6,
+   "to": 7,
+   "because": "C/X5/M4",
+   "argument_restated": "It was verified that OpenVLA's win of 15 points over the diffusion head, with its fused DINOv2+SigLIP representations, is mainly a decoder-level difference; backbone representation quality decides downstream control performance more than action-head design does",
+   "why": "Multimodal representation quality is a more fundamental driver than my original score reflected, so it should be raised"
+  }
+ ],
+ "held_despite": [
+  {
+   "post": "B/X2/K2",
+   "why": "I accept that judge evaluators being unstable is a fact, but the credible third-party evaluation I mean was never the LLM-judge kind; it is the CASP/blind-test kind, so this does not affect D05=9"
+  },
+  {
+   "post": "B/X3/C1",
+   "why": "I accept that necessity is an impact judgment and does not settle whether window/price is overextended; these are two independent questions, but this point is itself not an input to the D08 score and moved no score on its own"
+  }
+ ],
+ "still_disagree": "With C5 (X3): valuations running ahead of evidence I regard as a market phenomenon independent of research judgment, while he thinks it should count as a warning signal about the world-model paradigm itself",
+ "learned": "That a probe can read out a concept does not mean the policy's output truly depends on it (M5); verify with ablation, not only with standalone probes",
+ "searches": []
+}

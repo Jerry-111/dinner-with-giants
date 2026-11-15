@@ -14,7 +14,8 @@
 
 **Interests and track record (for you to weigh)**
 
-(The persona's stake in this answer, as dated facts; whether its past calls ran early or late,
+(The persona's stake in this answer, as dated facts that bear on this question, never the
+person's own recent news, legal or governance matters; whether its past calls ran early or late,
 from the prediction record in `views.md`. Shown, not applied as a discount.)
 
 **Basis**

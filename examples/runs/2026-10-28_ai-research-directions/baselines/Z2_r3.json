@@ -1,0 +1,344 @@
+{
+ "id": "Z2",
+ "name": "Baseline analyst",
+ "round": "R3",
+ "notice": "Simulation based on public material; not the person's own words.",
+ "options": {
+  "D01": {
+   "impact": 6,
+   "bottleneck": 5,
+   "academic_edge": 3,
+   "window": 3,
+   "overall": 5,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Frontier pre-training is locked up by industry compute (industry accounts for over 90% of notable models); academia's marginal contribution lies in methodology/data analysis, not in scale itself.",
+   "late_modes": "Piling on parameter scale is already locked up by industry compute and hard for an individual to enter.",
+   "conflict": null
+  },
+  "D02": {
+   "impact": 7,
+   "bottleneck": 7,
+   "academic_edge": 7,
+   "window": 5,
+   "overall": 7,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Whether RLVR 'teaches new capability' has converged to no (X7/errata confirmed Yue et al.), so it looks more like a reliability lever; but controlled experiments are cleanly designed, and the raise in academic_edge offsets the cut in impact.",
+   "late_modes": "Pure engineering work that replicates vendors' RLHF pipelines and tunes parameters already has very low marginal returns.",
+   "conflict": null
+  },
+  "D03": {
+   "impact": 7,
+   "bottleneck": 6,
+   "academic_edge": 7,
+   "window": 5,
+   "overall": 6,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "RSI evidence is still thin (METR: 70-90% is compute-driven trial and error), but the X4 table converged on a clean test of 'fixed-compute self-improvement vs random search' that academia can run.",
+   "late_modes": "Conceptual self-improving agent demos are already too late; without rigorous ablation they struggle to get attention.",
+   "conflict": null
+  },
+  "D04": {
+   "impact": 7,
+   "bottleneck": 4,
+   "academic_edge": 3,
+   "window": 2,
+   "overall": 3,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "The scaffolding layer is being absorbed by the models themselves (the top 9 on Terminal-Bench are all vendors' general CLI agents), and the space for academia-specific contributions is narrowing.",
+   "late_modes": "Designing a new agent harness/scaffolding is already too late; it is being absorbed by the models themselves.",
+   "conflict": null
+  },
+  "D05": {
+   "impact": 7,
+   "bottleneck": 7,
+   "academic_edge": 8,
+   "window": 6,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Open-world robots lack a game/code-style self-generated right/wrong signal (X1), and judges tested as unstable (13.6% changed their answers); evaluation in physical AI is scarcer than I judged in R1.",
+   "late_modes": "Building yet another static leaderboard is already too late; it is easy to game and hard to keep credible.",
+   "conflict": null
+  },
+  "D06": {
+   "impact": 9,
+   "bottleneck": 8,
+   "academic_edge": 6,
+   "window": 6,
+   "overall": 8,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "The gap in touch/force data and failures of cross-embodiment transfer are real unsolved problems, and low-cost hardware (SO-101 and others) has pushed the bar for academic experiments low enough.",
+   "late_modes": "Fine-tuning an off-the-shelf VLA for a new-task demo is already too late; research on reliability/generalization mechanisms is still open.",
+   "conflict": null
+  },
+  "D07": {
+   "impact": 8,
+   "bottleneck": 7,
+   "academic_edge": 6,
+   "window": 5,
+   "overall": 7,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Action representation (diffusion head vs autoregressive/parallel decoding) has solid empirical comparisons (OpenVLA-OFT, FAST) and does not depend only on marketing coinages (WAM).",
+   "late_modes": "Repackaging existing methods under the new WAM label is already too late and has no real novelty.",
+   "conflict": null
+  },
+  "D08": {
+   "impact": 9,
+   "bottleneck": 7,
+   "academic_edge": 4,
+   "window": 4,
+   "overall": 6,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "New evidence such as General Intuition ($320M / $2.3B; the reported 'pioneer' claim is not independently confirmed) confirms that valuations run ahead of validation that 'representations drive decisions', more clearly than in R1.",
+   "late_modes": "Simply building more realistic video-generation demos is already too late; too many teams are doing it.",
+   "conflict": null
+  },
+  "D09": {
+   "impact": 8,
+   "bottleneck": 7,
+   "academic_edge": 7,
+   "window": 6,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Simulation is one of the few scalable ways for robot learning to escape the cost of collecting real data, but it helps little with contact/touch, the hardest subset (confirmed by X6), and needs real data as its base.",
+   "late_modes": "Building a new simulator platform has declining added value; there are already many platforms.",
+   "conflict": null
+  },
+  "D10": {
+   "impact": 8,
+   "bottleneck": 5,
+   "academic_edge": 3,
+   "window": 3,
+   "overall": 5,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "The real levers (fleet long-tail data, safety validation) are monopolized by a few companies, and the success rate on the simulation benchmark academia can reach (CARLA 2.0) is only about 6%.",
+   "late_modes": "Paper-style end-to-end planning work without fleet data already has very low marginal value.",
+   "conflict": null
+  },
+  "D11": {
+   "impact": 8,
+   "bottleneck": 6,
+   "academic_edge": 6,
+   "window": 5,
+   "overall": 6,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "BLINK/VSI-Bench show the spatial-reasoning gap is still huge, and diagnostic benchmarks are themselves the contribution form academia is best at and that is adopted most.",
+   "late_modes": "The edge in training yet another VLM to chase existing leaderboards is already thin.",
+   "conflict": null
+  },
+  "D12": {
+   "impact": 8,
+   "bottleneck": 6,
+   "academic_edge": 6,
+   "window": 5,
+   "overall": 7,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Unified understanding-and-generation models are generally worse than specialized ones (RealUnify, UniG2U-Bench), and diagnosing interference mechanisms has more academic leverage than building another unified model.",
+   "late_modes": "Simply chasing image/video generation quality leaderboards is already too late; top vendors dominate.",
+   "conflict": null
+  },
+  "D13": {
+   "impact": 8,
+   "bottleneck": 5,
+   "academic_edge": 6,
+   "window": 6,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Interpretability methodology is still in heavy flux (DeepMind itself lowered the priority of SAEs) and suits rigorous comparison by academia.",
+   "late_modes": "Building yet another SAE variant is a route whose evidence is already relatively weak.",
+   "conflict": null
+  },
+  "D14": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 6,
+   "confidence": null,
+   "basis": null,
+   "one_line": "FlashAttention shows that academia can build systems-algorithm co-design components that are really adopted, but it requires a strong systems background.",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D15": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 4,
+   "confidence": null,
+   "basis": null,
+   "one_line": "AlphaEvolve shows the value is real, but in most applications (such as single-cell perturbation prediction) deep models have not consistently beaten simple baselines.",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D16": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 3,
+   "confidence": null,
+   "basis": null,
+   "one_line": "Generative methods have indeed been deployed in industrial recommendation (Tencent TGR), but the compute cost is high (Meituan case: 10-100x).",
+   "late_modes": null,
+   "conflict": null
+  }
+ },
+ "changes": [
+  {
+   "option": "D08",
+   "from": 7,
+   "to": 6,
+   "because": "X3 table: General Intuition ($320M / $2.3B valuation, rumored to approach $6B pre-money; the 'pioneer' claim not independently confirmed) and the AMI Labs valuation evidence; X5 table: no yardstick exists for D08's 'readable = usable'",
+   "why": "R1 already judged that valuations run ahead of the evidence, but the new evidence (especially the speed of General Intuition's valuation jump) is more evident than I expected; academic_edge and window were each lowered by 1 point, and overall fell by 1 point accordingly"
+  },
+  {
+   "option": "D05",
+   "from": 7,
+   "to": 8,
+   "because": "X1 table consensus: open-world robots lack a game/code-style self-generated right/wrong signal; C2 post: in testing, judges changed their answer in 13.6% of repeated judgments",
+   "why": "Evaluation is scarcer in physical AI (where no self-generated signal is available) than R1 estimated, and it is more than just a 'quality-inspection layer'; the raise in impact lifted overall by 1 point"
+  }
+ ],
+ "learned": "The X1/X3 tables independently converged on the same 'representation encoding vs policy use' causal-separation protocol, so this is not my inference alone (confidence raised). X7 confirmed that whether RLVR 'teaches new capability' has converged to no (it is mainly reliability); the D02 dimensions shifted internally but overall offset. X3 added the General Intuition valuation evidence, reinforcing 'world-model valuations run ahead of validation', so D08 is lowered. X1 also showed that evaluation is scarcer in a physical world lacking self-generated signals than I estimated in R1, so D05 is raised. X2 confirmed that 'training a brand-new model needs team + compute + (ready-made or self-built) evaluation', which refines how the Q2 conditions are satisfied but does not change the score. X6 confirmed that simulation helps little on the contact/touch subset, which refines D09/D06 but does not change the total. X4 gave a clean test design for 'fixed-compute self-improvement vs random search', raising D03's academic_edge, but the evidence for RSI itself is still thin, so the total is unchanged. D01/D04/D10-D16 were not directly touched by these 7 tables, and the original judgments stand.",
+ "searches": [],
+ "levers": {
+  "L1": 12,
+  "L2": 11,
+  "L3": 15,
+  "L4": 12,
+  "L5": 22,
+  "L6": 8,
+  "L7": 10,
+  "L8": 10
+ },
+ "lever_reason": "Evaluation is scarcer in the open world (no game/code-style self-generated signal) than R1 thought, so L1 is raised; the new evidence that world-model valuations run ahead of validation (General Intuition) is more evident, so L4 is lowered; real data is irreplaceable for contact/touch, so L5 is raised; RLVR looks more like reliability than new capability, so L2 is lowered slightly; the value of simulation depends more on conditions, so L3 is lowered slightly.",
+ "questions": {
+  "Q2": {
+   "position": "conditional",
+   "score": 7,
+   "condition": "Narrow domain + team and compute at scale + open weights with outside adoption; C2 can be a ready-made third-party evaluation or a self-built, open-source, reproducible one (accepted by both sides at the X2 table); training a brand-new model needs both conditions, while ablating existing components has a lower bar."
+  }
+ },
+ "conditions": {
+  "Q2": [
+   "C1",
+   "C2",
+   "C3",
+   "C4",
+   "C5"
+  ]
+ },
+ "cruxes": [
+  {
+   "question": "Is evaluation science the most reliable lever for the next 5-10 years, or quality inspection for other levers rather than a driving force?",
+   "my_position": "Evaluation is a necessary condition for trust, not a production function of capability; but the physical world lacks a self-generated right/wrong signal, which makes evaluation scarcer than I thought in R1, and more than just quality inspection.",
+   "would_change_if": "If an independent team confirms on long-horizon real-robot tasks that a world model 'encodes the property and the policy actually uses it for decisions', the data/world-model side stands; if it leads only within the training distribution, the evaluation side stands (the decisive fact at the X1 table).",
+   "directions": [
+    "D05",
+    "D02"
+   ]
+  },
+  {
+   "question": "Are the representations learned by video/JEPA-type predictive models already really usable by policies, or can they merely be read out but not used?",
+   "my_position": "Existing evidence (V-JEPA2-AC's planning horizon is only 1 step; General Intuition's valuation runs ahead of validation) says it is not yet usable, and closed-loop causal evidence is needed.",
+   "would_change_if": "If in 2027-28 an independent team, using the same representation without fine-tuning an action head, reproduces on contact-rich real-robot tasks a success rate comparable to the action-first route (the decisive fact at the X3 table).",
+   "directions": [
+    "D08",
+    "D07"
+   ]
+  },
+  {
+   "question": "Do an academic team + compute in place and real outside adoption count as evidence of impact, or can nothing be validated without credible evaluation?",
+   "my_position": "Both are needed: when training a brand-new model, team + compute and credible evaluation (ready-made or self-built) are both indispensable; ablating existing components can have a lower bar.",
+   "would_change_if": "If in 2027-28 the actual outside adoption rate of the academic narrow-domain foundation-model route is comparable to or higher than that of the 'evaluation first, then train' route, team + compute is sufficient by itself (the decisive fact at the X2 table).",
+   "directions": [
+    "D01",
+    "D06",
+    "D08"
+   ]
+  }
+ ],
+ "taste_advice": "First work one concrete, causally verifiable small problem deeply and thoroughly; do not rush to chase the label of a big narrative (world models/agents/scaling) itself.",
+ "pairwise": [
+  {
+   "a": "D05",
+   "b": "D08",
+   "pick": "D05",
+   "why": "The evidence that D08 valuations run ahead of validation is more evident (General Intuition); D05's judges are unstable, but academia's advantage in statistical rigor is more solid."
+  },
+  {
+   "a": "D05",
+   "b": "D06",
+   "pick": "D06",
+   "why": "D06's bottleneck more directly decides whether physical AI is usable (touch/reliability); D05's evaluation advantage mostly reflects scarcity in academia, not capability itself."
+  },
+  {
+   "a": "D06",
+   "b": "D08",
+   "pick": "D06",
+   "why": "The evidence that D08 valuations run ahead of validation is more evident; D06's bottleneck (touch/cross-embodiment transfer) is more concrete and verifiable."
+  },
+  {
+   "a": "D07",
+   "b": "D08",
+   "pick": "D07",
+   "why": "D07 already has a clear control-task touchstone, while a yardstick for D08's 'readable = usable' still does not exist, and the valuation evidence shows more clearly that valuations run ahead."
+  },
+  {
+   "a": "D09",
+   "b": "D06",
+   "pick": "D06",
+   "why": "The X6 table confirmed that simulation helps little on the contact/touch subset, and the core difficulties of embodied AI still depend on real data/deployment experience."
+  },
+  {
+   "a": "D02",
+   "b": "D03",
+   "pick": "D02",
+   "why": "The story that D02 'teaches new capability' has weakened (it is more about reliability), but its bottleneck is still higher; D03's RSI evidence is still thin, even with a cleaner test design."
+  },
+  {
+   "a": "D11",
+   "b": "D12",
+   "pick": "D12",
+   "why": "The generative direction has open problems (few-step generation, unified modeling) that are more valuable now."
+  },
+  {
+   "a": "D01",
+   "b": "D05",
+   "pick": "D05",
+   "why": "After D05 was raised its advantage is larger: evaluation is scarcer than pre-training scale in a physical world with no self-generated signal."
+  },
+  {
+   "a": "D04",
+   "b": "D03",
+   "pick": "D03",
+   "why": "The scaffolding layer is being absorbed by models and its leverage is falling; continual learning/credit assignment is still an open scientific problem."
+  },
+  {
+   "a": "D13",
+   "b": "D05",
+   "pick": "D05",
+   "why": "After D05 was raised its advantage is clearer; interpretability tools themselves are still in heavy flux with no settled conclusion."
+  },
+  {
+   "a": "D10",
+   "b": "D06",
+   "pick": "D06",
+   "why": "The real levers of autonomous driving are monopolized by a few companies; embodied AI has more real problems within reach."
+  }
+ ]
+}

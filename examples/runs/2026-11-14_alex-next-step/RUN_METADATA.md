@@ -5,7 +5,7 @@
 | Run | `2026-11-14_alex-next-step` — bundled example |
 | Question | Alex's next step: O1 big-lab research engineer, O2 founding ML engineer at a biotech startup, O3 PhD with a new assistant professor, O4 an independent open-source year; Q1 (PhD in an industry-led era), Q2 (conditions for O4) |
 | User | Fictional ("Alex"); context in `examples/context/` |
-| Personas | H1 Franklin, H2 Darwin, H3 Faraday, H4 Curie, H5 Lovelace, H6 Su Shi — historical, rebuilt from their own public-domain writings (`examples/personas/`); baseline Z1 |
+| Personas | H1 Franklin, H2 Darwin, H3 Faraday, H4 Curie, H5 Lovelace, H6 Su Shi — historical, rebuilt from their own public-domain writings (`personas/`); baseline Z1 |
 | Materials through | 2026-11-14 (evidence brief); personas' own materials end at their deaths |
 | Environment | Claude Code; orchestrator plus one sub-agent per persona, continued across rounds with SendMessage; fresh agents for the evidence brief, fact-checks, crux map, scribe notes, judging, report and review |
 | Size | Panel: 6 personas, 3 tables of 4, 2 seats each; overtime skipped |

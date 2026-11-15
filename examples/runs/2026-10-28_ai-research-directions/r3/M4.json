@@ -1,0 +1,355 @@
+{
+ "id": "M4",
+ "name": "Saining Xie",
+ "round": "R3",
+ "notice": "Simulation based on public material; not the person's own words.",
+ "options": {
+  "D01": {
+   "impact": 8,
+   "bottleneck": 5,
+   "academic_edge": 3,
+   "window": 2,
+   "overall": 3,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Scaling is not the core basis; the real compute bar for training a new foundation model, as the X2 debate confirmed, is more real than I thought in R1",
+   "late_modes": "Copying scaling-law tuning is already too late; this kind of engineering has been standardized by big companies",
+   "conflict": null
+  },
+  "D02": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": null,
+   "basis": null,
+   "one_line": "[synthesized] The RLVR mechanism is outside my publications; the consensus of the X7 debate (mainly about pass@1/sampling efficiency) is background knowledge, not a basis on which I can score",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D03": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": null,
+   "basis": null,
+   "one_line": "[synthesized] Long-horizon credit assignment/RSI is outside my publications; the 'infinite game' is a career philosophy, not a technical judgment",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D04": {
+   "impact": 6,
+   "bottleneck": 4,
+   "academic_edge": 4,
+   "window": 3,
+   "overall": 4,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "GUI grounding is isomorphic to the question I asked when working on V*; I have no basis to judge scaffolding/harness engineering",
+   "late_modes": "Writing general scaffolding/harness is already too late; each model generation absorbs it into native capability",
+   "conflict": null
+  },
+  "D05": {
+   "impact": 8,
+   "bottleneck": 7,
+   "academic_edge": 9,
+   "window": 6,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Diagnostic benchmarks are how academia can still create leverage despite a compute disadvantage; the whole X1 table confirmed that evaluation does not create capability but is still a core methodology",
+   "late_modes": "Building a large general leaderboard is already too late; this kind of infrastructure is being commercialized and absorbed by companies such as Arena",
+   "conflict": null
+  },
+  "D06": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": null,
+   "basis": null,
+   "one_line": "[synthesized] I have no real-robot or VLA work; spatial reasoning might spill over to embodied evaluation, but the evidence is too weak to score",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D07": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": null,
+   "basis": null,
+   "one_line": "[synthesized] I have no diffusion policy/VLA publications; it shares only the sampler with the diffusion in my papers",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D08": {
+   "impact": 9,
+   "bottleneck": 8,
+   "academic_edge": 6,
+   "window": 5,
+   "overall": 7,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Spatial/world representation is still a key bottleneck, but the validation gap at the decision-driving layer, independently confirmed by the X3 and X5 tables, is larger than I thought in R1; it is not just my own academic reservation",
+   "late_modes": "Treating video generation directly as a 'world model' has already been shown to be problematic: it fails on out-of-distribution physical laws",
+   "conflict": "Co-founder and chief scientist of AMI Labs; equity and funding narrative are staked here"
+  },
+  "D09": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": null,
+   "basis": null,
+   "one_line": "[synthesized] My publications do not cover physics simulators or sim2real, so there is no public position to cite",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D10": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": null,
+   "basis": null,
+   "one_line": "[synthesized] I have no autonomous-driving publications and no basis to judge",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D11": {
+   "impact": 9,
+   "bottleneck": 8,
+   "academic_edge": 9,
+   "window": 7,
+   "overall": 9,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "The quality of visual/spatial representation, not language-model reasoning, is the real bottleneck of multimodal systems; ten years of work have confirmed this repeatedly",
+   "late_modes": "Chasing scores on existing MLLM leaderboards is already too late; the next model generation absorbs them within three months",
+   "conflict": "This is the foundation of his reputation"
+  },
+  "D12": {
+   "impact": 8,
+   "bottleneck": 6,
+   "academic_edge": 6,
+   "window": 5,
+   "overall": 7,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "The race for image quality is already commoditized; replacing the VAE with external representations and making generation a by-product of understanding is a subproblem that is still open",
+   "late_modes": "Chasing plain FID/quality rankings is already too late; it has been absorbed by a price war among a few well-funded companies",
+   "conflict": "This is the foundation of his reputation"
+  },
+  "D13": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": null,
+   "basis": null,
+   "one_line": "[synthesized] My publications do not cover mechanistic interpretability or alignment, and I have no basis to judge",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D14": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 3,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "Not my core field; the faster training of REPA/RAE is a by-product of the choice of representation, not systems engineering itself",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D15": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": null,
+   "basis": null,
+   "one_line": "[synthesized] I have no AI for Science publications or public position, so I make no judgment",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D16": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": null,
+   "basis": null,
+   "one_line": "[synthesized] I have no publications on recommendation/retrieval systems, so I make no judgment",
+   "late_modes": null,
+   "conflict": null
+  }
+ },
+ "levers": {
+  "L1": 18,
+  "L2": 5,
+  "L3": 5,
+  "L4": 19,
+  "L5": 10,
+  "L6": 28,
+  "L7": 5,
+  "L8": 10
+ },
+ "lever_reason": "Representation/architecture paradigms are still the deepest bottleneck (L6); the evaluation methodology was confirmed as more solid by the X1/X3 debates, so raised (L1); the validation gap at the layer where world models make decisions is unfilled, so lowered (L4)",
+ "questions": {
+  "Q2": {
+   "position": "conditional",
+   "score": 7,
+   "condition": "A narrow-domain model + credible third-party evaluation + team and compute at scale (confirmed by the X2 debate) + open weights with a path to outside adoption"
+  }
+ },
+ "conditions": {
+  "Q2": [
+   "C1",
+   "C2",
+   "C4",
+   "C5"
+  ]
+ },
+ "cruxes": [
+  {
+   "question": "Will diagnostic benchmarks, as a weapon, soon be countered by the same playbook, driving their marginal value to zero?",
+   "my_position": "Still works, but the window is narrowing: Cambrian-S was rebutted within ten days, and X3 also confirmed that D08 lacks an equivalent diagnostic yardstick",
+   "would_change_if": "Two more independent teams' diagnostic benchmarks being rebutted just as quickly within the next year",
+   "directions": [
+    "D05",
+    "D11"
+   ]
+  },
+  {
+   "question": "Is AMI Labs' JEPA world-model route the necessary continuation of a methodology, or the founder's optimistic narrative?",
+   "my_position": "The whole X3 table independently confirmed that the evidence gap at the decision-driving layer is unfilled; the reader should calibrate this independently",
+   "would_change_if": "AMI Labs ships a usable product within a year, or conversely still has 'no product yet'",
+   "directions": [
+    "D08"
+   ]
+  },
+  {
+   "question": "Is diffusion policy the same research problem as the diffusion in my papers?",
+   "my_position": "No, they share only the sampler; robot decision-making addresses a different problem, and I have not published related work",
+   "would_change_if": "Someone shows that a specific technical breakthrough in generative image/video modeling transfers directly and improves robot policy performance",
+   "directions": [
+    "D07",
+    "D12"
+   ]
+  }
+ ],
+ "taste_advice": "Do not rush into a hot topic that already has its foundational work; find a component or assumption that everyone uses but nobody has verified, and run a small, sharp diagnostic experiment",
+ "pairwise": [
+  {
+   "a": "D05",
+   "b": "D08",
+   "pick": "D05",
+   "why": "The validation gap at the decision-driving layer is unfilled (X3 consensus); the evaluation methodology is more solid right now"
+  },
+  {
+   "a": "D05",
+   "b": "D06",
+   "pick": "D05",
+   "why": "I have a real track record in evaluation science; I have none in embodied AI"
+  },
+  {
+   "a": "D06",
+   "b": "D08",
+   "pick": "D08",
+   "why": "D08 is still an extension of my ten years of work; I have no track record in D06"
+  },
+  {
+   "a": "D07",
+   "b": "D08",
+   "pick": "D08",
+   "why": "D07 is not my direction; D08 is still an extension of my ten years of work"
+  },
+  {
+   "a": "D09",
+   "b": "D06",
+   "pick": "D06",
+   "why": "Robot learning is the final proving ground for whether representations can actually be used"
+  },
+  {
+   "a": "D02",
+   "b": "D03",
+   "pick": "D03",
+   "why": "Continual learning/memory is closer to a representation problem than RL mechanisms are"
+  },
+  {
+   "a": "D11",
+   "b": "D12",
+   "pick": "D11",
+   "why": "Diagnostic questions about understanding are still open; the race for generation quality is commoditized"
+  },
+  {
+   "a": "D01",
+   "b": "D05",
+   "pick": "D05",
+   "why": "The debate confirmed the bar for general pre-training is higher; evaluation is where academia really has an edge"
+  },
+  {
+   "a": "D04",
+   "b": "D03",
+   "pick": "D04",
+   "why": "I have an analogy for the grounding subproblem inside D04; I have no foundation at all in D03"
+  },
+  {
+   "a": "D13",
+   "b": "D05",
+   "pick": "D05",
+   "why": "Interpretability is not my field; evaluation is a methodology I have validated"
+  },
+  {
+   "a": "D10",
+   "b": "D06",
+   "pick": "D06",
+   "why": "Embodied AI at least has spatial-reasoning spillover to draw on; I have no foundation at all in autonomous driving"
+  }
+ ],
+ "web_searches": [],
+ "changes": [
+  {
+   "option": "D01",
+   "from": 4,
+   "to": 3,
+   "because": "B/X2/K2 point 1; C/X2/M4's own concession",
+   "argument_restated": "When training a genuinely new foundation model (not a recombination), the team-and-compute bar may be necessary alongside evaluation",
+   "why": "Narrow, controlled designs (Web-SSL) remain a counterexample; the scope is limited to high-dimensional settings like D06-D08; R3 confirms keeping the downward revision made in round C"
+  },
+  {
+   "option": "D08",
+   "from": 8,
+   "to": 7,
+   "because": "summary/X3.md consensus: the imagination layer has a third-party yardstick and the decision-driving layer does not; valuations such as AMI Labs' run ahead of validation",
+   "argument_restated": "The layer at which representations drive decisions was independently confirmed by both the X3 and X5 tables as not yet validated",
+   "why": "This is a new argument that only came from reading the X3 table, where I did not sit, not a case of 'others changed too'; two tables independently converged on the same gap, and that should show in the confidence"
+  }
+ ],
+ "held_despite": [
+  {
+   "post": "B/X2/K2",
+   "why": "Accepted that the decline in judge credibility is a fact, but it only hits LLM-judge-style evaluation, not MMVP/AlphaFold2-style diagnostic evaluation"
+  },
+  {
+   "post": "B/X5/M8_interjection",
+   "why": "Accepted that D07 is defined as jointly predicting observations and actions, not learning an independent representation first and then attaching a head, but this is only a terminological refinement and does not change that representation quality is still the variable that sets the ceiling"
+  }
+ ],
+ "still_disagree": "Still disagree on which of D07/D08 deserves a bet now: the existing real-robot evidence (LBM, OpenVLA-OFT) does not separate the two variables of representation quality and action-head design, so we cannot rule out that both sides depend on good representations.",
+ "learned": "The X3 table's breakdown is more precise than my own general talk of 'readable ≠ usable': the imagination layer has a third-party yardstick and the decision-driving layer does not; I had not explicitly thought of this two-layer distinction before.",
+ "searches": []
+}

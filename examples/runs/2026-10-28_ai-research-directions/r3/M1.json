@@ -1,0 +1,358 @@
+{
+ "id": "M1",
+ "name": "Percy Liang",
+ "round": "R3",
+ "notice": "Simulation based on public material; not the person's own words.",
+ "options": {
+  "D01": {
+   "impact": 9,
+   "bottleneck": 5,
+   "academic_edge": 4,
+   "window": 4,
+   "overall": 6,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Pre-training is being commoditized, and academia has no edge in competing on scale; what is truly scarce is diagnosing training dynamics, not more parameters",
+   "late_modes": "Competing on parameter count alone is already too late; industry's capital and compute advantage is too large",
+   "conflict": "The funding narrative of CRFM/Marin needs open pre-training to remain valuable"
+  },
+  "D02": {
+   "impact": 8,
+   "bottleneck": 7,
+   "academic_edge": 8,
+   "window": 6,
+   "overall": 7,
+   "confidence": "high",
+   "basis": "quoted",
+   "one_line": "s1 shows that a low-cost intervention can be reproduced; but Yue et al. is a reminder that RLVR claims need rigorous verification and are not settled",
+   "late_modes": "Re-running an off-the-shelf RLVR recipe for a demo is already too late; anyone can do it",
+   "conflict": null
+  },
+  "D03": {
+   "impact": 8,
+   "bottleneck": 5,
+   "academic_edge": 5,
+   "window": 5,
+   "overall": 4,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "Evidence for large-scale compounding RSI is still thin; K2 downgraded his assertion to a 2027 prediction, and M3's training-free experience accumulation is the only confirmed real mechanism",
+   "late_modes": "Shouting a self-improvement slogan without rigorous evaluation is no longer convincing",
+   "conflict": null
+  },
+  "D04": {
+   "impact": 7,
+   "bottleneck": 5,
+   "academic_edge": 7,
+   "window": 5,
+   "overall": 6,
+   "confidence": "high",
+   "basis": "quoted",
+   "one_line": "A public risk yardstick in the style of Cybench is academia's place; custom scaffolding is being absorbed by general CLI agents",
+   "late_modes": "Building your own custom scaffolding is already too late; the SWE-bench gap is only 2.4 points",
+   "conflict": null
+  },
+  "D05": {
+   "impact": 9,
+   "bottleneck": 9,
+   "academic_edge": 9,
+   "window": 8,
+   "overall": 9,
+   "confidence": "high",
+   "basis": "quoted",
+   "one_line": "Evaluation is not bookkeeping; it sets the tone for the whole field; right now this is fundamentally broken",
+   "late_modes": "Building yet another homogeneous leaderboard is already too late; Arena already owns mindshare",
+   "conflict": "Evaluation is where his own academic identity and reputation lie"
+  },
+  "D06": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": 5,
+   "window": null,
+   "overall": null,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "No judgment on the technical details (touch, failure recovery); the robot-evaluation layer falls under D05, the same diagnostic ability in a different medium",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D07": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "No judgment: architecture choices for action representations such as diffusion/flow policy are specific technical judgments, outside what his method covers",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D08": {
+   "impact": 9,
+   "bottleneck": 7,
+   "academic_edge": 6,
+   "window": 5,
+   "overall": 7,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "A representation being readable is not the same as the policy causally using it; this gap has to be filled by L4/L6 architectures, and evaluation alone cannot fill it, but without evaluation the gap is not even visible",
+   "late_modes": "Simply reproducing representations from video pre-training is no longer novel; verifying that they are actually used is what is scarce",
+   "conflict": null
+  },
+  "D09": {
+   "impact": 7,
+   "bottleneck": 6,
+   "academic_edge": 6,
+   "window": 6,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "Claims of unlimited synthetic data (RoboGen) are empty talk if they cannot be verified; quantifying sim2real correlation is the real task",
+   "late_modes": "Just building simulators to generate more data is no longer enough; measuring the gap is what is scarce",
+   "conflict": null
+  },
+  "D10": {
+   "impact": 8,
+   "bottleneck": 6,
+   "academic_edge": 7,
+   "window": 6,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "The safety figures of Waymo and Tesla are self-reported and not independently audited, which is the same problem as the voluntary disclosure FMTI measures, in a different field",
+   "late_modes": "Building end-to-end planning models is already crowded; independent safety evaluation is still scarce",
+   "conflict": null
+  },
+  "D11": {
+   "impact": 7,
+   "bottleneck": 7,
+   "academic_edge": 7,
+   "window": 6,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "MMVP's CLIP-blind pairs and VSI-Bench's huge human-model gap show that many understanding claims are still unverified",
+   "late_modes": "Building yet another MLLM architecture variant is already crowded; exposing specific failure modes is still scarce",
+   "conflict": null
+  },
+  "D12": {
+   "impact": 7,
+   "bottleneck": 5,
+   "academic_edge": 6,
+   "window": 5,
+   "overall": 5,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "He has not publicly commented on generative models themselves; the only defensible angle is that the methodology for evaluating generation is just as immature",
+   "late_modes": "Chasing FID and GenEval scores is already crowded; Sora 2 shows that a high score does not mean surviving",
+   "conflict": null
+  },
+  "D13": {
+   "impact": 8,
+   "bottleneck": 7,
+   "academic_edge": 7,
+   "window": 6,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "SAEs fail to find even 10% of the true features and CoT monitoring is fragile; interpretability claims also need FMTI-style rigorous verification",
+   "late_modes": "Pure robustness adversarial training: he himself judged it outdated and deliberately abandoned it",
+   "conflict": null
+  },
+  "D14": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 7,
+   "confidence": null,
+   "basis": null,
+   "one_line": "FlashAttention is an example he cites again and again: academia can make systems contributions that industry cannot do without, without large compute",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D15": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": null,
+   "basis": null,
+   "one_line": "No judgment: AI for Science is outside what his public material covers",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D16": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": null,
+   "basis": null,
+   "one_line": "No judgment: recommendation and retrieval systems are outside what his public material covers",
+   "late_modes": null,
+   "conflict": null
+  }
+ },
+ "levers": {
+  "L1": 25,
+  "L2": 18,
+  "L3": 10,
+  "L4": 13,
+  "L5": 8,
+  "L6": 8,
+  "L7": 12,
+  "L8": 6
+ },
+ "lever_reason": "Evaluation decides where resources go and tells real capability from fake, but does not raise the ceiling; the ceiling is in L4; the X1 overtime exchange between K5 and M7 drew the boundary between the two more precisely",
+ "questions": {
+  "Q2": {
+   "position": "conditional",
+   "score": 6,
+   "condition": "Narrow domain + a team of 2-4 + compute at scale + open weights with an adoption path; if no ready evaluation exists, building one also counts as a contribution"
+  }
+ },
+ "conditions": {
+  "Q2": [
+   "C1",
+   "C3",
+   "C4",
+   "C5"
+  ]
+ },
+ "cruxes": [
+  {
+   "question": "Do soft-constraint mechanisms such as public rankings and transparency indices still do anything to change big companies' behavior?",
+   "my_position": "Three years of data (FMTI 58→40) show that exposure alone is not enough; mandatory policy backing is needed to reverse the incentives",
+   "would_change_if": "FMTI stops falling and rebounds for two years running, or a big company changes its disclosure policy of its own accord because of the ranking",
+   "directions": [
+    "D05"
+   ]
+  },
+  {
+   "question": "Is training foundation models in academia or an open lab actually worth it for a short-horizon master's student?",
+   "my_position": "Worth it for an institution (CRFM); for an individual student on a short horizon the marginal return is low, unless narrow domain, compute and team are all in place",
+   "would_change_if": "A case appears of an open narrow-domain model led by a master's student and widely adopted externally within a year or two",
+   "directions": [
+    "D01",
+    "D08"
+   ]
+  },
+  {
+   "question": "Is progress in reasoning mainly built by scale plus RL, or can clever methodological interventions like s1 still be reproduced consistently?",
+   "my_position": "I bet that low-cost interventions like s1 can be reproduced, but I may be systematically underestimating that pure scale plus RL is itself the answer",
+   "would_change_if": "The next generation of reasoning breakthroughs can only be built with large-scale RL compute, and clever interventions by small teams cannot keep up",
+   "directions": [
+    "D02",
+    "D01"
+   ]
+  }
+ ],
+ "taste_advice": "First ask how this thing is measured today and whether the standard is credible, then ask whether the technical route is right; not the other way around",
+ "pairwise": [
+  {
+   "a": "D05",
+   "b": "D08",
+   "pick": "D05",
+   "why": "Without credible evaluation, claims about world models cannot be verified; evaluation is the precondition for verifying everything"
+  },
+  {
+   "a": "D05",
+   "b": "D06",
+   "pick": "D05",
+   "why": "Success or failure in embodied AI likewise has to be judged by credible evaluation; evaluation comes first"
+  },
+  {
+   "a": "D06",
+   "b": "D08",
+   "pick": "D08",
+   "why": "Whether a world model's representations are really used can be evaluated; he has no basis for judging the embodied hardware bottleneck"
+  },
+  {
+   "a": "D07",
+   "b": "D08",
+   "pick": "D07",
+   "why": "D07 has a ready pass/fail criterion (A/X5/M7), the D08 ruler is still being built, and the X5 table's 3v3 split is unresolved"
+  },
+  {
+   "a": "D09",
+   "b": "D06",
+   "pick": "D09",
+   "why": "The sim2real correlation of synthetic data can be evaluated; he has no basis for judging the embodied hardware bottleneck"
+  },
+  {
+   "a": "D02",
+   "b": "D03",
+   "pick": "D02",
+   "why": "s1 is a low-cost, high-leverage play that he verified himself; the self-improvement evidence for D03 is much thinner"
+  },
+  {
+   "a": "D11",
+   "b": "D12",
+   "pick": "D11",
+   "why": "MMVP and VSI-Bench correspond to his evaluation methodology; he has not taken a public position on generation"
+  },
+  {
+   "a": "D01",
+   "b": "D05",
+   "pick": "D05",
+   "why": "Evaluation is the core thesis of his career; he holds that pre-training scale is basically closed to academia"
+  },
+  {
+   "a": "D04",
+   "b": "D03",
+   "pick": "D04",
+   "why": "Cybench is an agent evaluation benchmark he built himself; he thinks the self-improvement evidence for D03 does not hold up"
+  },
+  {
+   "a": "D13",
+   "b": "D05",
+   "pick": "D05",
+   "why": "The credibility of interpretability itself also has to be verified by evaluation; that SAEs find fewer than 10% of the true features was exposed by evaluation"
+  },
+  {
+   "a": "D10",
+   "b": "D06",
+   "pick": "D10",
+   "why": "Self-reported safety data in autonomous driving is a replay of the FMTI-style voluntary-disclosure problem; he has no basis for judging the purely technical bottleneck of D06"
+  }
+ ],
+ "changes": [
+  {
+   "option": "D03",
+   "from": 5,
+   "to": 4,
+   "because": "B/X4/M3 point 2 + B/X4/K2 point 1",
+   "argument_restated": "That RSI is thinly evidenced cannot serve as a reason to invest; K2 himself downgraded his assertion to a 2027 prediction",
+   "why": "Both sides narrowed to: the direction may be right but there is no evidence now; this warrants a bigger downgrade than in my R1"
+  },
+  {
+   "option": "D08",
+   "from": 6,
+   "to": 7,
+   "because": "B/X1/K5 point 1",
+   "argument_restated": "The gap between a representation and its causal use has to be filled by L4/L6 architectures; evaluation alone cannot fill it",
+   "why": "With the division of labor between evaluation and architecture made clear, I am more sure that D08 is where the real bottleneck lies and not a narrative spinning in place"
+  }
+ ],
+ "held_despite": [
+  {
+   "post": "B/X1/K5",
+   "why": "Accepts that evaluation cannot create new representations, but D05=9 was never because evaluation creates capability, so it is unaffected"
+  },
+  {
+   "post": "B/X1/C6_interjection",
+   "why": "The point about AlexNet's recognition function is right, but D05 already has a top score of 9, so there is no room to raise it further"
+  },
+  {
+   "post": "B/X1/M2_interjection",
+   "why": "The diagnostic value is the same and is likewise already included in the reasons for D05=9, so no points are added twice"
+  }
+ ],
+ "still_disagree": "I accept the tests and data K2 proposed, but his strategy of working out the slope while already betting is the opposite of the lesson from my own FMTI experience of committing first and verifying afterwards; I still think the measurement should be made solid first.",
+ "learned": "K5's portfolio-management analogy reminds me that a researcher with only one main bet is not an institution with a multi-candidate funding pool; whether evaluation should rank first depends on whether the subfield has a live evaluation system to compare candidates on.",
+ "searches": []
+}

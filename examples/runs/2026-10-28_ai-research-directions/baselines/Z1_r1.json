@@ -1,0 +1,340 @@
+{
+ "id": "Z1",
+ "name": "Baseline analyst",
+ "round": "R1",
+ "notice": "Simulation based on public material; not the person's own words.",
+ "options": {
+  "D01": {
+   "impact": 9,
+   "bottleneck": 8,
+   "academic_edge": 3,
+   "window": 2,
+   "overall": 5,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "The largest lever overall, but academia training a general-purpose foundation model is locked out by capital and data scale; only a narrow-domain, conditional version still has room",
+   "late_modes": "Training a general-purpose foundation model from scratch is already too late; capital and data scale overwhelm academia",
+   "conflict": null
+  },
+  "D02": {
+   "impact": 7,
+   "bottleneck": 6,
+   "academic_edge": 5,
+   "window": 4,
+   "overall": 6,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Standard RLHF/RLVR pipelines are commoditized, but what RL actually teaches a model is still an unsolved methodological question",
+   "late_modes": "Directly applying standard DPO/GRPO pipelines is already too late; diagnostic research is still open",
+   "conflict": null
+  },
+  "D03": {
+   "impact": 8,
+   "bottleneck": 8,
+   "academic_edge": 6,
+   "window": 6,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Thin-wrapper agents on long-horizon tasks are already saturated, but the sample-efficiency problem of self-improvement and continual learning is still a vacuum",
+   "late_modes": "Putting a new prompt or framework layer on an existing agent is already too late; the self-improvement algorithm itself is not too late",
+   "conflict": null
+  },
+  "D04": {
+   "impact": 6,
+   "bottleneck": 4,
+   "academic_edge": 2,
+   "window": 2,
+   "overall": 3,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Evidence consistently points to scaffolding value being absorbed quickly by models and vendor CLIs, which almost closes this road to academia",
+   "late_modes": "Building a general agent framework or harness is already very late; vendor CLIs have absorbed it",
+   "conflict": null
+  },
+  "D05": {
+   "impact": 7,
+   "bottleneck": 7,
+   "academic_edge": 7,
+   "window": 5,
+   "overall": 6,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Evaluation-methodology problems are real and academia has a statistical edge, but the productized evaluation business has already been taken by Arena-type companies",
+   "late_modes": "Running yet another judge-consistency retest is already too late unless there is a new statistical method",
+   "conflict": null
+  },
+  "D06": {
+   "impact": 9,
+   "bottleneck": 8,
+   "academic_edge": 6,
+   "window": 7,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Data and generalization are still the real bottlenecks, and low-cost hardware has lowered the entry bar for some algorithmic problems to a level academia can reach",
+   "late_modes": "Pure teleoperation data collection plus behavior-cloning replication is already too late; without a new algorithm it is meaningless",
+   "conflict": null
+  },
+  "D07": {
+   "impact": 8,
+   "bottleneck": 7,
+   "academic_edge": 6,
+   "window": 6,
+   "overall": 7,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Action representation (diffusion/autoregressive/flow) is still unsettled, and is one of the few directions still open at the mechanism level",
+   "late_modes": "Simply swapping in another off-the-shelf action head without a new mechanism is already too late",
+   "conflict": null
+  },
+  "D08": {
+   "impact": 9,
+   "bottleneck": 9,
+   "academic_edge": 5,
+   "window": 5,
+   "overall": 7,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "The scientific questions are still open but capital is moving in extremely fast; narrow-and-deep representation-analysis work is the part academia can still do",
+   "late_modes": "Directly using an off-the-shelf video model as a world model without representation analysis is already too late",
+   "conflict": null
+  },
+  "D09": {
+   "impact": 7,
+   "bottleneck": 6,
+   "academic_edge": 7,
+   "window": 6,
+   "overall": 7,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Simulation is one of the few areas where academia can get high-quality results with low-cost hardware, and credible sim-real correlation evidence already exists",
+   "late_modes": "Merely using simulation to generate more demonstrations of the same kind is already too late; without a new evaluation angle it is not enough",
+   "conflict": null
+  },
+  "D10": {
+   "impact": 8,
+   "bottleneck": 5,
+   "academic_edge": 3,
+   "window": 3,
+   "overall": 4,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Industry impact is huge but the field is locked up by fleet data and top companies with years of accumulation, so new academic entrants get poor value",
+   "late_modes": "Module-level improvements to end-to-end perception and planning are already too late; fleet data scale overwhelms them",
+   "conflict": null
+  },
+  "D11": {
+   "impact": 7,
+   "bottleneck": 6,
+   "academic_edge": 6,
+   "window": 5,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Benchmark scores are rising fast, but the real gap in spatial and video understanding is still large, and diagnostic benchmark work is a strength of academia",
+   "late_modes": "Chasing scores on regular VQA or grounding is already too late unless a systematic failure mode is uncovered",
+   "conflict": null
+  },
+  "D12": {
+   "impact": 8,
+   "bottleneck": 6,
+   "academic_edge": 7,
+   "window": 5,
+   "overall": 7,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Efficiency and distillation methods are the narrow opening where academia can still contribute mechanism innovation, but the model-level arms race belongs to big companies",
+   "late_modes": "Training yet another general-purpose text-to-image or text-to-video model is already too late; a few big companies have locked it up",
+   "conflict": null
+  },
+  "D13": {
+   "impact": 6,
+   "bottleneck": 5,
+   "academic_edge": 8,
+   "window": 7,
+   "overall": 5,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "Mechanism-level problems are still largely open and the compute bar is low",
+   "late_modes": "Superficial case studies of models doing bad things are already too late; mechanism-level work is not too late",
+   "conflict": null
+  },
+  "D14": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 5,
+   "confidence": null,
+   "basis": null,
+   "one_line": "FlashAttention-style narrow-and-deep systems contributions can still be made by academia and adopted industry-wide; kept brief",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D15": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 4,
+   "confidence": null,
+   "basis": null,
+   "one_line": "AlphaEvolve shows that narrow, automatically verifiable settings can yield results, but on most real tasks deep models still cannot beat simple baselines; kept brief",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D16": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 3,
+   "confidence": null,
+   "basis": null,
+   "one_line": "Generative recommendation has industrial deployment but a markedly higher compute cost; kept brief",
+   "late_modes": null,
+   "conflict": null
+  }
+ },
+ "levers": {
+  "L1": 14,
+  "L2": 12,
+  "L3": 15,
+  "L4": 17,
+  "L5": 14,
+  "L6": 8,
+  "L7": 10,
+  "L8": 10
+ },
+ "lever_reason": "Unifying prediction and action in world models/WAM is the core bottleneck of physical AI and agents; simulation addresses data, and evaluation is a necessary but not primary-engine error-correction mechanism",
+ "questions": {
+  "Q2": {
+   "position": "conditional",
+   "score": 6,
+   "condition": "Limited to a narrow domain, credible third-party evaluation, compute available at month-scale, and open weights that outsiders can adopt; all four must hold to count"
+  }
+ },
+ "conditions": {
+  "Q2": [
+   "C1",
+   "C2",
+   "C4",
+   "C5"
+  ]
+ },
+ "cruxes": [
+  {
+   "question": "Is the core lever of physical-AI progress world models/WAM, or evaluation and verification?",
+   "my_position": "World models are the capability bottleneck; evaluation is a necessary error-correction mechanism, not the main engine",
+   "would_change_if": "If several independent teams show that improvements in evaluation methods by themselves significantly raise real-deployment success rates",
+   "directions": [
+    "D05",
+    "D08"
+   ]
+  },
+  {
+   "question": "Can academia still make original contributions on world models that industry adopts?",
+   "my_position": "Yes, but only narrow-and-deep representation or causal analysis, not whole-model pre-training",
+   "would_change_if": "If a compute-limited academic team produces, within twelve months, a new training objective that industry adopts",
+   "directions": [
+    "D08"
+   ]
+  },
+  {
+   "question": "LLM-judge-style evaluation research is easy to publish, but does it really have impact, or is it a comfort zone?",
+   "my_position": "Easy to publish is true, but most retest-type papers have limited impact; only statistical-method innovation counts",
+   "would_change_if": "If some judge-bias correction method is actually adopted by several independent evaluation platforms",
+   "directions": [
+    "D05"
+   ]
+  }
+ ],
+ "taste_advice": "Prefer problems that can be falsified and have a manageable compute bar, rather than chasing bigger models or flashier demos",
+ "pairwise": [
+  {
+   "a": "D05",
+   "b": "D08",
+   "pick": "D08",
+   "why": "World models score higher than evaluation itself on both impact and bottleneck"
+  },
+  {
+   "a": "D05",
+   "b": "D06",
+   "pick": "D06",
+   "why": "For embodied AI, both the bottleneck and the window are more pressing and more concrete"
+  },
+  {
+   "a": "D06",
+   "b": "D08",
+   "pick": "D06",
+   "why": "Embodied AI has clearer real-deployment landing points and evidence"
+  },
+  {
+   "a": "D07",
+   "b": "D08",
+   "pick": "D08",
+   "why": "World models are the more upstream, more fundamental bottleneck"
+  },
+  {
+   "a": "D09",
+   "b": "D06",
+   "pick": "D06",
+   "why": "Simulation is a means and embodied AI is the goal, so it has higher priority"
+  },
+  {
+   "a": "D02",
+   "b": "D03",
+   "pick": "D03",
+   "why": "Self-improvement and continual learning are a vacuum, while RL is already half commoditized"
+  },
+  {
+   "a": "D11",
+   "b": "D12",
+   "pick": "D12",
+   "why": "Generation leaves more room for academic contribution"
+  },
+  {
+   "a": "D01",
+   "b": "D05",
+   "pick": "D05",
+   "why": "The bar for evaluation is lower and academia's advantage is clearer"
+  },
+  {
+   "a": "D04",
+   "b": "D03",
+   "pick": "D03",
+   "why": "Agent systems have already been absorbed by vendor CLIs; learning mechanisms have not"
+  },
+  {
+   "a": "D13",
+   "b": "D05",
+   "pick": "D05",
+   "why": "[Removed: about the original user's situation.]"
+  },
+  {
+   "a": "D10",
+   "b": "D06",
+   "pick": "D06",
+   "why": "Autonomous driving is locked up by fleet data; the entry bar for embodied AI is lower"
+  }
+ ],
+ "web_searches": [
+  {
+   "query": "RLVR does not elicit new reasoning patterns base model pass@k 2026 follow-up",
+   "url": "https://arxiv.org/abs/2504.13837",
+   "published": "2025-04",
+   "sentence": "RLVR does not elicit fundamentally new reasoning patterns beyond base model",
+   "for_claim": "D02",
+   "result": "supports"
+  },
+  {
+   "query": "academic lab trains open-weight VLA or world model foundation model 2026 limited compute",
+   "url": "https://arxiv.org/abs/2509.24559",
+   "published": "2025-09",
+   "sentence": "OpenVLA shipped with 7B parameters and about 970k robot demonstrations",
+   "for_claim": "D06",
+   "result": "supports"
+  }
+ ]
+}

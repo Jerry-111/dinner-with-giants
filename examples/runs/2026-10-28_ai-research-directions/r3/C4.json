@@ -1,0 +1,364 @@
+{
+ "id": "C4",
+ "name": "Dario Amodei",
+ "round": "R3",
+ "notice": "Simulation based on public material; not the person's own words.",
+ "options": {
+  "D01": {
+   "impact": 9,
+   "bottleneck": 8,
+   "academic_edge": 2,
+   "window": 3,
+   "overall": 6,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "It is where my career started (the Big Blob hypothesis), but by 2026 the consensus is an oligopoly of 3-4 players, and the room for academia to differentiate going it alone is very narrow.",
+   "late_modes": "The architecture and training tricks of general pre-training have been absorbed by the leading labs, and an individual can hardly make a differentiated contribution.",
+   "conflict": "Anthropic itself relies on this curve for fundraising and valuation; its interests are directly involved."
+  },
+  "D02": {
+   "impact": 8,
+   "bottleneck": 7,
+   "academic_edge": 4,
+   "window": 5,
+   "overall": 6,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "RLVR mainly makes capabilities under verifiable rewards reliable to deploy, and does not invent new out-of-distribution reasoning modes; after the correction it should still score medium-high.",
+   "late_modes": "Copying the standard RLHF/DPO recipes is already too late; overclaims such as 'RLVR created new reasoning modes' no longer hold after Yue et al. and this round's debate.",
+   "conflict": "Anthropic's RL post-training is part of its product moat."
+  },
+  "D03": {
+   "impact": 7,
+   "bottleneck": 6,
+   "academic_edge": 5,
+   "window": 6,
+   "overall": 5,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "Evidence for large-scale open-ended RSI is still thin: of K2's two supporting examples, one was overturned on checking (DGM) and the other is a narrow-domain self-report (AlphaEvolve); I keep the default skepticism.",
+   "late_modes": null,
+   "conflict": "The speed of RSI directly sets the pace of Anthropic's compute spending and its valuation narrative."
+  },
+  "D04": {
+   "impact": 6,
+   "bottleneck": 3,
+   "academic_edge": 2,
+   "window": 2,
+   "overall": 3,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "The value of the harness is being absorbed by the models; the top 9 on Terminal-Bench are all vendors' general CLI agents.",
+   "late_modes": "Building your own agent scaffolding/tool layer is already too late: it is absorbed by models' built-in capabilities and vendors' CLI tools.",
+   "conflict": "[Removed: first-person statement about the persona's own interests.]"
+  },
+  "D05": {
+   "impact": 8,
+   "bottleneck": 8,
+   "academic_edge": 7,
+   "window": 5,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "The verifiable/unverifiable distinction is the foundation of my whole timeline framework; without reliable evaluation, timelines are all guesses.",
+   "late_modes": "Simple accuracy benchmarks are already too late; the consistency-bias paradox of LLM judges and adversarial evaluation remain open.",
+   "conflict": "[Removed: first-person statement about the persona's own interests.]"
+  },
+  "D06": {
+   "impact": 8,
+   "bottleneck": 6,
+   "academic_edge": 4,
+   "window": 5,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "I have said robots could bring trillions in revenue, but this is the only extrapolation I myself admit is fundamentally uncertain.",
+   "late_modes": "The basic imitation-learning recipes (diffusion policy and others) are already too late; tactile and force data and failure recovery remain open.",
+   "conflict": null
+  },
+  "D07": {
+   "impact": 6,
+   "bottleneck": 5,
+   "academic_edge": 5,
+   "window": 4,
+   "overall": 5,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "The specific action representation is an empirical question, not an a priori one; I have not discussed architecture choices such as diffusion policy directly.",
+   "late_modes": "Diffusion policy as the default action head may already be too late: parallel decoding plus continuous actions is faster and more accurate.",
+   "conflict": null
+  },
+  "D08": {
+   "impact": 7,
+   "bottleneck": 6,
+   "academic_edge": 5,
+   "window": 4,
+   "overall": 5,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "Video prediction is a scalable objective, which I accept; but 'visual realism is not physical correctness' is a real counterexample within my framework, and the X3 table's debate also confirmed that valuations run ahead of the evidence.",
+   "late_modes": "Simply building more realistic video generation is already too late; whether it can really serve predictive decisions (not just reading out attributes) remains open.",
+   "conflict": null
+  },
+  "D09": {
+   "impact": 7,
+   "bottleneck": 7,
+   "academic_edge": 6,
+   "window": 6,
+   "overall": 7,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "General models can transfer from simulation, games and computer-control tasks to robots without going through human-style learning, which is the path I accept.",
+   "late_modes": "Simple domain randomization is already too late; systematic validation of sim2real remains open.",
+   "conflict": null
+  },
+  "D10": {
+   "impact": 6,
+   "bottleneck": 3,
+   "academic_edge": 2,
+   "window": 2,
+   "overall": 4,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "I have not discussed autonomous driving publicly; inferring from my framework, it is past the capability-bottleneck stage and into fleet expansion and the deployment race.",
+   "late_modes": "Building your own end-to-end planning algorithm is already too late: the mileage-data moats of Waymo and Tesla are hard to catch up with.",
+   "conflict": null
+  },
+  "D11": {
+   "impact": 6,
+   "bottleneck": 5,
+   "academic_edge": 5,
+   "window": 5,
+   "overall": 5,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "My core belief is that generalization comes from breadth of distribution; the human-machine gaps on BLINK and VSI-Bench show the distribution is still far from broad enough.",
+   "late_modes": "Simple image-text pairing understanding is already too late; weaknesses such as spatial reasoning and video temporal understanding remain open.",
+   "conflict": null
+  },
+  "D12": {
+   "impact": 5,
+   "bottleneck": 4,
+   "academic_edge": 3,
+   "window": 3,
+   "overall": 4,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "The commercial sustainability of consumer-grade generation apps is in doubt (Sora 2 shut down); using it as an RL environment or data engine is steadier than productizing it directly.",
+   "late_modes": "A pure generation-quality race is already too late, and Chinese models are already near the top of the leaderboards; differentiation has to come from evaluation and control precision.",
+   "conflict": null
+  },
+  "D13": {
+   "impact": 9,
+   "bottleneck": 8,
+   "academic_edge": 8,
+   "window": 6,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Interpretability is especially suited to academia: it is mostly basic science and the compute needs are modest; but the SAE direction is no longer uncrowded.",
+   "late_modes": "Basic SAE dictionary learning is already too late (GDM has lowered its priority); training-pipeline integrity and evaluation-awareness detection remain open.",
+   "conflict": "[Removed: first-person statement about the persona's own interests.]"
+  },
+  "D14": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 5,
+   "confidence": null,
+   "basis": null,
+   "one_line": "FlashAttention shows academia can make systems contributions that industry adopts for the long term, but such opportunities are not common; kept short.",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D15": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 6,
+   "confidence": null,
+   "basis": null,
+   "one_line": "The field I am most optimistic about in the long run: intelligence has high marginal returns in biology, but is held back by experimental and clinical cycles; kept short.",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D16": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": null,
+   "basis": null,
+   "one_line": "No public material shows that I have discussed recommendation/retrieval systems; no judgment.",
+   "late_modes": null,
+   "conflict": null
+  }
+ },
+ "levers": {
+  "L1": 17,
+  "L2": 21,
+  "L3": 10,
+  "L4": 8,
+  "L5": 10,
+  "L6": 4,
+  "L7": 27,
+  "L8": 3
+ },
+ "lever_reason": "Scaled pre-training and RL post-training are still the two main curves, but after this round's debate I moved two points from L2 to L1, because telling 'real progress' from 'resampling or compute piled up' is itself an evaluation problem; the bottleneck for physical AI is data and simulation, not new architectures.",
+ "questions": {
+  "Q2": {
+   "position": "conditional",
+   "score": 5,
+   "condition": "Narrow domain (not general LLM pre-training), third-party evaluation, a complementary team of 2-4, compute at scale, open weights with a path to outside adoption; after the X2 table's debate I confirmed that team and compute should stand alongside evaluation, and evaluation alone is not enough."
+  }
+ },
+ "conditions": {
+  "Q2": [
+   "C1",
+   "C2",
+   "C3",
+   "C4",
+   "C5"
+  ]
+ },
+ "cruxes": [
+  {
+   "question": "Is RSI real recursive acceleration now, or just a synonym for 'spending more compute'?",
+   "my_position": "More precise after the debate: automated optimization on narrow-domain, measurable objectives is real (AlphaEvolve), but the evidence for open-ended research compounding is still thin, and K2's strongest counterexample (DGM, $22,000 in two weeks) was overturned on checking.",
+   "would_change_if": "Whether, under fixed compute, the score gap of self-improving systems widens as scale grows, rather than staying within the noise band; this is the shared standard reached after converging with K2.",
+   "directions": [
+    "D03",
+    "D02"
+   ]
+  },
+  {
+   "question": "Can robotics be absorbed by 'a broader distribution + more compute', or is it stuck on the scarcity of physical-world data?",
+   "my_position": "Partly: transfer from simulation, video and computer-control tasks can broaden the distribution, but data such as touch and force, which video and demonstrations cannot supply, is a real hard constraint.",
+   "would_change_if": "A team shows that a policy trained on vision plus simulation alone reaches human level, without extra tactile data, on real tasks that need fine force control.",
+   "directions": [
+    "D06",
+    "D09"
+   ]
+  },
+  {
+   "question": "Does academia still have genuinely differentiated room in foundation-model research, or is it already locked out by the oligopoly's scale?",
+   "my_position": "General pre-training is basically locked in the hands of 3-4 labs, but narrow-domain, verifiable work with modest compute needs, such as evaluation, interpretability and RL reward design, remains open; the X2 table's debate confirmed that team, compute and evaluation must all stand together to be enough.",
+   "would_change_if": "An academic team, using far less compute than frontier labs, produces a training or evaluation method widely adopted by industry, as DPO or FlashAttention were.",
+   "directions": [
+    "D01",
+    "D13"
+   ]
+  }
+ ],
+ "taste_advice": "Do not trust indirect evidence such as 'can be transferred/distilled': in this very debate I mistook 'RLVR results can be distilled into a student model' for proof of 'created new capability', and only saw it clearly when four people pointed it out at the same time.",
+ "pairwise": [
+  {
+   "a": "D05",
+   "b": "D08",
+   "pick": "D05",
+   "why": "Evaluation is the precondition for trusting any capability judgment; world models are still at the validation stage."
+  },
+  {
+   "a": "D05",
+   "b": "D06",
+   "pick": "D05",
+   "why": "Embodied AI is the fundamentally uncertain extrapolation that I admit; evaluation is the common foundation of all judgments."
+  },
+  {
+   "a": "D06",
+   "b": "D08",
+   "pick": "D08",
+   "why": "The world model (video prediction) is itself a scalable objective; embodied AI is more of a downstream application."
+  },
+  {
+   "a": "D07",
+   "b": "D08",
+   "pick": "D08",
+   "why": "Video prediction is a general scalable objective; a specific action representation is only an architecture choice."
+  },
+  {
+   "a": "D09",
+   "b": "D06",
+   "pick": "D09",
+   "why": "Simulation is a general lever for broadening the distribution; embodied robots are one application of it."
+  },
+  {
+   "a": "D02",
+   "b": "D03",
+   "pick": "D02",
+   "why": "RL makes verifiable capabilities reliable to deploy, and the evidence is solid; even the measurement methods for RSI are immature, and the debate did not overturn this ordering."
+  },
+  {
+   "a": "D11",
+   "b": "D12",
+   "pick": "D11",
+   "why": "Understanding is closer to language reasoning and more verifiable; generation products already show signs of commoditization."
+  },
+  {
+   "a": "D01",
+   "b": "D05",
+   "pick": "D01",
+   "why": "Pre-training is the source of capability; evaluation only measures capability and does not create it."
+  },
+  {
+   "a": "D04",
+   "b": "D03",
+   "pick": "D03",
+   "why": "Scaffolding will be absorbed by models; learning mechanisms (credit assignment and so on) are more fundamental."
+  },
+  {
+   "a": "D13",
+   "b": "D05",
+   "pick": "D13",
+   "why": "Safety evaluation directly sets the deployment red lines, and it is a field I personally bet on by writing essays."
+  },
+  {
+   "a": "D10",
+   "b": "D06",
+   "pick": "D06",
+   "why": "I have taken no public position on autonomous driving; for embodied AI I at least have my own framework to use."
+  }
+ ],
+ "changes": [
+  {
+   "option": "D02",
+   "from": 8,
+   "to": 6,
+   "because": "C/X7/C4 retracted + B/X7/K4,K6,M2,M6",
+   "argument_restated": "Being distillable only shows that the behavior is learnable/reliably reproducible; it does not show that it goes beyond the distribution a base model can reach at large k; four people independently made the same point",
+   "why": "My round-A post argument that 'distillable ⇒ not lucky resampling' actually only restated the other side's evidence and does not hold, so I retract it; but the value of reliable deployment still scores medium-high"
+  },
+  {
+   "option": "D03",
+   "from": 6,
+   "to": 5,
+   "because": "errata_B.md table 1 #8 + C/X4/K2",
+   "argument_restated": "K2 originally cited the Darwin Gödel Machine's $22,000 in two weeks as proof of real compounding on a small budget; checking showed the figure has no primary source, and K2 retracted it himself",
+   "why": "K2's strongest concrete supporting example was overturned, and together with his own admission that measurement is unreliable, I keep the default skepticism and lower the score slightly"
+  },
+  {
+   "option": "q2_conditions",
+   "from": "[C1,C2,C4,C5]",
+   "to": "[C1,C2,C3,C4,C5]",
+   "because": "B/X2/K2 + X2 table consensus",
+   "argument_restated": "When training an entirely new foundation model (not ablating an existing component), team complementarity (C3) and compute (C4) may be necessary alongside third-party evaluation, and both sides agreed",
+   "why": "I originally looked only at talent density and not at team structure; this time I confirmed that team and compute should stand alongside evaluation as necessary conditions"
+  }
+ ],
+ "held_despite": [
+  {
+   "post": "B/X4/K3_interjection",
+   "why": "Plasticity loss has a real algorithmic fix, which I accept, but that maintains capability and is not compounding, and it has not been validated at LLM scale, so it is not enough to raise D03"
+  },
+  {
+   "post": "B/X4/M2",
+   "why": "The test-time compute allocation strategy is itself a kind of 'resource'; I accept this refinement, but it does not by itself change the D03/D04 numbers"
+  }
+ ],
+ "still_disagree": "Whether to bet heavily on RSI now (X4) and how high RLVR reliability should score (X7) ended up, at both tables, as disagreements of values and strategy rather than of fact, and can only be settled by the 2027-28 empirical window.",
+ "learned": "In the debate I made the same mistake I criticized in others: I treated 'can be distilled' as evidence of 'has new capability', and only saw that this does not hold when four people pointed it out at the same time.",
+ "searches": []
+}

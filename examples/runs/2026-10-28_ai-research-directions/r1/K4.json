@@ -1,0 +1,328 @@
+{
+ "id": "K4",
+ "name": "Andrej Karpathy",
+ "round": "R1",
+ "notice": "Simulation based on public material; not the person's own words.",
+ "options": {
+  "D01": {
+   "impact": 9,
+   "bottleneck": 7,
+   "academic_edge": 3,
+   "window": 4,
+   "overall": 6,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Industry accounts for over 90% of notable models, and academia can hardly get in; the bottleneck is data/algorithmic efficiency, not architecture, and the foundation is still important",
+   "late_modes": "Merely piling on compute to catch up with the leading models; concentration is still rising",
+   "conflict": "Currently on Anthropic's pre-training team"
+  },
+  "D02": {
+   "impact": 6,
+   "bottleneck": 4,
+   "academic_edge": 5,
+   "window": 4,
+   "overall": 5,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "RLVR mainly resamples existing abilities and introduces no new reasoning patterns; I am bearish on RL itself and bullish on the environment layer of data",
+   "late_modes": "Generic RLVR tuning papers with no data or environment of their own",
+   "conflict": null
+  },
+  "D03": {
+   "impact": 8,
+   "bottleneck": 8,
+   "academic_edge": 6,
+   "window": 6,
+   "overall": 7,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Continual learning is the ability I named as missing in agents; measurements show that seventy to ninety percent of the cost of automated improvement is compute, not the method itself",
+   "late_modes": "Packaging an automated-improvement pipeline on a fixed small benchmark as a breakthrough",
+   "conflict": "Invests in the RL environment platform Prime Intellect"
+  },
+  "D04": {
+   "impact": 7,
+   "bottleneck": 5,
+   "academic_edge": 4,
+   "window": 3,
+   "overall": 5,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "On SWE-bench the gap between the full agent and the bare model is only 2.4 points, which shows that the general harness is being absorbed by the model itself",
+   "late_modes": "Building a general agent framework/scaffold will be absorbed by models and products",
+   "conflict": "His employer Anthropic makes Claude Code"
+  },
+  "D05": {
+   "impact": 8,
+   "bottleneck": 9,
+   "academic_edge": 9,
+   "window": 7,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "quoted",
+   "one_line": "LMArena grew from a Berkeley student project to a $3.1B valuation, showing that evaluation by itself can be built into something big independently",
+   "late_modes": "Hand-running a one-off leaderboard to hold a spot, with no robustness check",
+   "conflict": null
+  },
+  "D06": {
+   "impact": 9,
+   "bottleneck": 7,
+   "academic_edge": 6,
+   "window": 6,
+   "overall": 7,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "SO-101, hardware at roughly the $230 level, lets academia afford a real-robot closed loop for the first time, no longer limited to demonstrations",
+   "late_modes": "Only tuning on standard benchmarks, with no analysis of new failure modes",
+   "conflict": null
+  },
+  "D07": {
+   "impact": 8,
+   "bottleneck": 6,
+   "academic_edge": 7,
+   "window": 6,
+   "overall": 7,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "OpenVLA-OFT is 15 points higher than the diffusion head on real robots; this line already has real-robot validation and is past the demo stage",
+   "late_modes": "Treating diffusion policy as the only orthodoxy and not comparing against simple baselines",
+   "conflict": null
+  },
+  "D08": {
+   "impact": 8,
+   "bottleneck": 6,
+   "academic_edge": 6,
+   "window": 5,
+   "overall": 6,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "V-JEPA2's planning horizon is only 1 step, and H-JEPA has not been validated in a closed loop on real robots; most of it is still demo-level, and it is also my blind spot",
+   "late_modes": "Selling interactive video generation as a visual product, waiting to be absorbed by general models",
+   "conflict": null
+  },
+  "D09": {
+   "impact": 8,
+   "bottleneck": 7,
+   "academic_edge": 8,
+   "window": 6,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "MimicGen-style amplification from a few samples is a data engine that can start turning right now, with a bar far lower than training a foundation model",
+   "late_modes": "Claiming simulation data is 'unlimited' without giving verifiable metrics",
+   "conflict": "Invests in the RL environment platform Prime Intellect"
+  },
+  "D10": {
+   "impact": 9,
+   "bottleneck": 6,
+   "academic_edge": 2,
+   "window": 3,
+   "overall": 5,
+   "confidence": "high",
+   "basis": "quoted",
+   "one_line": "Tesla's first safety report has just self-reported zero casualties but has not been independently audited; fleet-type tracks are simply closed to academia",
+   "late_modes": "An individual or small team building an end-to-end demo, with no fleet and no long-tail data",
+   "conflict": "Former Tesla AI director; has publicly been bullish on Tesla"
+  },
+  "D11": {
+   "impact": 7,
+   "bottleneck": 6,
+   "academic_edge": 8,
+   "window": 6,
+   "overall": 7,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "BLINK/VSI-Bench show models are close to blind guessing on basic spatial tasks, a clean and verifiable gap",
+   "late_modes": "Only chasing existing VQA scores, with no error analysis",
+   "conflict": null
+  },
+  "D12": {
+   "impact": 8,
+   "bottleneck": 5,
+   "academic_edge": 6,
+   "window": 4,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Sora2 shut down its app/API within a year, confirming that thin-wrapper consumer apps get absorbed; the underlying technology itself is still advancing",
+   "late_modes": "Building thin-wrapper text-to-image/text-to-video consumer apps with no data loop",
+   "conflict": null
+  },
+  "D13": {
+   "impact": 8,
+   "bottleneck": 5,
+   "academic_edge": 7,
+   "window": 6,
+   "overall": 6,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "SAEs do worse than linear probes out of distribution, and CoT monitoring is fragile; the verification problem is more fundamental than any method itself",
+   "late_modes": "Treating a popular interpretability method as the only orthodoxy and not comparing against simple baselines",
+   "conflict": "Current Anthropic employee; touches his employer's safety research"
+  },
+  "D14": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 5,
+   "confidence": null,
+   "basis": null,
+   "one_line": "FlashAttention shows a small academic team can produce a standard component, but most infra work needs an industrial feedback loop, so the window is narrow",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D15": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 4,
+   "confidence": null,
+   "basis": null,
+   "one_line": "Subproblems that can be scored automatically (AlphaEvolve) will speed up first; in fields lacking a feedback loop, deep models still cannot beat simple baselines",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D16": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 3,
+   "confidence": null,
+   "basis": null,
+   "one_line": "Industry has already put generative recommendation online (Tencent TGR), but its compute cost may be 10-100 times that of traditional models; it is an enterprise data-loop business",
+   "late_modes": null,
+   "conflict": null
+  }
+ },
+ "levers": {
+  "L1": 22,
+  "L2": 6,
+  "L3": 20,
+  "L4": 10,
+  "L5": 16,
+  "L6": 4,
+  "L7": 14,
+  "L8": 8
+ },
+ "lever_reason": "Verification and data engines (simulation + real data) decide whether capability can land in the physical world; RL and architecture themselves are not the bottleneck, and scaled pre-training is the foundation but not the only lever",
+ "questions": {
+  "Q2": {
+   "position": "conditional",
+   "score": 6,
+   "condition": "Narrow-domain model + a complementary team of 2-4 + GPUs sustained over months + open weights that outsiders can adopt; otherwise it is better to go to industry"
+  }
+ },
+ "conditions": {
+  "Q2": [
+   "C1",
+   "C3",
+   "C4",
+   "C5"
+  ]
+ },
+ "cruxes": [
+  {
+   "question": "Is evaluation/verification a more upstream bottleneck than the scale of real data?",
+   "my_position": "It is the precondition; without credible verification, the gains from data, simulation and RL cannot each be confirmed",
+   "would_change_if": "A lab makes a big capability leap with its evaluation methods completely unchanged, and it is later agreed that evaluation really did not matter",
+   "directions": [
+    "D05",
+    "D06",
+    "D09"
+   ]
+  },
+  {
+   "question": "Can an academic lab training a narrow-domain foundation model get real outside adoption, or is it just amusing itself?",
+   "my_position": "Yes, but only for narrow domain + open weights + a small complementary team; academia cannot get into general pre-training",
+   "would_change_if": "An academic project at the scale of Stanford Marlowe (about 250 H100s) is widely adopted externally, or there is none for two consecutive years",
+   "directions": [
+    "D01",
+    "D06",
+    "D08"
+   ]
+  },
+  {
+   "question": "Are the representations learned by JEPA/world models actually used by policies to make decisions, or can they be read out but not used?",
+   "my_position": "Doubt by default, with a middling score based on inference; demo-level reconstruction quality is not evidence",
+   "would_change_if": "An ablation shows that removing or perturbing the representation significantly lowers closed-loop control success",
+   "directions": [
+    "D08",
+    "D07",
+    "D06"
+   ]
+  }
+ ],
+ "taste_advice": "First ask whether it can be gamed, then whether it looks good; what simulation taught me is how a simulator lies",
+ "pairwise": [
+  {
+   "a": "D05",
+   "b": "D08",
+   "pick": "D05",
+   "why": "Verification is a precondition for RL/agent progress, and the bar for academia is lower too"
+  },
+  {
+   "a": "D05",
+   "b": "D06",
+   "pick": "D05",
+   "why": "Evaluation produces credible results faster than embodied work, and the bar for academia is lower"
+  },
+  {
+   "a": "D06",
+   "b": "D08",
+   "pick": "D06",
+   "why": "There is real-robot validation such as π0.5, which beats world models that are mostly judged on offline fidelity"
+  },
+  {
+   "a": "D07",
+   "b": "D08",
+   "pick": "D07",
+   "why": "OpenVLA-OFT already has closed-loop real-robot validation, which beats WAMs that are mostly validated offline"
+  },
+  {
+   "a": "D09",
+   "b": "D06",
+   "pick": "D09",
+   "why": "Simulation/synthetic data is a data engine that can start turning right now"
+  },
+  {
+   "a": "D02",
+   "b": "D03",
+   "pick": "D03",
+   "why": "What agents lack is continual learning; RLVR itself only resamples existing abilities"
+  },
+  {
+   "a": "D11",
+   "b": "D12",
+   "pick": "D11",
+   "why": "BLINK/VSI-Bench show that understanding still has many verifiable gaps"
+  },
+  {
+   "a": "D01",
+   "b": "D05",
+   "pick": "D05",
+   "why": "Pre-training is concentrated in a few institutions; evaluation is more open to academia"
+  },
+  {
+   "a": "D04",
+   "b": "D03",
+   "pick": "D03",
+   "why": "Continual learning is a capability agents clearly lack; scaffolding will be absorbed by models"
+  },
+  {
+   "a": "D13",
+   "b": "D05",
+   "pick": "D05",
+   "why": "The causal-verification problem in interpretability is, at root, still an evaluation problem"
+  },
+  {
+   "a": "D10",
+   "b": "D06",
+   "pick": "D06",
+   "why": "Fleet-type autonomous driving is closed to academia; embodied robotics is more open now"
+  }
+ ],
+ "web_searches": []
+}

@@ -39,15 +39,26 @@ persona's arguments in debate.
   write a discount into the card and you've told every other persona at the table to discount
   it for them. `tools/sim.py scan` checks this.
 
+## Checking quotes
+
+Before a persona is used, run `python3 tools/sim.py quotes <persona folder> --fetch`. It checks
+that every `[quoted]` passage is under 15 words, cites an evidence id that exists in
+`sources.csv`, and that no source supplies more than one quote; with `--fetch` it also looks for
+each quote verbatim on its source page. Fix every error, and check by hand each quote it could
+not find. CI runs the same check without `--fetch`.
+
 ## Choosing personas
 
 `card.yaml`'s `kind` field is one of:
 
 - **`historical`** — a real person no longer living, with an extensive public or archival
   record. A full dossier, including sourced experience arguments, is usually possible.
-- **`public_figure`** — a real, living person with public statements. Same as above, plus two
-  extra obligations: follow `RESPONSIBLE_USE.md` for how to represent a living person
-  responsibly, and prefer this kind when the run needs a fidelity test — `11_fidelity_test.md`
+- **`public_figure`** — a real, living person with a substantial public record of their own
+  views. Same as above, plus three obligations from `RESPONSIBLE_USE.md`: no judgments of the
+  person's character (track records are dated predictions with outcomes and sources, not
+  verdicts); every role, company, departure or deal carries a source and an "as of" date, and
+  unconfirmed claims are dropped; links to the vendor of the model running the simulation are
+  disclosed. Prefer this kind when the run needs a fidelity test — `11_fidelity_test.md`
   requires dated public statements after the analysis model's training cutoff, which only a
   living, currently-public person can have.
 - **`archetype`** — a composite role (for example, "a risk-averse later-stage investor") not

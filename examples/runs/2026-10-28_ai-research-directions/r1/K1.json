@@ -1,0 +1,323 @@
+{
+ "id": "K1",
+ "name": "Vinod Khosla",
+ "round": "R1",
+ "notice": "Simulation based on public material; not the person's own words.",
+ "options": {
+  "D01": {
+   "impact": 8,
+   "bottleneck": 4,
+   "academic_edge": 2,
+   "window": 2,
+   "overall": 4,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "The technology will keep scaling, but the value is already locked up by two or three frontier labs; this is not an opportunity for individuals or academia",
+   "late_modes": "General pre-training itself is already late; marginal improvements are locked up by the leading labs",
+   "conflict": "OpenAI is his biggest success, and it belongs to this category"
+  },
+  "D02": {
+   "impact": 7,
+   "bottleneck": 5,
+   "academic_edge": 5,
+   "window": 4,
+   "overall": 5,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "The middle layer that turns capability into action; academia has real precedent (DPO), but the window is no longer early",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D03": {
+   "impact": 8,
+   "bottleneck": 8,
+   "academic_edge": 6,
+   "window": 7,
+   "overall": 7,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "High score for the engineering layer of being able to learn (continual learning, credit assignment); he has no public stance on strict intelligence-explosion-style RSI",
+   "late_modes": null,
+   "conflict": "KV has invested in agent companies, but has not directly bet on continual learning itself"
+  },
+  "D04": {
+   "impact": 8,
+   "bottleneck": 4,
+   "academic_edge": 2,
+   "window": 3,
+   "overall": 5,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "One of the highest-consequence tiers, but the scaffold layer has been absorbed by models, and the edge for individuals or academia is thin",
+   "late_modes": "Building your own agent scaffold/harness is already late; models have absorbed this layer",
+   "conflict": "KV has invested in agent companies such as Cognition"
+  },
+  "D05": {
+   "impact": 5,
+   "bottleneck": 5,
+   "academic_edge": 7,
+   "window": 3,
+   "overall": 5,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "There is a real academia-to-industry path (Arena), but he has consistently not trusted precise prediction or evaluation-report-style work, and the consequences are limited",
+   "late_modes": "Building a general leaderboard evaluation company is already late; Arena has turned this path into a unicorn",
+   "conflict": null
+  },
+  "D06": {
+   "impact": 10,
+   "bottleneck": 9,
+   "academic_edge": 6,
+   "window": 8,
+   "overall": 9,
+   "confidence": "high",
+   "basis": "quoted",
+   "one_line": "His most confident direction: the consequences are larger than the auto industry's, and the bottleneck is learning",
+   "late_modes": null,
+   "conflict": "KV's portfolio holds several physical-AI companies"
+  },
+  "D07": {
+   "impact": 8,
+   "bottleneck": 7,
+   "academic_edge": 6,
+   "window": 7,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "The layer that connects perception to action; academic contributions (Diffusion Policy, OpenVLA-OFT) are still in continued use, and the window is still open",
+   "late_modes": null,
+   "conflict": "KV's portfolio bets on this technical line"
+  },
+  "D08": {
+   "impact": 9,
+   "bottleneck": 8,
+   "academic_edge": 5,
+   "window": 6,
+   "overall": 8,
+   "confidence": "medium",
+   "basis": "quoted",
+   "one_line": "He says he pioneered the world-model category; the premise is that representations that can be read out are actually put to use, which has not been shown",
+   "late_modes": "Chasing pure generation quality or 3D reconstruction is already on the late side and is being commoditized (VGGT, Genie 3)",
+   "conflict": "A world-model company KV has bet on; he says he pioneered this category"
+  },
+  "D09": {
+   "impact": 7,
+   "bottleneck": 6,
+   "academic_edge": 6,
+   "window": 6,
+   "overall": 7,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "The loop between real data and simulation is part of his investment logic",
+   "late_modes": null,
+   "conflict": "KV's portfolio holds two simulation companies"
+  },
+  "D10": {
+   "impact": 7,
+   "bottleneck": 3,
+   "academic_edge": 5,
+   "window": 3,
+   "overall": 5,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "He is betting on a new form of mobility on a 25-year scale, not an opportunity for researchers in the near term; long-tail safety is still a real problem but the window is on the late side",
+   "late_modes": "Starting a full-stack autonomous-vehicle company is already late; the leading companies' scale effects are in place",
+   "conflict": "KV has led rounds in two mobility companies"
+  },
+  "D11": {
+   "impact": 6,
+   "bottleneck": 5,
+   "academic_edge": 7,
+   "window": 6,
+   "overall": 6,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "Not a field he addressed directly in his own words, but the spatial-understanding gap (evidence: VSI-Bench) shares a root with robots lacking learning",
+   "late_modes": "General image-text pairing/caption-style understanding is already on the late side and commoditized",
+   "conflict": null
+  },
+  "D12": {
+   "impact": 5,
+   "bottleneck": 3,
+   "academic_edge": 3,
+   "window": 2,
+   "overall": 4,
+   "confidence": "high",
+   "basis": "inferred",
+   "one_line": "He separates pure generated imagery from world models that can act; he considers the former to be getting cheaper and commoditized",
+   "late_modes": "Chasing generation quality or video aesthetics is already late and is being commoditized (Sora2 taken offline, Chinese vendors at the front)",
+   "conflict": null
+  },
+  "D13": {
+   "impact": 4,
+   "bottleneck": 2,
+   "academic_edge": 4,
+   "window": null,
+   "overall": 3,
+   "confidence": "low",
+   "basis": "quoted",
+   "one_line": "He does not treat this as an industry; the risks are real but manageable, and in his eyes the biggest safety risk is geopolitics (China) rather than technical alignment",
+   "late_modes": null,
+   "conflict": "He is an OpenAI investor and opposes fully open-sourcing frontier models"
+  },
+  "D14": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": null,
+   "basis": null,
+   "one_line": "He says explicitly that he makes no call on chips and data centers; this is a capital-expenditure question and falls outside what his framework covers",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D15": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 7,
+   "confidence": "medium",
+   "basis": "quoted",
+   "one_line": "He is very confident (a Nobel Prize may go to AI alone); kept short as required",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D16": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": null,
+   "basis": null,
+   "one_line": "He has not discussed recommendation/retrieval systems publicly; there is no material to support a score, so none is forced",
+   "late_modes": null,
+   "conflict": null
+  }
+ },
+ "levers": {
+  "L1": 5,
+  "L2": 15,
+  "L3": 15,
+  "L4": 20,
+  "L5": 20,
+  "L6": 10,
+  "L7": 10,
+  "L8": 5
+ },
+ "lever_reason": "What physical AI lacks is learning: real data (L5) and world models that can be turned into decisions (L4) are scarcest, with simulation (L3) as the bridge; scaling (L7) is already locked up, and evaluation (L1) only catches errors.",
+ "questions": {
+  "Q2": {
+   "position": "conditional",
+   "score": 6,
+   "condition": "Narrow-domain model + a team of 2-4 + compute at scale + actually adopted by outsiders; no requirement to have third-party evaluation backing first"
+  }
+ },
+ "conditions": {
+  "Q2": [
+   "C1",
+   "C3",
+   "C4",
+   "C5"
+  ]
+ },
+ "cruxes": [
+  {
+   "question": "Is evaluation science the most underrated bottleneck of this AI wave, or just a tool for endorsing other conclusions?",
+   "my_position": "Mostly an endorsement tool; you cannot go far without it, but it creates no new capability, and its consequences are smaller than those of world models and robot learning",
+   "would_change_if": "An improvement in some evaluation methodology actually changes the training/investment direction of a frontier lab, rather than scoring after the fact",
+   "directions": [
+    "D05"
+   ]
+  },
+  {
+   "question": "Does being able to 'probe out' physical properties/intent from interaction history mean the model actually uses it to make decisions?",
+   "my_position": "What most work shows today is 'can be read out', not 'put to use'; this is exactly what his bet on General Intuition is meant to test",
+   "would_change_if": "A closed-loop real-robot experiment shows that disrupting a probed-out representation significantly lowers task success, rather than a simulation ablation",
+   "directions": [
+    "D08"
+   ]
+  },
+  {
+   "question": "Is academia's work on agent systems a real experimental contribution, or scraps that models will eventually absorb?",
+   "my_position": "The view that the scaffold/harness layer is scraps is basically right; but agent continual learning/self-improvement is unsolved, and academia still has real problems there",
+   "would_change_if": "Within a year, an academia-led agent continual-learning method appears that industry deploys directly (not just in papers)",
+   "directions": [
+    "D03",
+    "D04"
+   ]
+  }
+ ],
+ "taste_advice": "Don't chase safe problems picked by whether they can yield a paper; pick a problem whose consequence is largest if it works, even at low probability",
+ "pairwise": [
+  {
+   "a": "D05",
+   "b": "D08",
+   "pick": "D08",
+   "why": "World models have larger consequences and are his own biggest new bet; evaluation leans toward error-checking and is not the frontier"
+  },
+  {
+   "a": "D05",
+   "b": "D06",
+   "pick": "D06",
+   "why": "Robot learning is the direction he is most confident in; evaluation is only a supporting tool"
+  },
+  {
+   "a": "D06",
+   "b": "D08",
+   "pick": "D06",
+   "why": "A world model is a tool; robots learning to act is the consequence itself"
+  },
+  {
+   "a": "D07",
+   "b": "D08",
+   "pick": "D07",
+   "why": "D07 connects directly to action; within D08 he does not value pure generated imagery, which will be commoditized"
+  },
+  {
+   "a": "D09",
+   "b": "D06",
+   "pick": "D06",
+   "why": "Simulation is a tool; robots learning to generalize is the consequence he is really betting on"
+  },
+  {
+   "a": "D02",
+   "b": "D03",
+   "pick": "D03",
+   "why": "Continual learning and self-improvement are the core of being able to learn; RL is just one mechanism among them"
+  },
+  {
+   "a": "D11",
+   "b": "D12",
+   "pick": "D11",
+   "why": "Understanding can feed decisions; generation quality gets commoditized faster by big companies"
+  },
+  {
+   "a": "D01",
+   "b": "D05",
+   "pick": "D01",
+   "why": "The consequences of ever-larger foundation models are bigger than those of evaluation infrastructure alone"
+  },
+  {
+   "a": "D04",
+   "b": "D03",
+   "pick": "D03",
+   "why": "Scaffolding has been absorbed by models (the evidence can be checked), self-improvement is still unsolved, and D03 has more consequence"
+  },
+  {
+   "a": "D13",
+   "b": "D05",
+   "pick": "D05",
+   "why": "Evaluation has a real academia-to-industry path (Arena); he does not treat safety alignment as a track"
+  },
+  {
+   "a": "D10",
+   "b": "D06",
+   "pick": "D06",
+   "why": "Autonomous driving is on a 25-year scale and already locked up by leading companies; robot learning is earlier and more open"
+  }
+ ],
+ "web_searches": []
+}

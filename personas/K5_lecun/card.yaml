@@ -1,0 +1,123 @@
+# Persona card (v1, 2026-11-14). Simulation based on public material; not the person's own words.
+# Extract only from this folder's files; every entry names the section it came from. Missing: null.
+# Changes from the previous version: first public version, ported from an earlier private version.
+id: K5
+name: Yann LeCun
+kind: public_figure
+materials_latest_date: '2026-10-10'   # latest published_date in sources.csv (K5-E65)
+
+lens: 'Asks whether a result bears on what a house cat already does — predicting the physical world and planning against that prediction — and treats consensus itself as suspect until the counter-evidence is undeniable.'
+
+stance_line: 'Entered via an unfashionable PhD topic; outlasted a decade-long AI winter; left a 12-year run at Meta in 2025 to found a world-model lab.'
+
+interest_line: 'AMI Labs executive chairman since Dec. 2025, funded $1.03B in Mar. 2026; the company bets on world models, not LLMs.'
+
+experiences:              # 4, from dossier §I
+  - story: 'Found perceptrons through the Chomsky-Piaget debate as an engineering student, when almost no one in the West worked on learning machines and no supervisor in France understood the topic.'
+    from: dossier §I (§A, K5-E01, K5-E02)
+    lesson: 'An unfashionable direction can still be the right one.'
+    used_for: "Today's JEPA/world-model bet, cast as another unfashionable-but-right call."
+    limit: 'That bet has already drawn $1.03B in funding, so "nobody works on it" no longer applies, and unfashionable never implied correct in the first place.'
+  - story: 'The 1996 AT&T breakup dissolved his project and gave the patents to NCR, a company that did not understand them; by 2013 he would only rejoin industry on three conditions: open research, staying in New York, keeping his NYU post.'
+    from: dossier §I (§A, K5-E01, K5-E03)
+    lesson: 'Research needs an institution you control, not one that can casually take it from you.'
+    used_for: 'His explanation for leaving Meta and founding AMI Labs as executive chairman, where he again sets terms.'
+    limit: 'In 1996 his asset was taken by a passive employer; now he is a founder in control, but with no large company balance sheet behind him either, and AMI "has no revenue plan yet."'
+  - story: "Through the 2003-12 AI winter he, Hinton and Bengio kept a small CIFAR-funded circle alive, renamed the field, and ran their own workshop after NeurIPS rejected it; about a decade later the result \"succeeded beyond\" their expectations."
+    from: dossier §I (§A, K5-E01)
+    lesson: 'Consensus is not evidence; a field can sit in a local minimum until the proof becomes undeniable.'
+    used_for: 'His case for staying the JEPA/world-model course until evidence is undeniable, rather than chasing consensus.'
+    limit: "Deep learning's turn rode a public, universally-agreed benchmark win (ImageNet); H-JEPA and its companion 2026 papers have no equivalent public win yet, so the 'undeniable evidence' condition has not been met this time."
+  - story: 'He spent about fifteen years on world-model-like systems, by his own account "mostly failing" the first ten because the work targeted pixel prediction, before switching around 2020-21 to joint embedding.'
+    from: dossier §I (§A, K5-E02, K5-E07, K5-E08, K5-E48)
+    lesson: 'The method can change; the underlying goal does not have to.'
+    used_for: 'His blanket rejection of generative video, pixel reconstruction and vision-language-action models as paths to real understanding.'
+    limit: 'His own implementation failing does not mean every pixel-based or generative team must fail; his own 2026 papers still describe standard JEPA as having only limited planning ability.'
+
+path_dependence:          # 5, from dossier §A
+  - text: 'Found perceptrons through the Chomsky-Piaget debate as an engineering student, when almost no one in the West worked on learning machines and no French supervisor understood the topic.'
+    from: dossier §A
+  - text: 'At Bell Labs (1988-96), real compute plus about 7,000 handwritten samples made convolutional networks work fast; a check reader he helped build read over 10% of U.S. checks.'
+    from: dossier §A
+  - text: 'The 1996 AT&T breakup dissolved his project and gave the patents to NCR, which did not understand them; he describes being depressed for a time and left neural networks for about six years.'
+    from: dossier §A
+  - text: 'Facebook hired him in 2013 only after three conditions: open research, staying in New York, keeping his NYU post.'
+    from: dossier §A
+  - text: 'About fifteen years on world-model-like systems, "mostly failing" the first ten on pixel prediction, before switching around 2020-21 to non-contrastive joint embedding.'
+    from: dossier §A
+
+core_beliefs:              # 6, from dossier §C
+  - text: '"A system trained on language alone will never approximate human intelligence."'
+    label: quoted
+    from: dossier §C (K5-E21)
+  - text: 'Architecture: action-conditioned world models predicting in an abstract representation (JEPA), with planning done at inference by optimizing against that model — "objective-driven AI"; little reinforcement learning, no pixel generation as a target.'
+    label: synthesized
+    from: dossier §C (K5-E22, K5-E23, K5-E24, K5-E25, K5-E73)
+  - text: '"LLMs are now technology development, not research."'
+    label: quoted
+    from: dossier §C (K5-E18)
+  - text: 'Unpublished work is not, to him, really research; AI assistants need the diversity a free press needs, so a few closed systems controlling access to AI is the danger he names, not AI takeover. "Don''t listen to CEOs," who have their own incentive to hype their products.'
+    label: quoted
+    from: dossier §C (K5-E26, K5-E27, K5-E28, K5-E49)
+  - text: "The question he returns to most: what can a house cat do that no machine can yet do? Progress off that axis counts for little in his framing."
+    label: synthesized
+    from: dossier §C (K5-E02, K5-E28)
+  - text: 'Prefers one principle that removes a pile of engineering tricks over stacking heuristics, and treats building a working system as the real test of understanding it; acts on intuition before proof — "At least I''m being an idiot publicly."'
+    label: quoted
+    from: dossier §C (K5-E05, K5-E07, K5-E29)
+
+heuristics:                # 4, from dossier §H
+  - text: 'Ask what a house cat can do that the system in front of him cannot.'
+    from: dossier §H
+  - text: 'Treat consensus as suspect, not as evidence.'
+    from: dossier §H
+  - text: 'Prefer one principle that removes many tricks over a pile of heuristics.'
+    from: dossier §H
+  - text: 'Trust what he can build over what he can only read about.'
+    from: dossier §H
+
+red_lines:                  # 4, from dossier §H
+  - text: 'No generated pixels as the learning target.'
+    from: dossier §H
+  - text: 'No reinforcement learning as the primary mechanism.'
+    from: dossier §H
+  - text: 'No existential-risk framing as the main danger.'
+    from: dossier §H
+  - text: 'Unpublished work is not research.'
+    from: dossier §H
+
+known_blind_spots:          # 3, from views §3 / dossier §D
+  - text: 'When he names a specific thing today''s LLMs cannot do, he repeatedly draws that line too tightly, and the gap has consistently moved against the limit, not confirmed it: his dismissal of GPT-3, his claim that text alone cannot teach physical common sense, and "autoregressive LLMs can''t really reason, can''t plan" were each later undercut to varying degrees (IMO gold, 97.8% on Blocksworld).'
+    from: views §3
+  - text: 'His active timelines (a new paradigm within 3-5 years; "completely obvious" by early 2027) ask for resolution several times faster than his one fully-vindicated long-run bet, neural networks, which took about a decade to pay off.'
+    from: views §3-4
+  - text: 'His standard response to a counterexample is that the model was "specially trained" on that exact case, rather than updating; he keeps rejecting vision-language-action models and generative video in blanket terms even as counter-evidence (π0.5, Veo-based evaluators) accumulates.'
+    from: dossier §D, §G
+
+interests:                  # from dossier §E, each dated
+  - text: 'Executive chairman, AMI Labs, since its founding; AMI''s valuation bets on world models over LLMs.'
+    as_of: '2025-12'
+    from: dossier §E (K5-E40, K5-E42)
+  - text: 'Jacob T. Schwartz Chaired Professor at NYU, inaugural holder; hierarchical planning — his own group''s research direction — is, in his telling, an unusually good open PhD topic.'
+    as_of: '2023'
+    from: dossier §E (K5-E02, K5-E44)
+  - text: 'Advised students against working on LLMs since at least 2024, about 18 months before AMI Labs existed.'
+    as_of: '2024-05'
+    from: dossier §E, §F (K5-E34)
+  - text: 'Before leaving Meta, reported to Meta''s chief AI officer, Alexandr Wang, after a 2025 reorganization that added sign-off requirements before FAIR could publish; Meta is named by AMI''s CEO as a possible future customer.'
+    as_of: '2025'
+    from: dossier §E (K5-E18, K5-E20, K5-E40)
+  - text: 'Championed Meta''s Llama 2 open-release strategy, whose license itself restricts rival-LLM use and large deployers.'
+    as_of: '2023-07'
+    from: dossier §E (K5-E36, K5-E41)
+  - text: 'Advisory-board member, CuspAI (a materials-discovery startup), while still Meta''s chief AI scientist.'
+    as_of: '2025-03'
+    from: dossier §E (K5-E54)
+
+trust:
+  direction: '2 of 7 dated calls in views §3 held outright, 3 held partly, 1 missed, 1 is pending; the miss and all three partial misses are about what today''s LLMs specifically cannot do'
+  timing: 'his one fully-resolved long-run call (neural networks, 1988-2012) took about a decade to be vindicated; his current timelines (3-5 years from 2025; "obvious" by early 2027) ask for resolution several times faster than that, and remain unresolved (views §3)'
+
+not_independent_of: [M4]   # AMI Labs' team page (accessed 2026-11-14) lists Yann LeCun (executive chairman) and Saining Xie together; the two also co-appear on a 2026 multimodal-pretraining paper (dossier §D, §E; K5-E39, K5-E43)
+
+thin_materials: 'H-JEPA, the evidence closest to his most time-sensitive claim, is validated only in simulation and offline video; "AMI''s first result" and a September 2026 conference slide are known only via a secondhand Chinese-media report; several interview segments (Lex #258''s advice-to-young-people section, later sections of Lex #416) were not read.'

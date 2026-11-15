@@ -1,0 +1,260 @@
+{
+ "note": "Translated from the original crux map; mentions of the original user and of the user's candidate topics are removed.",
+ "cruxes": [
+  {
+   "id": "X1",
+   "question": "Is evaluation (L1) really the lever most worth betting on for the next 5-10 years, or are data, simulation and world models more decisive?",
+   "why_it_matters": "Decides how high D05 ranks, and whether a researcher should bet on evaluation methodology or on the physical-data and modeling line.",
+   "directions": [
+    "D05",
+    "D08",
+    "D09",
+    "D06"
+   ],
+   "sides": [
+    {
+     "label": "Evaluation is the top lever",
+     "position": "Without trustworthy evaluation you cannot tell skill from luck: M3 put 35 points on it, citing SWE-Bench's self-documented contamination; M1 cited the lessons from Alpaca to s1; M7 called evaluation the upstream lever.",
+     "members": [
+      "C2",
+      "K6",
+      "M1",
+      "M7"
+     ]
+    },
+    {
+     "label": "Data and world models matter more",
+     "position": "Evaluation only catches errors; it does not create capability: K5 put 35 points on L4, citing deep learning's comeback; K3 said evaluation cannot measure whether a system itself knows it is wrong.",
+     "members": [
+      "K3",
+      "K5"
+     ]
+    }
+   ],
+   "evidence_needed": "Academic narrow-domain work publicly adopted at scale by leading labs, or third-party validation of world models on long-horizon real-robot tasks."
+  },
+  {
+   "id": "X2",
+   "question": "Does an academic lab training a narrow foundation model count as real impact only with third-party evaluation (C2), or is a team plus compute (C3 + C4) enough?",
+   "why_it_matters": "Decides whether joining an academic narrow-domain foundation-model project is worth it now, and by which standard to choose such a project.",
+   "directions": [
+    "D01",
+    "D06",
+    "D07",
+    "D08"
+   ],
+   "sides": [
+    {
+     "label": "Evaluation is the bar; compute is overrated",
+     "position": "C6 cited DeepMind choosing games because their evaluation is clean; M4's Web-SSL controlled comparison needed no large compute; M8 said diagnostic work does not depend on compute; M5 deliberately did not select the compute condition, signaling doubt.",
+     "members": [
+      "C6",
+      "M4",
+      "M5",
+      "M8"
+     ]
+    },
+    {
+     "label": "Team plus compute is the real bar",
+     "position": "K1 cited the IIT programming club ('nobody was doing it, so I did'): outside adoption is the evidence; K2 cited MapReduce: real demand comes before the platform, no need to wait for evaluation.",
+     "members": [
+      "K1",
+      "K2"
+     ]
+    }
+   ],
+   "evidence_needed": "Among academic narrow-domain model projects, actual industry adoption rates for projects backed first by third-party evaluation versus projects that built their own."
+  },
+  {
+   "id": "X3",
+   "question": "World models and spatial intelligence (D08): has the core claim, that predictive representations drive decisions, been validated, or are valuations and narrative running ahead of the evidence?",
+   "why_it_matters": "Decides whether to bet heavily on D08 now or wait for closed-loop real-robot evidence.",
+   "directions": [
+    "D08"
+   ],
+   "sides": [
+    {
+     "label": "Bet heavily: the next paradigm",
+     "position": "C6 said world models are a necessary component of AGI; K1 claimed to have pioneered the category but conceded that 'representations being actually used' is not yet proven; M8 said video foundation models were first to achieve understanding and imagination.",
+     "members": [
+      "C6",
+      "K1",
+      "M8"
+     ]
+    },
+    {
+     "label": "Not yet validated; overrated",
+     "position": "C1 cited AMI Labs' valuation of about $3.5B running ahead of real-robot validation; C5 cited a decade of his own video-prediction work that did not bring deep understanding; M5 said VISTA does not model environment dynamics.",
+     "members": [
+      "C1",
+      "C5",
+      "M5"
+     ]
+    }
+   ],
+   "evidence_needed": "Third-party, reproducible closed-loop results on long-horizon real-robot tasks that separate 'the representation encodes the property' from 'the policy actually uses it to decide'."
+  },
+  {
+   "id": "X4",
+   "question": "Agent self-improvement (RSI): a real, scarce compounding mechanism now, or compute spend packaged as a narrative?",
+   "why_it_matters": "Decides whether D03 scores a 4 or a 9; the direction with the widest disagreement in this run.",
+   "directions": [
+    "D03",
+    "D04"
+   ],
+   "sides": [
+    {
+     "label": "Still narrative, packaged compute",
+     "position": "C4 asked whether RSI is just a synonym for 'spending more compute'; M1 cited METR and Sakana evidence that self-improvement claims are thinly supported so far.",
+     "members": [
+      "C4",
+      "M1"
+     ]
+    },
+    {
+     "label": "Real, scarce, worth a heavy bet",
+     "position": "K2 cited experience with automated experiment loops and expects ML systems to self-improve by 2027; M3 cited his own Agent Workflow Memory as evidence the mechanism is real.",
+     "members": [
+      "K2",
+      "M2",
+      "M3"
+     ]
+    }
+   ],
+   "evidence_needed": "Compute-normalized, pre-registered multi-round experiments showing sustained real capability gains rather than cherry-picked results."
+  },
+  {
+   "id": "X5",
+   "question": "Physical AI: bet on abstract world models and representations (D08) as the upstream foundation, or on generative action policies (D07) that can be verified directly?",
+   "why_it_matters": "Affects the ranking of D06, D07 and D08, and whether to learn representation-based planning or action-policy design.",
+   "directions": [
+    "D07",
+    "D08"
+   ],
+   "sides": [
+    {
+     "label": "D08 is more fundamental: bet on representations",
+     "position": "C1 said the world model is more fundamental and a policy head is just one implementation; M4 said D08 extends a decade of their own work; M6 said upstream judgment matters more than the action subproblem.",
+     "members": [
+      "C1",
+      "M4",
+      "M6"
+     ]
+    },
+    {
+     "label": "Bet on D07: actions are verifiable",
+     "position": "C2 said the action representation directly decides deployability; M3 said policies that produce actions can be checked right or wrong on control tasks; M7 cited LBM's existing real-robot statistical validation.",
+     "members": [
+      "C2",
+      "M3",
+      "M7"
+     ]
+    }
+   ],
+   "evidence_needed": "Real-robot success rates and sample efficiency for representation-first versus action-first approaches on the same robot tasks."
+  },
+  {
+   "id": "X6",
+   "question": "Can simulation and synthetic data substitute for scarce real robot data, especially for contact, touch and the long tail?",
+   "why_it_matters": "Decides how D09 ranks, and whether simulation experience is best spent on sim2real as a main line.",
+   "directions": [
+    "D09",
+    "D06"
+   ],
+   "sides": [
+    {
+     "label": "Yes, a real lever",
+     "position": "C3 cited saving the company with a simulator when RIVA had six months of cash left, while granting that contact and touch may be overrated; K4 cited MimicGen: a data engine has a far lower entry bar than training a foundation model.",
+     "members": [
+      "C3",
+      "K4"
+     ]
+    },
+    {
+     "label": "No, real data is the core",
+     "position": "C5 said simulated or generated trajectories create no new information; K3 cited the embodiment-gap lesson from Keen to call synthetic data a big mistake; K5 said simulation is an aid to RL, not a road to understanding.",
+     "members": [
+      "C5",
+      "K3",
+      "K5"
+     ]
+    }
+   ],
+   "evidence_needed": "Whether quantified sim2real success rates in non-deterministic physical settings such as contact and touch can be reproduced by third parties."
+  },
+  {
+   "id": "X7",
+   "question": "Does RL and post-training (RLVR) teach new reasoning abilities, or polish and resample abilities the model already has?",
+   "why_it_matters": "Decides how D02 ranks, and whether progress in reasoning can come from method rather than pure scale.",
+   "directions": [
+    "D02"
+   ],
+   "sides": [
+    {
+     "label": "Teaches real capability",
+     "position": "C3 said reasoning is a second exponential and small compute can produce landmark work (s1); C4 cited DeepSeek-R1 as proof of a real small-compute contribution; M2 said RL is a capability lever but needs honest evaluation.",
+     "members": [
+      "C3",
+      "C4",
+      "M2"
+     ]
+    },
+    {
+     "label": "Mainly polishing and resampling",
+     "position": "K4 said RLVR mainly resamples existing abilities and introduces no new reasoning patterns; K6 said it looks more like execution getting cheaper than a new paradigm; M6 said RLVR mainly improves sampling efficiency.",
+     "members": [
+      "K4",
+      "K6",
+      "M6"
+     ]
+    }
+   ],
+   "evidence_needed": "Controlled experiments where the RLVR-trained model solves out-of-distribution tasks that the base model cannot reach even with unlimited sampling."
+  }
+ ],
+ "open_questions": [
+  {
+   "question": "Is the reliability of evaluators (LLM/VLM-as-judge) getting better or worse?",
+   "asked_by": [
+    "K2",
+    "K6",
+    "M4"
+   ],
+   "why": "A shared premise of the evaluation-related judgments at X1 and X3; if it changes, they must be redone."
+  },
+  {
+   "question": "How much of today's AI capex is real demand, and how much is propped up by circular deals?",
+   "asked_by": [
+    "C2"
+   ],
+   "why": "Decides how high the window score for scale-up directions such as D14 and D01 should be."
+  },
+  {
+   "question": "Do the representations of JEPA-style and video world models hold up in non-deterministic physical settings such as contact and touch?",
+   "asked_by": [
+    "C3",
+    "C5",
+    "M6"
+   ],
+   "why": "Decides whether to bet heavily on D06 and D08 now."
+  },
+  {
+   "question": "Once evaluation and continual learning, the two current counterexamples, are commoditized, what is academia's next unabsorbed niche in agents?",
+   "asked_by": [
+    "K5",
+    "M2",
+    "M3"
+   ],
+   "why": "Decides whether a direction chosen now still stands in three to five years."
+  },
+  {
+   "question": "In the cost of reported agent 'self-improvement', how much is methodological progress and how much is brute-force compute trial and error?",
+   "asked_by": [
+    "M2",
+    "M5",
+    "K4"
+   ],
+   "why": "Decides which end of the 4-to-9 range D03 should land in."
+  }
+ ]
+}

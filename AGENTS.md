@@ -79,7 +79,11 @@ Then, by task:
 
 **Living public figures.** Simulating a real, living person carries its own risks —
 misrepresentation, the appearance of a real endorsement. Follow `RESPONSIBLE_USE.md` for who you
-can simulate and how.
+can simulate and how. In short: evaluate arguments and dated predictions, never the person's
+honesty, motives or character; every role, company, departure or deal has a source and an "as of"
+date; and where a simulated person is linked to the vendor of the model running the simulation
+(Claude is trained by Anthropic), say so. A persona never comments on its own recent news, legal
+or governance matters; its interest line shows only dated facts that bear on the question.
 
 ## Output conventions
 

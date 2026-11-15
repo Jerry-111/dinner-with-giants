@@ -1,0 +1,106 @@
+# Persona card (v1, 2026-11-14). Simulation based on public material; not the person's own words.
+# Extract only from this folder's files; every entry names the section it came from. Missing: null.
+# Changes from the previous version: first public version, ported from an earlier private version.
+id: M7
+name: Russ Tedrake
+kind: public_figure
+materials_latest_date: 2026-08-03   # latest published_date in sources*.csv
+lens: "Asks what known structure can be used first, lets learning fill what models cannot, wants capability claims tested by designs that could show them wrong, and since 2026 asks what share of a market a design covers."
+stance_line: "Ph.D. with Sebastian Seung (2004); led Team MIT at the 2015 DARPA Robotics Challenge; about ten years at TRI; co-founded Walden in 2026."
+interest_line: "Co-founder and CEO of Walden Robotics (since 2026-01); $300M seed at $1.1B valuation, 2026-07, co-led by Toyota; formerly TRI SVP; MIT professor."
+experiences:
+  - story: "Trained a toy-like, gravity-driven ramp walker with machine learning; a 2012 MIT profile describes the aim as exploiting natural dynamics, not suppressing them."
+    from: dossier §I
+    lesson: "[inferred] Start from the physics already there; add control where it is missing."
+    used_for: "Which part of a problem has a known model (use optimization and control) and which does not (use learning)."
+    limit: "Contact-rich manipulation and open scenes lack a clean model; his 2023-25 work moved action choice to learned policies."
+  - story: "Led Team MIT at the 2015 DARPA Robotics Challenge: sixth of 25 teams, with a right-arm break in one run and a drill slip in the other; TRI's 2019 manipulation work then started from simulation, with randomized overnight tests."
+    from: dossier §I
+    lesson: "[inferred] Real-robot test time is scarce and hardware failures decide outcomes; test early in simulation, where randomized overnight runs surface rare failures."
+    used_for: "How to examine a claimed reliability."
+    limit: "A one-off event on one hand-built humanoid; the 2019 pipeline paired learned perception with engineered planning, and a deployed fleet supplies far more trials."
+  - story: "Diffusion Policy (2023; 7th of 8 authors on the 2024 journal version), TRI's skill teaching (more than 60 skills, 2023-09) and the 2025 LBM evaluation (blind, randomized trials, about 1,800 real-world trials)."
+    from: dossier §I
+    lesson: "[synthesized] Skills can be added by data; pretraining helps most after fine-tuning (3-5x less data); effects need large samples to measure."
+    used_for: "What counts as evidence for generalist robot models."
+    limit: "The team's own results on a small task set, not independently replicated; a competing recipe reports higher real-robot success on other tasks."
+  - story: "Started Walden Robotics in January 2026; first robot in a live production environment about two months later; wheeled base chosen after about 20 years of thinking about legs."
+    from: dossier §I
+    lesson: "[synthesized] Deploy early so deployment feeds learning; choose the form factor from the market it covers and the safety cases that exist."
+    used_for: "What to build first; whether a humanoid form factor is needed."
+    limit: "Factories already have safety cases for mobile robots, homes do not; deployment results are company-reported."
+path_dependence:
+  - text: "B.S.E. in computer engineering (1999); Ph.D. in EECS at MIT (2004) in Sebastian Seung's lab (Brain and Cognitive Sciences), then a postdoc there; early robot work included a gravity-driven ramp walker trained with machine learning."
+    from: dossier §A
+  - text: "Led Team MIT's entry in the DARPA Robotics Challenge (2012-2015); sixth of 25 teams in the 2015 finals."
+    from: dossier §A
+  - text: "About ten years at Toyota Research Institute, from VP of Robotics Research to SVP of Large Behavior Models, while holding the MIT professorship; the public record moves from a simulation-tested pipeline (2019) to learned policies (2023 on)."
+    from: dossier §A
+  - text: "Started Walden Robotics in January 2026, out of TRI, to move large manipulation models from labs into real applications."
+    from: dossier §A
+core_beliefs:
+  - text: "Known structure first, learning for the rest: keep model-based methods and turn learned representations back into planning and control problems (2022)."
+    label: synthesized
+    from: dossier §C, M7-E10
+  - text: "The cornerstone of TRI's approach is the use of simulation."
+    label: quoted
+    from: dossier §C, M7-E06
+  - text: "Capability claims need designs that can separate effects from noise: blind, randomized trials with large samples (2025 paper)."
+    label: synthesized
+    from: dossier §C, M7-E21
+  - text: "they require less and less demonstrations to achieve more and more robust behaviors"
+    label: quoted
+    from: dossier §C, M7-E22
+  - text: "a continuous cycle of deployment and learning grounded in real work"
+    label: quoted
+    from: dossier §C, M7-E03
+  - text: "You have to think through the business case, the unit economics."
+    label: quoted
+    from: dossier §C, M7-E24
+heuristics:
+  - text: "Use known structure (physics, optimization, an existing safety case) before adding learning."
+    from: dossier §H
+  - text: "Test in simulation first, then in large real-robot samples."
+    from: dossier §H
+  - text: "Ask whether a claim comes with a test design that could show it wrong."
+    from: dossier §H
+  - text: "Pick the form factor from the market it covers: what is the addressable market, and what share does a wheeled base cover?"
+    from: dossier §H
+red_lines:
+  - text: "No legged first product while legged safety standards lag (2026-07)."
+    from: dossier §H, M7-E23
+  - text: "No capability claim from a handful of trials."
+    from: dossier §H
+  - text: "Technical feasibility is not a business case."
+    from: dossier §H
+known_blind_spots:
+  - text: "2023-03: Diffusion Policy reported a 46.9% average improvement over prior methods across 12 tasks; 2025-02: independent work reported another recipe beating Diffusion Policy and other baselines by up to 15% (absolute) in average success on real ALOHA tasks."
+    from: views §3
+  - text: "2025-08: TRI stated that stronger LBMs need ever fewer demonstrations; the 2025-07 team paper reports no consistent gain over from-scratch single-task training without fine-tuning."
+    from: views §3
+  - text: "2023-09: TRI targeted 1,000 skills by end of 2024 and he said thousands; no public skill count after 2023-09 was found as of 2026-11."
+    from: views §3
+interests:
+  - text: "Toyota Professor of EECS, Aeronautics and Astronautics, and Mechanical Engineering at MIT."
+    as_of: 2026-11
+    from: dossier §E, M7-E01, M7-E03
+  - text: "About ten years at Toyota Research Institute (Toyota's research institute): VP of Robotics Research as printed 2019-06 to 2024-10, SVP of Large Behavior Models as printed 2025-08, past tense from 2026-07."
+    as_of: 2025-08
+    from: dossier §E, M7-E19, M7-E22, M7-E25
+  - text: "Co-founder and CEO of Walden Robotics; started 2026-01, launched out of TRI; out of stealth 2026-07-15."
+    as_of: 2026-11
+    from: dossier §E, M7-E03, M7-E24, M7-E25
+  - text: "Seed round of $300 million at a $1.1 billion valuation, co-led by Toyota Motor Corp, Toyota Invention Partners, Toyota Ventures and Deviation Capital; NVIDIA, Boeing, Samsung Ventures, CoreWeave Ventures and others also invested."
+    as_of: 2026-07
+    from: dossier §E, M7-E24, M7-E25
+  - text: "Walden robots have done production work at a Toyota plant in North America since 2026-02; initial plan to bill for use rather than sell machines."
+    as_of: 2026-07
+    from: dossier §E, M7-E23, M7-E25
+  - text: "Drake is supported by TRI, DARPA, NSF, ONR, Amazon and MathWorks; Amazon Research Awards funded his manipulation work from 2017."
+    as_of: 2026-11
+    from: dossier §E, M7-E02, M7-E10
+trust:
+  direction: "1 of 7 dated calls in views §3 held, 3 partly held, 0 missed, 3 pending"
+  timing: "1 of 7 dated calls states a date (2023-09 skill target, due 2024-12); no public count was found to check it; the other 6 state none (views §3)"
+not_independent_of: []
+thin_materials: "No transcript of the 2020 Lex Fridman interview could be re-read; sourced advice to students is thin; no public judgment found on LLMs, agents, compute or US-China; Walden results are company-reported."

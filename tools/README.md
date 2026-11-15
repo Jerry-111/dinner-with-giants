@@ -35,6 +35,7 @@ There is no built-in default run; one of the two must be given.
 | `index [--run PATH]` | Writes `board/A/INDEX.md`: one line per opening post, with its claim and persona display name. |
 | `anon [--seed N] [--run PATH]` | Writes anonymized copies of every `board/A\|B\|C` post to `judge/anon/...`, replacing persona names, aliases and ids with a seeded, shuffled `P01`, `P02`, ... code. Writes the real mapping to `judge/anon_key.json` (never hand this to a blind judge). Default seed is `0`. |
 | `aggregate [--run PATH]` | Writes `summary.json` and `summary.md` (see **Aggregate output** below). |
+| `quotes PATH... [--fetch] [--timeout S]` | Checks every `[quoted]` passage: under 15 words, cites an evidence id that exists in the folder's `sources.csv`, at most one quote per source. With `--fetch`, downloads each cited page and looks for the quote verbatim; anything not found is listed to check by hand. Labels written as code (`` `[quoted]` ``) and near-verbatim paraphrases without quotation marks are skipped. |
 | `scan [--boards] [--personas DIR [DIR...]] [--run PATH]` | Scans persona cards for `rubric.json`'s `forbidden_words` (default: `discount`, `打折`, `折扣`, `减权`). Add `--boards` to also scan the run's posts. See **Persona-folder discovery** below for the default (no `--personas`) behavior. |
 | `lint PATH... [--strict]` | Checks persona-authored Markdown, filenames, JSON and sources CSVs under the given paths (see **Rules checked**). `--strict` turns warnings into errors. Exit 1 on any error. |
 | `compare RUN_A RUN_B OUT.json [--exclude IDS]` | Writes pre-registered cross-run comparison metrics (diversity, persona-baseline gap, score churn, verdict mix, search counts, interjection asymmetry, pairwise win counts) to `OUT.json` and prints the headline numbers. `--exclude` takes a comma-separated list of persona ids to drop from both runs (for a sensitivity check). |
@@ -132,11 +133,12 @@ CJK terms, where a word-boundary regex would not do anything useful).
 `scan` (without `--boards`) and `roster` work on explicit persona folders. When `scan` is run
 without `--personas`, it falls back to the run's own scope: it reads the persona ids out of
 `rubric.json`'s `personas` block (when `--run`/`RUN` is set) and looks for `<ID>_*` folders under
-`workspace/personas/`, `examples/personas/` and `personas/`, in that order, relative to the
+`workspace/personas/` and `personas/`, in that order, relative to the
 current directory. This is a convenience default, not a protocol rule — pass `--personas`
 explicitly whenever the persona folders live somewhere else.
 
 ## No network access
 
-None of these commands talk to the network, a database, or any external service. They only read
-and write files under the paths given on the command line.
+None of these commands talk to the network, a database, or any external service, with one
+exception: `quotes --fetch` downloads the pages cited in `sources.csv` to look for each quote.
+Everything else only reads and writes files under the paths given on the command line.

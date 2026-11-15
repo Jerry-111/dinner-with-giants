@@ -1,0 +1,362 @@
+{
+ "id": "M3",
+ "name": "Graham Neubig",
+ "round": "R3",
+ "notice": "Simulation based on public material; not the person's own words.",
+ "options": {
+  "D01": {
+   "impact": 8,
+   "bottleneck": 5,
+   "academic_edge": 2,
+   "window": 2,
+   "overall": 3,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "Post-training and scaffolding are more likely where the lever is; academia lacks compute for the pre-training-scale track, which is not his bet",
+   "late_modes": "Relying purely on piling up parameters is already too late; it is locked up by the few labs that own base models",
+   "conflict": null
+  },
+  "D02": {
+   "impact": 7,
+   "bottleneck": 6,
+   "academic_edge": 5,
+   "window": 5,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "RLVR mainly improves reliable execution and sampling efficiency and does not teach new reasoning (confirmed at X7); honest evaluation itself is academia's real contribution",
+   "late_modes": "Work that merely finds a prompting trick that raises scores is already too late and is soon absorbed by the next generation of models",
+   "conflict": null
+  },
+  "D03": {
+   "impact": 8,
+   "bottleneck": 7,
+   "academic_edge": 7,
+   "window": 6,
+   "overall": 7,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "His own Agent Workflow Memory shows that training-free, model-agnostic mechanisms are a contribution academia can truly own independently",
+   "late_modes": "RSI that needs large-scale online self-improvement is kept out of academia by the compute threshold; lightweight training-free mechanisms are not yet too late",
+   "conflict": "His own paper and his company's business model both rest on the judgment that lightweight mechanisms work"
+  },
+  "D04": {
+   "impact": 8,
+   "bottleneck": 5,
+   "academic_edge": 4,
+   "window": 3,
+   "overall": 5,
+   "confidence": "high",
+   "basis": "quoted",
+   "one_line": "This is his home turf, but he concedes that complex scaffolding is being absorbed by vendor CLIs and model capability, and only the evaluation and orchestration-management layer holds up",
+   "late_modes": "Tuning prompts and designing orchestration logic is already too late; the front row is almost entirely vendor CLIs",
+   "conflict": "His company All Hands AI is itself a commercial venture in this direction"
+  },
+  "D05": {
+   "impact": 9,
+   "bottleneck": 8,
+   "academic_edge": 9,
+   "window": 7,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "quoted",
+   "one_line": "This is the one craft in his career that has not depreciated, but certifying a capability is not the same as producing it (a lesson from X1), so impact should be more conservative than academic_edge",
+   "late_modes": "A new benchmark built only to land a top-conference paper and abandoned after publication is already too late: one that is not kept in use might as well never have happened",
+   "conflict": "OpenHands's reputation is built on evaluation being credible"
+  },
+  "D06": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "No judgment: it is not something he studies; the methodology of evaluation credibility could in principle transfer, but he has never publicly discussed embodied content",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D07": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "No judgment: diffusion/flow policy and world action models are outside what he has publicly discussed",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D08": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "No judgment: vision and language was one of his early research directions, but there has been no public output in recent years, so no judgment on architectures such as JEPA",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D09": {
+   "impact": null,
+   "bottleneck": 5,
+   "academic_edge": 7,
+   "window": null,
+   "overall": 6,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "No judgment on the content, but X6 showed that honestly diagnosing simulation distortion (the contact/touch inflection point is a continuous function) is a real and maturing research direction",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D10": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "No judgment: no public material shows him ever discussing autonomous driving, and there is no methodological connection point to extend from",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D11": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "No judgment: vision and language and semantic grounding were directions he listed, but there is no evidence of continuation in recent years",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D12": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "No judgment: no record of him discussing diffusion or image/video generation was found in the public material",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D13": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "No judgment: no public material shows him discussing interpretability, alignment or safety",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D14": {
+   "impact": 6,
+   "bottleneck": 5,
+   "academic_edge": 6,
+   "window": 4,
+   "overall": 5,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "Not a specific field he has publicly discussed, but academic low-level tools of the FlashAttention kind being adopted as standard industry equipment is exactly the path he has followed since DyNet",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D15": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "No judgment: no public material shows him discussing AI for Science, and there is no methodological connection point",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D16": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "No judgment: no public material shows him discussing recommender systems or retrieval, which is outside his research scope",
+   "late_modes": null,
+   "conflict": null
+  }
+ },
+ "levers": {
+  "L1": 35,
+  "L2": 20,
+  "L3": 7,
+  "L4": 3,
+  "L5": 8,
+  "L6": 2,
+  "L7": 15,
+  "L8": 10
+ },
+ "lever_reason": "Evaluation credibility decides whether the other levers are really working (but certifying is not producing, which is already reflected in D05's impact dimension); scaffolding does not count as an independent lever and will be flattened by model capability",
+ "questions": {
+  "Q2": {
+   "position": "conditional",
+   "score": 6,
+   "condition": "Narrow domain, not general LLM pre-training; credible third-party evaluation exists in that domain; compute reaches months of continuous scale; open weights with a path to outside adoption; all four must hold to count as high impact"
+  }
+ },
+ "conditions": {
+  "Q2": [
+   "C1",
+   "C2",
+   "C4",
+   "C5"
+  ]
+ },
+ "cruxes": [
+  {
+   "question": "Is evaluation and credibility really the lever most worth betting on, or a consolation prize for those with few resources?",
+   "my_position": "Evaluation decides whether you can see if the other levers really work; but it certifies capability and does not create it, so its industrial impact and a researcher's comparative advantage should be counted separately",
+   "would_change_if": "A direction built purely on compute and data scale, without carefully designed evaluation, crushes a carefully evaluated direction for two years in a row",
+   "directions": [
+    "D05",
+    "D04"
+   ]
+  },
+  {
+   "question": "Is the cleverness of complex multi-agent orchestration really being quickly flattened by model capability?",
+   "my_position": "The design advantage has a shelf life measured in months; the operational criterion the X4 debate converged on is the score gap between self-improvement and random search under fixed compute, which is more precise than the open-ended goal I originally put forward",
+   "would_change_if": "This score gap keeps widening as scale grows, rather than staying in a noise range like 1.9-37x that is too wide to bet on",
+   "directions": [
+    "D04",
+    "D03"
+   ]
+  },
+  {
+   "question": "Is training foundation models in a school lab with GPUs the highest-impact path for students from undergraduate to master's level?",
+   "my_position": "Yes when the domain is narrow, weights are open, credible third-party evaluation exists and compute is at scale, but this is not an unconditional claim that academia can also win the pre-training war",
+   "would_change_if": "An academic team trains a widely adopted foundation model without meeting these conditions, showing the conditions were set too strictly",
+   "directions": [
+    "D01"
+   ]
+  }
+ ],
+ "taste_advice": "Define yourself as someone who can design honest evaluations that cannot be won by leaderboard-chasing, not as someone who does agents or embodied AI",
+ "pairwise": [
+  {
+   "a": "D05",
+   "b": "D08",
+   "pick": "D05",
+   "why": "Evaluation credibility is a precondition; without it you cannot even say whether D08's progress is real"
+  },
+  {
+   "a": "D05",
+   "b": "D06",
+   "pick": "D05",
+   "why": "By the same logic: credible measurement is his moat, and he does not bet on embodied content itself"
+  },
+  {
+   "a": "D06",
+   "b": "D08",
+   "pick": "D06",
+   "why": "The final test of embodied AI is whether tasks succeed on real robots, which is easier to falsify than the potential of representation learning"
+  },
+  {
+   "a": "D07",
+   "b": "D08",
+   "pick": "D07",
+   "why": "D07 has LBM real-robot validation as a touchstone already in use, while D08's equivalent ruler is still in early construction"
+  },
+  {
+   "a": "D09",
+   "b": "D06",
+   "pick": "D09",
+   "why": "Honestly diagnosing the gap between simulation and reality is at least a problem one can enter from the angle of evaluation credibility"
+  },
+  {
+   "a": "D02",
+   "b": "D03",
+   "pick": "D03",
+   "why": "D02 is confirmed as a reliable-execution/efficiency lever, while D03's lightweight mechanisms are a contribution academia can own independently"
+  },
+  {
+   "a": "D11",
+   "b": "D12",
+   "pick": "D11",
+   "why": "Vision and language was a direction he listed; generation has no connection at all"
+  },
+  {
+   "a": "D01",
+   "b": "D05",
+   "pick": "D05",
+   "why": "Evaluation is the academic stronghold he recognizes; academia lacks compute on the pre-training-scale track, and he never bets on that line"
+  },
+  {
+   "a": "D04",
+   "b": "D03",
+   "pick": "D03",
+   "why": "D04's complex scaffolding is being absorbed by vendor CLIs; lightweight mechanisms like D03 have a longer half-life, and he has verified this himself"
+  },
+  {
+   "a": "D13",
+   "b": "D05",
+   "pick": "D05",
+   "why": "Evaluation is the only field he has worked in deeply; alignment and interpretability are outside what he has publicly discussed"
+  },
+  {
+   "a": "D10",
+   "b": "D06",
+   "pick": "D06",
+   "why": "RoboNLP was one of the research directions he listed; autonomous driving never appears in his material"
+  }
+ ],
+ "changes": [
+  {
+   "option": "D05",
+   "from": 9,
+   "to": 8,
+   "because": "A/X1/K3",
+   "argument_restated": "A benchmark or judge only says whether the score is high, not whether the model knows it is right or wrong",
+   "why": "AlexNet's capability came from CNN + GPU + data, not ImageNet; D05's impact should be more conservative than academic_edge"
+  },
+  {
+   "option": "D02",
+   "from": 5,
+   "to": 6,
+   "because": "A/X7/K4",
+   "argument_restated": "At large k the base model's pass@k matches or exceeds RL's, so RLVR did not teach new reasoning",
+   "why": "This diagnostic conclusion was caught by rigorous academic evaluation work (Yue et al.), showing that the evaluation-style academic_edge is more real than I first estimated"
+  },
+  {
+   "option": "D09",
+   "from": 5,
+   "to": 6,
+   "because": "summary/X6 (C3×C5 exchange + overtime Levine×Karpathy)",
+   "argument_restated": "The simulation shortfall in contact and touch scenarios is real, and the inflection point is a continuous function of contact-force calibration precision, not a fixed ceiling",
+   "why": "Quantifying where simulation distorts as a continuous variable is exactly the honest diagnosis I described actually happening, and it is more mature than I thought in R1"
+  }
+ ],
+ "held_despite": [
+  {
+   "post": "B/X4/K2",
+   "why": "AlphaEvolve's narrow-domain compounding is real, but this is exactly the bounded-contribution category that D03 already rewards, so it is not new information"
+  },
+  {
+   "post": "A/X5/M7",
+   "why": "Accepts that LBM real-robot validation supports D07 being easier to test, but this is a methodological signal; I do not have robotics-content expertise to put a specific number on D07"
+  }
+ ],
+ "still_disagree": "Still disagree with M6, M4 and C1: whether a hard-to-replicate upstream capability can by itself justify a bet before the ruler matures; I think not, while they think structural importance does not depend on verification progress",
+ "learned": "K3 pointed out at X1 that certifying is not producing: evaluation lets you know whether a capability exists, which does not mean evaluation creates capability. This means D05's impact and academic_edge should be thought of separately",
+ "searches": []
+}

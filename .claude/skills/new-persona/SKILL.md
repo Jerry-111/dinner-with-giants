@@ -6,7 +6,8 @@ description: Build or update a persona folder (dossier A–I, views, card, sourc
 # New persona
 
 Follow `protocol/02_persona_research.md`. Rules are in `AGENTS.md`; living public figures also
-follow `RESPONSIBLE_USE.md`.
+follow `RESPONSIBLE_USE.md` (no judgments of character; sourced, dated facts; vendor links
+disclosed). Private individuals: only with their explicit permission, and only in `workspace/`.
 
 1. Scaffold: `python3 tools/sim.py new-persona --id <ID> --slug <slug>` (creates
    `workspace/personas/<ID>_<slug>/` from `templates/persona/`).
@@ -17,7 +18,8 @@ follow `RESPONSIBLE_USE.md`.
 4. Labels on every claim; English quotes under 15 words; at most one quote per source. Check famous
    quotes against a primary source before using them.
 5. Write `card.yaml` last, extracting only from the folder's own files.
-6. Validate: `python3 tools/sim.py lint workspace/personas/<ID>_<slug>` and
+6. Validate: `python3 tools/sim.py quotes workspace/personas/<ID>_<slug> --fetch` (fix every error;
+   check by hand any quote it could not find on its source page), `python3 tools/sim.py lint workspace/personas/<ID>_<slug>` and
    `python3 tools/sim.py scan --personas workspace/personas/<ID>_<slug>`.
 
 Reply with the folder path, the materials' latest date and where the material is thin.

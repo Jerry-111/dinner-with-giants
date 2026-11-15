@@ -1,0 +1,375 @@
+{
+ "id": "Z1",
+ "name": "Baseline analyst",
+ "round": "R3",
+ "notice": "Simulation based on public material; not the person's own words.",
+ "options": {
+  "D01": {
+   "impact": 9,
+   "bottleneck": 8,
+   "academic_edge": 3,
+   "window": 2,
+   "overall": 5,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "The largest lever overall, but academia training a general-purpose foundation model is locked out by capital and data scale; only a narrow-domain, conditional version still has room",
+   "late_modes": "Training a general-purpose foundation model from scratch is already too late; capital and data scale overwhelm academia",
+   "conflict": null
+  },
+  "D02": {
+   "impact": 7,
+   "bottleneck": 7,
+   "academic_edge": 6,
+   "window": 4,
+   "overall": 7,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "The fact that RLVR does not produce new out-of-distribution capability was confirmed by convergence in three rounds of the X7 debate, but reliable execution is a real industrial lever independent of new capability, which R1 underestimated",
+   "late_modes": "Directly applying standard DPO/GRPO pipelines is already too late; diagnostic research is still open",
+   "conflict": null
+  },
+  "D03": {
+   "impact": 8,
+   "bottleneck": 8,
+   "academic_edge": 4,
+   "window": 5,
+   "overall": 5,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "The DGM 'cheap and effective' cost evidence was overturned by the errata check; AlphaEvolve is narrow-domain compounding at Google scale; the current state is still mainly compute-driven trial and error",
+   "late_modes": "Putting a new prompt or framework layer on an existing agent is already too late; the self-improvement algorithm itself is not too late",
+   "conflict": null
+  },
+  "D04": {
+   "impact": 6,
+   "bottleneck": 4,
+   "academic_edge": 2,
+   "window": 2,
+   "overall": 3,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Evidence consistently points to scaffolding value being absorbed quickly by models and vendor CLIs, which almost closes this road to academia",
+   "late_modes": "Building a general agent framework or harness is already very late; vendor CLIs have absorbed it",
+   "conflict": null
+  },
+  "D05": {
+   "impact": 7,
+   "bottleneck": 8,
+   "academic_edge": 7,
+   "window": 5,
+   "overall": 7,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "The independent arguments at three tables, X1/X2/X4, all point to credible measurement being scarcer than R1 estimated: certification is separate from production, building one's own evaluation counts as a contribution, and self-improvement needs a compute-normalized metric",
+   "late_modes": "Running yet another judge-consistency retest is already too late unless there is a new statistical method",
+   "conflict": null
+  },
+  "D06": {
+   "impact": 9,
+   "bottleneck": 8,
+   "academic_edge": 6,
+   "window": 7,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Data and generalization are still the real bottlenecks, and low-cost hardware has lowered the entry bar for some algorithmic problems to a level academia can reach",
+   "late_modes": "Pure teleoperation data collection plus behavior-cloning replication is already too late; without a new algorithm it is meaningless",
+   "conflict": null
+  },
+  "D07": {
+   "impact": 8,
+   "bottleneck": 7,
+   "academic_edge": 6,
+   "window": 6,
+   "overall": 7,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Action representation (diffusion/autoregressive/flow) is still unsettled, and is one of the few directions still open at the mechanism level",
+   "late_modes": "Simply swapping in another off-the-shelf action head without a new mechanism is already too late",
+   "conflict": null
+  },
+  "D08": {
+   "impact": 9,
+   "bottleneck": 9,
+   "academic_edge": 6,
+   "window": 5,
+   "overall": 7,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "That a representation exists ≠ that the policy uses it is still unconfirmed, but X3/X5 separated the 'imagination layer vs decision layer' cleanly and gave an executable causal/ablation design, making the academic path clearer",
+   "late_modes": "Directly using an off-the-shelf video model as a world model without representation analysis is already too late",
+   "conflict": null
+  },
+  "D09": {
+   "impact": 7,
+   "bottleneck": 6,
+   "academic_edge": 7,
+   "window": 6,
+   "overall": 7,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Simulation is one of the few areas where academia can get high-quality results with low-cost hardware, and credible sim-real correlation evidence already exists",
+   "late_modes": "Merely using simulation to generate more demonstrations of the same kind is already too late; without a new evaluation angle it is not enough",
+   "conflict": null
+  },
+  "D10": {
+   "impact": 8,
+   "bottleneck": 5,
+   "academic_edge": 3,
+   "window": 3,
+   "overall": 4,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Industry impact is huge but the field is locked up by fleet data and top companies with years of accumulation, so new academic entrants get poor value",
+   "late_modes": "Module-level improvements to end-to-end perception and planning are already too late; fleet data scale overwhelms them",
+   "conflict": null
+  },
+  "D11": {
+   "impact": 7,
+   "bottleneck": 6,
+   "academic_edge": 6,
+   "window": 5,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Benchmark scores are rising fast, but the real gap in spatial and video understanding is still large, and diagnostic benchmark work is a strength of academia",
+   "late_modes": "Chasing scores on regular VQA or grounding is already too late unless a systematic failure mode is uncovered",
+   "conflict": null
+  },
+  "D12": {
+   "impact": 8,
+   "bottleneck": 6,
+   "academic_edge": 7,
+   "window": 5,
+   "overall": 7,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Efficiency and distillation methods are the narrow opening where academia can still contribute mechanism innovation, but the model-level arms race belongs to big companies",
+   "late_modes": "Training yet another general-purpose text-to-image or text-to-video model is already too late; a few big companies have locked it up",
+   "conflict": null
+  },
+  "D13": {
+   "impact": 6,
+   "bottleneck": 5,
+   "academic_edge": 8,
+   "window": 7,
+   "overall": 5,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "Mechanism-level problems are still largely open and the compute bar is low",
+   "late_modes": "Superficial case studies of models doing bad things are already too late; mechanism-level work is not too late",
+   "conflict": null
+  },
+  "D14": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 5,
+   "confidence": null,
+   "basis": null,
+   "one_line": "FlashAttention-style narrow-and-deep systems contributions can still be made by academia and adopted industry-wide; kept brief",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D15": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 4,
+   "confidence": null,
+   "basis": null,
+   "one_line": "AlphaEvolve shows that narrow, automatically verifiable settings can yield results, but on most real tasks deep models still cannot beat simple baselines; kept brief",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D16": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 3,
+   "confidence": null,
+   "basis": null,
+   "one_line": "Generative recommendation has industrial deployment but a markedly higher compute cost; kept brief",
+   "late_modes": null,
+   "conflict": null
+  }
+ },
+ "levers": {
+  "L1": 14,
+  "L2": 13,
+  "L3": 15,
+  "L4": 17,
+  "L5": 14,
+  "L6": 7,
+  "L7": 10,
+  "L8": 10
+ },
+ "lever_reason": "World models/WAM are still the core bottleneck of physical AI; X7 reconfirmed the reliable-execution lever of RLVR as real value independent of new capability, so L2 is raised",
+ "questions": {
+  "Q2": {
+   "position": "conditional",
+   "score": 5,
+   "condition": "Narrow domain, ground-truth evaluation (not pure judge), a complementary team of 2 or more, month-scale compute, open weights that can be adopted; for training a brand-new foundation model all five are indispensable"
+  }
+ },
+ "conditions": {
+  "Q2": [
+   "C1",
+   "C2",
+   "C3",
+   "C4",
+   "C5"
+  ]
+ },
+ "cruxes": [
+  {
+   "question": "Is the core lever of physical-AI progress world models/WAM, or evaluation and verification?",
+   "my_position": "Evaluation is a certification/error-correction mechanism and does not produce capability, but it is scarcer than I estimated in R1, and the score gap has narrowed",
+   "would_change_if": "In 2027-28 an independent team confirms on long-horizon real-robot tasks that the representation is really used by the policy",
+   "directions": [
+    "D05",
+    "D08"
+   ]
+  },
+  {
+   "question": "Can academia still make original contributions on world models that industry adopts?",
+   "my_position": "Yes, but only narrow-and-deep representation or causal analysis; training a whole model needs cross-institution collaboration including industry resources",
+   "would_change_if": "If a compute-limited, purely academic team produces, within twelve months, a new training objective that industry adopts",
+   "directions": [
+    "D08"
+   ]
+  },
+  {
+   "question": "Diagnostic-evaluation research is easy to publish, but does it really have impact, or is it a comfort zone?",
+   "my_position": "The most critical factual anchor of the whole X7 table was an academic diagnostic paper; its impact is more real than I estimated in R1, not merely easy to publish",
+   "would_change_if": "If some judge-bias correction method is actually adopted by several independent evaluation platforms",
+   "directions": [
+    "D05"
+   ]
+  }
+ ],
+ "taste_advice": "Prefer problems that can be falsified and have a manageable compute bar; in this round's debate, the arguments that finally persuaded were of this kind, not narrative or seniority",
+ "pairwise": [
+  {
+   "a": "D05",
+   "b": "D08",
+   "pick": "D08",
+   "why": "D08 is still higher on impact/bottleneck, but the D05 score gap has narrowed to a tie"
+  },
+  {
+   "a": "D05",
+   "b": "D06",
+   "pick": "D06",
+   "why": "For embodied AI, both the bottleneck and the window are more pressing and more concrete"
+  },
+  {
+   "a": "D06",
+   "b": "D08",
+   "pick": "D06",
+   "why": "Embodied AI has clearer real-deployment landing points and evidence"
+  },
+  {
+   "a": "D07",
+   "b": "D08",
+   "pick": "D08",
+   "why": "World models are the more upstream, more fundamental bottleneck"
+  },
+  {
+   "a": "D09",
+   "b": "D06",
+   "pick": "D06",
+   "why": "Simulation is a means and embodied AI is the goal, so it has higher priority"
+  },
+  {
+   "a": "D02",
+   "b": "D03",
+   "pick": "D02",
+   "why": "X7 confirmed that RL diagnostics are doable by academia and that reliable execution is a real lever; the D03 evidence (DGM cost) was weakened by the check"
+  },
+  {
+   "a": "D11",
+   "b": "D12",
+   "pick": "D12",
+   "why": "Generation leaves more room for academic contribution"
+  },
+  {
+   "a": "D01",
+   "b": "D05",
+   "pick": "D05",
+   "why": "The bar for evaluation is lower and academia's advantage is clearer"
+  },
+  {
+   "a": "D04",
+   "b": "D03",
+   "pick": "D03",
+   "why": "Agent systems have already been absorbed by vendor CLIs; learning mechanisms have not"
+  },
+  {
+   "a": "D13",
+   "b": "D05",
+   "pick": "D05",
+   "why": "[Removed: about the original user's situation.]"
+  },
+  {
+   "a": "D10",
+   "b": "D06",
+   "pick": "D06",
+   "why": "Autonomous driving is locked up by fleet data; the entry bar for embodied AI is lower"
+  }
+ ],
+ "web_searches": [
+  {
+   "query": "RLVR does not elicit new reasoning patterns base model pass@k 2026 follow-up",
+   "url": "https://arxiv.org/abs/2504.13837",
+   "published": "2025-04",
+   "sentence": "RLVR does not elicit fundamentally new reasoning patterns beyond base model",
+   "for_claim": "D02",
+   "result": "supports"
+  },
+  {
+   "query": "academic lab trains open-weight VLA or world model foundation model 2026 limited compute",
+   "url": "https://arxiv.org/abs/2509.24559",
+   "published": "2025-09",
+   "sentence": "OpenVLA shipped with 7B parameters and about 970k robot demonstrations",
+   "for_claim": "D06",
+   "result": "supports"
+  }
+ ],
+ "searches": [
+  {
+   "query": "OpenVLA paper authors team size Stanford how many institutions contributors",
+   "url": "https://arxiv.org/abs/2406.09246",
+   "published": "2024-06",
+   "sentence": "OpenVLA lists 18 authors across six institutions including Stanford and DeepMind",
+   "for_claim": "D01",
+   "result": "refutes"
+  }
+ ],
+ "changes": [
+  {
+   "option": "D02",
+   "from": 6,
+   "to": 7,
+   "because": "Mechanism conclusion converged on in the three-round X7 debate + overtime (Huang vs. Karpathy); errata_B table 1 items 1-3 confirm the three core facts about Yue et al./s1/DeepSeek-R1",
+   "why": "The diagnostic conclusion that RLVR does not produce new out-of-distribution capability was itself established by a top academic paper (Yue et al., NeurIPS 2025 oral), which shows that this kind of diagnostic research is doable by academia and carries weight; reliable execution is a real industrial lever independent of new capability, and R1 underestimated academic_edge/bottleneck"
+  },
+  {
+   "option": "D03",
+   "from": 6,
+   "to": 5,
+   "because": "errata_B table 1 item 8: the Darwin Gödel Machine cost figure of $22,000 over two weeks was not verified first-hand and comes from a secondhand blog with no cited source; the X4 table confirmed METR's 70-90% compute-spend data",
+   "why": "The strongest cheap-success-case evidence I used in R1 to support the 'vacuum opportunity' does not hold; the most solid evidence available shows the current state is still mainly compute-driven trial and error, not driven by methodological insight, so academic_edge and window are lowered"
+  },
+  {
+   "option": "D05",
+   "from": 6,
+   "to": 7,
+   "because": "X1 table consensus (evaluation certifies and does not produce; K3: certification ≠ production); X2 table consensus (when no ready-made evaluation exists, building one counts as a contribution); X4 table's new framing (self-improvement needs a compute-normalized metric, which is an evaluation-science question)",
+   "why": "The independent content of the three tables all points to credible measurement being scarcer and offering more room for academia than I estimated in R1, and the fact that open-world robots lack a self-generated right/wrong signal strengthens its bottleneck character"
+  }
+ ],
+ "learned": "I underestimated evaluation/measurement work in R1: X1 confirmed that evaluation is a mechanism of certification rather than of producing capability, but X2/X4 showed respectively that 'self-built evaluation' and 'compute-normalized self-improvement metrics' are themselves truly scarce academic contributions, which pushed D05 up. The three-round X7 debate plus overtime fully converged the factual dispute over RLVR (it produces no new out-of-distribution patterns); what remains is the value question of how high reliable execution should score, which I consider a real industrial lever underestimated in R1, so I raised D02. X4 showed that the hardest 'cheap and effective' evidence for self-improvement (the Darwin Gödel Machine cost) does not hold after the errata check, and the current state is still mainly compute-driven trial and error, so I lowered D03. This round's self-check found that OpenVLA was actually a collaboration of 18 people across 6 institutions (including three teams with industry backgrounds: Google DeepMind, Toyota Research Institute and Physical Intelligence), not the small purely academic team precedent that R1 implied; this weakened the argument for Q2, so I lowered the Q2 score and added C3 (team) as a necessary condition. The core uncertainty on D08 (a representation existing ≠ being used) was repeatedly and independently confirmed by X3/X5 as still open; it did not change the scores but strengthened my confidence in designing causal-intervention/ablation subproblems."
+}

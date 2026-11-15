@@ -1,25 +1,21 @@
 # Examples
 
-Everything here is safe to publish: the personas are historical figures whose own writings are in
-the public domain, and the user is fictional.
+Two complete runs and one fictional user. Every persona output in them is a simulation based on
+public material, not the person's own words.
 
 | Path | What it shows |
 |---|---|
-| [`personas/`](personas/) | Six persona folders built from primary sources: dossier A–I, domain views with a prediction record, card, sources table. |
-| [`context/`](context/) | A filled-in user context for the fictional user Alex: profile, preferences, feedback log. |
-| [`runs/2026-11-14_alex-next-step/`](runs/2026-11-14_alex-next-step/) | A complete panel run: scope, pre-registered rubric, evidence brief and errata, R1 scores, crux map and seating, three debate rounds at three tables, scribe notes, R3 re-scores, judges, audit, aggregated summary, report, review and a one-page reader version. |
+| [`runs/2026-10-28_ai-research-directions/`](runs/2026-10-28_ai-research-directions/) | A full 20-persona run, adapted from a real run: 16 AI research directions, seven debate tables with overtime, three fact-checks, judges, private re-scores, two no-persona baselines. Translated from Chinese; the original user's personal details removed. |
+| [`runs/2026-11-14_alex-next-step/`](runs/2026-11-14_alex-next-step/) | A complete panel run with six historical figures on a fictional student's career decision: every file from the frozen rubric to the reviewer's findings. |
+| [`context/`](context/) | The fictional user Alex's context: profile, preferences, feedback log. A model for your own `workspace/context/`. |
 
-## Why historical figures
+The personas both runs use are in the library at [`../personas/`](../personas/).
 
-They show the whole method — sources, the range actually read, labeled claims, experience
-arguments — without putting words in a living person's mouth. Their eras are far from 2026, so
-every experience argument has to say where its analogy may break. That discipline is the point.
+## Reading order for a run
 
-## Reading order for the run
-
-1. `scope.md` and `rubric.json` — the question and the frozen rules.
-2. `reader/` — the one-page version.
-3. `report.md` — the full report, with post IDs you can follow.
-4. `board/` — the debate itself. Start with `board/summary_full/`.
-5. `summary.md` — the numbers, including the persona − baseline gap.
-6. `RUN_METADATA.md` — timeline, what was skipped, limitations.
+1. `reader/page.md`: the one-page version.
+2. `report.md`: the full report, with post IDs you can follow.
+3. `board/`: the debate itself. `board/summary/` has the scribe's notes per table.
+4. `summary.md`: the numbers, including the persona − baseline gap.
+5. `scope.md` and `rubric.json`: the question and the frozen rules.
+6. `RUN_METADATA.md`: timeline, what was skipped, slips, limitations.

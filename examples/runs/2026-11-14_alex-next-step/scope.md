@@ -48,12 +48,12 @@ where the analogy may break for a 2026 decision.
 
 | ID | Persona | Folder |
 |---|---|---|
-| H1 | Benjamin Franklin | `examples/personas/H1_franklin/` |
-| H2 | Charles Darwin | `examples/personas/H2_darwin/` |
-| H3 | Michael Faraday | `examples/personas/H3_faraday/` |
-| H4 | Marie Curie | `examples/personas/H4_curie/` |
-| H5 | Ada Lovelace | `examples/personas/H5_lovelace/` |
-| H6 | Su Shi | `examples/personas/H6_su_shi/` |
+| H1 | Benjamin Franklin | `personas/H1_franklin/` |
+| H2 | Charles Darwin | `personas/H2_darwin/` |
+| H3 | Michael Faraday | `personas/H3_faraday/` |
+| H4 | Marie Curie | `personas/H4_curie/` |
+| H5 | Ada Lovelace | `personas/H5_lovelace/` |
+| H6 | Su Shi | `personas/H6_su_shi/` |
 | Z1 | Baseline analyst (no persona) | — |
 
 ## The user's context (only this)

@@ -1,0 +1,336 @@
+{
+ "id": "Z2",
+ "name": "Baseline analyst",
+ "round": "R1",
+ "notice": "Simulation based on public material; not the person's own words.",
+ "options": {
+  "D01": {
+   "impact": 6,
+   "bottleneck": 5,
+   "academic_edge": 3,
+   "window": 3,
+   "overall": 5,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Frontier pre-training is locked up by industry compute (industry accounts for over 90% of notable models); academia's marginal contribution lies in methodology/data analysis, not in scale itself.",
+   "late_modes": "Piling on parameter scale is already locked up by industry compute and hard for an individual to enter.",
+   "conflict": null
+  },
+  "D02": {
+   "impact": 8,
+   "bottleneck": 7,
+   "academic_edge": 5,
+   "window": 5,
+   "overall": 7,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Whether RLVR merely reweights the existing sampling distribution rather than teaching new capability is still an open question, and academia can run clean experiments with small models.",
+   "late_modes": "Pure engineering work that replicates vendors' RLHF pipelines and tunes parameters already has very low marginal returns.",
+   "conflict": null
+  },
+  "D03": {
+   "impact": 7,
+   "bottleneck": 6,
+   "academic_edge": 6,
+   "window": 5,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Treat continual learning/credit assignment and RSI separately: the former is a solid academic problem, while the existing evidence on the latter all points to it being far off.",
+   "late_modes": "Conceptual self-improving agent demos are already too late; without rigorous ablation they struggle to get attention.",
+   "conflict": null
+  },
+  "D04": {
+   "impact": 7,
+   "bottleneck": 4,
+   "academic_edge": 3,
+   "window": 2,
+   "overall": 3,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "The scaffolding layer is being absorbed by the models themselves (the top 9 on Terminal-Bench are all vendors' general CLI agents), and the space for academia-specific contributions is narrowing.",
+   "late_modes": "Designing a new agent harness/scaffolding is already too late; it is being absorbed by the models themselves.",
+   "conflict": null
+  },
+  "D05": {
+   "impact": 6,
+   "bottleneck": 7,
+   "academic_edge": 8,
+   "window": 6,
+   "overall": 7,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Evaluation does not directly produce capability, but it decides the credibility of other directions; statistical rigor and the trust boundary of judges are among academia's few real advantages (Arena itself began in academia).",
+   "late_modes": "Building yet another static leaderboard is already too late; it is easy to game and hard to keep credible.",
+   "conflict": null
+  },
+  "D06": {
+   "impact": 9,
+   "bottleneck": 8,
+   "academic_edge": 6,
+   "window": 6,
+   "overall": 8,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "The gap in touch/force data and failures of cross-embodiment transfer are real unsolved problems, and low-cost hardware (SO-101 and others) has pushed the bar for academic experiments low enough.",
+   "late_modes": "Fine-tuning an off-the-shelf VLA for a new-task demo is already too late; research on reliability/generalization mechanisms is still open.",
+   "conflict": null
+  },
+  "D07": {
+   "impact": 8,
+   "bottleneck": 7,
+   "academic_edge": 6,
+   "window": 5,
+   "overall": 7,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Action representation (diffusion head vs autoregressive/parallel decoding) has solid empirical comparisons (OpenVLA-OFT, FAST) and does not depend only on marketing coinages (WAM).",
+   "late_modes": "Repackaging existing methods under the new WAM label is already too late and has no real novelty.",
+   "conflict": null
+  },
+  "D08": {
+   "impact": 9,
+   "bottleneck": 7,
+   "academic_edge": 5,
+   "window": 5,
+   "overall": 7,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "The biggest paradigm bet, but 'video generation = world model' itself has not been proven (it fails on out-of-distribution physics); frontier work is quickly being pulled away by private capital/startups.",
+   "late_modes": "Simply building more realistic video-generation demos is already too late; too many teams are doing it.",
+   "conflict": null
+  },
+  "D09": {
+   "impact": 8,
+   "bottleneck": 7,
+   "academic_edge": 7,
+   "window": 6,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Simulation is one of the few scalable ways for robot learning to escape the cost of collecting real data, and SIMPLER shows that academia can make real methodological impact.",
+   "late_modes": "Building a new simulator platform has declining added value; there are already many platforms.",
+   "conflict": null
+  },
+  "D10": {
+   "impact": 8,
+   "bottleneck": 5,
+   "academic_edge": 3,
+   "window": 3,
+   "overall": 5,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "The real levers (fleet long-tail data, safety validation) are monopolized by a few companies, and the success rate on the simulation benchmark academia can reach (CARLA 2.0) is only about 6%.",
+   "late_modes": "Paper-style end-to-end planning work without fleet data already has very low marginal value.",
+   "conflict": null
+  },
+  "D11": {
+   "impact": 8,
+   "bottleneck": 6,
+   "academic_edge": 6,
+   "window": 5,
+   "overall": 6,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "BLINK/VSI-Bench show the spatial-reasoning gap is still huge, and diagnostic benchmarks are themselves the contribution form academia is best at and that is adopted most.",
+   "late_modes": "The edge in training yet another VLM to chase existing leaderboards is already thin.",
+   "conflict": null
+  },
+  "D12": {
+   "impact": 8,
+   "bottleneck": 6,
+   "academic_edge": 6,
+   "window": 5,
+   "overall": 7,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Unified understanding-and-generation models are generally worse than specialized ones (RealUnify, UniG2U-Bench), and diagnosing interference mechanisms has more academic leverage than building another unified model.",
+   "late_modes": "Simply chasing image/video generation quality leaderboards is already too late; top vendors dominate.",
+   "conflict": null
+  },
+  "D13": {
+   "impact": 8,
+   "bottleneck": 5,
+   "academic_edge": 6,
+   "window": 6,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Interpretability methodology is still in heavy flux (DeepMind itself lowered the priority of SAEs) and suits rigorous comparison by academia.",
+   "late_modes": "Building yet another SAE variant is a route whose evidence is already relatively weak.",
+   "conflict": null
+  },
+  "D14": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 6,
+   "confidence": null,
+   "basis": null,
+   "one_line": "FlashAttention shows that academia can build systems-algorithm co-design components that are really adopted, but it requires a strong systems background.",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D15": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 4,
+   "confidence": null,
+   "basis": null,
+   "one_line": "AlphaEvolve shows the value is real, but in most applications (such as single-cell perturbation prediction) deep models have not consistently beaten simple baselines.",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D16": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 3,
+   "confidence": null,
+   "basis": null,
+   "one_line": "Generative methods have indeed been deployed in industrial recommendation (Tencent TGR), but the compute cost is high (Meituan case: 10-100x).",
+   "late_modes": null,
+   "conflict": null
+  }
+ },
+ "levers": {
+  "L1": 10,
+  "L2": 12,
+  "L3": 16,
+  "L4": 14,
+  "L5": 20,
+  "L6": 8,
+  "L7": 10,
+  "L8": 10
+ },
+ "lever_reason": "The hard constraints of physical AI are real data and transferable simulation, not the algorithms themselves; evaluation is a quality-inspection layer, not a production function; world models have great potential but have not been validated in a closed loop, so they get medium-high weight, not the highest.",
+ "questions": {
+  "Q2": {
+   "position": "conditional",
+   "score": 7,
+   "condition": "Narrow-domain model + compute at scale (such as 64 H100s for months) + a team of 2-4 + open weights that can be adopted externally; otherwise it is better to dig deep into a specific subproblem."
+  }
+ },
+ "conditions": {
+  "Q2": [
+   "C1",
+   "C2",
+   "C3",
+   "C4",
+   "C5"
+  ]
+ },
+ "cruxes": [
+  {
+   "question": "Is evaluation science the most reliable lever for the next 5-10 years, or merely quality inspection for other levers rather than a driving force?",
+   "my_position": "Evaluation is a necessary condition for trust, not a production function of capability; real data + simulation + RL are the direct driving forces, and evaluation decides whether their output can be believed.",
+   "would_change_if": "If there is evidence that a better evaluation method directly led to a model's capability improvement, rather than only helping us choose models better, I would raise the weight.",
+   "directions": [
+    "D05",
+    "D02"
+   ]
+  },
+  {
+   "question": "Are the representations learned by video/JEPA-type predictive models already really usable by policies, or can they merely be read out but not used?",
+   "my_position": "Existing evidence (V-JEPA2-AC's planning horizon is only 1 step; POKEWORLD separates read-out from use) says it is not yet usable, and closed-loop causal evidence is needed.",
+   "would_change_if": "If there were long-horizon closed-loop control work on real robots with strict ablation showing that the policy truly depends on the representation rather than a shortcut, I would consider it solved.",
+   "directions": [
+    "D08",
+    "D07"
+   ]
+  },
+  {
+   "question": "Training a narrow-domain foundation model at academic compute scale (such as a hundred-card H100 cluster): a real opportunity, or a structural lag, destined to be matched by industry?",
+   "my_position": "When narrow domain + open weights + a path to outside adoption are all present, it is a real opportunity (precedents: Olmo3, FlashAttention, DPO); without all three it is just amusing oneself.",
+   "would_change_if": "If, over the next two years, cases of outside adoption of narrow-domain academic models (VLA/world models) keep growing rather than being quickly replaced by industry versions, I would be more sure it is a real opportunity.",
+   "directions": [
+    "D01",
+    "D06",
+    "D08"
+   ]
+  }
+ ],
+ "taste_advice": "First work one concrete, causally verifiable small problem deeply and thoroughly; do not rush to chase the label of a big narrative (world models/agents/scaling) itself.",
+ "pairwise": [
+  {
+   "a": "D05",
+   "b": "D08",
+   "pick": "D08",
+   "why": "If world models hold up, they are the bigger paradigm bet; evaluation is a necessary quality-inspection layer and does not directly produce new capability."
+  },
+  {
+   "a": "D05",
+   "b": "D06",
+   "pick": "D06",
+   "why": "Embodied AI has clearer, verifiable real bottlenecks, and evaluation remains a supporting role."
+  },
+  {
+   "a": "D06",
+   "b": "D08",
+   "pick": "D06",
+   "why": "D06's bottleneck is more concrete and verifiable (touch/cross-embodiment transfer failures), while the core assumption of D08 is still disputed on validity."
+  },
+  {
+   "a": "D07",
+   "b": "D08",
+   "pick": "D07",
+   "why": "D07 already has solid real-robot comparison data (OpenVLA-OFT and others), while the core assumption of D08 is still disputed."
+  },
+  {
+   "a": "D09",
+   "b": "D06",
+   "pick": "D06",
+   "why": "Simulation is a key method, but core difficulties such as reliability/touch/generalization cannot be solved by simulation alone."
+  },
+  {
+   "a": "D02",
+   "b": "D03",
+   "pick": "D02",
+   "why": "RLVR already has a solid evidence chain for capability improvement; the current evidence on RSI/continual learning shows limited effect."
+  },
+  {
+   "a": "D11",
+   "b": "D12",
+   "pick": "D12",
+   "why": "The generative direction has open problems (few-step generation, unified modeling) that are more valuable now."
+  },
+  {
+   "a": "D01",
+   "b": "D05",
+   "pick": "D05",
+   "why": "Frontier pre-training scale is locked up by industry compute, while in evaluation methodology academia still has a scarce advantage that can be adopted."
+  },
+  {
+   "a": "D04",
+   "b": "D03",
+   "pick": "D03",
+   "why": "The scaffolding layer is being absorbed by models and its leverage is falling; continual learning/credit assignment is still an open scientific problem."
+  },
+  {
+   "a": "D13",
+   "b": "D05",
+   "pick": "D05",
+   "why": "Evaluation-methodology problems are more concrete and testable; interpretability tools themselves are still in heavy flux with no settled conclusion."
+  },
+  {
+   "a": "D10",
+   "b": "D06",
+   "pick": "D06",
+   "why": "The real levers of autonomous driving (fleet data/safety validation) are monopolized by a few companies; embodied AI has more real problems within reach."
+  }
+ ],
+ "web_searches": [
+  {
+   "query": "academic lab open-source VLA robot foundation model 2026 adopted industry",
+   "url": "https://arxiv.org/abs/2506.01844",
+   "published": "2025-06-02",
+   "sentence": "existing VLAs are typically massive often with billions of parameters leading to high training costs",
+   "for_claim": "D06",
+   "result": "supports"
+  }
+ ]
+}

@@ -1,0 +1,140 @@
+{
+ "tables": [
+  {
+   "id": "X1",
+   "crux": "X1",
+   "members": [
+    "C2",
+    "K3",
+    "K5",
+    "K6",
+    "M1",
+    "M7"
+   ],
+   "why": {
+    "C2": "Evaluation is the safest bet: trust is the underlying mechanism",
+    "K6": "Evaluation is the source: settle the standard before competing",
+    "M1": "The s1 lesson: methodology is the lever",
+    "M7": "Gave L1 25 points: evaluation is the upstream lever",
+    "K3": "Gave L1 only 8 points: values planning with learned models",
+    "K5": "Put 35 points on L4: world models are the bet"
+   }
+  },
+  {
+   "id": "X2",
+   "crux": "X2",
+   "members": [
+    "C6",
+    "K1",
+    "K2",
+    "M4",
+    "M5",
+    "M8"
+   ],
+   "why": {
+    "C6": "Chose games because evaluation was clean; no compute bar",
+    "M4": "Web-SSL controlled comparison needed no large compute",
+    "M5": "Deliberately did not select the compute condition; doubtful",
+    "M8": "Diagnostic work does not need piles of compute",
+    "K1": "The IIT programming club: nobody was doing it, so I did",
+    "K2": "MapReduce came from a real need"
+   }
+  },
+  {
+   "id": "X3",
+   "crux": "X3",
+   "members": [
+    "C1",
+    "C5",
+    "C6",
+    "K1",
+    "M5",
+    "M8"
+   ],
+   "why": {
+    "C6": "World models are a necessary component of AGI",
+    "K1": "Claims to have pioneered the world-model category",
+    "M8": "Video foundation models were first to achieve imagination",
+    "C1": "AMI's valuation runs ahead of real-robot validation",
+    "C5": "A decade of video prediction did not bring understanding",
+    "M5": "VISTA does not model environment dynamics"
+   }
+  },
+  {
+   "id": "X4",
+   "crux": "X4",
+   "members": [
+    "C4",
+    "K2",
+    "M1",
+    "M2",
+    "M3"
+   ],
+   "why": {
+    "C4": "Is RSI just a synonym for spending compute?",
+    "M1": "METR evidence is thin; improvement is doubtful",
+    "K2": "Expects systems to self-improve by 2027",
+    "M2": "Long-horizon credit assignment is academia's edge",
+    "M3": "Their own work shows the mechanism is real"
+   }
+  },
+  {
+   "id": "X5",
+   "crux": "X5",
+   "members": [
+    "C1",
+    "C2",
+    "M3",
+    "M4",
+    "M6",
+    "M7"
+   ],
+   "why": {
+    "C1": "Representations are more fundamental; the policy head is replaceable",
+    "M4": "D08 extends a decade of their own work",
+    "M6": "Upstream judgment matters more than the action subproblem",
+    "C2": "The action representation decides deployability",
+    "M3": "Policies produce actions; control can be checked right or wrong",
+    "M7": "LBM already has real-robot statistical validation"
+   }
+  },
+  {
+   "id": "X6",
+   "crux": "X6",
+   "members": [
+    "C3",
+    "C5",
+    "K3",
+    "K4",
+    "K5"
+   ],
+   "why": {
+    "C3": "Experience of saving the company with a simulator during RIVA",
+    "K4": "MimicGen: a data engine has a low entry bar",
+    "C5": "Simulation creates no new information; it can only assist",
+    "K3": "Keen's embodiment gap: the gap is real",
+    "K5": "Simulation aids RL; it is not a road to understanding"
+   }
+  },
+  {
+   "id": "X7",
+   "crux": "X7",
+   "members": [
+    "C3",
+    "C4",
+    "K4",
+    "K6",
+    "M2",
+    "M6"
+   ],
+   "why": {
+    "C3": "Reasoning is a second exponential; RL is the biggest lever",
+    "C4": "R1 and s1 show real small-compute contributions",
+    "M2": "RL is a capability lever, but needs honest evaluation",
+    "K4": "RLVR resamples; not new reasoning",
+    "K6": "Execution got cheaper; not a new paradigm",
+    "M6": "RLVR improves sampling efficiency, not new reasoning"
+   }
+  }
+ ]
+}

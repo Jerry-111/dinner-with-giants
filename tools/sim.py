@@ -16,6 +16,7 @@ Commands: new-run, new-persona, roster, check, tables, index, anon,
 aggregate, scan, lint, compare, blind, blind-report, privacy-scan.
 """
 import argparse
+import csv
 import datetime
 import glob
 import json
@@ -1039,7 +1040,7 @@ def discover_persona_dirs(run, explicit_dirs):
         rubric, err = try_load_json(p(run, "rubric.json"))
         if not err:
             ids = list(rubric_personas(rubric).keys())
-    roots = [d for d in ("workspace/personas", "examples/personas", "personas") if os.path.isdir(d)]
+    roots = [d for d in ("workspace/personas", "personas") if os.path.isdir(d)]
     found = []
     for root in roots:
         if ids:
@@ -1180,6 +1181,144 @@ def cmd_lint(args):
         errors += warnings
         warnings = 0
     print(f"lint: {errors} error(s), {warnings} warning(s)")
+    return 1 if errors else 0
+
+
+# ---------------------------------------------------------------------------
+# quotes
+# ---------------------------------------------------------------------------
+
+QUOTE_LABEL_RE = re.compile(r"\[(?:quoted|原话)([^\]]*)\]")
+EVIDENCE_ID_RE = re.compile(r"\b[A-Z][A-Za-z0-9]*-E\d+\b")
+QUOTE_SPAN_RE = re.compile(r'["“]([^"”\n]{1,400})["”]')
+QUOTE_MAX_WORDS = 15
+
+
+def _norm_for_match(s):
+    s = s.lower().replace("’", "'").replace("‘", "'").replace("“", '"').replace("”", '"')
+    s = s.replace("—", "-").replace("–", "-")
+    s = re.sub(r"[^\w' -]+", " ", s)
+    return re.sub(r"\s+", " ", s).strip()
+
+
+def same_quote(a, b):
+    """True if one quote is the other, a shortened form of it, or an excerpt with '...' gaps."""
+    short, long_ = sorted((a, b), key=len)
+    long_n = _norm_for_match(long_)
+    parts = [_norm_for_match(x) for x in re.split(r"\.\.\.|…", short)]
+    return all(part in long_n for part in parts if part)
+
+
+def find_quotes(text):
+    """Return (quote, evidence_ids) for each [quoted …] label.
+
+    The quote is the quotation that ends right before the label ("…" [quoted, P1-E03]). A label
+    with no quotation directly before it marks a near-verbatim paraphrase: quote is None.
+    Labels written as code (`[quoted]`, as in explanations of the labels) are skipped.
+    """
+    prose = re.sub(r"```.*?```", "", text, flags=re.S)
+    found = []
+    for para in re.split(r"\n\s*\n", prose):
+        flat = re.sub(r"\s+", " ", para)
+        for m in QUOTE_LABEL_RE.finditer(flat):
+            ids = EVIDENCE_ID_RE.findall(m.group(1))
+            if flat[max(0, m.start() - 1):m.start()] == "`" and not ids:
+                continue  # an explanation of the label, not a citation
+            before = flat[:m.start()].rstrip(" `,;:(")
+            quote = None
+            if before.endswith(('"', "”")):
+                opener = max(before.rfind('"', 0, len(before) - 1), before.rfind("“", 0, len(before) - 1))
+                if opener >= 0 and len(before) - opener <= 402:
+                    quote = before[opener + 1:-1].strip()
+            found.append((quote, ids))
+    return found
+
+
+def _sources_by_id(folder):
+    path = os.path.join(folder, "sources.csv")
+    if not os.path.isfile(path):
+        return None
+    with open(path, encoding="utf-8", newline="") as fh:
+        return {row.get("evidence_id", ""): row for row in csv.DictReader(fh)}
+
+
+def _fetch_text(url, timeout, cache):
+    if url in cache:
+        return cache[url]
+    import html as _html
+    import urllib.request
+    import ssl
+    try:
+        import certifi  # optional: some Python installs ship without a CA bundle
+        ctx = ssl.create_default_context(cafile=certifi.where())
+    except ImportError:
+        ctx = ssl.create_default_context()
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "dinner-with-giants quote check"})
+        with urllib.request.urlopen(req, timeout=timeout, context=ctx) as resp:
+            raw = resp.read(4_000_000).decode("utf-8", errors="replace")
+        raw = re.sub(r"(?is)<(script|style)[^>]*>.*?</\1>", " ", raw)
+        cache[url] = _norm_for_match(_html.unescape(re.sub(r"<[^>]+>", " ", raw)))
+    except Exception as e:  # network errors are reported, never fatal
+        cache[url] = e
+    return cache[url]
+
+
+def cmd_quotes(args):
+    files, errors = _collect_lint_files(args.paths)
+    warnings, checked, verbatim, unverified = 0, 0, 0, 0
+    cache = {}
+    seen_by_folder = {}
+    for f in files:
+        if not f.endswith((".md", ".yaml", ".yml")):
+            continue
+        try:
+            text = read_text(f)
+        except (OSError, UnicodeDecodeError):
+            continue
+        folder = os.path.dirname(f)
+        sources = _sources_by_id(folder)
+        seen = seen_by_folder.setdefault(folder, {})  # one quote per source across the whole folder
+        for quote, ids in find_quotes(text):
+            if quote is None:
+                continue  # near-verbatim paraphrase: nothing to measure or match
+            checked += 1
+            if quote.isascii() and len(quote.split()) >= QUOTE_MAX_WORDS:
+                print(f"{f}: ERROR quote of {len(quote.split())} words (limit: under {QUOTE_MAX_WORDS}): \"{quote[:60]}…\"")
+                errors += 1
+            if not ids:
+                print(f"{f}: WARNING [quoted] without an evidence id: \"{quote[:60]}\"")
+                warnings += 1
+                continue
+            if sources is None:
+                continue
+            for eid in ids:
+                if eid not in sources:
+                    print(f"{f}: ERROR {eid} is not in {os.path.join(folder, 'sources.csv')}")
+                    errors += 1
+                    continue
+                other = seen.setdefault(eid, quote)
+                if not same_quote(other, quote):
+                    print(f"{f}: WARNING two different quotes cite {eid} (one quote per source)")
+                    warnings += 1
+                if args.fetch:
+                    url = (sources[eid].get("url") or "").strip()
+                    if not url.startswith(("http://", "https://")):
+                        continue
+                    page = _fetch_text(url, args.timeout, cache)
+                    if isinstance(page, Exception):
+                        hint = " (SSL certificates missing: pip install certifi)" if "CERTIFICATE" in str(page) else ""
+                        print(f"{f}: INFO {eid} could not be fetched ({type(page).__name__}{hint}); check by hand")
+                        unverified += 1
+                    elif _norm_for_match(quote) in page:
+                        verbatim += 1
+                    else:
+                        print(f"{f}: INFO {eid}: quote not found verbatim on the page; check by hand: \"{quote[:60]}\"")
+                        unverified += 1
+    line = f"quotes: {checked} checked, {errors} error(s), {warnings} warning(s)"
+    if args.fetch:
+        line += f"; verbatim on source page: {verbatim}, to check by hand: {unverified}"
+    print(line)
     return 1 if errors else 0
 
 
@@ -1606,6 +1745,13 @@ def build_parser():
     sp.add_argument("paths", nargs="+", metavar="PATH")
     sp.add_argument("--strict", action="store_true", help="Treat warnings as errors.")
     sp.set_defaults(func=cmd_lint)
+
+    sp = sub.add_parser("quotes", help="Check [quoted] passages: length, evidence ids, one quote per source; "
+                                          "--fetch also looks for each quote on its source page.")
+    sp.add_argument("paths", nargs="+", metavar="PATH")
+    sp.add_argument("--fetch", action="store_true", help="Fetch each cited URL and look for the quote verbatim.")
+    sp.add_argument("--timeout", type=float, default=15.0, help="Seconds per fetch (default 15).")
+    sp.set_defaults(func=cmd_quotes)
 
     sp = sub.add_parser("compare", help="Pre-registered cross-run comparison metrics.")
     sp.add_argument("run_a", metavar="RUN_A")

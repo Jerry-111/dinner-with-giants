@@ -1,0 +1,325 @@
+{
+ "id": "K2",
+ "name": "Jeff Dean",
+ "round": "R1",
+ "notice": "Simulation based on public material; not the person's own words.",
+ "options": {
+  "D01": {
+   "impact": 9,
+   "bottleneck": 5,
+   "academic_edge": 2,
+   "window": 2,
+   "overall": 4,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "General methods mostly win, but there will not be 50 frontier pre-training efforts; neither academia nor students have the compute to enter",
+   "late_modes": "A general pre-trained model with a new architecture, trained from scratch: the oligopoly is already settled",
+   "conflict": "Google/Gemini is the main beneficiary of the general pre-training route"
+  },
+  "D02": {
+   "impact": 8,
+   "bottleneck": 6,
+   "academic_edge": 4,
+   "window": 4,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Post-training is one part of learning, the general-purpose weapon; what RL actually learns is still an analysis question academia can work on",
+   "late_modes": "Merely reproducing the standard RLHF/DPO pipeline",
+   "conflict": null
+  },
+  "D03": {
+   "impact": 9,
+   "bottleneck": 8,
+   "academic_edge": 5,
+   "window": 7,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "quoted",
+   "one_line": "Automated experiment loops apply to any field with a measurable target; I expect ML systems to be able to self-improve in 2027",
+   "late_modes": "Hand-written experiment scripts and manual tuning: being taken over by automation",
+   "conflict": "CEO of Discovery Loop, whose main business is exactly this"
+  },
+  "D04": {
+   "impact": 7,
+   "bottleneck": 6,
+   "academic_edge": 3,
+   "window": 3,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Scaffolding is being absorbed by models; what is left for researchers is environment design and evaluation, not hand-built orchestration",
+   "late_modes": "Custom academic scaffolds and hand-written prompt orchestration",
+   "conflict": null
+  },
+  "D05": {
+   "impact": 8,
+   "bottleneck": 9,
+   "academic_edge": 6,
+   "window": 6,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Evaluation credibility decides whether a field can plug into the automated loop; this is my most direct answer to Q1",
+   "late_modes": "Running off-the-shelf benchmarks to chase scores without asking whether the evaluator itself can be trusted",
+   "conflict": "Measurable targets are the premise of the company's business"
+  },
+  "D06": {
+   "impact": 8,
+   "bottleneck": 6,
+   "academic_edge": 4,
+   "window": 6,
+   "overall": 6,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "I have said little about this; inferred from my framework, slow real-data collection is robotics' biggest bottleneck, and a software loop cannot speed it up",
+   "late_modes": null,
+   "conflict": "Google has the Gemini Robotics team under it"
+  },
+  "D07": {
+   "impact": 6,
+   "bottleneck": 4,
+   "academic_edge": 4,
+   "window": 5,
+   "overall": 5,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "The material is almost blank; inferred from the 'general wins' framework, a specific action representation is not a moat and will be absorbed",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D08": {
+   "impact": 8,
+   "bottleneck": 7,
+   "academic_edge": 5,
+   "window": 6,
+   "overall": 7,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "A learned simulator is several orders of magnitude faster than a traditional one; but I avoid the term 'world model'; it looks more like a data/modality problem",
+   "late_modes": "Standalone video generation aimed at image quality: general models will catch up in 6–12 months",
+   "conflict": "One of the Gemini co-leads; Google has the Genie series"
+  },
+  "D09": {
+   "impact": 7,
+   "bottleneck": 7,
+   "academic_edge": 5,
+   "window": 7,
+   "overall": 7,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Simulation is the most direct tool for making the loop 100 times faster: screen ideas first in small, low-cost environments",
+   "late_modes": null,
+   "conflict": "A core tool of the automated loop, aligned with the company's interests"
+  },
+  "D10": {
+   "impact": 6,
+   "bottleneck": 3,
+   "academic_edge": 2,
+   "window": 3,
+   "overall": 4,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "The capability hurdle has been passed; what comes next is a race of deployment, replication and cost reduction, not exponential growth a researcher can bet on",
+   "late_modes": "Building an end-to-end planning algorithm from scratch: a few companies already hold deployment and data",
+   "conflict": "Waymo is part of the same Alphabet group"
+  },
+  "D11": {
+   "impact": 6,
+   "bottleneck": 4,
+   "academic_edge": 3,
+   "window": 3,
+   "overall": 4,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Multimodal understanding is being absorbed by mainline models like Gemini, and the window for independent research is narrowing",
+   "late_modes": "Building narrow multimodal understanding models (single-task VQA and the like)",
+   "conflict": "One of the Gemini co-leads"
+  },
+  "D12": {
+   "impact": 6,
+   "bottleneck": 4,
+   "academic_edge": 3,
+   "window": 3,
+   "overall": 4,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "A standalone generation track aimed at image quality will be caught up by general models; the collapse in Sora2 users confirms the commercial fragility",
+   "late_modes": "Video/image generation that only stacks image quality",
+   "conflict": "Gemini does image generation (Nano Banana)"
+  },
+  "D13": {
+   "impact": 7,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 5,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Safety is a discipline embedded in engineering, not a separate track; I have taken no position on whether academia has a distinctive advantage",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D14": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 9,
+   "confidence": null,
+   "basis": null,
+   "one_line": "FlashAttention-style work shows that academia can make systems contributions industry cannot do without",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D15": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 6,
+   "confidence": null,
+   "basis": null,
+   "one_line": "Learned surrogate models can replace expensive simulation and screen candidates; but medical data cannot be obtained and validation is slow",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D16": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 4,
+   "confidence": null,
+   "basis": null,
+   "one_line": "No direct stance; recommendation is another example of whether general models will eat vertical applications",
+   "late_modes": null,
+   "conflict": null
+  }
+ },
+ "levers": {
+  "L1": 20,
+  "L2": 10,
+  "L3": 10,
+  "L4": 8,
+  "L5": 10,
+  "L6": 5,
+  "L7": 12,
+  "L8": 25
+ },
+ "lever_reason": "Evaluation and systems efficiency decide whether a field can plug into the automated loop and how fast the loop can turn; scaled-up foundation models are the base but already have a consensus; new architecture paradigms are a bonus, not the main lever.",
+ "questions": {
+  "Q2": {
+   "position": "conditional",
+   "score": 5,
+   "condition": "Worth it only with a narrow-domain model, a complementary team of 2–4, and compute usable continuously for months; otherwise it is just practice runs alongside frontier institutions"
+  }
+ },
+ "conditions": {
+  "Q2": [
+   "C1",
+   "C3",
+   "C4",
+   "C5"
+  ]
+ },
+ "cruxes": [
+  {
+   "question": "Is the world model a genuinely new paradigm, or a general multimodal model under a new name?",
+   "my_position": "I have seen no hard evidence that physical quantities read out of the representation are actually used by the policy; it looks more like a data and modality problem than a separate paradigm",
+   "would_change_if": "Public evidence shows that a world model without extra fine-tuning can accurately predict real outcomes on more than 10 real-robot tasks",
+   "directions": [
+    "D08",
+    "D07"
+   ]
+  },
+  {
+   "question": "For an undergraduate or master's student, is training a narrow-domain foundation model at school real research, or just practice runs alongside frontier institutions?",
+   "my_position": "It is worth it only if all three hold: narrow domain, complementary team, compute usable continuously for months; otherwise the output is hard for outsiders to adopt",
+   "would_change_if": "A university team, using compute clearly smaller than industry's, builds an open-weights narrow-domain model that gets adopted externally",
+   "directions": [
+    "D01",
+    "D08"
+   ]
+  },
+  {
+   "question": "How long can the engineering value of complex agent scaffolds hold up, and will models absorb it soon?",
+   "my_position": "Most hand-built orchestration will be absorbed, but the environment-design and evaluation layer will not, because that is defining the measurable target itself",
+   "would_change_if": "On a sufficiently hard new benchmark, a minimal scaffold keeps trailing a complex scaffold by a wide margin",
+   "directions": [
+    "D04",
+    "D05"
+   ]
+  }
+ ],
+ "taste_advice": "Write down predictions and review them a year later; after the distillation paper was rejected by NeurIPS I still bet on it, and it later became the basis of Gemini Flash.",
+ "pairwise": [
+  {
+   "a": "D05",
+   "b": "D08",
+   "pick": "D05",
+   "why": "Without credible evaluation, 'can be read out' for a world model cannot be verified"
+  },
+  {
+   "a": "D05",
+   "b": "D06",
+   "pick": "D05",
+   "why": "Evaluation is the precondition for plugging into the automated loop, and my material on robotics is also the thinnest"
+  },
+  {
+   "a": "D06",
+   "b": "D08",
+   "pick": "D08",
+   "why": "World models are the half of the loop that can be accelerated; embodiment's real-data bottleneck cannot be resolved within my framework"
+  },
+  {
+   "a": "D07",
+   "b": "D08",
+   "pick": "D08",
+   "why": "D07 looks more like an application form of D08 (the choice of action head), not an independent lever"
+  },
+  {
+   "a": "D09",
+   "b": "D06",
+   "pick": "D09",
+   "why": "Simulation is the tool that makes the loop fast; embodiment is held back by the speed of real-data collection"
+  },
+  {
+   "a": "D02",
+   "b": "D03",
+   "pick": "D03",
+   "why": "Post-training is a means; the self-improvement loop itself is the new design point"
+  },
+  {
+   "a": "D11",
+   "b": "D12",
+   "pick": "D11",
+   "why": "The image-quality race in the generation track easily crosses the red line of building hype before the work is done; understanding is closer to decisions"
+  },
+  {
+   "a": "D01",
+   "b": "D05",
+   "pick": "D05",
+   "why": "A consensus already exists on the pre-training recipe; evaluation credibility is the switch for whether the next step can be automated"
+  },
+  {
+   "a": "D04",
+   "b": "D03",
+   "pick": "D03",
+   "why": "The systems ecosystem is scaffolding; only the self-improvement loop itself can keep compounding"
+  },
+  {
+   "a": "D13",
+   "b": "D05",
+   "pick": "D05",
+   "why": "Safety still relies on credible measurement/evaluation; it is not a separate track"
+  },
+  {
+   "a": "D10",
+   "b": "D06",
+   "pick": "D06",
+   "why": "Autonomous driving has passed the capability hurdle and its window is held by a few companies; embodied AI is still early, with more room for research"
+  }
+ ],
+ "web_searches": []
+}

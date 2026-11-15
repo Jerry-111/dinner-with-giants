@@ -24,7 +24,8 @@ full protocol.
 - Their judgment and reasoning, labeled `[quoted]` / `[synthesized]` / `[inferred]`.
 - Where they would push back on the user.
 - Interests and track record, as facts for the user to weigh: the persona's stake in the
-  answer, and whether its past calls ran early or late. Shown, never applied as a discount by
+  answer (only dated facts that bear on this question; never the person's own recent news,
+  legal or governance matters), and whether its past calls ran early or late. Shown, never applied as a discount by
   the persona or the agent (`AGENTS.md`).
 - One screen, not a report.
 

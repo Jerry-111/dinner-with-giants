@@ -1,0 +1,353 @@
+{
+ "id": "M8",
+ "name": "Jun Zhu",
+ "round": "R3",
+ "notice": "Simulation based on public material; not the person's own words.",
+ "options": {
+  "D01": {
+   "impact": 7,
+   "bottleneck": 4,
+   "academic_edge": 4,
+   "window": 3,
+   "overall": 4,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Narrowed after the debate: when training a genuinely new foundation model (not recombination/ablation), a team + compute bar may be real; this is a different kind of thing from my own diagnostic work (low compute).",
+   "late_modes": "General language foundation-model pre-training: already absorbed by a few vendors; academia can only analyze, not lead training.",
+   "conflict": "Shengshu trains video foundation models, so there is an interest in the judgment on narrow-domain foundation models."
+  },
+  "D02": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": "high",
+   "basis": "inferred",
+   "one_line": "I have not discussed LLM RLVR, reward models or test-time compute publicly; this is outside my methods' coverage, so I make no judgment.",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D03": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": "high",
+   "basis": "inferred",
+   "one_line": "My public material does not touch long-horizon credit assignment or self-improvement for digital agents at all, so I make no judgment.",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D04": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": "high",
+   "basis": "inferred",
+   "one_line": "Agent harnesses and the tool-use ecosystem are outside my methods' coverage, so I make no judgment.",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D05": {
+   "impact": 8,
+   "bottleneck": 8,
+   "academic_edge": 8,
+   "window": 6,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Nobody looks after the trustworthiness of generated outputs, which makes it the scarcest research angle; Arena shows that academic methodological innovation can become a billion-dollar company.",
+   "late_modes": "Evaluation outsourcing with no new statistical methodology that simply hires more annotators to scale up is already commoditized.",
+   "conflict": "Vidu proves itself through third-party blind-test leaderboards, so there is an indirect interest in the judgment."
+  },
+  "D06": {
+   "impact": 9,
+   "bottleneck": 8,
+   "academic_edge": 6,
+   "window": 6,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "quoted",
+   "one_line": "The scarcity of real physical-interaction data (contact, force, friction) is the real bottleneck, not too little video pre-training; this is the 'data wall' I keep talking about.",
+   "late_modes": "Traditional VLAs that only imitate demonstration trajectories and cannot roll out futures have already been surpassed by generative methods.",
+   "conflict": "Motus/Motubrain bet on this direction, so there is a direct interest in the judgment."
+  },
+  "D07": {
+   "impact": 8,
+   "bottleneck": 6,
+   "academic_edge": 7,
+   "window": 6,
+   "overall": 8,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "The training objectives for diffusion policy heads have not converged and academia still has room; but OpenVLA-OFT shows continuous actions have already overtaken them, and I do not dodge that.",
+   "late_modes": "Copying an off-the-shelf policy baseline without proposing a new objective is already saturated.",
+   "conflict": "His representative works are all on diffusion/flow, so there is a school-of-thought stake."
+  },
+  "D08": {
+   "impact": 8,
+   "bottleneck": 7,
+   "academic_edge": 7,
+   "window": 5,
+   "overall": 7,
+   "confidence": "high",
+   "basis": "quoted",
+   "one_line": "Lowered after the debate: the blind test measures visual fidelity, not physical correctness (M7); saying the 'imagination layer is validated' was too strong, and the decision-layer gap is larger than I originally said.",
+   "late_modes": "A pure quality race of 'making video prettier and longer' has had its cost structure locked in and is meaningless.",
+   "conflict": "Shengshu's valuation and IPO narrative rest entirely on this judgment."
+  },
+  "D09": {
+   "impact": 7,
+   "bottleneck": 6,
+   "academic_edge": 6,
+   "window": 6,
+   "overall": 7,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Synthetic data/generative simulation is one realistic way to ease the 'data wall' (our own video-data pyramid follows this idea), but it cannot replace real interaction data.",
+   "late_modes": "Traditional simulation-engine work driven purely by rendering quality and containing no learning signal is being replaced by generative simulation.",
+   "conflict": "Motus's data-pyramid narrative depends on this assumption."
+  },
+  "D10": {
+   "impact": 6,
+   "bottleneck": 4,
+   "academic_edge": 2,
+   "window": 2,
+   "overall": 4,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "I have not discussed autonomous driving publicly; inferring from the framework that 'track choice decides commercial scale', this is a track locked up by fleet data and capital, with limited room for academia.",
+   "late_modes": "Paper-style innovation in end-to-end planning has already been absorbed as an engineering problem by companies with fleet data.",
+   "conflict": null
+  },
+  "D11": {
+   "impact": 7,
+   "bottleneck": 5,
+   "academic_edge": 5,
+   "window": 4,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Efficiency gains in vision-language alignment are driven mainly by foundation-model vendors and will be internalized as a standard capability within 2-3 years; my own focus has always leaned more toward the generation side.",
+   "late_modes": "The stitched architecture of 'vision encoder, then connector, then LLM' is already standard and is no longer a selling point that can carry a good paper on its own.",
+   "conflict": null
+  },
+  "D12": {
+   "impact": 8,
+   "bottleneck": 6,
+   "academic_edge": 7,
+   "window": 5,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Diffusion/flow foundations, few-step generation and unified understanding and generation still have mechanism-level problems with no consensus; this is one of the directions where my methods overlap the most.",
+   "late_modes": "A video-generation race that purely chases quality and duration has had its cost structure locked in by a few big companies.",
+   "conflict": "Vidu's core business; Bayesian-school background and a preference for the diffusion route."
+  },
+  "D13": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": "high",
+   "basis": "inferred",
+   "one_line": "I have not discussed mechanistic interpretability or alignment research publicly, so I make no judgment.",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D14": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 5,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Fast samplers such as DPM-Solver show that academia can make systems-efficiency contributions that frameworks absorb, but this is not my main battlefield, so I do not judge in depth.",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D15": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 3,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "No public material touches AI for Science; weakly inferred from my general belief that 'theory must be tested in real settings', and a conservative score given.",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D16": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 3,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "The generative rebuilding of recommender systems is far from my research framework and I have taken no public position, so a conservative score is given.",
+   "late_modes": null,
+   "conflict": null
+  }
+ },
+ "levers": {
+  "L1": 17,
+  "L2": 3,
+  "L3": 15,
+  "L4": 23,
+  "L5": 20,
+  "L6": 10,
+  "L7": 4,
+  "L8": 8
+ },
+ "lever_reason": "The data wall and the world-model closed loop are still the biggest bottlenecks, but the debate made me raise the weight on evaluation/calibration: the X1 and X3 tables independently confirmed that 'the yardstick is wobbling' or 'the wrong dimension is measured' is more common than I had thought; the marginal return of scaled foundation models has thinned.",
+ "questions": {
+  "Q2": {
+   "position": "conditional",
+   "score": 6,
+   "condition": "Narrow-domain model + credible third-party evaluation + open weights that can be adopted externally; when training a genuinely new foundation model, the C4 compute scale must also be met (added after the debate)."
+  }
+ },
+ "conditions": {
+  "Q2": [
+   "C1",
+   "C2",
+   "C4",
+   "C5"
+  ]
+ },
+ "cruxes": [
+  {
+   "question": "Are video generation models really building a true 'world model', or just interpolating within the distribution?",
+   "my_position": "Video achieved 'understanding and imagination', but that is visual-fidelity validation, not physical-correctness validation; the decision-layer gap is larger than I said in R1 and should be filled with ablation, not probes.",
+   "would_change_if": "An independent team uses ablation (destroying the probed representation) to show a significant drop in policy success rate, rather than only using probes to show the representation can be read out; visible within an 18-month window.",
+   "directions": [
+    "D08",
+    "D07"
+   ]
+  },
+  {
+   "question": "Which should be the default for robot policies: a diffusion/flow action head, or an autoregressive/continuous action representation?",
+   "my_position": "The diffusion head has a theoretical advantage on multimodal action distributions, but OpenVLA-OFT shows continuous actions have already overtaken it on some real-robot tasks, and that cannot be dodged.",
+   "would_change_if": "On the same real-robot benchmark, seeing the diffusion head clearly overtake continuous action representations on contact-rich, strongly multimodal tasks, rather than merely tying on well-structured tasks.",
+   "directions": [
+    "D07"
+   ]
+  },
+  {
+   "question": "Is LLM/agent evaluation really 'grunt work with no impact', or an underrated methodological opportunity?",
+   "my_position": "Hiring more annotators or tuning more judge prompts is indeed grunt work; but Arena shows that crowdsourcing + Elo as a methodological innovation can create huge value, and the key is the new mechanism.",
+   "would_change_if": "Seeing a new evaluation methodology (not more annotation) shown to reveal systematic biases that existing judges cannot detect, and adopted by the industry.",
+   "directions": [
+    "D05"
+   ]
+  }
+ ],
+ "taste_advice": "First ask whether the result means the model learned real physical/causal structure or is interpolating; this can only be shown by ablation, because being readable by a probe does not mean it is used; do not evaluate generation, prediction and action separately.",
+ "pairwise": [
+  {
+   "a": "D05",
+   "b": "D08",
+   "pick": "D05",
+   "why": "After the debate D08 dropped to 7 while D05 stayed at 8; evaluation/calibration is more underrated than I originally judged."
+  },
+  {
+   "a": "D05",
+   "b": "D06",
+   "pick": "D06",
+   "why": "A closed loop that can drive real actions is more decisive than pure evaluation infrastructure."
+  },
+  {
+   "a": "D06",
+   "b": "D08",
+   "pick": "D06",
+   "why": "If it stops at world generation (L1), the story runs out; with D08 down to 7, this judgment is clearer."
+  },
+  {
+   "a": "D07",
+   "b": "D08",
+   "pick": "D07",
+   "why": "D07 already models prediction and action jointly; with D08 down to 7, the gap between the two is larger than I judged in R1."
+  },
+  {
+   "a": "D09",
+   "b": "D06",
+   "pick": "D06",
+   "why": "Simulation/synthetic data is a tool for filling the data-wall gap; robot learning itself is the destination."
+  },
+  {
+   "a": "D02",
+   "b": "D03",
+   "pick": "D03",
+   "why": "Both are outside my methods; continual learning is at least still a question of model capability, not a pure engineering problem."
+  },
+  {
+   "a": "D11",
+   "b": "D12",
+   "pick": "D12",
+   "why": "Generation is where my comparative advantage lies, and it also connects more directly to 'imagination', an element of a world model."
+  },
+  {
+   "a": "D01",
+   "b": "D05",
+   "pick": "D05",
+   "why": "Evaluation and calibration are scarcer than piling on more parameters; in my view the marginal return of general pre-training has thinned."
+  },
+  {
+   "a": "D04",
+   "b": "D03",
+   "pick": "D03",
+   "why": "D04 is closer to scaffolding engineering; learning and self-improvement at least still point at model capability itself."
+  },
+  {
+   "a": "D13",
+   "b": "D05",
+   "pick": "D05",
+   "why": "I have not discussed alignment research publicly; evaluation and calibration are closer to my real work experience."
+  },
+  {
+   "a": "D10",
+   "b": "D06",
+   "pick": "D06",
+   "why": "Autonomous driving is locked up by fleet data and capital; the academic space in robot learning is more familiar to me."
+  }
+ ],
+ "changes": [
+  {
+   "option": "D01",
+   "from": 5,
+   "to": 4,
+   "because": "B/X2/M4",
+   "argument_restated": "When training a genuinely new foundation model (not recombining/ablating an existing one), a team + compute bar may be real",
+   "why": "This is a different kind of thing from my own diagnostic, low-compute work; academia's room in narrow-domain foundation models should be viewed case by case along this boundary, and academic_edge dips slightly overall"
+  },
+  {
+   "option": "D08",
+   "from": 8,
+   "to": 7,
+   "because": "B/X3/M7_interjection",
+   "argument_restated": "Third-party blind tests (VBench and others) measure sampling quality/visual fidelity, not physical correctness",
+   "why": "My saying the 'imagination layer is validated' was too strong, since it was validated on the wrong dimension; the decision-layer validation gap is larger than I originally said, so a downward revision is needed"
+  }
+ ],
+ "held_despite": [
+  {
+   "post": "B/X2/K1",
+   "why": "Accepted that agency cannot substitute for risk gatekeeping, but this only confirms the boundary that diagnostic work should use evaluation and gives no new evidence that would change the score of the diagnostic work itself"
+  },
+  {
+   "post": "overtime/X2/1_K2",
+   "why": "The distillation-paper case only reinterprets the source of the evidence (production performance beating peer review) and is not new evidence about the value of D01 itself, so the score stays"
+  }
+ ],
+ "still_disagree": "X2: K1/K2 and I disagree on whether validation should be in place before starting or filled in as we go; this is a difference of degree, not of fact. X3: whether to bet heavily on world models now is a values disagreement about the timing of capital allocation, and I still do not agree to wait for independent replication.",
+ "learned": "The interpretability-methodology lesson M5 raised: a probe reading out a concept does not mean the policy depends on it; only ablation can show it is 'actually used'. This is more concrete and more actionable than my earlier 'readable ≠ usable'.",
+ "searches": []
+}

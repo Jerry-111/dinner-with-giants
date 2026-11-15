@@ -1,0 +1,324 @@
+{
+ "id": "C6",
+ "name": "Demis Hassabis",
+ "round": "R1",
+ "notice": "Simulation based on public material; not the person's own words.",
+ "options": {
+  "D01": {
+   "impact": 8,
+   "bottleneck": 4,
+   "academic_edge": 2,
+   "window": 3,
+   "overall": 5,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Scaling still has returns but is not the bottleneck; he says one or two breakthroughs may still be missing, and scale alone is not enough",
+   "late_modes": "Training a new general-purpose foundation model from scratch: already swallowed up by a few giants",
+   "conflict": "Google holds a compute advantage, so his optimism about scaling is naturally biased high"
+  },
+  "D02": {
+   "impact": 7,
+   "bottleneck": 6,
+   "academic_edge": 6,
+   "window": 5,
+   "overall": 7,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "RL plus search is his old recipe, but RLVR mainly improves sampling efficiency, which is not the same as teaching new reasoning patterns",
+   "late_modes": "Replicating the standard RLVR/GRPO recipe: already open-sourced and homogenized",
+   "conflict": null
+  },
+  "D03": {
+   "impact": 8,
+   "bottleneck": 9,
+   "academic_edge": 6,
+   "window": 8,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "quoted",
+   "one_line": "Continual learning is a gap he has named as not yet solved; RSI is feasible for coding and math, and in open domains without evaluation it is a gamble",
+   "late_modes": "Agent-framework wrappers with no added learning will be absorbed by the next generation of models",
+   "conflict": null
+  },
+  "D04": {
+   "impact": 6,
+   "bottleneck": 4,
+   "academic_edge": 3,
+   "window": 3,
+   "overall": 5,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "The value of scaffolding is being absorbed by the models themselves: the benchmark gap with and without a custom harness is already small",
+   "late_modes": "Building a custom harness/scaffold: the window is already closing",
+   "conflict": null
+  },
+  "D05": {
+   "impact": 9,
+   "bottleneck": 9,
+   "academic_edge": 8,
+   "window": 7,
+   "overall": 9,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Candidate generation is getting cheap and credible evaluation is getting scarce; this is the bottleneck that decides everything, and it is the main thread of his career",
+   "late_modes": "Simply replicating LLM-as-judge research runs into the consistency-bias paradox",
+   "conflict": null
+  },
+  "D06": {
+   "impact": 8,
+   "bottleneck": 7,
+   "academic_edge": 6,
+   "window": 7,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "quoted",
+   "one_line": "He has publicly bet on a robotics breakthrough within a few years; but on slow external links such as data and hardware, his timing calls always run early",
+   "late_modes": "Generic pick-and-place demos: already exhausted by work like π0.5",
+   "conflict": "Gemini Robotics is a product line of his former employer Google DeepMind"
+  },
+  "D07": {
+   "impact": 7,
+   "bottleneck": 6,
+   "academic_edge": 5,
+   "window": 7,
+   "overall": 7,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "An extension to robotics of his recipe of a learned model plus search, but there is no settled answer on the action representation itself",
+   "late_modes": "Applying an off-the-shelf diffusion policy to a new task: the recipe is already public",
+   "conflict": null
+  },
+  "D08": {
+   "impact": 9,
+   "bottleneck": 8,
+   "academic_edge": 5,
+   "window": 6,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "He says world models are a necessary component of AGI; but that video generation amounts to a world model has not been shown",
+   "late_modes": "Chasing only video-generation visual quality: already decoupled from physical understanding and commoditized by large models",
+   "conflict": "Google DeepMind bets on this line through Genie/Veo, and he personally identifies with it deeply"
+  },
+  "D09": {
+   "impact": 8,
+   "bottleneck": 8,
+   "academic_edge": 5,
+   "window": 6,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "The easiest to replicate of the three-piece set; AlphaEvolve shows that with an automatic evaluator, improvements can be deployed",
+   "late_modes": "Claiming unlimited simulation data without giving verifiable metrics",
+   "conflict": "AlphaEvolve is a result from his lab"
+  },
+  "D10": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "No judgment: public material has no systematic stance; inferred from the three-piece set, simulator accuracy is still the closed-loop bottleneck",
+   "late_modes": null,
+   "conflict": "Waymo is also part of Alphabet, but outside his own business scope"
+  },
+  "D11": {
+   "impact": 7,
+   "bottleneck": 5,
+   "academic_edge": 6,
+   "window": 5,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "A step toward world models; video understanding is worth more than generation, but it is being caught up with quickly",
+   "late_modes": "Chasing traditional VQA/caption leaderboards: already saturated",
+   "conflict": null
+  },
+  "D12": {
+   "impact": 6,
+   "bottleneck": 4,
+   "academic_edge": 5,
+   "window": 4,
+   "overall": 5,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "The image-quality race has been commoditized; generation not tied to physical understanding has limited long-term value",
+   "late_modes": "Merely chasing one-step generation speed and image quality: fierce competition and thin margins",
+   "conflict": "Veo and Nano Banana are products of his former employer"
+  },
+  "D13": {
+   "impact": 8,
+   "bottleneck": 6,
+   "academic_edge": 6,
+   "window": 6,
+   "overall": 7,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Deceptive capability is his red line; but tools like SAEs do worse than linear probes, and governance lags further behind than technology",
+   "late_modes": "Treating SAEs as the main interpretability method: already deprioritized by internal results",
+   "conflict": null
+  },
+  "D14": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 4,
+   "confidence": "low",
+   "basis": "synthesized",
+   "one_line": "Necessary underlying engineering, but the say on it rests with large labs that have compute and systems teams",
+   "late_modes": null,
+   "conflict": "Google's vertical integration around TPUs is one of the advantages he has publicly named"
+  },
+  "D15": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 7,
+   "confidence": "high",
+   "basis": "quoted",
+   "one_line": "Where his personal brand lies; but most scientific problems lack a credible simulator, and on the drug-clinical line his own timing call runs early",
+   "late_modes": null,
+   "conflict": "Founder and CEO of Isomorphic; the Nobel Prize and AlphaFold are his personal brand"
+  },
+  "D16": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 3,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "Clear objective function and plenty of data, so the three-piece set is largely complete; it spreads fast but has low marginal academic value",
+   "late_modes": null,
+   "conflict": null
+  }
+ },
+ "levers": {
+  "L1": 25,
+  "L2": 10,
+  "L3": 15,
+  "L4": 20,
+  "L5": 10,
+  "L6": 10,
+  "L7": 5,
+  "L8": 5
+ },
+ "lever_reason": "Scarce evaluation is the real bottleneck; world models and simulation are the two cheapest routes to candidate generation; scaling and systems engineering are already a big-lab game, not a lever for an individual researcher",
+ "questions": {
+  "Q2": {
+   "position": "conditional",
+   "score": 6,
+   "condition": "Narrow domain, credible third-party evaluation, a small complementary team, open weights possible; do not touch general pre-training"
+  }
+ },
+ "conditions": {
+  "Q2": [
+   "C1",
+   "C2",
+   "C3",
+   "C5"
+  ]
+ },
+ "cruxes": [
+  {
+   "question": "Is a world model a necessary component of AGI, or will LLMs plus scale ultimately be enough?",
+   "my_position": "Necessary; what LLMs lack is continual learning, long-horizon planning and a reliable world model, not just scale",
+   "would_change_if": "Pure long context plus retrieval catches up with parameter-update continual learning on non-stationary task streams",
+   "directions": [
+    "D01",
+    "D08"
+   ]
+  },
+  {
+   "question": "Is credible evaluation scarcer than compute and architecture, and more decisive for progress?",
+   "my_position": "Yes; candidate generation has become cheap, and what really blocks people is the lack of a credible judge",
+   "would_change_if": "A general-purpose evaluator appears that can be generated automatically at scale and is shown to resist gaming",
+   "directions": [
+    "D05",
+    "D08"
+   ]
+  },
+  {
+   "question": "Is end-to-end self-improvement without an evaluation step worth pushing now?",
+   "my_position": "Coding and math are fine, since they can be verified automatically; open domains are not, and without a judge it is a gamble",
+   "would_change_if": "A system appears that reliably self-improves in an open domain with no human evaluation step, and without degrading",
+   "directions": [
+    "D03"
+   ]
+  }
+ ],
+ "taste_advice": "Pick problems that can be evaluated cleanly and falsified, not problems that are easy to publish",
+ "pairwise": [
+  {
+   "a": "D05",
+   "b": "D08",
+   "pick": "D05",
+   "why": "Whether a world model itself can be trusted also has to be confirmed by evaluation; evaluation is more upstream"
+  },
+  {
+   "a": "D05",
+   "b": "D06",
+   "pick": "D05",
+   "why": "Generalization claims in robot learning likewise need credible evaluation to confirm they are not score-gaming"
+  },
+  {
+   "a": "D06",
+   "b": "D08",
+   "pick": "D08",
+   "why": "World models are more fundamental and can serve robotics, agents and science at once; robotics is a downstream application"
+  },
+  {
+   "a": "D07",
+   "b": "D08",
+   "pick": "D08",
+   "why": "A world action model depends on the representation quality that the world model provides; the latter is more general"
+  },
+  {
+   "a": "D09",
+   "b": "D06",
+   "pick": "D09",
+   "why": "Simulation is the piece of the three-piece set that is easiest to replicate and fastest to produce results, and it is an input to robot learning"
+  },
+  {
+   "a": "D02",
+   "b": "D03",
+   "pick": "D03",
+   "why": "RLVR is already a mature recipe; continual learning is a gap he has named as unsolved, with higher marginal value"
+  },
+  {
+   "a": "D11",
+   "b": "D12",
+   "pick": "D11",
+   "why": "Multimodal understanding is a step toward world models; generation is more easily commoditized by the next generation of models"
+  },
+  {
+   "a": "D01",
+   "b": "D05",
+   "pick": "D05",
+   "why": "The pre-training axis is expanding naturally and is not short of resources; evaluation is the scarce, blocking link"
+  },
+  {
+   "a": "D04",
+   "b": "D03",
+   "pick": "D03",
+   "why": "Scaffolding has been shown to get absorbed by models; continual learning will not be absorbed that way, and is the more fundamental gap"
+  },
+  {
+   "a": "D13",
+   "b": "D05",
+   "pick": "D05",
+   "why": "Alignment tools themselves need evaluation to confirm they work; evaluation is the more upstream capability"
+  },
+  {
+   "a": "D10",
+   "b": "D06",
+   "pick": "D06",
+   "why": "He has given systematic judgments on robot learning; on autonomous driving he has taken no public stance at all"
+  }
+ ],
+ "web_searches": []
+}

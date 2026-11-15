@@ -1,0 +1,337 @@
+{
+ "version": "2026-10-28",
+ "note": "Adapted for publication from a rubric pre-registered on 2026-10-28, before any R1 submission. Removed for privacy: a fifth dimension about the original user's own career capital, the user's four candidate topics (T1-T4) and the pairwise picks involving them, and a weight set built for the user. The two remaining weight sets were renormalized over the four public dimensions. Nothing was added.",
+ "options": {
+  "D01": "Pre-training and foundation models: scaling, architecture, data, training dynamics; foundation-model training in academia",
+  "D02": "Post-training, RL and reasoning: RLVR, reward models, test-time compute",
+  "D03": "Agent learning, continual learning and self-improvement: long-horizon credit assignment, memory, experience replay, recursive self-improvement (by layer)",
+  "D04": "Agent systems and ecosystem: environments and benchmarks, tool use, computer use, harnesses, open-source agents",
+  "D05": "Evaluation science: evaluating LLMs, agents, multimodal models and robots; LLM/VLM-as-judge; statistical rigor; when an evaluator can be trusted",
+  "D06": "Embodied AI and robot learning: VLAs and robot foundation models, generalization, reliability, failure recovery, learning in deployment, touch",
+  "D07": "Generative policies and world action models: diffusion/flow policies, video as policy, models that predict observations and actions together",
+  "D08": "World models and spatial intelligence: interactive video generation, 3D/4D representations, action-conditioned latent dynamics, JEPA-style representation prediction",
+  "D09": "Simulation and synthetic data: physics simulation, generative simulation, sim2real, digital twins, synthetic training and evaluation data",
+  "D10": "Autonomous driving: end-to-end planning, closed-loop evaluation and simulation, long tail and safety, fleet data engines",
+  "D11": "Multimodal understanding: MLLM/VLM architectures, visual grounding, spatial and video understanding, multimodal reasoning",
+  "D12": "Multimodal generation: diffusion/flow foundations, few-step generation, unified understanding and generation, video and 3D generation, evaluating generation",
+  "D13": "Interpretability, alignment and safety: mechanistic interpretability, scalable oversight, robustness, monitoring",
+  "D14": "AI infrastructure and algorithm-system co-design (short): long context and KV cache, low precision, MoE, RL rollout systems, inference-compute allocation",
+  "D15": "AI for science (short)",
+  "D16": "Recommendation, retrieval and decision optimization (short)"
+ },
+ "short_options": [
+  "D14",
+  "D15",
+  "D16"
+ ],
+ "dimensions": {
+  "impact": "If it works within ten years, how much it changes AI capability or the industry",
+  "bottleneck": "Whether it is the bottleneck or lever that decides progress (without it, other progress stalls) rather than a nice-to-have",
+  "academic_edge": "Whether academia, including academic labs with GPUs, can make a contribution industry can't make and that then gets adopted; not whether it can publish",
+  "window": "Timing: whether a newcomer can still own a piece of it now; low if already absorbed, commoditized or overcrowded"
+ },
+ "scale": {
+  "min": 0,
+  "max": 10
+ },
+ "overall": "The persona's own overall score, weighted by the persona's own values; not the average of dimensions. In the original run it also weighed the removed user-specific dimension, so it is shown as recorded and marked as such in the report.",
+ "levers": {
+  "L1": "Evaluation and verification (benchmarks, evaluators, statistical rigor, trustworthiness)",
+  "L2": "RL and post-training (RLVR, rewards, online learning)",
+  "L3": "Simulation and synthetic data (physics simulation, generative simulation, sim2real)",
+  "L4": "World models and world action models (models that predict future observations and actions)",
+  "L5": "Scale and quality of real data (robot data, human video, deployment data)",
+  "L6": "Architectures and new paradigms (non-LLM routes, representation learning)",
+  "L7": "Scaled-up foundation models (bigger pre-training, more compute)",
+  "L8": "Systems and efficiency (infrastructure, inference, training efficiency)"
+ },
+ "lever_allocation": "Split 100 points across L1-L8: over the next 5-10 years, which levers most decide progress in AI (physical AI and agents especially) and most deserve a researcher's bet.",
+ "named_questions": {
+  "Q1": "Levers: which kind of lever most decides AI progress over the next 5-10 years? Is evaluation really the safest bet, or RL, simulation, world models or world action models?",
+  "Q2": "Academic foundation models: academic labs with GPUs can train foundation models (open VLAs, video or world models, open LLMs). For a student at the undergraduate-to-master's stage, is joining this kind of work the highest-impact path?",
+  "Q5": "Late entry: for each direction, which way of taking part is already too late, and why (absorbed, automated or commoditized)?",
+  "Q6": "Taste: if you could give someone starting out in AI research one piece of advice on research taste, what would it be, and which of your experiences makes you say it?"
+ },
+ "conditional_questions": {
+  "Q2": {
+   "question": "Under which conditions would you say yes to Q2?",
+   "conditions": {
+    "C1": "A narrow-domain model (VLA, video or world model and similar), not general LLM pre-training",
+    "C2": "Credible third-party evaluation already exists for that domain",
+    "C3": "A team of 2-4 people with complementary skills, not one person alone",
+    "C4": "Lab compute at scale (for example 64 H100-class GPUs usable continuously for months)",
+    "C5": "Open weights with a path to outside adoption"
+   }
+  }
+ },
+ "pairwise": [
+  [
+   "D05",
+   "D08"
+  ],
+  [
+   "D05",
+   "D06"
+  ],
+  [
+   "D06",
+   "D08"
+  ],
+  [
+   "D07",
+   "D08"
+  ],
+  [
+   "D09",
+   "D06"
+  ],
+  [
+   "D02",
+   "D03"
+  ],
+  [
+   "D11",
+   "D12"
+  ],
+  [
+   "D01",
+   "D05"
+  ],
+  [
+   "D04",
+   "D03"
+  ],
+  [
+   "D13",
+   "D05"
+  ],
+  [
+   "D10",
+   "D06"
+  ]
+ ],
+ "weight_sets": {
+  "equal": {
+   "impact": 0.25,
+   "bottleneck": 0.25,
+   "academic_edge": 0.25,
+   "window": 0.25
+  },
+  "impact_heavy": {
+   "impact": 0.389,
+   "bottleneck": 0.278,
+   "academic_edge": 0.167,
+   "window": 0.166
+  }
+ },
+ "personas": {
+  "C1": {
+   "name": "Michael Mauboussin",
+   "aliases": [
+    "Mauboussin"
+   ]
+  },
+  "C2": {
+   "name": "Bill Gurley",
+   "aliases": [
+    "Gurley"
+   ]
+  },
+  "C3": {
+   "name": "Jensen Huang",
+   "aliases": [
+    "Huang",
+    "Jensen"
+   ]
+  },
+  "C4": {
+   "name": "Dario Amodei",
+   "aliases": [
+    "Amodei",
+    "Dario"
+   ]
+  },
+  "C5": {
+   "name": "Sergey Levine",
+   "aliases": [
+    "Levine"
+   ]
+  },
+  "C6": {
+   "name": "Demis Hassabis",
+   "aliases": [
+    "Hassabis",
+    "Demis"
+   ]
+  },
+  "K1": {
+   "name": "Vinod Khosla",
+   "aliases": [
+    "Khosla"
+   ]
+  },
+  "K2": {
+   "name": "Jeff Dean",
+   "aliases": [
+    "Dean"
+   ]
+  },
+  "K3": {
+   "name": "Rich Sutton",
+   "aliases": [
+    "Sutton"
+   ]
+  },
+  "K4": {
+   "name": "Andrej Karpathy",
+   "aliases": [
+    "Karpathy"
+   ]
+  },
+  "K5": {
+   "name": "Yann LeCun",
+   "aliases": [
+    "LeCun"
+   ]
+  },
+  "K6": {
+   "name": "Patrick Collison",
+   "aliases": [
+    "Collison"
+   ]
+  },
+  "M1": {
+   "name": "Percy Liang",
+   "aliases": [
+    "Liang"
+   ]
+  },
+  "M2": {
+   "name": "Shunyu Yao",
+   "aliases": [
+    "Yao"
+   ]
+  },
+  "M3": {
+   "name": "Graham Neubig",
+   "aliases": [
+    "Neubig"
+   ]
+  },
+  "M4": {
+   "name": "Saining Xie",
+   "aliases": [
+    "Xie"
+   ]
+  },
+  "M5": {
+   "name": "Kaiming He",
+   "aliases": [
+    "Kaiming"
+   ]
+  },
+  "M6": {
+   "name": "Fei-Fei Li",
+   "aliases": [
+    "Fei-Fei"
+   ]
+  },
+  "M7": {
+   "name": "Russ Tedrake",
+   "aliases": [
+    "Tedrake"
+   ]
+  },
+  "M8": {
+   "name": "Jun Zhu",
+   "aliases": [
+    "Zhu"
+   ]
+  }
+ },
+ "baselines": [
+  "Z1",
+  "Z2"
+ ],
+ "seating": {
+  "table_size": [
+   5,
+   6
+  ],
+  "seats_per_persona": 2
+ },
+ "forbidden_words": [
+  "discount",
+  "打折",
+  "折扣",
+  "减权"
+ ],
+ "aggregation": {
+  "primary": "Per option: median, IQR, min, max of persona `overall`. Sort by median; ties go to the smaller IQR.",
+  "no_headcount_as_evidence": true,
+  "no_weighting_by_persona": true,
+  "no_extremizing": true,
+  "sensitivity": "Flag options whose rank moves 3+ places across weight sets.",
+  "sensitivity_threshold": 3,
+  "baselines": "Two no-persona baselines, reported separately; never pooled into the medians.",
+  "movement": "Per persona and option, the R1-to-R3 change in overall; every change cites a post.",
+  "empty_concession": "An argument marked accepted or partly accepted in the debate whose option score does not move in R3 is logged as an empty concession."
+ },
+ "groups": {
+  "capital and value": [
+   "C1",
+   "C2",
+   "K1",
+   "K6"
+  ],
+  "platforms and cost": [
+   "C3",
+   "K2"
+  ],
+  "scale and verification": [
+   "C4",
+   "K4"
+  ],
+  "experience and world models": [
+   "C5",
+   "C6",
+   "K3",
+   "K5"
+  ],
+  "academia and evaluation": [
+   "M1",
+   "M3"
+  ],
+  "agents": [
+   "M2"
+  ],
+  "multimodal and generative": [
+   "M4",
+   "M5",
+   "M8"
+  ],
+  "spatial intelligence and robotics": [
+   "M6",
+   "M7"
+  ]
+ },
+ "not_independent": [
+  [
+   "M4",
+   "K5"
+  ],
+  [
+   "M5",
+   "C6",
+   "K2"
+  ],
+  [
+   "C4",
+   "K4"
+  ],
+  [
+   "M4",
+   "M5"
+  ]
+ ]
+}

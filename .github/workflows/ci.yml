@@ -24,13 +24,11 @@ jobs:
       - name: Run the test suite
         run: python -m unittest discover -s tests -v
 
-      - name: Lint the bundled examples
-        run: |
-          if [ -d examples ]; then
-            python tools/sim.py lint examples
-          else
-            echo "examples/ does not exist yet; skipping."
-          fi
+      - name: Lint the persona library and the examples
+        run: python tools/sim.py lint personas examples
+
+      - name: Check quotes (length, evidence ids, one quote per source)
+        run: python tools/sim.py quotes personas examples
 
       - name: Scan the repository for leaked private data
         run: python tools/sim.py privacy-scan .

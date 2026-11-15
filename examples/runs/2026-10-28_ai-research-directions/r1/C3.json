@@ -1,0 +1,325 @@
+{
+ "id": "C3",
+ "name": "Jensen Huang",
+ "round": "R1",
+ "notice": "Simulation based on public material; not the person's own words.",
+ "options": {
+  "D01": {
+   "impact": 9,
+   "bottleneck": 7,
+   "academic_edge": 2,
+   "window": 3,
+   "overall": 5,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "The birthplace of the compute inflection, but the pre-training window has been locked up by big companies' compute, and a student can hardly get in from scratch",
+   "late_modes": "Training a general foundation model from scratch to start a company or publish papers; the compute barrier has been locked up by big companies",
+   "conflict": "NVIDIA sells compute; the more compute pre-training burns, the better for him"
+  },
+  "D02": {
+   "impact": 9,
+   "bottleneck": 9,
+   "academic_edge": 6,
+   "window": 7,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Reasoning is what he called the second exponential; the RL/reasoning lever is the largest, and small compute can still produce landmark work (s1)",
+   "late_modes": "Directly replicating the standard RLHF pipeline; it is already a commoditized baseline",
+   "conflict": "Reasoning demand is what he called the second exponential, and it directly drives compute sales"
+  },
+  "D03": {
+   "impact": 7,
+   "bottleneck": 6,
+   "academic_edge": 5,
+   "window": 6,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "Agents have large prospects, but self-modification needs a human in the loop; the pure continual-learning/memory part remains open",
+   "late_modes": null,
+   "conflict": "Agents drive inference compute, which favors his demand narrative"
+  },
+  "D04": {
+   "impact": 6,
+   "bottleneck": 4,
+   "academic_edge": 4,
+   "window": 3,
+   "overall": 4,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Scaffolding will be absorbed by platform runtimes, which the SWE-bench/Terminal-Bench data already confirm",
+   "late_modes": "Building a pure wrapper-layer agent demo to raise money; it will be absorbed by platform runtimes",
+   "conflict": "Runtimes such as OpenClaw are pushed by NVIDIA's own ecosystem, and he has praised them by name"
+  },
+  "D05": {
+   "impact": 6,
+   "bottleneck": 5,
+   "academic_edge": 7,
+   "window": 6,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "Necessary trust infrastructure, not an engine of progress; academic independence is an advantage, but it is being commercialized (Arena)",
+   "late_modes": "Only chasing public leaderboard rank; it is being eroded by leaderboard gaming and contamination from proprietary data",
+   "conflict": null
+  },
+  "D06": {
+   "impact": 10,
+   "bottleneck": 8,
+   "academic_edge": 5,
+   "window": 7,
+   "overall": 9,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Physical AI is what he called the next ten-trillion-dollar market",
+   "late_modes": "Chasing eye-catching humanoid demos without reliability/intervention-rate metrics; easily copied by faster teams",
+   "conflict": "GR00T, robot computers and Physical AI are the new market he is betting on"
+  },
+  "D07": {
+   "impact": 8,
+   "bottleneck": 7,
+   "academic_edge": 6,
+   "window": 6,
+   "overall": 7,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "WAM-style action generation is the GR00T route, and academic recipes (diffusion policy and others) have been shown to be adoptable",
+   "late_modes": "Only replicating the published diffusion policy recipe as a baseline; it is no longer an incremental contribution",
+   "conflict": "Products such as GR00T map directly onto this direction"
+  },
+  "D08": {
+   "impact": 9,
+   "bottleneck": 8,
+   "academic_edge": 6,
+   "window": 7,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "The world model is the core of his grounding logic, and it is getting hotter and more expensive (AMI Labs $3.5 billion)",
+   "late_modes": "Only chasing the realism of video frames; the generation side is being commoditized",
+   "conflict": "Cosmos is his open-model product, and the world-model narrative supports his compute sales"
+  },
+  "D09": {
+   "impact": 8,
+   "bottleneck": 9,
+   "academic_edge": 7,
+   "window": 7,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Simulation is his deepest path dependence (RIVA128), and the real bottleneck for closing the physical-data gap",
+   "late_modes": null,
+   "conflict": "Omniverse/Isaac Sim/DSX Air are his simulation product line"
+  },
+  "D10": {
+   "impact": 8,
+   "bottleneck": 6,
+   "academic_edge": 4,
+   "window": 6,
+   "overall": 7,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Robotaxi is starting to scale, but it is increasingly a game of a few platforms and their fleet data",
+   "late_modes": "Making incremental improvements in the style of L2 driver-assistance features; carmakers have already made them standard",
+   "conflict": "The DRIVE platform and the partnership with Uber are among his revenue lines"
+  },
+  "D11": {
+   "impact": 7,
+   "bottleneck": 5,
+   "academic_edge": 5,
+   "window": 5,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "The gaps exposed by understanding benchmarks are real (BLINK/VSI-Bench), but it is not the layer he talks about most",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D12": {
+   "impact": 7,
+   "bottleneck": 5,
+   "academic_edge": 5,
+   "window": 4,
+   "overall": 5,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Generation is being commoditized, and consumer-side sustainability is in doubt (Sora2 went offline less than a year after launch)",
+   "late_modes": "Building a pure consumer-grade text-to-image/text-to-video app; Sora2's shutdown is a ready-made counterexample",
+   "conflict": null
+  },
+  "D13": {
+   "impact": 7,
+   "bottleneck": 5,
+   "academic_edge": 6,
+   "window": 6,
+   "overall": 5,
+   "confidence": "low",
+   "basis": "synthesized",
+   "one_line": "He treats safety as an engineering-redundancy problem and distrusts closed-door work; the technical details of mechanistic interpretability are not his strong suit",
+   "late_modes": "Only patching known jailbreaks after the fact; defense lags attack structurally",
+   "conflict": "Publicly disagrees with Amodei; he argues for openness and against a few people doing safety behind closed doors"
+  },
+  "D14": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 9,
+   "confidence": null,
+   "basis": null,
+   "one_line": "Extreme co-design is his bedrock, and FlashAttention-style contributions have extremely high leverage",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D15": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 6,
+   "confidence": null,
+   "basis": null,
+   "one_line": "GPUs are what he called a time machine for science",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D16": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 4,
+   "confidence": null,
+   "basis": null,
+   "one_line": "Generative recommendation consumes compute, which favors him, but he has never directly discussed this vertical, so confidence is low",
+   "late_modes": null,
+   "conflict": null
+  }
+ },
+ "levers": {
+  "L1": 5,
+  "L2": 15,
+  "L3": 20,
+  "L4": 15,
+  "L5": 10,
+  "L6": 10,
+  "L7": 10,
+  "L8": 15
+ },
+ "lever_reason": "Simulation plus world models fill the physical-data gap, RL turns reasoning into the second exponential, and systems efficiency keeps scaling going; evaluation is necessary but not the engine.",
+ "questions": {
+  "Q2": {
+   "position": "conditional",
+   "score": 7,
+   "condition": "Choose a narrow-domain model (VLA/world model, not general LLM pre-training), with independent third-party evaluation, a team of 2-4, and open weights that outsiders can adopt"
+  }
+ },
+ "conditions": {
+  "Q2": [
+   "C1",
+   "C2",
+   "C3",
+   "C5"
+  ]
+ },
+ "cruxes": [
+  {
+   "question": "Should evaluation rank first, or is it only infrastructure?",
+   "my_position": "Necessary but not the engine; what really decides progress is simulation, world models and test-time compute",
+   "would_change_if": "An evaluation or judge method is shown to predict new failure modes that have not been systematically tested, not just re-check known benchmarks",
+   "directions": [
+    "D05",
+    "D08"
+   ]
+  },
+  {
+   "question": "Can simulation fill the robot data gap, especially for contact and touch?",
+   "my_position": "For non-contact tasks it mostly can; for contact-rich, touch-dependent tasks, I may be overestimating how much simulation covers",
+   "would_change_if": "A purely data-driven world model, not conditioned on simulation, catches up with simulation-conditioned models on contact counterfactuals",
+   "directions": [
+    "D06",
+    "D09"
+   ]
+  },
+  {
+   "question": "Without large compute, can academia still make adopted contributions on foundation models?",
+   "my_position": "On general pre-training, almost not; with a narrow-domain model, open weights, independent evaluation and a small team, yes",
+   "would_change_if": "A narrow-domain model (VLA/world model) from an academic lab or small team is widely adopted by industry on independent evaluation",
+   "directions": [
+    "D01",
+    "D08"
+   ]
+  }
+ ],
+ "taste_advice": "Pick interfaces that can be reused across generations; do not bet on a single product; CUDA taking about ten years to pay back proves the point",
+ "pairwise": [
+  {
+   "a": "D05",
+   "b": "D08",
+   "pick": "D08",
+   "why": "The world model is the core of grounding; evaluation is necessary but not the engine"
+  },
+  {
+   "a": "D05",
+   "b": "D06",
+   "pick": "D06",
+   "why": "Physical AI is a ten-trillion-dollar-scale market; evaluation is only infrastructure"
+  },
+  {
+   "a": "D06",
+   "b": "D08",
+   "pick": "D06",
+   "why": "Embodied AI is the destination and the world model is the method; the destination carries more weight"
+  },
+  {
+   "a": "D07",
+   "b": "D08",
+   "pick": "D08",
+   "why": "WAM builds perception into a world model and then attaches actions, which is more fundamental than a plain policy head"
+  },
+  {
+   "a": "D09",
+   "b": "D06",
+   "pick": "D06",
+   "why": "Physical AI is the destination; simulation is only a method for filling the data gap"
+  },
+  {
+   "a": "D02",
+   "b": "D03",
+   "pick": "D02",
+   "why": "RL/reasoning is the second exponential; self-improvement is still bound by the human-in-the-loop red line"
+  },
+  {
+   "a": "D11",
+   "b": "D12",
+   "pick": "D11",
+   "why": "Generation benchmarks are being commoditized; understanding gaps are more real and more lasting"
+  },
+  {
+   "a": "D01",
+   "b": "D05",
+   "pick": "D05",
+   "why": "The pre-training window has been locked up by big companies; evaluation still has room for independence"
+  },
+  {
+   "a": "D04",
+   "b": "D03",
+   "pick": "D03",
+   "why": "A pure wrapper layer will be absorbed by platforms; continual learning itself remains open"
+  },
+  {
+   "a": "D13",
+   "b": "D05",
+   "pick": "D05",
+   "why": "Safety is an engineering-redundancy problem; the value of evaluation independence is more direct"
+  },
+  {
+   "a": "D10",
+   "b": "D06",
+   "pick": "D06",
+   "why": "Autonomous driving is narrowing to a few platforms; physical AI is the bigger bet"
+  }
+ ],
+ "web_searches": []
+}

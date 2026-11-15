@@ -1,0 +1,468 @@
+{
+ "posts": {
+  "A/X5/C1": {
+   "claim_clear": 5,
+   "evidence_holds": 4,
+   "answers_strongest": null,
+   "source_independent": 4,
+   "flags": []
+  },
+  "A/X5/C2": {
+   "claim_clear": 5,
+   "evidence_holds": 4,
+   "answers_strongest": null,
+   "source_independent": 4,
+   "flags": []
+  },
+  "A/X5/M3": {
+   "claim_clear": 5,
+   "evidence_holds": 4,
+   "answers_strongest": null,
+   "source_independent": 4,
+   "flags": []
+  },
+  "A/X5/M4": {
+   "claim_clear": 5,
+   "evidence_holds": 4,
+   "answers_strongest": null,
+   "source_independent": 4,
+   "flags": []
+  },
+  "A/X5/M6": {
+   "claim_clear": 5,
+   "evidence_holds": 4,
+   "answers_strongest": null,
+   "source_independent": 3,
+   "flags": []
+  },
+  "A/X5/M7": {
+   "claim_clear": 5,
+   "evidence_holds": 2,
+   "answers_strongest": null,
+   "source_independent": 2,
+   "flags": [
+    "retracted"
+   ]
+  },
+  "B/X5/C1": {
+   "claim_clear": 5,
+   "evidence_holds": 4,
+   "answers_strongest": 4,
+   "source_independent": 4,
+   "flags": []
+  },
+  "B/X5/C2": {
+   "claim_clear": 5,
+   "evidence_holds": 3,
+   "answers_strongest": 4,
+   "source_independent": 3,
+   "flags": [
+    "retracted"
+   ]
+  },
+  "B/X5/M3": {
+   "claim_clear": 5,
+   "evidence_holds": 4,
+   "answers_strongest": 4,
+   "source_independent": 4,
+   "flags": []
+  },
+  "B/X5/M4": {
+   "claim_clear": 5,
+   "evidence_holds": 4,
+   "answers_strongest": 4,
+   "source_independent": 4,
+   "flags": []
+  },
+  "B/X5/M6": {
+   "claim_clear": 5,
+   "evidence_holds": 3,
+   "answers_strongest": 4,
+   "source_independent": 3,
+   "flags": [
+    "retracted",
+    "source_challenged"
+   ]
+  },
+  "B/X5/M7": {
+   "claim_clear": 5,
+   "evidence_holds": 3,
+   "answers_strongest": 3,
+   "source_independent": 3,
+   "flags": []
+  },
+  "B/X5/M8_interjection": {
+   "claim_clear": 4,
+   "evidence_holds": 3,
+   "answers_strongest": 3,
+   "source_independent": 3,
+   "flags": []
+  },
+  "C/X5/C1": {
+   "claim_clear": 5,
+   "evidence_holds": 5,
+   "answers_strongest": 4,
+   "source_independent": 4,
+   "flags": []
+  },
+  "C/X5/C2": {
+   "claim_clear": 5,
+   "evidence_holds": 5,
+   "answers_strongest": 5,
+   "source_independent": 4,
+   "flags": []
+  },
+  "C/X5/M3": {
+   "claim_clear": 5,
+   "evidence_holds": 4,
+   "answers_strongest": 4,
+   "source_independent": 4,
+   "flags": []
+  },
+  "C/X5/M4": {
+   "claim_clear": 5,
+   "evidence_holds": 5,
+   "answers_strongest": 5,
+   "source_independent": 5,
+   "flags": []
+  },
+  "C/X5/M6": {
+   "claim_clear": 5,
+   "evidence_holds": 4,
+   "answers_strongest": 4,
+   "source_independent": 4,
+   "flags": []
+  },
+  "C/X5/M7": {
+   "claim_clear": 5,
+   "evidence_holds": 4,
+   "answers_strongest": 5,
+   "source_independent": 4,
+   "flags": []
+  },
+  "overtime/X5/1_M3": {
+   "claim_clear": 5,
+   "evidence_holds": 4,
+   "answers_strongest": 5,
+   "source_independent": 4,
+   "flags": []
+  },
+  "overtime/X5/1_M6": {
+   "claim_clear": 5,
+   "evidence_holds": 4,
+   "answers_strongest": 5,
+   "source_independent": 3,
+   "flags": []
+  },
+  "overtime/X5/2_M3": {
+   "claim_clear": 5,
+   "evidence_holds": 4,
+   "answers_strongest": 5,
+   "source_independent": 4,
+   "flags": []
+  },
+  "overtime/X5/2_M6": {
+   "claim_clear": 5,
+   "evidence_holds": 4,
+   "answers_strongest": 5,
+   "source_independent": 4,
+   "flags": []
+  },
+  "A/X6/C3": {
+   "claim_clear": 5,
+   "evidence_holds": 3,
+   "answers_strongest": null,
+   "source_independent": 2,
+   "flags": [
+    "retracted"
+   ]
+  },
+  "A/X6/C5": {
+   "claim_clear": 5,
+   "evidence_holds": 4,
+   "answers_strongest": null,
+   "source_independent": 3,
+   "flags": []
+  },
+  "A/X6/K3": {
+   "claim_clear": 5,
+   "evidence_holds": 4,
+   "answers_strongest": null,
+   "source_independent": 2,
+   "flags": []
+  },
+  "A/X6/K4": {
+   "claim_clear": 5,
+   "evidence_holds": 4,
+   "answers_strongest": null,
+   "source_independent": 3,
+   "flags": []
+  },
+  "A/X6/K5": {
+   "claim_clear": 5,
+   "evidence_holds": 4,
+   "answers_strongest": null,
+   "source_independent": 3,
+   "flags": []
+  },
+  "B/X6/C3": {
+   "claim_clear": 5,
+   "evidence_holds": 4,
+   "answers_strongest": 4,
+   "source_independent": 4,
+   "flags": []
+  },
+  "B/X6/C5": {
+   "claim_clear": 5,
+   "evidence_holds": 5,
+   "answers_strongest": 4,
+   "source_independent": 4,
+   "flags": []
+  },
+  "B/X6/K3": {
+   "claim_clear": 5,
+   "evidence_holds": 2,
+   "answers_strongest": 4,
+   "source_independent": 2,
+   "flags": [
+    "retracted",
+    "source_challenged"
+   ]
+  },
+  "B/X6/K4": {
+   "claim_clear": 5,
+   "evidence_holds": 5,
+   "answers_strongest": 4,
+   "source_independent": 4,
+   "flags": []
+  },
+  "B/X6/K5": {
+   "claim_clear": 5,
+   "evidence_holds": 4,
+   "answers_strongest": 4,
+   "source_independent": 4,
+   "flags": []
+  },
+  "C/X6/C3": {
+   "claim_clear": 5,
+   "evidence_holds": 4,
+   "answers_strongest": 4,
+   "source_independent": 3,
+   "flags": []
+  },
+  "C/X6/C5": {
+   "claim_clear": 5,
+   "evidence_holds": 5,
+   "answers_strongest": 4,
+   "source_independent": 4,
+   "flags": []
+  },
+  "C/X6/K3": {
+   "claim_clear": 5,
+   "evidence_holds": 4,
+   "answers_strongest": 4,
+   "source_independent": 3,
+   "flags": []
+  },
+  "C/X6/K4": {
+   "claim_clear": 5,
+   "evidence_holds": 5,
+   "answers_strongest": 5,
+   "source_independent": 4,
+   "flags": []
+  },
+  "C/X6/K5": {
+   "claim_clear": 5,
+   "evidence_holds": 4,
+   "answers_strongest": 4,
+   "source_independent": 4,
+   "flags": []
+  },
+  "overtime/X6/1_C5": {
+   "claim_clear": 5,
+   "evidence_holds": 4,
+   "answers_strongest": 5,
+   "source_independent": 4,
+   "flags": []
+  },
+  "overtime/X6/1_K4": {
+   "claim_clear": 5,
+   "evidence_holds": 4,
+   "answers_strongest": 5,
+   "source_independent": 4,
+   "flags": []
+  },
+  "overtime/X6/2_C5": {
+   "claim_clear": 5,
+   "evidence_holds": 4,
+   "answers_strongest": 5,
+   "source_independent": 4,
+   "flags": []
+  },
+  "overtime/X6/2_K4": {
+   "claim_clear": 5,
+   "evidence_holds": 4,
+   "answers_strongest": 5,
+   "source_independent": 4,
+   "flags": []
+  },
+  "A/X7/C3": {
+   "claim_clear": 5,
+   "evidence_holds": 4,
+   "answers_strongest": null,
+   "source_independent": 4,
+   "flags": []
+  },
+  "A/X7/C4": {
+   "claim_clear": 5,
+   "evidence_holds": 3,
+   "answers_strongest": null,
+   "source_independent": 4,
+   "flags": [
+    "retracted"
+   ]
+  },
+  "A/X7/K4": {
+   "claim_clear": 5,
+   "evidence_holds": 5,
+   "answers_strongest": null,
+   "source_independent": 4,
+   "flags": []
+  },
+  "A/X7/K6": {
+   "claim_clear": 5,
+   "evidence_holds": 3,
+   "answers_strongest": null,
+   "source_independent": 4,
+   "flags": [
+    "retracted"
+   ]
+  },
+  "A/X7/M2": {
+   "claim_clear": 5,
+   "evidence_holds": 5,
+   "answers_strongest": null,
+   "source_independent": 4,
+   "flags": []
+  },
+  "A/X7/M6": {
+   "claim_clear": 5,
+   "evidence_holds": 4,
+   "answers_strongest": null,
+   "source_independent": 4,
+   "flags": []
+  },
+  "B/X7/C3": {
+   "claim_clear": 5,
+   "evidence_holds": 4,
+   "answers_strongest": 4,
+   "source_independent": 4,
+   "flags": []
+  },
+  "B/X7/C4": {
+   "claim_clear": 5,
+   "evidence_holds": 3,
+   "answers_strongest": 2,
+   "source_independent": 4,
+   "flags": []
+  },
+  "B/X7/K4": {
+   "claim_clear": 5,
+   "evidence_holds": 5,
+   "answers_strongest": 4,
+   "source_independent": 4,
+   "flags": []
+  },
+  "B/X7/K6": {
+   "claim_clear": 5,
+   "evidence_holds": 4,
+   "answers_strongest": 4,
+   "source_independent": 4,
+   "flags": []
+  },
+  "B/X7/M2": {
+   "claim_clear": 5,
+   "evidence_holds": 5,
+   "answers_strongest": 5,
+   "source_independent": 4,
+   "flags": []
+  },
+  "B/X7/M6": {
+   "claim_clear": 5,
+   "evidence_holds": 4,
+   "answers_strongest": 4,
+   "source_independent": 4,
+   "flags": []
+  },
+  "C/X7/C3": {
+   "claim_clear": 5,
+   "evidence_holds": 4,
+   "answers_strongest": 5,
+   "source_independent": 4,
+   "flags": []
+  },
+  "C/X7/C4": {
+   "claim_clear": 5,
+   "evidence_holds": 5,
+   "answers_strongest": 5,
+   "source_independent": 4,
+   "flags": []
+  },
+  "C/X7/K4": {
+   "claim_clear": 5,
+   "evidence_holds": 5,
+   "answers_strongest": 5,
+   "source_independent": 4,
+   "flags": []
+  },
+  "C/X7/K6": {
+   "claim_clear": 5,
+   "evidence_holds": 5,
+   "answers_strongest": 5,
+   "source_independent": 4,
+   "flags": []
+  },
+  "C/X7/M2": {
+   "claim_clear": 5,
+   "evidence_holds": 5,
+   "answers_strongest": 5,
+   "source_independent": 4,
+   "flags": []
+  },
+  "C/X7/M6": {
+   "claim_clear": 5,
+   "evidence_holds": 4,
+   "answers_strongest": 4,
+   "source_independent": 4,
+   "flags": []
+  },
+  "overtime/X7/1_C3": {
+   "claim_clear": 5,
+   "evidence_holds": 5,
+   "answers_strongest": 5,
+   "source_independent": 4,
+   "flags": []
+  },
+  "overtime/X7/1_K4": {
+   "claim_clear": 5,
+   "evidence_holds": 5,
+   "answers_strongest": 5,
+   "source_independent": 4,
+   "flags": []
+  },
+  "overtime/X7/2_C3": {
+   "claim_clear": 5,
+   "evidence_holds": 5,
+   "answers_strongest": 5,
+   "source_independent": 4,
+   "flags": []
+  },
+  "overtime/X7/2_K4": {
+   "claim_clear": 5,
+   "evidence_holds": 5,
+   "answers_strongest": 5,
+   "source_independent": 4,
+   "flags": []
+  }
+ }
+}

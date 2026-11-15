@@ -1,12 +1,25 @@
 name: Content concern
-description: Something in this repository misrepresents a person, contains personal data, or may infringe a right.
+description: Ask for a persona to be changed or removed, or report content that misrepresents a person, contains personal data, or may infringe a right.
 labels: ["content-concern"]
 body:
   - type: markdown
     attributes:
       value: |
+        **If you are a person simulated here, or act for one,** and want your persona changed or removed: say so below. We remove it; no reason needed.
         If the concern involves personal data, please report it privately instead: Security tab → "Report a vulnerability".
         Content under a good-faith concern is removed first and discussed after.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What is this about?
+      options:
+        - I am the person simulated (or act for them) and want the persona changed or removed
+        - A persona misrepresents someone
+        - Personal data
+        - Copyright or another right
+        - Something else
+    validations:
+      required: true
   - type: input
     id: where
     attributes:

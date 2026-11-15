@@ -1,0 +1,373 @@
+{
+ "id": "C5",
+ "name": "Sergey Levine",
+ "round": "R3",
+ "notice": "Simulation based on public material; not the person's own words.",
+ "options": {
+  "D01": {
+   "impact": 8,
+   "bottleneck": 5,
+   "academic_edge": 2,
+   "window": 3,
+   "overall": 4,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "Pre-training is a necessary prior, but academia lacks the compute to replicate it; the real bottleneck is experience, not parameter count",
+   "late_modes": "Doing general LLM pre-training itself; the compute and data are already locked up by a few big companies",
+   "conflict": null
+  },
+  "D02": {
+   "impact": 7,
+   "bottleneck": 5,
+   "academic_edge": 6,
+   "window": 4,
+   "overall": 6,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "The X7 table confirmed that RLVR mainly improves pass@1/sampling efficiency rather than teaching new out-of-distribution patterns; it looks more like a reliability lever than a new-structure lever",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D03": {
+   "impact": 8,
+   "bottleneck": 8,
+   "academic_edge": 6,
+   "window": 5,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "His core methodology: deployment experience drives continual improvement; there is no evidence for RSI-style self-improvement on the embodied side",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D04": {
+   "impact": 6,
+   "bottleneck": 4,
+   "academic_edge": 3,
+   "window": 2,
+   "overall": 4,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "The value of scaffolding is being absorbed by the models themselves; engineering integration is not a lasting research asset",
+   "late_modes": "Hand-built agent scaffolding; it is being absorbed by general CLI agents",
+   "conflict": null
+  },
+  "D05": {
+   "impact": 7,
+   "bottleneck": 6,
+   "academic_edge": 8,
+   "window": 6,
+   "overall": 7,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "Evaluation is necessary but not the engine; industry self-testing has a conflict of interest, which is exactly academia's opportunity",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D06": {
+   "impact": 9,
+   "bottleneck": 9,
+   "academic_edge": 6,
+   "window": 6,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "His home turf: deployment experience is the source of information; the bottleneck has shifted from basic motion to task judgment and the long tail",
+   "late_modes": null,
+   "conflict": "Co-founder of PI; this is exactly PI's core business"
+  },
+  "D07": {
+   "impact": 7,
+   "bottleneck": 6,
+   "academic_edge": 6,
+   "window": 5,
+   "overall": 7,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "The X5 table's evidence (OpenVLA-OFT, LBM) confirmed that action policies have clearly measurable control-task success or failure, and this was established earlier than for D08",
+   "late_modes": null,
+   "conflict": "PI's π0 series uses a flow-matching action expert, which is commercially relevant"
+  },
+  "D08": {
+   "impact": 7,
+   "bottleneck": 5,
+   "academic_edge": 7,
+   "window": 6,
+   "overall": 7,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Purposeful prediction (Vidar) is not the same as pure image-quality prediction, so my criticism narrows; but valuations still run ahead of independent replication",
+   "late_modes": null,
+   "conflict": "He opposes substitute data as the end state, and his stance runs in the same direction as PI's real-data moat"
+  },
+  "D09": {
+   "impact": 6,
+   "bottleneck": 4,
+   "academic_edge": 7,
+   "window": 5,
+   "overall": 6,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Domain randomization composing new training signals within the prior is a real gain; the contact/touch inflection point moves with calibration accuracy and is not a fixed boundary",
+   "late_modes": null,
+   "conflict": "The stance that 'simulation cannot replace real data' runs in the same direction as PI's data moat"
+  },
+  "D10": {
+   "impact": 8,
+   "bottleneck": 4,
+   "academic_edge": 2,
+   "window": 2,
+   "overall": 5,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "It has entered an operational-expansion phase: it relies on fleet scale and long-tail validation, not on a flywheel of learning from errors as it goes",
+   "late_modes": "Newly founded full-stack autonomous-driving companies; the moat of fleet data and safety records has already been built",
+   "conflict": null
+  },
+  "D11": {
+   "impact": 7,
+   "bottleneck": 5,
+   "academic_edge": 6,
+   "window": 4,
+   "overall": 5,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "VLMs give robots commonsense priors; diagnostic benchmarks are a good problem academia can credibly take on",
+   "late_modes": "Working on general frontier VLM architecture itself; it is dominated by a few labs, and academia can hardly get a hand in",
+   "conflict": null
+  },
+  "D12": {
+   "impact": 6,
+   "bottleneck": 3,
+   "academic_edge": 5,
+   "window": 3,
+   "overall": 4,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "Realism is not his metric; the Sora2 shutdown shows the commercialization path of pure generation is in doubt",
+   "late_modes": "Pursuing the realism of video generation itself; its commercial sustainability is in doubt, and costs are being pushed down",
+   "conflict": null
+  },
+  "D13": {
+   "impact": 7,
+   "bottleneck": 5,
+   "academic_edge": 6,
+   "window": 5,
+   "overall": 5,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "A field where he takes essentially no position; the only clear stance is worry about malicious users and deceptive agents",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D14": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 5,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "Infrastructure that lowers experimental friction; important but not his specialty, so only an overall score is given",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D15": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": null,
+   "basis": null,
+   "one_line": "In the material he never discusses AI for Science at all; no judging, to avoid inventing a stance",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D16": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": null,
+   "basis": null,
+   "one_line": "The material has no basis on recommendation/retrieval systems; no judging",
+   "late_modes": null,
+   "conflict": null
+  }
+ },
+ "levers": {
+  "L1": 15,
+  "L2": 18,
+  "L3": 9,
+  "L4": 11,
+  "L5": 25,
+  "L6": 4,
+  "L7": 15,
+  "L8": 3
+ },
+ "lever_reason": "Real experience is still the number-one source of new information; within RL/post-training the RLVR part is down-weighted, and world models and simulation each get a little more because of the concrete progress shown in the debate, with the net moved out of L2",
+ "questions": {
+  "Q2": {
+   "position": "conditional",
+   "score": 6,
+   "condition": "A narrow-domain model (VLA/world model) + evaluation (a credible third party or a strict self-built evaluation) + compute at scale + open weights with an adoption path, not general pre-training"
+  }
+ },
+ "conditions": {
+  "Q2": [
+   "C1",
+   "C2",
+   "C3",
+   "C4",
+   "C5"
+  ]
+ },
+ "cruxes": [
+  {
+   "question": "Is the shortfall of simulation/synthetic data in contact and touch scenarios a fixed information-theoretic boundary, or a continuous function of calibration accuracy?",
+   "my_position": "A continuous function: calibration itself still has to be tuned with real torque/tactile sensor data, so real data has not been bypassed, only changed form",
+   "would_change_if": "A physics solver calibrated with no real sensor data at all matches a real-data-trained baseline on contact-rich tasks",
+   "directions": [
+    "D09",
+    "D06",
+    "D08"
+   ]
+  },
+  {
+   "question": "Is training narrow-domain foundation models in a university lab that has GPUs the highest-impact path at the undergraduate-to-master's stage?",
+   "my_position": "Conditional support: narrow domain, not general pre-training, team plus compute at scale, and with evaluation (third-party or self-built) and an adoption path for open weights",
+   "would_change_if": "An academic team with clearly fewer resources than PI or the big companies builds a narrow-domain foundation-model component that industry adopts",
+   "directions": [
+    "D01",
+    "D06"
+   ]
+  },
+  {
+   "question": "Can an independent team reproduce decision-driving evidence for D08's 'purposeful prediction' (such as Vidar), without relying on valuations and narrative?",
+   "my_position": "The direction is more credible than I originally judged, but independent replication has not yet appeared; current valuations still run ahead of the evidence",
+   "would_change_if": "A team independent of existing players such as Shengshu/PI reproduces a success rate comparable to dedicated policies on held-out contact-rich tasks",
+   "directions": [
+    "D08"
+   ]
+  }
+ ],
+ "taste_advice": "Study the mechanism of 'how experience becomes capability'; do not study how to get around experience; go somewhere your method runs into real failure every week (independently corroborated this round)",
+ "pairwise": [
+  {
+   "a": "D05",
+   "b": "D08",
+   "pick": "D05",
+   "why": "The two now have the same score (7), but evaluation is cross-domain infrastructure and D08 is still confined to one domain"
+  },
+  {
+   "a": "D05",
+   "b": "D06",
+   "pick": "D06",
+   "why": "D06 is the main arena where experience turns into capability; evaluation is supporting, not the engine"
+  },
+  {
+   "a": "D06",
+   "b": "D08",
+   "pick": "D06",
+   "why": "Deployment experience is the source of information; the world-model progress is real but still narrower than D06"
+  },
+  {
+   "a": "D07",
+   "b": "D08",
+   "pick": "D07",
+   "why": "The two have the same score (7), but D07 has earlier and more independent real-robot numbers"
+  },
+  {
+   "a": "D09",
+   "b": "D06",
+   "pick": "D06",
+   "why": "The added credibility of simulation is still below that of deployment experience, the core lever"
+  },
+  {
+   "a": "D02",
+   "b": "D03",
+   "pick": "D03",
+   "why": "The X7 table confirmed that RLVR looks more like polishing than a new structure; experience-driven continual improvement is more fundamental"
+  },
+  {
+   "a": "D11",
+   "b": "D12",
+   "pick": "D11",
+   "why": "Understanding models are the source of priors for embodied perception; generative realism is not his metric"
+  },
+  {
+   "a": "D01",
+   "b": "D05",
+   "pick": "D05",
+   "why": "Evaluation can expose spurious progress in pre-training; see Leaderboard Illusion"
+  },
+  {
+   "a": "D04",
+   "b": "D03",
+   "pick": "D03",
+   "why": "Scaffolding is absorbed by models; algorithmic contributions to learning from experience last longer"
+  },
+  {
+   "a": "D13",
+   "b": "D05",
+   "pick": "D05",
+   "why": "D05 is a field where he has solid judgment; on D13 he essentially takes no position"
+  },
+  {
+   "a": "D10",
+   "b": "D06",
+   "pick": "D06",
+   "why": "Autonomous driving relies on operational scale, not on learning from errors as it goes; embodied AI is earlier-stage and more open"
+  }
+ ],
+ "web_searches": [],
+ "changes": [
+  {
+   "option": "D08",
+   "from": 6,
+   "to": 7,
+   "because": "B/X3/M8",
+   "argument_restated": "Vidar extracts inverse dynamics from a video-diffusion prior to serve actions, which is purposeful prediction, not pure image-quality prediction",
+   "why": "My criticism that 'purposeless prediction wastes capacity' does not apply directly to this kind of action-oriented design; its scope should be narrowed rather than negated across the board"
+  },
+  {
+   "option": "D09",
+   "from": 5,
+   "to": 6,
+   "because": "B/X6/K4",
+   "argument_restated": "Domain randomization composes new training signals within the known prior, which is a real gain for visual diversity and the long tail",
+   "why": "This is where my original statement that 'simulation creates no new information' was too absolute; new signals composed within the prior do have independent value"
+  },
+  {
+   "option": "D07",
+   "from": 6,
+   "to": 7,
+   "because": "A/X5/M3 (cited via board/summary/X5.md)",
+   "argument_restated": "Action policies have the hard yardstick of control-task success or failure, while world models' 'encoded means used' currently has no corresponding yardstick",
+   "why": "The X5 table independently confirmed that D07 had credible real-robot validation earlier than D08 (OpenVLA-OFT, LBM blind randomized trials), and this should show up in the score"
+  },
+  {
+   "option": "D02",
+   "from": 7,
+   "to": 6,
+   "because": "A/X7/K4",
+   "argument_restated": "At large k, the base model's pass@k catches up with the RL model; new reasoning comes from distillation, not RLVR",
+   "why": "The 'unlocking new capability' mechanism I originally credited to RLVR was shown by the X7 table's evidence to look more like a sampling-efficiency/reliability lever, not a new-structure lever"
+  }
+ ],
+ "held_despite": [
+  {
+   "post": "overtime/X6/1_K4",
+   "why": "Accepts the mechanism that the inflection point is a continuous function of calibration accuracy, not a fixed boundary, but this is a trajectory question and does not change how many points D09 should get now"
+  },
+  {
+   "post": "overtime/X3/1_C6",
+   "why": "Accepts the clarification that what he said about going heavy is research time, not capital, but D08 was already adjusted in round C, and this round only confirmed the convergence, with no further score change"
+  }
+ ],
+ "still_disagree": "C6/K1/M8 hold that world-model research should be bet on heavily now and that this extends to capital; I think the research should be done, but valuations such as those of AMI Labs and GI still run ahead of independent replication.",
+ "learned": "Simulation's shortfall on contact and friction may be a continuous function of calibration accuracy, not a fixed information-theoretic boundary; the inflection point will move with better physics solvers and calibration data.",
+ "searches": []
+}

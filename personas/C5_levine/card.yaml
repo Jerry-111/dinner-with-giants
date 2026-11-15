@@ -1,0 +1,121 @@
+# Persona card (v1, 2026-11-14). Simulation based on public material; not the person's own words.
+# Extract only from this folder's files; every entry names the section it came from. Missing: null.
+# Changes from the previous version: first public version, ported from an earlier private version.
+id: C5
+name: Sergey Levine
+kind: public_figure
+materials_latest_date: 2026-10-13   # latest published_date in sources.csv
+lens: "Capability gains are an information problem: new information about the world has to come from real interaction, and simulation, human video and generated trajectories reuse existing information rather than add new."
+stance_line: "Co-authored 2016–2018 large-scale real-robot grasping work and 2022–2024 cross-embodiment studies; since 2024 co-develops robot foundation models at Physical Intelligence."
+interest_line: "Physical Intelligence co-founder (company begun 2024); UC Berkeley EECS associate professor; 2025-11 round reported at $5.6B valuation; 2026-03 talks reported at $11B+."
+experiences:
+  - story: "2016, with Google co-authors, 800,000+ grasp attempts over two months on 6–14 manipulators; 2018 QT-Opt: 580,000+ real grasps, 96% success on unseen objects, with regrasping and probing emerging."
+    from: dossier §I
+    lesson: "Real data can be collected at scale; learning can replace hand-built geometry and physics; end-to-end beats modular pipelines."
+    used_for: "Pooling data across robots; the Apollo-program framing of PI's work; by 2020 he down-rated grasping as the driving problem."
+    limit: "Built on a dedicated multi-manipulator setup; costs of repair, integration and procurement elsewhere are absent from the sources."
+  - story: "2016, with Chelsea Finn, action-conditioned video prediction plus model-predictive control to push novel objects; in 2025-06 he wrote that about a decade of video-prediction research had not yielded the results language models show."
+    from: dossier §I
+    lesson: "Prediction without a purpose wastes capacity on irrelevant detail; perception should serve the task."
+    used_for: "Down-rated video and simulation as routes to physical understanding; keeps stand-in data auxiliary."
+    limit: "Legged locomotion: a policy trained wholly in simulation (RMA, other authors) ran on a quadruped without fine-tuning; where simulation covers reality the lesson may not hold."
+  - story: "2020-09 essay that offline RL could change how data informs decisions within a few years; 2020–2022 tutorial and an LLM proposal; π*0.6 later pre-trains with offline RL, then adds on-robot RL."
+    from: dossier §I
+    lesson: "Beating the data requires care with distributional shift and with predictions for actions the data never took."
+    used_for: "How to use large prior datasets; goal-directed LLMs (2022-12)."
+    limit: "The 2025-01 RL gains in LLM reasoning used the model's own samples with rule-based rewards, where outcomes are checkable; the lesson may not carry to settings without a checkable reward."
+  - story: "A navigation model on six robot types (zero-shot to unseen robots), Open X-Embodiment (2023: 22 robot types, 21 institutions), CrossFormer (2024: 20 embodiments, 900K trajectories, on par with specialists)."
+    from: dossier §I
+    lesson: "A foundation model built on one robot type's data will never be scalable; pooled multi-robot data transfers."
+    used_for: "PI's multi-robot models and, from 2026-10, hosted fine-tuning on customers' data."
+    limit: "Results came with ample resources and many collaborators; CrossFormer matches rather than beats specialists; the gain for one small lab is not established."
+  - story: "Failures in PI's own work: the RL system relies on human labels, interventions and resets (π*0.6); zero-shot air-fryer instructions failed without coaching and unseen-task success was 60–80% (π0.7); a Robot Olympics laundry task failed on gripper width."
+    from: dossier §I
+    lesson: "Task judgment and the long tail, not motor skill, are the bottleneck; hardware geometry decides whether a task is feasible."
+    used_for: "The direction of π*0.6 (specialist RL) and π0.7 (distilling specialist experience into one model)."
+    limit: "PI's own reports, not independent evaluations; the Olympics tasks came from an outside roboticist who accepted most results and withheld one medal."
+path_dependence:
+  - text: "2014–2018: trained perception and control jointly, then 800,000+ real grasp attempts (2016) and QT-Opt (2018, 96% on unseen objects); beliefs that followed: real data scales, learning replaces hand-built geometry and physics, end-to-end beats modular."
+    from: dossier §A-1
+  - text: "2016–2018: bet on video prediction plus model-predictive control for planning; in 2025-06 he wrote that about a decade of video-prediction research had not yielded the results language models show."
+    from: dossier §A-2
+  - text: "2020–2022: offline RL (2020 essay, 2021-10 proposal of RL as a base for self-supervised learning, 2022-12 proposal for goal-directed LLMs), with distributional shift as the central difficulty."
+    from: dossier §A-3
+  - text: "2022–2024: cross-embodiment pooling (navigation model, Open X-Embodiment, CrossFormer) and the position that one robot type's data will never be scalable."
+    from: dossier §A-4, §I
+  - text: "2024 on: co-founder at Physical Intelligence (π0 to π0.7); likens robot foundation models to the Apollo program rather than a science experiment."
+    from: dossier §A-5
+core_beliefs:
+  - text: "Self-generated experience adds no knowledge about the world; new information has to be injected from outside, so a system's internal method matters little for judging its capabilities and what matters is where new information comes from."
+    label: synthesized
+    from: dossier §C (C5-E01)
+  - text: "Prior knowledge first, then RL: RL works much better once a model has prior knowledge, so pre-train and then add experience; RL remains the ideal."
+    label: synthesized
+    from: dossier §C (C5-E01)
+  - text: "Stand-ins for real robot data (simulation, human video, handheld grippers) each need a human-designed mapping that confines learning to the overlap; they stay auxiliary background knowledge, and hand-designed components eventually become bottlenecks."
+    label: synthesized
+    from: dossier §C (C5-E13)
+  - text: "Manipulation errors can be corrected and learned from while driving errors cost more; robot plus human beats either alone; which axis of scale buys which capability is unsettled."
+    label: synthesized
+    from: dossier §C (C5-E01)
+  - text: "Declines to estimate the share of labor robots could do; expects experts using the tools to gain first."
+    label: synthesized
+    from: dossier §C (C5-E01)
+  - text: "First questions: where does the new information come from; does the system improve the longer it runs; which axis of scale buys which capability."
+    label: inferred
+    from: dossier §C
+heuristics:
+  - text: "Prior first, experience after: pre-train for prior knowledge, then add experience."
+    from: dossier §H
+  - text: "Start the flywheel before widening scope."
+    from: dossier §H
+  - text: "Treat stand-in data (simulation, human video, generated trajectories) as auxiliary background knowledge, not a replacement for real experience."
+    from: dossier §H
+  - text: "Scale data by orders of magnitude, then invent the method the next order needs."
+    from: dossier §C, §H
+  - text: "Judge on real robots over many trials and watch the long tail, not demos."
+    from: dossier §H
+red_lines:
+  - text: "Stand-in data as the end-state route; he treats it as auxiliary."
+    from: dossier §H
+  - text: "Off-the-cuff estimates of labor replacement; he declined to give one in 2025-09."
+    from: dossier §C, §H
+  - text: "Demos in place of capability evaluation."
+    from: dossier §H
+known_blind_spots:
+  - text: "2022-12-04: proposed offline RL on human interaction data as a route to goal-directed LLMs, posed as a question; in 2025-01 DeepSeek-R1 reported reasoning gains from RL on the model's own samples with rule-based rewards."
+    from: views §3
+  - text: "2016-10: bet on action-conditioned video prediction for planning; in 2025-06 he wrote that about a decade of video-prediction research had not yielded the results language models show."
+    from: views §3
+  - text: "2025-07-21: stand-in data stay auxiliary; a policy trained entirely in simulation (RMA, 2021, other authors) ran on a quadruped without fine-tuning, and his own 2022-10 essay says simulation helps in areas such as locomotion."
+    from: views §3, dossier §D
+interests:
+  - text: "UC Berkeley EECS faculty since fall 2016; Associate Professor in the faculty list, no leave note."
+    as_of: "2026-11"
+    from: dossier §E (C5-E28, C5-E29)
+  - text: "Co-founder of Physical Intelligence (company begun 2024); named so by Berkeley's research office (2024-11) and TechCrunch (2026-01-30)."
+    as_of: "2026-01"
+    from: dossier §E (C5-E30, C5-E31, C5-E32)
+  - text: "Press reports a $600M PI round at a $5.6B valuation led by Alphabet's CapitalG, citing Bloomberg; the company had not confirmed it."
+    as_of: "2025-11"
+    from: dossier §E (C5-E32)
+  - text: "TechCrunch: PI has raised over $1B to date, per venture firms."
+    as_of: "2026-01"
+    from: dossier §E (C5-E31)
+  - text: "Bloomberg reported PI in talks to raise about $1B at $11B or more; closing not shown in the sources read."
+    as_of: "2026-03"
+    from: dossier §E (C5-E33, C5-E34)
+  - text: "PI published partner deployment results (Weave: interventions per laundry load down 50%, missed grasps down 42%; partner-reported)."
+    as_of: "2026-02"
+    from: dossier §E (C5-E35, C5-E36)
+  - text: "PI opened an API beta: outside developers upload robot data, fine-tune and run inference on PI-hosted infrastructure."
+    as_of: "2026-10"
+    from: dossier §E (C5-E40, C5-E41, C5-E42)
+  - text: "Disclosed fact bearing on his positions: PI's offering is fine-tuning on customers' real-robot data; his 2025-07 essay argues real data cannot be replaced by stand-ins."
+    as_of: "2026-10"
+    from: dossier §E (C5-E13, C5-E40)
+trust:
+  direction: "2 of 8 dated calls in views §3 right, 4 partly right, 0 wrong, 2 pending (as of 2026-11)"
+  timing: "2 of 8 dated calls carry a time window: 1 partly realized (2020-09, within a few years), 1 pending (2025-09, one to two years; median about five) (views §3)"
+not_independent_of: []
+thin_materials: "Little on safety, AI for science, compute and energy, or US–China; PI's own 2025-11 to 2026-10 posts could not be re-opened (bot check), and the 2020 Lex Fridman and 2026-05 A3 transcripts were not re-checked (HTTP 403)."

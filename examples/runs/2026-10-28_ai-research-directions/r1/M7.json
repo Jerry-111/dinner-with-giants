@@ -1,0 +1,323 @@
+{
+ "id": "M7",
+ "name": "Russ Tedrake",
+ "round": "R1",
+ "notice": "Simulation based on public material; not the person's own words.",
+ "options": {
+  "D01": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": 3,
+   "window": 2,
+   "overall": 3,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "Not my specialty; foundation models trained without compute at scale are mostly scaled-down versions, with limited weight for industry",
+   "late_modes": "Merely reproducing larger-scale pre-training is already too late; academia cannot beat industry on compute",
+   "conflict": null
+  },
+  "D02": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": 4,
+   "window": 3,
+   "overall": 3,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "LLM reasoning/RLVR is not my specialty; by analogy with robot RL, algorithmic innovation often originates in academia, but the window is narrowing",
+   "late_modes": "Chasing RLVR fine-tuning scores on off-the-shelf benchmarks is already too late; top labs overwhelm it with resources",
+   "conflict": null
+  },
+  "D03": {
+   "impact": null,
+   "bottleneck": 6,
+   "academic_edge": null,
+   "window": null,
+   "overall": 4,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "I make no judgment on agent self-improvement itself; but whether autonomous improvement is really more effective than compute spending has not yet been statistically validated",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D04": {
+   "impact": null,
+   "bottleneck": 5,
+   "academic_edge": 2,
+   "window": 2,
+   "overall": 3,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "Not my specialty; conclusions about scaffolding being absorbed by models are inconsistent across benchmarks and should be settled by rigorous evaluation",
+   "late_modes": "Building general agent scaffolding is already too late; vendor CLI agents already fill the top of the leaderboards",
+   "conflict": null
+  },
+  "D05": {
+   "impact": 9,
+   "bottleneck": 10,
+   "academic_edge": 7,
+   "window": 6,
+   "overall": 9,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Evaluation is a bottleneck I have validated repeatedly: a real robot cannot rerun the same experiment, so statistical design is scarcer than the model itself",
+   "late_modes": "Chasing a single static benchmark leaderboard is already too late; design work on evaluation methodology itself is not too late",
+   "conflict": "Author of the LBM evaluation and also CEO of Walden"
+  },
+  "D06": {
+   "impact": 9,
+   "bottleneck": 7,
+   "academic_edge": 6,
+   "window": 7,
+   "overall": 9,
+   "confidence": "high",
+   "basis": "quoted",
+   "one_line": "My home field; low-cost hardware is loosening the old constraint that real-robot trials are scarce, but the ability to design evaluations is still the bar",
+   "late_modes": "Reproducing viral demo videos that 'look like they get work done' is already too late; single-task showcases without statistical validation are worth little",
+   "conflict": "Founder and CEO of Walden; direct commercial interest lies here"
+  },
+  "D07": {
+   "impact": 8,
+   "bottleneck": 6,
+   "academic_edge": 7,
+   "window": 5,
+   "overall": 7,
+   "confidence": "medium",
+   "basis": "quoted",
+   "one_line": "The evidence shows the diffusion head is not the only optimum; the paradigm dispute is unsettled",
+   "late_modes": "Swapping in a new action head to chase benchmarks is already too late; work that does not address data/evaluation has low value",
+   "conflict": "Founder and CEO; the company bets on the diffusion/LBM route"
+  },
+  "D08": {
+   "impact": 7,
+   "bottleneck": 8,
+   "academic_edge": 6,
+   "window": 5,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "'Looks realistic' and 'physically correct' are often confused; I trust world models that are action-conditioned and statistically validated more",
+   "late_modes": "Chasing only higher resolution/longer consistency in quality metrics is already too late; demo videos without closed-loop decision validation are of doubtful value",
+   "conflict": "Walden's business model depends indirectly on this judgment"
+  },
+  "D09": {
+   "impact": 8,
+   "bottleneck": 7,
+   "academic_edge": 7,
+   "window": 6,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Whether simulation can substitute for real-robot trials depends on whether it has been validated as correlated with the real world, not on how high its resolution is",
+   "late_modes": "Showing only that something 'runs in simulation' with no correlation validation is already too late; claims of 'unlimited data' that cannot be quantified have no value",
+   "conflict": "Simulation cost directly affects his company's unit economics"
+  },
+  "D10": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": null,
+   "basis": null,
+   "one_line": "No judgment: autonomous-driving evaluation is not a field I have discussed publicly, although problems like self-reported, not independently audited data are isomorphic to my own skepticism",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D11": {
+   "impact": null,
+   "bottleneck": 7,
+   "academic_edge": 5,
+   "window": null,
+   "overall": 5,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "I am a downstream consumer; the spatial-reasoning gap is a concrete bottleneck for robot manipulation, and diagnostic work is worth more than leaderboard chasing",
+   "late_modes": "Chasing scores with general VLMs is already too late, overwhelmed by top labs' resources; specialized spatial/3D diagnosis is not too late",
+   "conflict": null
+  },
+  "D12": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": 4,
+   "window": 3,
+   "overall": 4,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "Not my track; evaluation driven by image quality has fragile value, but the methodology for generative-distribution fidelity shares its roots with mine",
+   "late_modes": "A pure quality/FID race is already too late; generation evaluation not tied to downstream tasks is of doubtful value",
+   "conflict": null
+  },
+  "D13": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": null,
+   "basis": null,
+   "one_line": "No judgment: alignment and interpretability are not my specialty, and the material has no relevant public statements",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D14": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 5,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "Inference latency/throughput directly affects robot deployment cost; it is an engineering parameter I care about, but not a research specialty",
+   "late_modes": null,
+   "conflict": "Falling compute costs benefit his company"
+  },
+  "D15": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": null,
+   "basis": null,
+   "one_line": "No judgment: no public material shows me discussing AI for Science, and it has no direct overlap with my methodology",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D16": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": null,
+   "basis": null,
+   "one_line": "No judgment: recommender systems are not my specialty and the material does not cover them",
+   "late_modes": null,
+   "conflict": null
+  }
+ },
+ "levers": {
+  "L1": 25,
+  "L2": 8,
+  "L3": 15,
+  "L4": 15,
+  "L5": 15,
+  "L6": 7,
+  "L7": 5,
+  "L8": 10
+ },
+ "lever_reason": "Evaluation/verification decides whether any claim can be trusted; simulation, world models and real data together address the hard constraint that real-robot experiments cannot be repeated; scaled-up pre-training is not the main lever for physical AI.",
+ "questions": {
+  "Q2": {
+   "position": "conditional",
+   "score": 7,
+   "condition": "Narrow domain, not general LLM pre-training; credible third-party evaluation; a complementary team of 2-4 people; open model weights with a path to outside adoption."
+  }
+ },
+ "conditions": {
+  "Q2": [
+   "C1",
+   "C2",
+   "C3",
+   "C5"
+  ]
+ },
+ "cruxes": [
+  {
+   "question": "Must an action policy use diffusion/flow to represent multimodality, or is continuous regression enough?",
+   "my_position": "Diffusion is useful but not the only solution; OpenVLA-OFT shows continuous actions + parallel decoding can overtake it",
+   "would_change_if": "More independent teams consistently show continuous actions outperforming diffusion in larger-scale real-robot evaluations",
+   "directions": [
+    "D07"
+   ]
+  },
+  {
+   "question": "Can pure video generation implicitly learn enough physics to serve as a world model?",
+   "my_position": "Skeptical; 'looks real' does not equal 'physically correct', which requires action-conditioned models + statistical validation on real robots",
+   "would_change_if": "Reproducible, strong evidence that video world models generalize out of distribution in physics, not just similarity matching",
+   "directions": [
+    "D08",
+    "D07"
+   ]
+  },
+  {
+   "question": "Is evaluation methodology really the bottleneck of physical-AI progress, or an excuse for the compute gap?",
+   "my_position": "It is a bottleneck: without statistical design you cannot even tell which route is better, so this is not an excuse",
+   "would_change_if": "Some route keeps succeeding in large-scale real deployment even without rigorous evaluation, which would show that statistical design is not necessary",
+   "directions": [
+    "D05"
+   ]
+  }
+ ],
+ "taste_advice": "First ask whether a known structure can be used; only when there is no structure and plenty of data is it the generative model's turn; whichever road you take, without a statistically credible evaluation you know nothing.",
+ "pairwise": [
+  {
+   "a": "D05",
+   "b": "D08",
+   "pick": "D05",
+   "why": "Evaluation is the precondition for every judgment; without it even the claims about D08 cannot be verified"
+  },
+  {
+   "a": "D05",
+   "b": "D06",
+   "pick": "D05",
+   "why": "Without evaluation methodology, claims of robot progress cannot be verified; D05 is more upstream"
+  },
+  {
+   "a": "D06",
+   "b": "D08",
+   "pick": "D06",
+   "why": "D06 has twenty years of verifiable real-deployment evidence, while D08 is still mostly demos and inference"
+  },
+  {
+   "a": "D07",
+   "b": "D08",
+   "pick": "D07",
+   "why": "Action representations already have statistical validation on real robots (LBM), while D08 mostly remains at simulation/demo level"
+  },
+  {
+   "a": "D09",
+   "b": "D06",
+   "pick": "D06",
+   "why": "D06 is the end goal; D09 (simulation) is a tool that serves it and not a destination in itself"
+  },
+  {
+   "a": "D02",
+   "b": "D03",
+   "pick": "D03",
+   "why": "Whether self-improvement really works has not been statistically validated, which is closer to my methodology"
+  },
+  {
+   "a": "D11",
+   "b": "D12",
+   "pick": "D11",
+   "why": "The spatial-reasoning gap is a bottleneck robots actually run into; multimodal generation quality is not directly relevant"
+  },
+  {
+   "a": "D01",
+   "b": "D05",
+   "pick": "D05",
+   "why": "For the evaluation-bottleneck judgment I have twenty years of first-hand evidence; pre-training scaling is not my specialty"
+  },
+  {
+   "a": "D04",
+   "b": "D03",
+   "pick": "D03",
+   "why": "The sample-efficiency problem of self-improvement is closer to an unsolved scientific problem than scaffolding engineering is"
+  },
+  {
+   "a": "D13",
+   "b": "D05",
+   "pick": "D05",
+   "why": "No public material supports my judgment on alignment/interpretability; I have first-hand experience in evaluation"
+  },
+  {
+   "a": "D10",
+   "b": "D06",
+   "pick": "D06",
+   "why": "The autonomous-driving evaluation system is not a field I know well; robot manipulation is my home field"
+  }
+ ],
+ "web_searches": []
+}

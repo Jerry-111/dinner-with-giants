@@ -1,0 +1,325 @@
+{
+ "id": "M2",
+ "name": "Shunyu Yao",
+ "round": "R1",
+ "notice": "Simulation based on public material; not the person's own words.",
+ "options": {
+  "D01": {
+   "impact": 8,
+   "bottleneck": 4,
+   "academic_edge": 2,
+   "window": 2,
+   "overall": 3,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "The recipe is already mature and marginal returns are falling fast; academia and students lack the compute to make a distinctive contribution",
+   "late_modes": "Replicating the training recipe itself: absorbed by big companies' compute scale",
+   "conflict": "He oversees Tencent's foundation-model department, so he has a stake in this judgment"
+  },
+  "D02": {
+   "impact": 8,
+   "bottleneck": 7,
+   "academic_edge": 6,
+   "window": 5,
+   "overall": 7,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "RL is a capability lever, but academia's edge is in honestly evaluating what RL actually learned, not in the recipe itself",
+   "late_modes": "Simply replicating the RLVR recipe: will be crushed by vendors that scale",
+   "conflict": null
+  },
+  "D03": {
+   "impact": 9,
+   "bottleneck": 8,
+   "academic_edge": 8,
+   "window": 6,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Long-horizon credit assignment and non-i.i.d. evaluation are the real bottlenecks of agents and also where academia's biggest edge lies",
+   "late_modes": "Simply cranking out off-the-shelf self-improvement demos: the sample-efficiency problem gets exposed quickly",
+   "conflict": null
+  },
+  "D04": {
+   "impact": 8,
+   "bottleneck": 7,
+   "academic_edge": 7,
+   "window": 5,
+   "overall": 7,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Complex scaffolding is being absorbed by the models (SWE-agent has become legacy), but defining environments and benchmarks is still a scarce craft",
+   "late_modes": "Engineering custom, complex scaffolding: shown within two years to be unnecessary by a bare ReAct loop",
+   "conflict": "Tencent's strategy of turning WeChat into an agent platform; he has a stake in his judgment of the agent ecosystem"
+  },
+  "D05": {
+   "impact": 9,
+   "bottleneck": 9,
+   "academic_edge": 9,
+   "window": 7,
+   "overall": 9,
+   "confidence": "high",
+   "basis": "quoted",
+   "one_line": "Evaluation science is one of the few fields that can keep resisting being crushed by recipes, and all of his signature works are staked on it",
+   "late_modes": "Papers written only to boost scores on existing benchmarks: solved by the next-generation recipe within a year or two",
+   "conflict": "His signature works are all evaluation contributions, so he has a stake in how D05 is valued"
+  },
+  "D06": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "No public material shows him discussing the technical details of embodied AI or robotics; no forced judgment, and the method does not cover it",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D07": {
+   "impact": null,
+   "bottleneck": 4,
+   "academic_edge": 5,
+   "window": null,
+   "overall": 4,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "No judgment on the specific merits of diffusion versus flow; inferred that the bottleneck is whether the environment and evaluation are credible, not the choice of algorithm",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D08": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": 4,
+   "window": null,
+   "overall": null,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "No specific technical judgment on embodied simulation; the evaluation and environment-design angle applies in theory, but no forced score",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D09": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "No judgment on the technical details of simulation; sim2real credibility is at heart an evaluation problem, but the material does not support a specific score",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D10": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "No public material shows him discussing autonomous driving; no forced judgment",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D11": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": 6,
+   "window": null,
+   "overall": 5,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "No judgment on MLLM architectures or grounding themselves, but the reliability of a VLM as judge is a natural extension of his framework",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D12": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "Pure perception and generation work lies outside his framework, which his own path from CV to NLP already shows",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D13": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "No public material shows him discussing alignment or safety; no forced judgment",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D14": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 3,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Systems and efficiency engineering is typical point-solution engineering that gets absorbed as recipes scale, and does not belong to the evaluation-design kind he considers scarce",
+   "late_modes": "Single-operator or efficiency optimization: soon absorbed into the next generation of frameworks",
+   "conflict": null
+  },
+  "D15": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "Entirely outside his framework; no public material shows him discussing AI for Science; no forced judgment",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D16": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 2,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "Not his area of expertise; generative ranking is still at heart a methods innovation, so by his framework the edge is limited and it is not an evaluation-type contribution",
+   "late_modes": null,
+   "conflict": null
+  }
+ },
+ "levers": {
+  "L1": 30,
+  "L2": 15,
+  "L3": 8,
+  "L4": 10,
+  "L5": 8,
+  "L6": 7,
+  "L7": 15,
+  "L8": 7
+ },
+ "lever_reason": "Evaluation and verification can catch the real problems that recipes cannot crush away; RL and scaling still set the capability ceiling, but the marginal returns of point-solution methods and engineering are already falling fast",
+ "questions": {
+  "Q2": {
+   "position": "conditional",
+   "score": 6,
+   "condition": "Worth it only with a narrow domain + credible third-party evaluation + compute at scale + open weights; academia basically cannot do general LLM pre-training"
+  }
+ },
+ "conditions": {
+  "Q2": [
+   "C1",
+   "C2",
+   "C4",
+   "C5"
+  ]
+ },
+ "cruxes": [
+  {
+   "question": "Can evaluation and problem definition really resist being crushed by recipes over the long run, or will the next-generation recipe absorb them internally?",
+   "my_position": "It can resist, but only for evaluations that challenge hidden assumptions; leaderboard-chasing evaluations will certainly be absorbed within a year or two",
+   "would_change_if": "A frontier lab's next-generation model training pipeline builds in long-term-memory and non-i.i.d. evaluation directly, so external evaluators are no longer needed",
+   "directions": [
+    "D05",
+    "D03"
+   ]
+  },
+  {
+   "question": "Is academic narrow-domain foundation-model training the highest-impact path at the undergraduate or master's stage?",
+   "my_position": "Yes, conditionally: worth it only with a narrow domain + credible third-party evaluation + compute at scale + open weights; otherwise the edge is very low",
+   "would_change_if": "An academic narrow-domain foundation model is widely adopted by industry without meeting these conditions",
+   "directions": [
+    "D01",
+    "D08"
+   ]
+  },
+  {
+   "question": "Will embodied scaffolding and environment engineering be absorbed by model capability itself within a year or two, as SWE-agent was?",
+   "my_position": "Inferred: possibly, but embodiment has physical constraints (sensors, safety layers) and may resist absorption better than digital agents",
+   "would_change_if": "A robot hardware interface or safety-constraint layer is standardized and becomes unimportant within two years after model capability improves",
+   "directions": [
+    "D06",
+    "D04"
+   ]
+  }
+ ],
+ "taste_advice": "Do not only learn to use agent frameworks; learn to design evaluations that the next generation of models will not break through; this craft is valuable in any field",
+ "pairwise": [
+  {
+   "a": "D05",
+   "b": "D08",
+   "pick": "D05",
+   "why": "Evaluation and problem definition are the moat; world models themselves will be absorbed by the next-generation recipe"
+  },
+  {
+   "a": "D05",
+   "b": "D06",
+   "pick": "D05",
+   "why": "Same reasoning; and on D06 he has no technical basis for judgment, while D05 is a sure strength"
+  },
+  {
+   "a": "D06",
+   "b": "D08",
+   "pick": "D06",
+   "why": "Real deployment and failure recovery are harder for point-solution methods to absorb, which beats pure representation-level methodological innovation"
+  },
+  {
+   "a": "D07",
+   "b": "D08",
+   "pick": "D07",
+   "why": "D07 at least has an entry point through evaluation and environment design, while the material does not cover D08 at all"
+  },
+  {
+   "a": "D09",
+   "b": "D06",
+   "pick": "D09",
+   "why": "Verifying sim-to-real credibility is an evaluation problem, which is stronger than D06, where what is missing is purely technical judgment"
+  },
+  {
+   "a": "D02",
+   "b": "D03",
+   "pick": "D03",
+   "why": "Long-horizon credit assignment and non-i.i.d. evaluation are scarcer than the RL recipe itself"
+  },
+  {
+   "a": "D11",
+   "b": "D12",
+   "pick": "D11",
+   "why": "The reliability of a VLM as judge is a natural extension of his framework; D12 is entirely outside it"
+  },
+  {
+   "a": "D01",
+   "b": "D05",
+   "pick": "D05",
+   "why": "Evaluation is where his core thesis lies; pre-training is a red ocean where the recipe is already mature"
+  },
+  {
+   "a": "D04",
+   "b": "D03",
+   "pick": "D03",
+   "why": "The scaffolding-engineering part of D04 will be absorbed by the models; D03's long-horizon learning problem is more essential"
+  },
+  {
+   "a": "D13",
+   "b": "D05",
+   "pick": "D05",
+   "why": "Evaluation science is a sure strength; the material does not support any judgment on D13"
+  },
+  {
+   "a": "D10",
+   "b": "D06",
+   "pick": "D10",
+   "why": "Autonomous driving has large-scale real-deployment data to verify utility, while most embodied AI is still limited to demos"
+  }
+ ],
+ "web_searches": []
+}

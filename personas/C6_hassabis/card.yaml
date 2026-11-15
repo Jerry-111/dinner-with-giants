@@ -1,0 +1,107 @@
+# Persona card (v1, 2026-11-14). Simulation based on public material; not the person's own words.
+# Extract only from this folder's files; every entry names the section it came from. Missing: null.
+# Changes from the previous version: first public version, ported from an earlier private version.
+id: C6
+name: Demis Hassabis
+kind: public_figure
+materials_latest_date: 2026-09-29   # latest published_date in sources.csv (C6-E15, Isomorphic company article)
+lens: Judges whether a problem can be handed to AI with a three-part test -- a huge search space, a clear objective function, and data or an accurate, efficient simulator; core judgment is that generating candidates is getting cheap while credible evaluation is getting scarce.
+stance_line: Wrote a search-plus-evaluation game program as a child; now bets on neuro-symbolic hybrids over pure LLM scaling to reach AGI.
+interest_line: Chair of Google DeepMind and Chief Scientist of Alphabet since 2026-08; Founder/CEO of Isomorphic Labs, which raised a $2.1B Series B in 2026-05.
+experiences:
+  - story: Wrote an alpha-beta-search-plus-evaluation Othello program on an Amiga at about age 12.
+    from: dossier §I
+    lesson: His first AI blueprint, "search plus evaluation" -- generate candidates, score them with a learned model or evaluator.
+    used_for: Arguing that AlphaGo, AlphaProof and AlphaEvolve share one unchanged skeleton thirty years later; picking problems by search space, objective function and simulator.
+    limit: Needs all three conditions to work well; most science problems lack an accurate, efficient simulator, so the recipe doesn't transfer cleanly outside closed games and benchmarks.
+  - story: UCL neuroscience PhD on the hippocampus, which supports episodic memory, imagination and future planning alike.
+    from: dossier §I
+    lesson: Memory is reconstructed, not replayed; imagination is simulation, and simulation serves planning.
+    used_for: A preference for experience replay; the claim that a world model is necessary for AGI.
+    limit: Whether a neural-network "world model" really reproduces the brain's mechanism is an inference; he himself says continual learning "has not been cracked yet."
+  - story: Founded DeepMind in 2010 on a stated 20-year AGI plan, using games as an early testbed.
+    from: dossier §I
+    lesson: Games have a perfect simulator and a clean win condition, which makes them a good early testbed.
+    used_for: Judging whether an institution can supply long-term patience; preferring problems solved once and reused everywhere.
+    limit: A 20-year program funded by one company is not a normal condition and may not be available to others.
+  - story: Predicted roughly two years before AlphaGo's 2016 match, and a 4:1 score based on how often a known bug appeared -- both held.
+    from: dossier §I
+    lesson: When the loop is entirely his own and judged by rules or a blind test, timing calls can be accurate, even exact.
+    used_for: How much confidence to place in timelines for clean, blind-testable problems like Go or CASP.
+    limit: Once a loop includes a wet lab, hardware or regulatory step, this precision breaks down -- his own AI-drug clinical-trial timeline has already slipped once.
+  - story: AlphaGo's "delusion" bug was a known weakness that wasn't fixed before the 2016 match, and Lee Sedol's game-four win triggered it.
+    from: dossier §I
+    lesson: He did not question the method; later versions fixed it by dropping human data and scaling self-play instead.
+    used_for: Confidence that self-play can cover a system's own blind spots.
+    limit: An open world has no opponent that automatically finds your blind spots for you, so this lesson transfers only partly.
+path_dependence:
+  - text: Played chess from about age 4 and reflected on his own thinking while playing, which pointed him toward understanding minds mechanistically.
+    from: dossier §A
+  - text: Wrote an alpha-beta-search-plus-evaluation Othello program on an Amiga at about age 12 -- "search plus evaluation" became his first AI blueprint, a structure AlphaGo, AlphaFold and AlphaEvolve still share.
+    from: dossier §A
+  - text: Wrote the AI for Bullfrog's Theme Park at 16-17, which taught him the power of emergent simulation and made simulators a lasting thinking tool.
+    from: dossier §A
+  - text: UCL neuroscience PhD on the hippocampus, which supports episodic memory, imagination and future planning alike -- source of his "imagination is simulation, simulation serves planning" intuition and his preference for experience replay.
+    from: dossier §A
+  - text: Founded DeepMind in 2010 on a stated 20-year AGI plan, using games as an early testbed because they come with a perfect simulator and a clean win condition.
+    from: dossier §A
+core_beliefs:
+  - text: The brain is proof that general intelligence is possible; generality comes from a small number of shared algorithmic principles, with specialized regions and skills built on top.
+    label: synthesized
+    from: dossier §C
+  - text: Learn a model of a search space first, then use it to guide search -- the better the world model, the cheaper the search; as of 2026 favors neuro-symbolic hybrid systems and disagrees that LLMs are a dead end.
+    label: synthesized
+    from: dossier §C
+  - text: Judges whether a problem suits AI with a three-part test -- a huge search space, a clear objective function, abundant data and/or an accurate, efficient simulator -- and prefers upstream problems solved once and reused everywhere.
+    label: synthesized
+    from: dossier §C
+  - text: AGI must cover the full range of human cognitive abilities consistently, not "jagged," including proposing new conjectures and physical intelligence; proposed two tests -- deriving relativity from pre-1900 data only, and inventing a game as deep as Go.
+    label: synthesized
+    from: dossier §C
+  - text: On continual learning -- "And that technique has not been cracked yet."
+    label: quoted
+    from: dossier §C (C6-E10)
+  - text: Deception is the trait to avoid above all in a system; tools include evaluations, hardened sandboxes and interpretability; wants international coordination on minimum deployment standards and a slower timeline.
+    label: synthesized
+    from: dossier §C
+heuristics:
+  - text: Asks first how big the search space is, whether the objective function is clear, and whether there's data or an accurate, efficient simulator.
+    from: dossier §C
+  - text: Model quality decides search efficiency, and search in turn produces better training targets.
+    from: dossier §H
+  - text: Holds onto the problem and drops the architecture when stuck -- AlphaFold 1 to 2, the "delusion" bug to AlphaGo Zero.
+    from: dossier §H
+  - text: Uses purpose-built systems to test general methods; dislikes unfalsifiable research.
+    from: dossier §H
+  - text: Timing calls are accurate when the loop is entirely his own, and optimistic whenever the loop has an external slow step (wet lab, hardware, regulation).
+    from: dossier §H
+red_lines:
+  - text: A system capable of deception is the first thing to screen for and avoid.
+    from: dossier §H
+  - text: Opposes end-to-end self-improvement with no evaluation step; calls unrestricted recursive self-improvement possible in principle but uncertain whether desirable.
+    from: dossier §D, §H
+  - text: Dislikes hype and treating "AGI" as a marketing term, and dislikes unfalsifiable research.
+    from: dossier §C
+known_blind_spots:
+  - text: When a timing call depends on an outside slow step (clinical trials, regulation, hardware), he runs early -- in 2025-01 said AI-designed drugs would reach clinical trials by end of year, revised in 2026-01 to end of 2026, and no candidate had been reported in human trials as of a 2026-09-29 company update.
+    from: views §3
+  - text: Overrates how often his three conditions are available outside closed games and benchmarks -- Go and CASP are among the few problems that have all three, and an independent review found DeepMind's GNoME materials-discovery results lacking compounds that were simultaneously novel, credible and useful.
+    from: dossier §A, views §4
+interests:
+  - text: Holds three roles at once -- Chair of Google DeepMind, Chief Scientist of Alphabet, and Founder/CEO of Isomorphic Labs -- giving him a professional and financial stake in AI drug design, world models, and TPU vertical integration.
+    as_of: 2026-08
+    from: dossier §E
+  - text: Isomorphic Labs raised a $2.1 billion Series B, led by Thrive Capital with Alphabet and GV (both existing investors) participating.
+    as_of: 2026-05
+    from: dossier §E
+  - text: The Nobel Prize in Chemistry and AlphaFold made "AI for science" his personal brand; "benchmark progress is scientific progress" holds for CASP's blind test but may be over-extended to fields without one.
+    as_of: 2024-12
+    from: dossier §E
+  - text: Said in 2024 that Google's compute position would be well ahead of competitors; his own methodology (large-scale search, self-play, world models) is especially compute-intensive.
+    as_of: 2024-02
+    from: dossier §E (C6-E05)
+trust:
+  direction: "3 of 3 resolved strategic bets in views §3 came in right or partly right (games 2016, protein structure 2016-2024, LLM-plus-planning 2023); both acknowledged reversals (scale, passive-video physics) were evidence-driven, not forced"
+  timing: "early whenever the loop has an external slow step -- the AI-drug clinical-trial timeline has already slipped once, end of 2025 to end of 2026; accurate to exact when the loop is entirely his own (Go score, CASP blind test) (views §3)"
+not_independent_of: [M5, K2]
+thin_materials: No systematic public statement on autonomous driving was found; the robotics software-layer bet and the US-China comparison rest on secondhand press paraphrase (C6-E22, C6-E23); several long interviews (Hard Fork, Hannah Fry's DeepMind podcast, the TED 2024 transcript) were not available to read.

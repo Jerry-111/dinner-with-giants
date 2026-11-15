@@ -1,0 +1,327 @@
+{
+ "id": "K5",
+ "name": "Yann LeCun",
+ "round": "R1",
+ "notice": "Simulation based on public material; not the person's own words.",
+ "options": {
+  "D01": {
+   "impact": 6,
+   "bottleneck": 2,
+   "academic_edge": 2,
+   "window": 2,
+   "overall": 3,
+   "confidence": "high",
+   "basis": "quoted",
+   "one_line": "LLM pre-training as research is already near its ceiling, and academia cannot compete on compute at all; deployment is still growing, but that is not a research problem.",
+   "late_modes": "Simply chasing larger-scale pre-training: academia and small independent players are both already too late",
+   "conflict": "AMI bets on a non-LLM route; interested party"
+  },
+  "D02": {
+   "impact": 5,
+   "bottleneck": 3,
+   "academic_edge": 6,
+   "window": 6,
+   "overall": 5,
+   "confidence": "high",
+   "basis": "quoted",
+   "one_line": "RL post-training mainly improves sampling efficiency for now, not new reasoning ability; not the core bottleneck but useful.",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D03": {
+   "impact": 6,
+   "bottleneck": 6,
+   "academic_edge": 6,
+   "window": 6,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Persistent memory is one of the four things machines lack; pure RSI-style self-improvement is overrated, and evidence such as METR's shows limited gains.",
+   "late_modes": "Agent self-improvement shown only through demos is no longer convincing",
+   "conflict": null
+  },
+  "D04": {
+   "impact": 5,
+   "bottleneck": 2,
+   "academic_edge": 2,
+   "window": 2,
+   "overall": 3,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Agent engineering has been absorbed by the models and a few CLI vendors; much of what academia does is top-conference work with no impact.",
+   "late_modes": "Custom academic scaffolding has already been absorbed by the models themselves",
+   "conflict": null
+  },
+  "D05": {
+   "impact": 5,
+   "bottleneck": 3,
+   "academic_edge": 7,
+   "window": 6,
+   "overall": 5,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "Evaluation is quality inspection, not a source of capability, and not the core bottleneck; but statistical rigor is one of academia's few real edges.",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D06": {
+   "impact": 9,
+   "bottleneck": 8,
+   "academic_edge": 7,
+   "window": 7,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "quoted",
+   "one_line": "Understanding and operating in the physical world is the real next stage that has not peaked, but it needs to be driven by world models; pure VLA imitation is not enough.",
+   "late_modes": null,
+   "conflict": "AMI bets on physical AI, with world models driving robots"
+  },
+  "D07": {
+   "impact": 8,
+   "bottleneck": 7,
+   "academic_edge": 6,
+   "window": 6,
+   "overall": 7,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Jointly predicting observations and actions is the right idea, but the pixel-diffusion sub-route is wrong; I bet on the representation-space version.",
+   "late_modes": null,
+   "conflict": "AMI's research direction overlaps with this directly"
+  },
+  "D08": {
+   "impact": 9,
+   "bottleneck": 9,
+   "academic_edge": 6,
+   "window": 8,
+   "overall": 9,
+   "confidence": "high",
+   "basis": "quoted",
+   "one_line": "This is the core bet I make: prediction counts only when it is done in an abstract representation space; I am not optimistic about the route that generates pixels.",
+   "late_modes": null,
+   "conflict": "AMI's company valuation rests entirely on this direction"
+  },
+  "D09": {
+   "impact": 5,
+   "bottleneck": 3,
+   "academic_edge": 6,
+   "window": 5,
+   "overall": 4,
+   "confidence": "medium",
+   "basis": "quoted",
+   "one_line": "Simulation and synthetic data are auxiliary tools that feed RL, not a road to understanding, but they can be used for evaluation and red-teaming.",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D10": {
+   "impact": 7,
+   "bottleneck": 4,
+   "academic_edge": 3,
+   "window": 3,
+   "overall": 5,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "The last few percentage points are an engineering problem, taken by a few companies that have fleet data; limited room for academia.",
+   "late_modes": "End-to-end planning without a fleet data engine behind it is already too late",
+   "conflict": null
+  },
+  "D11": {
+   "impact": 6,
+   "bottleneck": 5,
+   "academic_edge": 6,
+   "window": 5,
+   "overall": 5,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Spatial and visual understanding is a prerequisite for embodied intelligence, but simply stacking up a bigger MLLM does not solve the grounding problem.",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D12": {
+   "impact": 5,
+   "bottleneck": 2,
+   "academic_edge": 4,
+   "window": 3,
+   "overall": 4,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "Generated content has a market but is not a source of intelligence; Sora 2 being taken offline is a warning against over-promising commercially.",
+   "late_modes": "Consumer video generation is already hyper-competitive, and its business model is not yet proven",
+   "conflict": null
+  },
+  "D13": {
+   "impact": 4,
+   "bottleneck": 2,
+   "academic_edge": 6,
+   "window": 5,
+   "overall": 3,
+   "confidence": "high",
+   "basis": "quoted",
+   "one_line": "The risk is human misuse, not an AI takeover; interpretability is not the main safety mechanism for a goal-driven architecture.",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D14": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 5,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "FlashAttention shows that academic systems contributions can get adopted, but it is far from the question of what machines lack and is not my focus.",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D15": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 7,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Optimistic in the long run, with payoff in 5-30 years; pure LLMs cannot invent anything new, and the real driver is learned models that replace numerical simulation.",
+   "late_modes": null,
+   "conflict": "He is an adviser to CuspAI, a materials-AI company"
+  },
+  "D16": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "My material does not cover recommendation, retrieval or decision optimization; no judgment.",
+   "late_modes": null,
+   "conflict": null
+  }
+ },
+ "levers": {
+  "L1": 8,
+  "L2": 7,
+  "L3": 10,
+  "L4": 35,
+  "L5": 15,
+  "L6": 15,
+  "L7": 5,
+  "L8": 5
+ },
+ "lever_reason": "Planning requires prediction, so world models (L4) are the decisive lever of the future; real data (L5) and new architectures (L6) are the raw materials; evaluation, RL and simulation are auxiliary tools, and scaling up LLMs (L7) is already near the top.",
+ "questions": {
+  "Q2": {
+   "position": "conditional",
+   "score": 6,
+   "condition": "Narrow domain, not general LLM pre-training; a team rather than a solo effort; compute that can last for months; open-weight models that people use. Academia should not touch general LLM pre-training."
+  }
+ },
+ "conditions": {
+  "Q2": [
+   "C1",
+   "C3",
+   "C4",
+   "C5"
+  ]
+ },
+ "cruxes": [
+  {
+   "question": "Have video and pixel-generative models actually learned a world understanding that can be planned with, or only statistical interpolation?",
+   "my_position": "No; predicting unpredictable pixel detail is a methodological error, and the evidence is failed out-of-distribution transfer.",
+   "would_change_if": "A purely generative (non-JEPA) video model matches JEPA-type methods in success rate on zero-shot planning in out-of-distribution physical scenes.",
+   "directions": [
+    "D07",
+    "D08",
+    "D09",
+    "D12"
+   ]
+  },
+  {
+   "question": "Does RL post-training teach new reasoning ability, or only raise the sampling efficiency of abilities that already exist?",
+   "my_position": "Mainly sampling efficiency, not new ability; evidence such as Yue et al. supports this judgment.",
+   "would_change_if": "Work showing that an RL post-trained model succeeds consistently on problem types the base model cannot answer however many times it is sampled, and not because of distillation.",
+   "directions": [
+    "D02",
+    "D03"
+   ]
+  },
+  {
+   "question": "Has the compute threshold for academia training narrow-domain foundation models already become too high to be workable?",
+   "my_position": "Not yet; V-JEPA2-level work on a cluster on the order of a thousand H100s is still feasible, and only general LLM pre-training is truly infeasible.",
+   "would_change_if": "Even reproducing a narrow-domain world-model SOTA requires compute far beyond the NAIRR / Stanford Marlowe scale.",
+   "directions": [
+    "D01",
+    "D08"
+   ]
+  }
+ ],
+ "taste_advice": "Ask first whether you can build it, not whether you can publish it; I only really learned this by betting wrongly on pixel prediction for ten years.",
+ "pairwise": [
+  {
+   "a": "D05",
+   "b": "D08",
+   "pick": "D08",
+   "why": "Evaluation is necessary quality inspection and does not create capability; world models are the source of the capability itself and the real bottleneck."
+  },
+  {
+   "a": "D05",
+   "b": "D06",
+   "pick": "D06",
+   "why": "Embodied intelligence is the proving ground for understanding the physical world; however rigorous evaluation is, it cannot replace real-world feedback."
+  },
+  {
+   "a": "D06",
+   "b": "D08",
+   "pick": "D08",
+   "why": "D06 can truly generalize only once D08's methods mature; world models are more fundamental, and robots are one of their downstream settings."
+  },
+  {
+   "a": "D07",
+   "b": "D08",
+   "pick": "D08",
+   "why": "The good part of D07 is in essence a subset of D08; D08 is more fundamental, and I am not optimistic about D07's pixel-diffusion sub-route."
+  },
+  {
+   "a": "D09",
+   "b": "D06",
+   "pick": "D06",
+   "why": "Simulation is an auxiliary tool for robot learning, not the goal; the learning-signal problem of embodied intelligence itself is more fundamental."
+  },
+  {
+   "a": "D02",
+   "b": "D03",
+   "pick": "D03",
+   "why": "RL post-training currently only raises sampling efficiency; continual learning and memory bear on one of the four things machines lack and are more fundamental."
+  },
+  {
+   "a": "D11",
+   "b": "D12",
+   "pick": "D11",
+   "why": "Understanding is the prerequisite for action and planning; purely generative content that does not serve downstream decisions is useless to my framework."
+  },
+  {
+   "a": "D01",
+   "b": "D05",
+   "pick": "D05",
+   "why": "Scaling up pre-training is already near its ceiling and academia cannot get in; evaluation science can at least still produce methodological contributions that get adopted."
+  },
+  {
+   "a": "D04",
+   "b": "D03",
+   "pick": "D03",
+   "why": "Agent-engineering scaffolding has been absorbed by the models; the underlying problem of continual learning and memory is still open and worth betting on more."
+  },
+  {
+   "a": "D13",
+   "b": "D05",
+   "pick": "D05",
+   "why": "Interpretability is not the main safety mechanism for the goal-driven architecture I bet on; evaluation is at least a general-purpose quality-inspection tool."
+  },
+  {
+   "a": "D10",
+   "b": "D06",
+   "pick": "D06",
+   "why": "Most of autonomous driving has been taken by a few companies with fleet data; the methods of embodied intelligence are not yet settled, so the opportunity is larger."
+  }
+ ],
+ "web_searches": []
+}

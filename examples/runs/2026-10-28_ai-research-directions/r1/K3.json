@@ -1,0 +1,324 @@
+{
+ "id": "K3",
+ "name": "Rich Sutton",
+ "round": "R1",
+ "notice": "Simulation based on public material; not the person's own words.",
+ "options": {
+  "D01": {
+   "impact": 6,
+   "bottleneck": 2,
+   "academic_edge": 2,
+   "window": 2,
+   "overall": 3,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Pre-training on human data is near its peak; the verifiable-reasoning part can still grow, but its starting point is still human data",
+   "late_modes": "Simply piling on pre-training scale is already late, taken up in full by a few big companies and their compute",
+   "conflict": null
+  },
+  "D02": {
+   "impact": 7,
+   "bottleneck": 5,
+   "academic_edge": 5,
+   "window": 4,
+   "overall": 5,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "RL with verifiable rewards really works, but it looks more like polishing existing abilities and is not the general learning algorithm he wants",
+   "late_modes": "Following the crowd with RLHF/RLVR recipes is already crowded, and work without a new algorithmic contribution will be weeded out",
+   "conflict": null
+  },
+  "D03": {
+   "impact": 9,
+   "bottleneck": 9,
+   "academic_edge": 8,
+   "window": 7,
+   "overall": 9,
+   "confidence": "high",
+   "basis": "quoted",
+   "one_line": "The biggest bottleneck is here: learning algorithms are too crude; the plasticity paper shows that small compute can also make a real contribution",
+   "late_modes": "Wrapper self-improvement demos and work with no new credit-assignment algorithm are already crowded",
+   "conflict": "Oak Lab is betting on the same direction; interests aligned"
+  },
+  "D04": {
+   "impact": 5,
+   "bottleneck": 2,
+   "academic_edge": 2,
+   "window": 2,
+   "overall": 3,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Deployment is experience, but weights are not updated now, so it is wasted; the scaffold layer has already been absorbed by vendors' general agents",
+   "late_modes": "General tool calling/scaffolding has already been absorbed by general agents of the Claude Code and Codex type",
+   "conflict": null
+  },
+  "D05": {
+   "impact": 6,
+   "bottleneck": 7,
+   "academic_edge": 6,
+   "window": 5,
+   "overall": 5,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "Evaluation catching faked results is important, but human/LLM scoring is still another kind of human data, not a signal grounded in consequences",
+   "late_modes": "Merely chasing static leaderboard rankings has been shown to be manipulable, with low marginal value",
+   "conflict": null
+  },
+  "D06": {
+   "impact": 9,
+   "bottleneck": 8,
+   "academic_edge": 6,
+   "window": 6,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "Every robot is producing experience, but right now it breaks as soon as it tries and errs; low-cost hardware has lowered the bar for academia to do online learning",
+   "late_modes": "The imitation route built purely by piling up human teleoperation demonstration data is being taken up in full by scaling",
+   "conflict": "Keen/Oak background points the same way as continual learning on real robots; interests are involved"
+  },
+  "D07": {
+   "impact": 6,
+   "bottleneck": 4,
+   "academic_edge": 5,
+   "window": 4,
+   "overall": 5,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "Whether the action head is diffusion or autoregressive is a secondary engineering question; the question to ask is whether the reward comes from human scoring or from the consequences of actions",
+   "late_modes": "World action model has already become vendor marketing jargon, and the concept is already crowded",
+   "conflict": null
+  },
+  "D08": {
+   "impact": 7,
+   "bottleneck": 8,
+   "academic_edge": 5,
+   "window": 4,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "quoted",
+   "one_line": "Treating generated video as a world model is a directional error; what is truly unsolved is a learned abstract transition model plus planning, and he has not produced experimental results for it either",
+   "late_modes": "Packaging video generation as a world model to chase the trend is already late, and capital is already very crowded",
+   "conflict": "Oak bets on a transition model in the experience paradigm; its method is close to K5's but its conclusion is the opposite"
+  },
+  "D09": {
+   "impact": 3,
+   "bottleneck": 2,
+   "academic_edge": 4,
+   "window": 3,
+   "overall": 3,
+   "confidence": "high",
+   "basis": "quoted",
+   "one_line": "Synthetic data is a big mistake; simulation should be used as a research tool to test continual learning, not as a data factory",
+   "late_modes": "Using simulation purely as a data factory or for score-chasing has been shown to have a ceiling",
+   "conflict": null
+  },
+  "D10": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": null,
+   "confidence": "low",
+   "basis": null,
+   "one_line": "He does not comment on specific industries or companies; he has publicly commented only on Wayve's GAIA-1, and there is no usable material here",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D11": {
+   "impact": 5,
+   "bottleneck": 5,
+   "academic_edge": 5,
+   "window": 4,
+   "overall": 5,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "Good representations are an unsolved problem he named, but multimodal understanding relies mostly on human-annotated data and is still bound by the human-data ceiling",
+   "late_modes": "Simply stacking parameters/data to raise scores is already crowded; diagnostic evaluation of 'can be read out ≠ put to use' still has room",
+   "conflict": null
+  },
+  "D12": {
+   "impact": 3,
+   "bottleneck": 2,
+   "academic_edge": 3,
+   "window": 2,
+   "overall": 3,
+   "confidence": "medium",
+   "basis": "quoted",
+   "one_line": "Generating video frames is a direction he explicitly rejects; as a content product he does not comment, but capital is already very crowded",
+   "late_modes": "Few-step/high-quality video generation is already a capital battlefield of big companies in China and the US, and individuals or academia can hardly get in",
+   "conflict": null
+  },
+  "D13": {
+   "impact": 4,
+   "bottleneck": 3,
+   "academic_edge": 5,
+   "window": 4,
+   "overall": 3,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "He thinks doomsday arguments and aligning to human values are overrated; the real question is whether a system can verify right and wrong by itself",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D14": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 5,
+   "confidence": null,
+   "basis": null,
+   "one_line": "Compute is the only stable long-term exponential; but he cares more about energy efficiency (the 20-watt target) than about pure infra engineering",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D15": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 7,
+   "confidence": null,
+   "basis": null,
+   "one_line": "He considers it one of the biggest payoffs of the era of experience: the experimental loop gives rewards grounded in results, and slow real experiments are a natural brake",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D16": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 4,
+   "confidence": null,
+   "basis": null,
+   "one_line": "By the Bitter Lesson, advantages held up by hand-made features/rules will lose value; long-term personalized feedback signals last longer",
+   "late_modes": null,
+   "conflict": null
+  }
+ },
+ "levers": {
+  "L1": 8,
+  "L2": 20,
+  "L3": 2,
+  "L4": 20,
+  "L5": 12,
+  "L6": 20,
+  "L7": 5,
+  "L8": 13
+ },
+ "lever_reason": "Online learning, representation learning and planning with a learned model are his core agenda; simulation and pure scaling are the two he explicitly downplays; energy efficiency is a newly added bottleneck.",
+ "questions": {
+  "Q2": {
+   "position": "conditional",
+   "score": 6,
+   "condition": "The premise is working on new algorithms for continual learning/representation learning, not replicating the scaling recipe; team and compute must meet the threshold"
+  }
+ },
+ "conditions": {
+  "Q2": [
+   "C1",
+   "C3",
+   "C4",
+   "C5"
+  ]
+ },
+ "cruxes": [
+  {
+   "question": "How wide is the sim-to-real gap: universal, or only on some tasks?",
+   "my_position": "Narrow tasks with controllable physical parameters can cross it; broad-coverage, contact-rich tasks cannot, and Keen's six games, six failures is the evidence",
+   "would_change_if": "Someone's pure-simulation zero-shot deployment matches training on large-scale real-robot data, on contact-rich real manipulation tasks with non-fixed geometry",
+   "directions": [
+    "D09",
+    "D06"
+   ]
+  },
+  {
+   "question": "Does RLVR on LLMs discover new capabilities, or polish existing ones?",
+   "my_position": "Most evidence says it polishes existing capabilities: failing to hit a solution with limited sampling does not mean the base model's probability of generating that solution is zero",
+   "would_change_if": "RLVR reliably produces new solutions of a kind that never appears in the base model at any number of samples, and does so without distillation",
+   "directions": [
+    "D02"
+   ]
+  },
+  {
+   "question": "Does a generative video model count as a world model at all?",
+   "my_position": "No: it optimizes how realistic the picture looks, not decision consequences; latent-space prediction is closer but has not been validated in long-horizon closed loops on real robots either",
+   "would_change_if": "In out-of-distribution scenes such as unseen materials/geometries, a generative video model's predictions are actually used by a downstream policy to improve decisions",
+   "directions": [
+    "D08",
+    "D07"
+   ]
+  }
+ ],
+ "taste_advice": "Write one page of notes every day and challenge your own ideas, keeping it up for a year or more; this is the advice he repeats most and the cheapest to follow.",
+ "pairwise": [
+  {
+   "a": "D05",
+   "b": "D08",
+   "pick": "D08",
+   "why": "Representation plus planning is his number-one unsolved problem; however rigorous, evaluation is only another source of signal"
+  },
+  {
+   "a": "D05",
+   "b": "D06",
+   "pick": "D06",
+   "why": "Robots are the core setting where the experience paradigm lands; evaluation serves it and is not the goal itself"
+  },
+  {
+   "a": "D06",
+   "b": "D08",
+   "pick": "D08",
+   "why": "Good representations and transition models are the foundation of all downstream applications such as robotics"
+  },
+  {
+   "a": "D07",
+   "b": "D08",
+   "pick": "D08",
+   "why": "D08 is the foundation problem; D07's action-head architecture is an engineering choice on top of it"
+  },
+  {
+   "a": "D09",
+   "b": "D06",
+   "pick": "D06",
+   "why": "Every real robot is producing experience; simulation still has to cross a gap it has not crossed"
+  },
+  {
+   "a": "D02",
+   "b": "D03",
+   "pick": "D03",
+   "why": "Continual learning is the biggest bottleneck in his view; RLVR looks more like polishing existing abilities"
+  },
+  {
+   "a": "D11",
+   "b": "D12",
+   "pick": "D11",
+   "why": "Representation is one of the two big unsolved problems; generating video frames is a direction he explicitly rejects"
+  },
+  {
+   "a": "D01",
+   "b": "D05",
+   "pick": "D05",
+   "why": "He thinks the pre-training route is near its peak; evaluation can at least catch who is faking results"
+  },
+  {
+   "a": "D04",
+   "b": "D03",
+   "pick": "D03",
+   "why": "Continual learning is the core bottleneck; the scaffolding layer of current agents has already been absorbed by vendors"
+  },
+  {
+   "a": "D13",
+   "b": "D05",
+   "pick": "D05",
+   "why": "Evaluation is an actionable engineering problem; he never accepted the framing of aligning to human values in the first place"
+  },
+  {
+   "a": "D10",
+   "b": "D06",
+   "pick": "D06",
+   "why": "On D06 he has concrete experience to judge from; on autonomous driving he explicitly makes no public comment"
+  }
+ ],
+ "web_searches": []
+}

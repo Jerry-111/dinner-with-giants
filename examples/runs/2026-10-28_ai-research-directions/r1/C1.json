@@ -1,0 +1,324 @@
+{
+ "id": "C1",
+ "name": "Michael Mauboussin",
+ "round": "R1",
+ "notice": "Simulation based on public material; not the person's own words.",
+ "options": {
+  "D01": {
+   "impact": 9,
+   "bottleneck": 8,
+   "academic_edge": 3,
+   "window": 2,
+   "overall": 4,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "The model layer looks like economies of scale, not network effects: three to six similar suppliers compete; value mostly flows to users, and academia can hardly enter",
+   "late_modes": "Replicating the frontier pre-training recipe head-on to post scores: crowded, capital-driven, and quickly copied",
+   "conflict": "Buy-side institutions prefer the 'users benefit' narrative"
+  },
+  "D02": {
+   "impact": 7,
+   "bottleneck": 6,
+   "academic_edge": 6,
+   "window": 5,
+   "overall": 6,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "The capital barrier is lower than for pre-training, and this is one of the few corners within diminishing returns where cleverness can still earn an increment; but it depends on whether the metrics really have predictive power",
+   "late_modes": "Climbing public RLVR leaderboards without looking at the base model's pass@k: it may be only a gain in sampling efficiency",
+   "conflict": null
+  },
+  "D03": {
+   "impact": 9,
+   "bottleneck": 8,
+   "academic_edge": 5,
+   "window": 6,
+   "overall": 7,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "Continual self-improvement is the learning-by-doing kind of increasing returns that I have described, one of the few exception mechanisms; but the empirical evidence is thin for now, so it cannot be the base case",
+   "late_modes": "Packaging multi-round score gains as RSI: not normalized by compute, and not pre-registered",
+   "conflict": null
+  },
+  "D04": {
+   "impact": 6,
+   "bottleneck": 4,
+   "academic_edge": 3,
+   "window": 2,
+   "overall": 3,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "Scaffolding is being absorbed by the models themselves: the top of Terminal-Bench is all vendor CLI agents, so the moat around a custom harness is shallow",
+   "late_modes": "Tuning custom scaffolding for one benchmark: one model upgrade and a general solution matches it",
+   "conflict": null
+  },
+  "D05": {
+   "impact": 8,
+   "bottleneck": 9,
+   "academic_edge": 8,
+   "window": 7,
+   "overall": 8,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "A good metric needs both persistence and predictive power, which has been my standard for decades; without credible evaluation, skill cannot be told from luck, and capital gets staked on the wrong things",
+   "late_modes": "Chasing public leaderboard rank: unequal access to private-test data has already distorted the leaderboard",
+   "conflict": null
+  },
+  "D06": {
+   "impact": 8,
+   "bottleneck": 7,
+   "academic_edge": 5,
+   "window": 4,
+   "overall": 5,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "In a Cambrian-style wave of entry, with valuations already pricing in very high expectations; the real bottlenecks are resets, maintenance and reliability, which do not disappear with replication",
+   "late_modes": "Founding a company on full-humanoid demo valuations: the price already embeds very high expectations, and a shake-out must follow the wave of entry",
+   "conflict": null
+  },
+  "D07": {
+   "impact": 6,
+   "bottleneck": 6,
+   "academic_edge": 5,
+   "window": 3,
+   "overall": 4,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "It will not form a separate market and will be absorbed by robotics, simulation and platforms; world action model is becoming NVIDIA's product term",
+   "late_modes": "Specializing in the diffusion policy head: parallel decoding of continuous actions has been shown to match or even beat it",
+   "conflict": null
+  },
+  "D08": {
+   "impact": 8,
+   "bottleneck": 7,
+   "academic_edge": 6,
+   "window": 3,
+   "overall": 5,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "I do not rate the technology itself; but AMI Labs' seed round at about $3.5 billion pre-money shows the price already embeds very high expectations",
+   "late_modes": "Treating gains on small simulation benchmarks as already delivered: long-horizon closed-loop real-robot results are not yet validated",
+   "conflict": null
+  },
+  "D09": {
+   "impact": 7,
+   "bottleneck": 7,
+   "academic_edge": 6,
+   "window": 5,
+   "overall": 6,
+   "confidence": "medium",
+   "basis": "inferred",
+   "one_line": "If the sim2real correlation is repeatedly confirmed, this is a real lever on the hard bottleneck of scarce real data, not just a story",
+   "late_modes": "Shouting 'unlimited synthetic data' without giving verifiable quantitative results",
+   "conflict": null
+  },
+  "D10": {
+   "impact": 8,
+   "bottleneck": 6,
+   "academic_edge": 2,
+   "window": 2,
+   "overall": 3,
+   "confidence": "high",
+   "basis": "synthesized",
+   "one_line": "The shake-out has begun (GM exited Cruise); learning by doing from fleet miles is a rare proprietary increasing return, and without fleet access this path is basically closed",
+   "late_modes": "A new team now going head-on at L4 robotaxi: the integrated leaders have already built a moat from fleet data",
+   "conflict": null
+  },
+  "D11": {
+   "impact": 7,
+   "bottleneck": 6,
+   "academic_edge": 5,
+   "window": 4,
+   "overall": 5,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "Building a VLM itself is as crowded as pre-training; but diagnosing where models really do not understand (such as the human-machine gap) has a low capital barrier and still has room",
+   "late_modes": "Stacking parameters head-on to build the next general VLM: as crowded and capital-intensive as pre-training",
+   "conflict": null
+  },
+  "D12": {
+   "impact": 6,
+   "bottleneck": 4,
+   "academic_edge": 5,
+   "window": 2,
+   "overall": 3,
+   "confidence": "medium",
+   "basis": "synthesized",
+   "one_line": "Sora 2 was taken offline less than a year after launch, with users down by more than half; the commercial sustainability of consumer-grade generation is in doubt; the recipe itself diffuses very fast",
+   "late_modes": "Video generation that competes on visual realism: it will be commoditized, and it has nothing to do with decision value",
+   "conflict": null
+  },
+  "D13": {
+   "impact": 7,
+   "bottleneck": 5,
+   "academic_edge": 6,
+   "window": 6,
+   "overall": 5,
+   "confidence": "low",
+   "basis": "inferred",
+   "one_line": "I do not rate the safety technology itself; but value capture in this kind of work looks more like it depends on regulation and enterprise adoption thresholds than on product competition",
+   "late_modes": "Treating one specific tool as the end-state solution and grinding on details: a major lab has already lowered its priority because out-of-distribution results were no better than linear probes",
+   "conflict": null
+  },
+  "D14": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 8,
+   "confidence": null,
+   "basis": null,
+   "one_line": "Algorithm-system co-design is exactly what I called worth doing (1): feedback is fast and the value is directly internalized by the employer; FlashAttention is an example of academia building something that industry uses",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D15": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 4,
+   "confidence": null,
+   "basis": null,
+   "one_line": "Fast only in narrow areas that can be verified automatically; single-cell perturbation-prediction models currently cannot even beat simple baselines, and hype often runs ahead of the evidence",
+   "late_modes": null,
+   "conflict": null
+  },
+  "D16": {
+   "impact": null,
+   "bottleneck": null,
+   "academic_edge": null,
+   "window": null,
+   "overall": 5,
+   "confidence": null,
+   "basis": null,
+   "one_line": "A classic second-order-beneficiary setting, and Tencent's TGR is already live; but Meituan's MTGR needing 10 to 100 times the compute of DLRM reminds us that a gain counts only after subtracting the cost of capital",
+   "late_modes": null,
+   "conflict": null
+  }
+ },
+ "levers": {
+  "L1": 25,
+  "L2": 8,
+  "L3": 8,
+  "L4": 10,
+  "L5": 20,
+  "L6": 7,
+  "L7": 12,
+  "L8": 10
+ },
+ "lever_reason": "Without credible evaluation, skill cannot be told from luck, and capital will be put on the wrong targets; what really sustains the competitive advantage period is hard-to-copy assets such as proprietary data, not piled-up compute; diminishing returns are the default, and exceptions need a mechanism behind them",
+ "questions": {
+  "Q2": {
+   "position": "conditional",
+   "score": 5,
+   "condition": "Narrow domain, credible external evaluation, a small complementary team, an open model that people use; not a head-on fight in general pre-training, the battlefield of the strong"
+  }
+ },
+ "conditions": {
+  "Q2": [
+   "C1",
+   "C2",
+   "C3",
+   "C5"
+  ]
+ },
+ "cruxes": [
+  {
+   "question": "With academia's compute this small, can it still make contributions that industry actually adopts?",
+   "my_position": "Yes, but only on narrow-domain problems with a low capital barrier that outsiders can verify, not by competing head-on on the scale of general pre-training",
+   "would_change_if": "A narrow-domain academic work is adopted at scale by a leading lab and publicly acknowledged, as FlashAttention was",
+   "directions": [
+    "D01",
+    "D05"
+   ]
+  },
+  {
+   "question": "Is the high valuation of JEPA-style world models today borrowing against capabilities that have not yet been validated?",
+   "my_position": "Yes: AMI Labs' seed round at about $3.5 billion pre-money; until long-horizon closed-loop real-robot results are validated, the price already embeds very high expectations",
+   "would_change_if": "Large-scale, third-party-validated long-horizon closed-loop real-robot results appear, not just offline or short-horizon gains",
+   "directions": [
+    "D08"
+   ]
+  },
+  {
+   "question": "Is agent self-improvement (RSI) real evidence now, or still a narrative?",
+   "my_position": "Still mostly a narrative: the evidence from METR and AIDE² both shows limited effect from autonomous improvement, with most of the cost going to trial-and-error compute",
+   "would_change_if": "Compute-normalized, pre-registered experiments appear that show sustained multi-round gains in real capability, not cherry-picked results",
+   "directions": [
+    "D03",
+    "D04"
+   ]
+  }
+ ],
+ "taste_advice": "Do not pick a direction by who grows fastest; pick a position by who the returns ultimately land with and how long they last, and put your skills on a layer that does not depreciate with each model generation",
+ "pairwise": [
+  {
+   "a": "D05",
+   "b": "D08",
+   "pick": "D05",
+   "why": "Without credible evaluation there is no way to know whether the world model's contribution is real"
+  },
+  {
+   "a": "D05",
+   "b": "D06",
+   "pick": "D05",
+   "why": "Claims about robot reliability likewise need evaluation to be believed"
+  },
+  {
+   "a": "D06",
+   "b": "D08",
+   "pick": "D06",
+   "why": "Embodied AI already has real deployment and a data moat; world-model valuations run ahead of real-robot validation"
+  },
+  {
+   "a": "D07",
+   "b": "D08",
+   "pick": "D08",
+   "why": "The world model is more fundamental; the policy head is only one implementation of it and is more replaceable"
+  },
+  {
+   "a": "D09",
+   "b": "D06",
+   "pick": "D09",
+   "why": "Simulation directly addresses the hard bottleneck of scarce real data and is closer to the root cause than embodied AI as a whole"
+  },
+  {
+   "a": "D02",
+   "b": "D03",
+   "pick": "D03",
+   "why": "Continual self-improvement is a scarce learning-by-doing mechanism; post-training looks more like one-off tuning"
+  },
+  {
+   "a": "D11",
+   "b": "D12",
+   "pick": "D11",
+   "why": "The gap in understanding tasks has not been closed; generation is already being commoditized and caught in price wars"
+  },
+  {
+   "a": "D01",
+   "b": "D05",
+   "pick": "D05",
+   "why": "The pre-training door is already closed to academia; evaluation is one of the few positions that combine a low barrier with a real bottleneck"
+  },
+  {
+   "a": "D04",
+   "b": "D03",
+   "pick": "D03",
+   "why": "Scaffolding is being absorbed by models; the core problem of continual learning is unsolved, so the moat is deeper"
+  },
+  {
+   "a": "D13",
+   "b": "D05",
+   "pick": "D05",
+   "why": "The value of safety and alignment is realized through regulation, an external variable; evaluation is an internal bottleneck that cannot be bypassed"
+  },
+  {
+   "a": "D10",
+   "b": "D06",
+   "pick": "D06",
+   "why": "The shake-out in autonomous driving has begun and requires fleet access; the shake-out in embodied AI has not fully arrived"
+  }
+ ],
+ "web_searches": []
+}
